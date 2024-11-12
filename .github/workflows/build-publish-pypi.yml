@@ -28,6 +28,7 @@ jobs:
           MapboxAccessTokenJupyter: ${{ secrets.mapbox_jupyter_token }}
           NODE_OPTIONS: --openssl-legacy-provider
         run: |
+          export YARN_ENABLE_IMMUTABLE_INSTALLS=false
           python -m virtualenv venv
           source venv/bin/activate
           pip install jupyter jupyterlab jupyter-packaging
