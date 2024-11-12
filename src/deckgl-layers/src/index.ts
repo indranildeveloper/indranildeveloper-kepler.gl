@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export {default as ThreeDBuildingLayer} from './3d-building-layer/3d-building-layer';
 

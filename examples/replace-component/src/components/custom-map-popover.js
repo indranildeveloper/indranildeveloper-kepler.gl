@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
-import {MapPopoverFactory} from '@kepler.gl/components';
+import {MapPopoverFactory} from '@indranildeveloper-kepler.gl/components';
 
 const CustomMapPopoverFactory = (...deps) => {
   const MapPopover = MapPopoverFactory(...deps);

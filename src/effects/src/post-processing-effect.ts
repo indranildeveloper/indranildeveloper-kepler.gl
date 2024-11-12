@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {PostProcessEffect as DeckPostProcessEffect} from '@deck.gl/core';
 import {
@@ -20,8 +20,8 @@ import {
   hexagonalPixelate
 } from '@luma.gl/shadertools';
 
-import {POSTPROCESSING_EFFECTS, DEFAULT_POST_PROCESSING_EFFECT_TYPE} from '@kepler.gl/constants';
-import {EffectPropsPartial, EffectParameterDescription} from '@kepler.gl/types';
+import {POSTPROCESSING_EFFECTS, DEFAULT_POST_PROCESSING_EFFECT_TYPE} from '@indranildeveloper-kepler.gl/constants';
+import {EffectPropsPartial, EffectParameterDescription} from '@indranildeveloper-kepler.gl/types';
 
 import Effect from './effect';
 

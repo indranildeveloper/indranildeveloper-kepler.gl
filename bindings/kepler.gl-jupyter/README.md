@@ -1,8 +1,8 @@
-# kepler.gl for Jupyter
+# indranildeveloper-kepler.gl for Jupyter
 
-This is the [kepler.gl](http://kepler.gl) jupyter widget, an advanced geospatial visualization tool, to render large-scale interactive maps in Jupyter Notebook.
+This is the [indranildeveloper-kepler.gl](http://indranildeveloper-kepler.gl) jupyter widget, an advanced geospatial visualization tool, to render large-scale interactive maps in Jupyter Notebook.
 
-![Kepler.gl for Jupyter][jupyter_widget]
+![indranildeveloper-kepler.gl for Jupyter][jupyter_widget]
 
 Table of contacts
 - [Installation](#installation)
@@ -138,12 +138,12 @@ jupyter labextension install keplergl-jupyter
 NOTE: please make sure the python kernel is correctly specified in the notebook.
 
 ```python
-# Load kepler.gl with an empty map
+# Load indranildeveloper-kepler.gl with an empty map
 from keplergl import KeplerGl
 map_1 = KeplerGl(height=400)
 map_1
 
-# Load kepler.gl with map data and config
+# Load indranildeveloper-kepler.gl with map data and config
 # Since keplergl 0.3.4, you can pass `use_arrow=True` to load and render data faster using GeoArrow, e.g. `KeplerGl(data={'data_1': df}, config=config, use_arrow=True)`
 map_2 = KeplerGl(height=400, data={'data_1': df}, config=config)
 map_2
@@ -171,7 +171,7 @@ Keplergl (>0.3.0) works with Google Colab. You can install it using pip.
 # Install keplergl (>0.3.0)
 !pip install keplergl
 
-# Load Kepler.gl with an empty map
+# Load indranildeveloper-kepler.gl with an empty map
 from keplergl import KeplerGl
 map_1 = KeplerGl()
 
@@ -192,32 +192,32 @@ with input parameters:
 Please note that the map is not interactive due to the limitation of Google Colab. For example, when applying config to the map in Colab, the map won't be updated and one needs to call `show()` again to render a new map in a new cell.
 
 ## Demo Notebooks
-- [Load kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/Load%20kepler.gl.ipynb): Load kepler.gl widget, add data and config
-- [Geometry as String](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/Geometry%20as%20String.ipynb): Embed Polygon geometries as `GeoJson` and `WKT` inside a `CSV`
-- [GeoJSON](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/GeoJSON.ipynb): Load GeoJSON to kepler.gl
-- [DataFrame](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/DataFrame.ipynb): Load DataFrame to kepler.gl
-- [GeoDataFrame](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/GeoDataFrame.ipynb): Load GeoDataFrame to kepler.gl
+- [Load indranildeveloper-kepler.gl](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/Load%20indranildeveloper-kepler.gl.ipynb): Load indranildeveloper-kepler.gl widget, add data and config
+- [Geometry as String](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/Geometry%20as%20String.ipynb): Embed Polygon geometries as `GeoJson` and `WKT` inside a `CSV`
+- [GeoJSON](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/GeoJSON.ipynb): Load GeoJSON to indranildeveloper-kepler.gl
+- [DataFrame](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/DataFrame.ipynb): Load DataFrame to indranildeveloper-kepler.gl
+- [GeoDataFrame](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/GeoDataFrame.ipynb): Load GeoDataFrame to indranildeveloper-kepler.gl
 
 
-https://docs.kepler.gl/docs/keplergl-jupyter#1-load-keplergl-map
+https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#1-load-keplergl-map
 ## Usage
-  - [1. Load kepler.gl](https://docs.kepler.gl/docs/keplergl-jupyter#1-load-keplergl-map)
-    - [`keplergl.KeplerGl()`](https://docs.kepler.gl/docs/keplergl-jupyter#keplergl)
-  - [2. Add Data](https://docs.kepler.gl/docs/keplergl-jupyter#2-add-data)
-    - [`.add_data()`](https://docs.kepler.gl/docs/keplergl-jupyter#add_data)
-    - [`.data`](https://docs.kepler.gl/docs/keplergl-jupyter#data)
-  - [3. Data Format](https://docs.kepler.gl/docs/keplergl-jupyter#3-data-format)
-    - [`CSV`](https://docs.kepler.gl/docs/keplergl-jupyter#csv)
-    - [`GeoJSON`](https://docs.kepler.gl/docs/keplergl-jupyter#geojson)
-    - [`DataFrame`](https://docs.kepler.gl/docs/keplergl-jupyter#dataframe)
-    - [`GeoDataFrame`](https://docs.kepler.gl/docs/keplergl-jupyter#geodataframe)
-    - [`WKT`](https://docs.kepler.gl/docs/keplergl-jupyter#wkt)
-  - [4. Customize the map](https://docs.kepler.gl/docs/keplergl-jupyter#4-customize-the-map)
-  - [5. Save and load config](https://docs.kepler.gl/docs/keplergl-jupyter#5-save-and-load-config)
-    - [`.config`](https://docs.kepler.gl/docs/keplergl-jupyter#config)
-  - [6. Match config with data](https://docs.kepler.gl/docs/keplergl-jupyter#6-match-config-with-data)
-  - [7. Save Map](https://docs.kepler.gl/docs/keplergl-jupyter#7-save-map)
-    - [`.save_to_html()`](https://docs.kepler.gl/docs/keplergl-jupyter#save_to_html)
+  - [1. Load indranildeveloper-kepler.gl](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#1-load-keplergl-map)
+    - [`keplergl.KeplerGl()`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#keplergl)
+  - [2. Add Data](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#2-add-data)
+    - [`.add_data()`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#add_data)
+    - [`.data`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#data)
+  - [3. Data Format](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#3-data-format)
+    - [`CSV`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#csv)
+    - [`GeoJSON`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#geojson)
+    - [`DataFrame`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#dataframe)
+    - [`GeoDataFrame`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#geodataframe)
+    - [`WKT`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#wkt)
+  - [4. Customize the map](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#4-customize-the-map)
+  - [5. Save and load config](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#5-save-and-load-config)
+    - [`.config`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#config)
+  - [6. Match config with data](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#6-match-config-with-data)
+  - [7. Save Map](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#7-save-map)
+    - [`.save_to_html()`](https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter#save_to_html)
 
 ## Local Development Setup
 
@@ -260,13 +260,13 @@ pip install geopandas
 
 #### Clone Repo
 ```shell
-git clone https://github.com/keplergl/kepler.gl.git
+git clone https://github.com/keplergl/indranildeveloper-kepler.gl.git
 ```
 
 ### Setup JS
 #### 1. Install Js module
 ```sh
-cd bindings/kepler.gl-jupyter
+cd bindings/indranildeveloper-kepler.gl-jupyter
 cd js
 yarn
 ```
@@ -302,7 +302,7 @@ jupyter nbextension install --py --symlink --sys-prefix keplergl
 jupyter nbextension enable --py --sys-prefix keplergl
 ```
 
-NOTE: The above command `jupyter nbextension install -py --symlink --sys-prefix keplergl` is trying to create a symoblic link of the folder `bindings/kepler.gl-jupyter/keplergl/static` under the jupyter's folder `nbextensions`. Please check if there is already a folder "nbextensions/kepler-jupyter" existed, and you might need to remove it first.
+NOTE: The above command `jupyter nbextension install -py --symlink --sys-prefix keplergl` is trying to create a symoblic link of the folder `bindings/indranildeveloper-kepler.gl-jupyter/keplergl/static` under the jupyter's folder `nbextensions`. Please check if there is already a folder "nbextensions/kepler-jupyter" existed, and you might need to remove it first.
 
 To find the location of `nbextensions` folder, you can use the following command:
 ```shell
@@ -353,16 +353,16 @@ Then, you can either install this labextension to test it:
 ```shell
 jupyter labextension install .
 ```
-or, you can manually create a symbolic link for the folder `bindings/kepler.gl-jupyter/kepler-jupyter/labextension` under the jupyter's folder `labextensions`, e.g. `/Users/test/opt/anaconda3/envs/test37/share/jupyter/labextensions`. You will need to reload the jupyter lab page.
+or, you can manually create a symbolic link for the folder `bindings/indranildeveloper-kepler.gl-jupyter/kepler-jupyter/labextension` under the jupyter's folder `labextensions`, e.g. `/Users/test/opt/anaconda3/envs/test37/share/jupyter/labextensions`. You will need to reload the jupyter lab page.
 
-[jupyter_widget]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_widget.png
-[empty_map]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_empty_map.png
-[geodataframe_map]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_geodataframe.png
-[map_interaction]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_custom_map.gif
-[load_map_w_data]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_load_map_w_data.gif
-[map_add_data]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_add_data.png
-[connect_data_config]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_connect_data_w_config.png
-[save_widget_state]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_save_state.png
+[jupyter_widget]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_widget.png
+[empty_map]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_empty_map.png
+[geodataframe_map]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_geodataframe.png
+[map_interaction]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_custom_map.gif
+[load_map_w_data]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_load_map_w_data.gif
+[map_add_data]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_add_data.png
+[connect_data_config]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_connect_data_w_config.png
+[save_widget_state]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_save_state.png
 
 [wkt]: https://dev.mysql.com/doc/refman/5.7/en/gis-data-formats.html#gis-wkt-format
 [geojson]: https://tools.ietf.org/html/rfc7946

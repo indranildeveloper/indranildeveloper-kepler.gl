@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* setup.js */
 import {JSDOM, VirtualConsole} from 'jsdom';
@@ -141,7 +141,7 @@ Object.keys(global.window).forEach(property => {
 global.navigator = {
   userAgent: 'node.js',
   platform: 'mac',
-  appName: 'kepler.gl'
+  appName: 'indranildeveloper-kepler.gl'
 };
 
 global.IntersectionObserver = class IntersectionObserver {

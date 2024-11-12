@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useState, useCallback, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 
 import {PanelLabel, SidePanelSection} from '../../common/styled-components';
 import RangeSliderFactory from '../../common/range-slider';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {KeyEvent} from '@kepler.gl/constants';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {KeyEvent} from '@indranildeveloper-kepler.gl/constants';
 import {Checkbox} from '../..';
-import {Layer, LayerBaseConfig} from '@kepler.gl/layers';
-import {isInRange, clamp} from '@kepler.gl/utils';
+import {Layer, LayerBaseConfig} from '@indranildeveloper-kepler.gl/layers';
+import {isInRange, clamp} from '@indranildeveloper-kepler.gl/utils';
 
 type LazyInputProps = {
   value: string | [string, string];

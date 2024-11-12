@@ -1,5 +1,5 @@
 {
-  "name": "@kepler.gl/deckgl-arrow-layers",
+  "name": "@indranildeveloper-kepler.gl/deckgl-arrow-layers",
   "author": "Shan He <shan@uber.com>",
   "version": "3.0.0",
   "description": "Deck.gl layers with GeoArrow and GeoParquet support",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/kepler.gl.git"
+    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
   },
   "scripts": {
     "build": "rm -fr dist && babel src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js,.jsx' --ignore '**/*.d.ts'",

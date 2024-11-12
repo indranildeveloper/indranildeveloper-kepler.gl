@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* different option share same query type e.g. events,
 and segments both use queryRunner */
 import keyMirror from 'keymirror';
 
-export const ASSETS_URL = 'https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/';
-export const DATA_URL = 'https://raw.githubusercontent.com/keplergl/kepler.gl-data/master/';
+export const ASSETS_URL = 'https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/';
+export const DATA_URL = 'https://raw.githubusercontent.com/keplergl/indranildeveloper-kepler.gl-data/master/';
 export const MAP_URI = 'demo/map?mapUrl=';
 /*
- * If you want to add more samples, feel free to edit the json file on github kepler.gl data repo
+ * If you want to add more samples, feel free to edit the json file on github indranildeveloper-kepler.gl data repo
  */
 export const MAP_CONFIG_URL = `${DATA_URL}samples.json?nocache=${new Date().getTime()}`;
 
@@ -18,7 +18,7 @@ export const MAP_CONFIG_URL = `${DATA_URL}samples.json?nocache=${new Date().getT
  * because it belongs to the demo app
  * @type {string}
  */
-export const KEPLER_GL_WEBSITE = 'http://kepler.gl/';
+export const KEPLER_GL_WEBSITE = 'http://indranildeveloper-kepler.gl/';
 
 export const QUERY_TYPES = keyMirror({
   file: null,

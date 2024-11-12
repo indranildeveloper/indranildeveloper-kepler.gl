@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import pick from 'lodash.pick';
 import {VERSIONS} from './versions';
-import {LAYER_VIS_CONFIGS, FILTER_VIEW_TYPES} from '@kepler.gl/constants';
-import {isFilterValidToSave, notNullorUndefined, findById} from '@kepler.gl/utils';
+import {LAYER_VIS_CONFIGS, FILTER_VIEW_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {isFilterValidToSave, notNullorUndefined, findById} from '@indranildeveloper-kepler.gl/utils';
 import Schema from './schema';
 import cloneDeep from 'lodash.clonedeep';
 import {
@@ -28,9 +28,9 @@ import {
   SplitMap,
   ValueOf,
   Effect
-} from '@kepler.gl/types';
-import {Datasets} from '@kepler.gl/table';
-import {Layer, LayerClassesType} from '@kepler.gl/layers';
+} from '@indranildeveloper-kepler.gl/types';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {Layer, LayerClassesType} from '@indranildeveloper-kepler.gl/layers';
 import {Loader} from '@loaders.gl/loader-utils';
 import KeplerGLSchema from './schema-manager';
 

@@ -32,7 +32,7 @@ const RESOLVE_LOCAL_ALIASES = {
   'react-intl': `${NODE_MODULES_DIR}/react-intl`,
   // Suppress useless warnings from react-date-picker's dep
   'tiny-warning': `${SRC_DIR}/utils/src/noop.ts`,
-  // kepler.gl and loaders.gl need to use same apache-arrow
+  // indranildeveloper-kepler.gl and loaders.gl need to use same apache-arrow
   'apache-arrow': `${NODE_MODULES_DIR}/apache-arrow`
 };
 
@@ -56,7 +56,7 @@ const config = {
     'process.env.FoursquareUserMapsURL': JSON.stringify(process.env.FoursquareUserMapsURL) // eslint-disable-line
   },
   plugins: [
-    // automatically injected kepler.gl package version into the bundle
+    // automatically injected indranildeveloper-kepler.gl package version into the bundle
     replace({
       __PACKAGE_VERSION__: KeplerPackage.version,
       include: /constants\/src\/default-settings\.ts/
@@ -74,13 +74,13 @@ function addAliases(externals, args) {
   // resolve deck.gl from local dir
   if (useLocalDeck || useRepoDeck) {
     // Load deck.gl from root node_modules
-    // if env.deck_src Load deck.gl from deck.gl/modules/main/src folder parallel to kepler.gl
+    // if env.deck_src Load deck.gl from deck.gl/modules/main/src folder parallel to indranildeveloper-kepler.gl
     resolveAlias['deck.gl'] = useLocalDeck
       ? `${NODE_MODULES_DIR}/deck.gl/src`
       : `${EXTERNAL_DECK_SRC}/modules/main/src`;
 
     // if env.deck Load @deck.gl modules from root node_modules/@deck.gl
-    // if env.deck_src Load @deck.gl modules from  deck.gl/modules folder parallel to kepler.gl
+    // if env.deck_src Load @deck.gl modules from  deck.gl/modules folder parallel to indranildeveloper-kepler.gl
     externals['deck.gl'].forEach(mdl => {
       resolveAlias[`@deck.gl/${mdl}`] = useLocalDeck
         ? `${NODE_MODULES_DIR}/@deck.gl/${mdl}/src`
@@ -93,7 +93,7 @@ function addAliases(externals, args) {
 
     ['luma.gl', 'probe.gl', 'loaders.gl'].forEach(name => {
       // if env.deck Load ${name} from root node_modules
-      // if env.deck_src Load ${name} from deck.gl/node_modules folder parallel to kepler.gl
+      // if env.deck_src Load ${name} from deck.gl/node_modules folder parallel to indranildeveloper-kepler.gl
       resolveAlias[name] = useLocalDeck
         ? `${NODE_MODULES_DIR}/${name}/src`
         : name === 'probe.gl'
@@ -101,7 +101,7 @@ function addAliases(externals, args) {
         : `${EXTERNAL_DECK_SRC}/node_modules/@${name}/core/src`;
 
       // if env.deck Load @${name} modules from root node_modules/@${name}
-      // if env.deck_src Load @${name} modules from deck.gl/node_modules/@${name} folder parallel to kepler.gl`
+      // if env.deck_src Load @${name} modules from deck.gl/node_modules/@${name} folder parallel to indranildeveloper-kepler.gl`
       externals[name].forEach(mdl => {
         resolveAlias[`@${name}/${mdl}`] = useLocalDeck
           ? `${NODE_MODULES_DIR}/@${name}/${mdl}/src`
@@ -208,7 +208,7 @@ function openURL(url) {
           }
         });
         console.info(
-          `kepler.gl demo app running at ${`http://localhost:${port}`}, press Ctrl+C to stop`
+          `indranildeveloper-kepler.gl demo app running at ${`http://localhost:${port}`}, press Ctrl+C to stop`
         );
         openURL(`http://localhost:${port}`);
       })

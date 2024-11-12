@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 import test from 'tape-catch';
@@ -9,8 +9,8 @@ import {console as Console} from 'global/window';
 import {drainTasksForTesting, succeedTaskInTest, errorTaskInTest} from 'react-palm/tasks';
 import CloneDeep from 'lodash.clonedeep';
 
-import SchemaManager from '@kepler.gl/schemas';
-import {VisStateActions, MapStateActions} from '@kepler.gl/actions';
+import SchemaManager from '@indranildeveloper-kepler.gl/schemas';
+import {VisStateActions, MapStateActions} from '@indranildeveloper-kepler.gl/actions';
 import {
   visStateReducer as reducer,
   INITIAL_VIS_STATE,
@@ -21,11 +21,11 @@ import {
   prepareStateForDatasetReplace,
   syncTimeFilterWithLayerTimelineUpdater,
   setTimeFilterTimelineModeUpdater
-} from '@kepler.gl/reducers';
+} from '@indranildeveloper-kepler.gl/reducers';
 
-import {processCsvData, processGeojson} from '@kepler.gl/processors';
-import {Layer, KeplerGlLayers, COLUMN_MODE_TABLE} from '@kepler.gl/layers';
-import {createNewDataEntry, maybeToDate} from '@kepler.gl/table';
+import {processCsvData, processGeojson} from '@indranildeveloper-kepler.gl/processors';
+import {Layer, KeplerGlLayers, COLUMN_MODE_TABLE} from '@indranildeveloper-kepler.gl/layers';
+import {createNewDataEntry, maybeToDate} from '@indranildeveloper-kepler.gl/table';
 import {
   createDataContainer,
   applyFilterFieldName,
@@ -33,7 +33,7 @@ import {
   getDefaultFilter,
   histogramFromDomain,
   TileTimeInterval
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 import {
   ALL_FIELD_TYPES,
   EDITOR_MODES,
@@ -47,7 +47,7 @@ import {
   INTERVAL,
   LAYER_TYPES,
   SYNC_TIMELINE_MODES
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 const {ArcLayer, PointLayer, GeojsonLayer, LineLayer, TripLayer} = KeplerGlLayers;
 

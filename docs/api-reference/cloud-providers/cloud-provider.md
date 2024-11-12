@@ -59,7 +59,7 @@ async downloadMap(loadParams) {
      datasets: [],
      config: {},
      info: {
-       app: 'kepler.gl',
+       app: 'indranildeveloper-kepler.gl',
        created_at: ''
        title: 'test map',
        description: 'Hello this is my test dropbox map'
@@ -83,7 +83,7 @@ Returns **[boolean][31]** true if a user already logged in
 
 ### getMapUrl
 
-This method is called by kepler.gl demo app to pushes a new location to history, becoming the current location.
+This method is called by indranildeveloper-kepler.gl demo app to pushes a new location to history, becoming the current location.
 
 **Parameters**
 
@@ -146,7 +146,7 @@ Returns **[Array][32]&lt;[Viz][33]>** an array of Viz objects
 ### login
 
 This method will be called when user click the login button in the cloud provider tile.
-Upon login success, `onCloudLoginSuccess` has to be called to notify kepler.gl UI
+Upon login success, `onCloudLoginSuccess` has to be called to notify indranildeveloper-kepler.gl UI
 
 **Parameters**
 
@@ -155,7 +155,7 @@ Upon login success, `onCloudLoginSuccess` has to be called to notify kepler.gl U
 ### logout
 
 This method will be called when user click the logout button under the cloud provider tile.
-Upon login success, `onCloudLoginSuccess` has to be called to notify kepler.gl UI
+Upon login success, `onCloudLoginSuccess` has to be called to notify indranildeveloper-kepler.gl UI
 
 **Parameters**
 
@@ -163,7 +163,7 @@ Upon login success, `onCloudLoginSuccess` has to be called to notify kepler.gl U
 
 ### uploadMap
 
-This method will be called to upload map for saving and sharing. Kepler.gl will package map data, config, title, description and thumbnail for upload to storage.
+This method will be called to upload map for saving and sharing. indranildeveloper-kepler.gl will package map data, config, title, description and thumbnail for upload to storage.
 With the option to overwrite already saved map, and upload as private or public map.
 
 **Parameters**

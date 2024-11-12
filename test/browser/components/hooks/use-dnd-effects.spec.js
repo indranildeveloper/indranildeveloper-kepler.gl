@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {renderHook, act} from '@testing-library/react';
 import {useDispatch} from 'react-redux';
-import {useDndEffects} from '@kepler.gl/components';
-import {reorderEffect, updateEffect} from '@kepler.gl/actions';
-import {SORTABLE_EFFECT_PANEL_TYPE, SORTABLE_EFFECT_TYPE} from '@kepler.gl/constants';
-import {reorderEffectOrder} from '@kepler.gl/utils';
+import {useDndEffects} from '@indranildeveloper-kepler.gl/components';
+import {reorderEffect, updateEffect} from '@indranildeveloper-kepler.gl/actions';
+import {SORTABLE_EFFECT_PANEL_TYPE, SORTABLE_EFFECT_TYPE} from '@indranildeveloper-kepler.gl/constants';
+import {reorderEffectOrder} from '@indranildeveloper-kepler.gl/utils';
 
 // Mock useDispatch hook
 jest.mock('react-redux', () => ({
@@ -15,14 +15,14 @@ jest.mock('react-redux', () => ({
 }));
 
 // Mock dependencies
-jest.mock('@kepler.gl/actions', () => ({
-  ...jest.requireActual('@kepler.gl/actions'),
+jest.mock('@indranildeveloper-kepler.gl/actions', () => ({
+  ...jest.requireActual('@indranildeveloper-kepler.gl/actions'),
   reorderEffect: jest.fn(),
   updateEffect: jest.fn()
 }));
 
-jest.mock('@kepler.gl/utils', () => ({
-  ...jest.requireActual('@kepler.gl/utils'),
+jest.mock('@indranildeveloper-kepler.gl/utils', () => ({
+  ...jest.requireActual('@indranildeveloper-kepler.gl/utils'),
   reorderEffectOrder: jest.fn()
 }));
 

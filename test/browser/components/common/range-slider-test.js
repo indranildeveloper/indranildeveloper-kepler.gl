@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
-import {RangeSlider, Slider, SliderHandle, SliderBarHandle} from '@kepler.gl/components';
+import {RangeSlider, Slider, SliderHandle, SliderBarHandle} from '@indranildeveloper-kepler.gl/components';
 
 test('Components -> RangeSlider.render', t => {
   let wrapper;

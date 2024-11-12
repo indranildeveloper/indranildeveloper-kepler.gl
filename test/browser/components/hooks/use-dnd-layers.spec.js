@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {renderHook, act} from '@testing-library/react';
 import {useDispatch} from 'react-redux';
-import {useDndLayers} from '@kepler.gl/components';
-import {layerConfigChange, reorderLayer, toggleLayerForMap} from '@kepler.gl/actions';
+import {useDndLayers} from '@indranildeveloper-kepler.gl/components';
+import {layerConfigChange, reorderLayer, toggleLayerForMap} from '@indranildeveloper-kepler.gl/actions';
 import {
   DROPPABLE_MAP_CONTAINER_TYPE,
   SORTABLE_LAYER_TYPE,
   SORTABLE_SIDE_PANEL_TYPE
-} from '@kepler.gl/constants';
-import {reorderLayerOrder} from '@kepler.gl/reducers';
+} from '@indranildeveloper-kepler.gl/constants';
+import {reorderLayerOrder} from '@indranildeveloper-kepler.gl/reducers';
 
 // Mock useDispatch hook
 jest.mock('react-redux', () => ({
@@ -19,14 +19,14 @@ jest.mock('react-redux', () => ({
 }));
 
 // Mock dependencies
-jest.mock('@kepler.gl/actions', () => ({
-  ...jest.requireActual('@kepler.gl/actions'),
+jest.mock('@indranildeveloper-kepler.gl/actions', () => ({
+  ...jest.requireActual('@indranildeveloper-kepler.gl/actions'),
   layerConfigChange: jest.fn(),
   reorderLayer: jest.fn(),
   toggleLayerForMap: jest.fn()
 }));
 
-jest.mock('@kepler.gl/reducers', () => ({
+jest.mock('@indranildeveloper-kepler.gl/reducers', () => ({
   reorderLayerOrder: jest.fn()
 }));
 

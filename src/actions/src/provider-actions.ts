@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {ACTION_PREFIX} from './action-types';
@@ -8,8 +8,8 @@ import {
   ExportFileToCloudPayload,
   OnErrorCallBack,
   OnSuccessCallBack
-} from '@kepler.gl/types';
-import {Provider} from '@kepler.gl/cloud-providers';
+} from '@indranildeveloper-kepler.gl/types';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
 
 // eslint-disable-next-line prettier/prettier
 const assignType = <T>(obj: T): { [K in keyof T]: `${typeof ACTION_PREFIX}${string & K}`; } => obj as any

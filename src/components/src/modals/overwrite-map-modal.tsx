@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 import {CenterVerticalFlexbox} from '../common/styled-components';
 import {UploadAnimation} from './status-panel';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 import ImageModalContainer, {ImageModalContainerProps} from './image-modal-container';
-import {Provider} from '@kepler.gl/cloud-providers';
-import {cleanupExportImage as cleanupExportImageAction} from '@kepler.gl/actions';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {cleanupExportImage as cleanupExportImageAction} from '@indranildeveloper-kepler.gl/actions';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 import {ModalFooter} from '../common/modal';
 

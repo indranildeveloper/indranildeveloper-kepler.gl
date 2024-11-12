@@ -1,7 +1,7 @@
-# Customize kepler.gl Theme
+# Customize indranildeveloper-kepler.gl Theme
 
-This example show how to customize Kepler.gl theme
-  1. Define an object (theme) to override Kepler.gl style
+This example show how to customize indranildeveloper-kepler.gl theme
+  1. Define an object (theme) to override indranildeveloper-kepler.gl style
   2. Pass the newly created object as prop to KeplerGl react component
 
 #### 1. Install

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {default as ActionTypes} from './action-types';
@@ -11,12 +11,12 @@ import {
   MapState,
   VisibleLayerGroups,
   LayerGroup
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 /**
  * Add map style from user input to reducer and set it to current style
  * This action is called when user click confirm after putting in a valid style url in the custom map style dialog.
- * It should not be called from outside kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
+ * It should not be called from outside indranildeveloper-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
  * param {void}
  * @memberof mapStyleActions
  * @public
@@ -34,7 +34,7 @@ export type RemoveCustomMapStyleUpdaterAction = {
 /**
  * Edit map style from user input to reducer.
  * This action is called when user clicks confirm after editing an existing custom style in the custom map style dialog.
- * It should not be called from outside kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
+ * It should not be called from outside indranildeveloper-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
  * param {void}
  * @memberof mapStyleActions
  * @public

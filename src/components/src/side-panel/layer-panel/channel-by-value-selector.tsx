@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 
-import {CHANNEL_SCALE_SUPPORTED_FIELDS} from '@kepler.gl/constants';
-import {Layer, VisualChannel} from '@kepler.gl/layers';
-import {ColorUI, Field, LayerVisConfig} from '@kepler.gl/types';
+import {CHANNEL_SCALE_SUPPORTED_FIELDS} from '@indranildeveloper-kepler.gl/constants';
+import {Layer, VisualChannel} from '@indranildeveloper-kepler.gl/layers';
+import {ColorUI, Field, LayerVisConfig} from '@indranildeveloper-kepler.gl/types';
 import DimensionScaleSelectorFactory from './dimension-scale-selector';
 import VisConfigByFieldSelectorFactory from './vis-config-by-field-selector';
 

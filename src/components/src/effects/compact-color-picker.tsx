@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import styled from 'styled-components';
 
-import {rgbToHex} from '@kepler.gl/utils';
+import {rgbToHex} from '@indranildeveloper-kepler.gl/utils';
 
 import {Button} from '../common/styled-components';
 import Portaled from '../common/portaled';

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {OAuthApp} from '@carto/toolkit';
 import Console from 'global/console';
 import CartoIcon from './carto-icon';
-import {Provider} from '@kepler.gl/cloud-providers';
-import {createDataContainer} from '@kepler.gl/utils';
-import {formatCsv} from '@kepler.gl/reducers';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {createDataContainer} from '@indranildeveloper-kepler.gl/utils';
+import {formatCsv} from '@indranildeveloper-kepler.gl/reducers';
 
 const NAME = 'carto';
 const DISPLAY_NAME = 'CARTO';

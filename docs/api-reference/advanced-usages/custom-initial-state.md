@@ -1,12 +1,12 @@
 # Custom reducer initial state
 
-For advanced users who wish to modify the initial state of kepler.gl reducer, kepler.gl provides a reducer `initialState` function. `Reducer.initialState` will take the custom state and return a new reducer function. `initialState` is only meant to be called where the store is initialized. The custom state passed in will be shallow merged with the default `initialState`.
+For advanced users who wish to modify the initial state of indranildeveloper-kepler.gl reducer, indranildeveloper-kepler.gl provides a reducer `initialState` function. `Reducer.initialState` will take the custom state and return a new reducer function. `initialState` is only meant to be called where the store is initialized. The custom state passed in will be shallow merged with the default `initialState`.
 
 Here is an example modify `uiState` `initialState` to hide side panel, and selectively display map control button.
 
 ```js
 import {combineReducers} from 'redux';
-import {keplerGlReducer} from '@kepler.gl/reducers';
+import {keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
 
 const customizedKeplerGlReducer = keplerGlReducer
   .initialState({
@@ -41,5 +41,5 @@ const reducers = combineReducers({
 
 For full implementation, take a look at the [custom reducer example][custom-reducer-example]
 
-[custom-reducer-example]: https://github.com/keplergl/kepler.gl/tree/master/examples/custom-reducer
+[custom-reducer-example]: https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/examples/custom-reducer
 

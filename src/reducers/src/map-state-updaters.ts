@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import geoViewport from '@mapbox/geo-viewport';
 import booleanWithin from '@turf/boolean-within';
@@ -8,17 +8,17 @@ import {fitBounds} from '@math.gl/web-mercator';
 import deepmerge from 'deepmerge';
 import pick from 'lodash.pick';
 
-import {getCenterAndZoomFromBounds, validateBounds, MAPBOX_TILE_SIZE} from '@kepler.gl/utils';
-import {MapStateActions, ReceiveMapConfigPayload, ActionTypes} from '@kepler.gl/actions';
-import {MapState, Bounds, Viewport} from '@kepler.gl/types';
+import {getCenterAndZoomFromBounds, validateBounds, MAPBOX_TILE_SIZE} from '@indranildeveloper-kepler.gl/utils';
+import {MapStateActions, ReceiveMapConfigPayload, ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {MapState, Bounds, Viewport} from '@indranildeveloper-kepler.gl/types';
 
 /**
- * Updaters for `mapState` reducer. Can be used in your root reducer to directly modify kepler.gl's state.
+ * Updaters for `mapState` reducer. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
  * Read more about [Using updaters](../advanced-usage/using-updaters.md)
  * @public
  * @example
  *
- * import keplerGlReducer, {mapStateUpdaters} from 'kepler.gl/reducers';
+ * import keplerGlReducer, {mapStateUpdaters} from 'indranildeveloper-kepler.gl/reducers';
  * // Root Reducer
  * const reducers = combineReducers({
  *  keplerGl: keplerGlReducer,

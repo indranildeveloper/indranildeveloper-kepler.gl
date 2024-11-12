@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {Button, Edit} from '@kepler.gl/components';
-import {ColorUI} from '@kepler.gl/types';
-import {colorMapToColorBreaks, isNumericColorBreaks} from '@kepler.gl/utils';
+import {Button, Edit} from '@indranildeveloper-kepler.gl/components';
+import {ColorUI} from '@indranildeveloper-kepler.gl/types';
+import {colorMapToColorBreaks, isNumericColorBreaks} from '@indranildeveloper-kepler.gl/utils';
 import React, {useCallback, useMemo} from 'react';
 import styled from 'styled-components';
-import {ColorBreak, ColorBreakOrdinal} from '@kepler.gl/utils';
+import {ColorBreak, ColorBreakOrdinal} from '@indranildeveloper-kepler.gl/utils';
 import CustomPaletteFactory, {
   ColorPaletteItem,
   ColorSwatch,

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-// TODO: this will move onto kepler.gl core
+// TODO: this will move onto indranildeveloper-kepler.gl core
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {CORS_LINK} from '../../constants/default-settings';
 import {FormattedMessage} from 'react-intl';
-import {Button} from '@kepler.gl/components';
+import {Button} from '@indranildeveloper-kepler.gl/components';
 import {validateUrl} from '../../utils/url';
 
 const propTypes = {

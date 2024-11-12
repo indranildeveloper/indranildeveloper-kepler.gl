@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useState} from 'react';
 
-import {Button, Icons, TextArea, withState} from '@kepler.gl/components';
-import {KeplerGlSchema} from '@kepler.gl/schemas';
-import {visStateLens, mapStateLens, mapStyleLens} from '@kepler.gl/reducers';
+import {Button, Icons, TextArea, withState} from '@indranildeveloper-kepler.gl/components';
+import {KeplerGlSchema} from '@indranildeveloper-kepler.gl/schemas';
+import {visStateLens, mapStateLens, mapStyleLens} from '@indranildeveloper-kepler.gl/reducers';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import styled from 'styled-components';
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {GeoJsonLayer} from '@deck.gl/layers';
-import {EnhancedGridLayer} from '@kepler.gl/deckgl-layers';
+import {EnhancedGridLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
 import AggregationLayer, {AggregationLayerConfig} from '../aggregation-layer';
 import {pointToPolygonGeo} from './grid-utils';
 import GridLayerIcon from './grid-layer-icon';
@@ -13,8 +13,8 @@ import {
   VisConfigRange,
   VisConfigSelection,
   Merge
-} from '@kepler.gl/types';
-import {AggregationTypes, ColorRange} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/types';
+import {AggregationTypes, ColorRange} from '@indranildeveloper-kepler.gl/constants';
 
 export type GridLayerVisConfigSettings = {
   opacity: VisConfigNumber;

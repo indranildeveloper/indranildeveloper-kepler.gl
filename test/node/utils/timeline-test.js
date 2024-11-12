@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
-import {getTimelineFromFilter, getTimelineFromAnimationConfig} from '@kepler.gl/utils';
+import {getTimelineFromFilter, getTimelineFromAnimationConfig} from '@indranildeveloper-kepler.gl/utils';
 
 test('#timeline -> getTimelineFromFilter', t => {
   const filter = {

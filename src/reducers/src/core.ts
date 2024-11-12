@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {combineReducers} from 'redux';
 
@@ -11,8 +11,8 @@ import {providerStateReducerFactory} from './provider-state';
 
 import composers from './composers';
 
-import {VisState} from '@kepler.gl/schemas';
-import {MapState, UiState} from '@kepler.gl/types';
+import {VisState} from '@indranildeveloper-kepler.gl/schemas';
+import {MapState, UiState} from '@indranildeveloper-kepler.gl/types';
 import {MapStyle} from './map-style-updaters';
 import {ProviderState} from './provider-state-updaters';
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {combineReducers} from 'redux';
 import {handleActions} from 'redux-actions';
 
-import keplerGlReducer, {combinedUpdaters, uiStateUpdaters} from '@kepler.gl/reducers';
-import {processGeojson, processRowObject, processArrowTable} from '@kepler.gl/processors';
-import KeplerGlSchema from '@kepler.gl/schemas';
-import {EXPORT_MAP_FORMATS} from '@kepler.gl/constants';
+import keplerGlReducer, {combinedUpdaters, uiStateUpdaters} from '@indranildeveloper-kepler.gl/reducers';
+import {processGeojson, processRowObject, processArrowTable} from '@indranildeveloper-kepler.gl/processors';
+import KeplerGlSchema from '@indranildeveloper-kepler.gl/schemas';
+import {EXPORT_MAP_FORMATS} from '@indranildeveloper-kepler.gl/constants';
 
 import {
   INIT,
@@ -55,7 +55,7 @@ export const appReducer = handleActions(
 const {DEFAULT_EXPORT_MAP} = uiStateUpdaters;
 
 // combine app reducer and keplerGl reducer
-// to mimic the reducer state of kepler.gl website
+// to mimic the reducer state of indranildeveloper-kepler.gl website
 const demoReducer = combineReducers({
   // mount keplerGl reducer
   keplerGl: keplerGlReducer.initialState({
@@ -79,7 +79,7 @@ const demoReducer = combineReducers({
   app: appReducer
 });
 
-// this can be moved into a action and call kepler.gl action
+// this can be moved into a action and call indranildeveloper-kepler.gl action
 /**
  *
  * @param state
@@ -115,7 +115,7 @@ export const loadRemoteResourceSuccess = (state, action) => {
   const config = action.config ? KeplerGlSchema.parseSavedConfig(action.config) : null;
 
   const keplerGlInstance = combinedUpdaters.addDataToMapUpdater(
-    state.keplerGl.map, // "map" is the id of your kepler.gl instance
+    state.keplerGl.map, // "map" is the id of your indranildeveloper-kepler.gl instance
     {
       payload: {
         datasets,

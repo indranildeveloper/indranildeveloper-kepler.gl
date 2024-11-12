@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {getGlobalTaskQueue} from 'react-palm/tasks';
-import {isObject, toArray} from '@kepler.gl/utils';
-import {ValueOf} from '@kepler.gl/types';
-import {VisState, Merger, PostMergerPayload} from '@kepler.gl/schemas';
+import {isObject, toArray} from '@indranildeveloper-kepler.gl/utils';
+import {ValueOf} from '@indranildeveloper-kepler.gl/types';
+import {VisState, Merger, PostMergerPayload} from '@indranildeveloper-kepler.gl/schemas';
 
 export function isValidMerger(merger: Merger<any>): boolean {
   return (

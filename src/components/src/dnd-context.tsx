@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo, PropsWithChildren} from 'react';
 import styled from 'styled-components';
@@ -11,9 +11,9 @@ import {
   DND_MODIFIERS,
   SORTABLE_LAYER_TYPE,
   SORTABLE_EFFECT_TYPE
-} from '@kepler.gl/constants';
-import {visStateLens} from '@kepler.gl/reducers';
-import {VisState} from '@kepler.gl/schemas';
+} from '@indranildeveloper-kepler.gl/constants';
+import {visStateLens} from '@indranildeveloper-kepler.gl/reducers';
+import {VisState} from '@indranildeveloper-kepler.gl/schemas';
 
 import LayerPanelHeaderFactory from './side-panel/layer-panel/layer-panel-header';
 import {withState} from './injector';

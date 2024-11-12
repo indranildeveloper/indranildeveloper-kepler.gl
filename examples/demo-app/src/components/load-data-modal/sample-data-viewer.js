@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {format} from 'd3-format';
-import {LoadingDialog} from '@kepler.gl/components';
+import {LoadingDialog} from '@indranildeveloper-kepler.gl/components';
 import {FormattedMessage} from 'react-intl';
 
 const numFormat = format(',');

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {DataRow, SharedRowOptions} from './data-row';
-import {Field} from '@kepler.gl/types';
+import {Field} from '@indranildeveloper-kepler.gl/types';
 import {DataContainerInterface, RangeOptions} from './data-container-interface';
 
 type RowDataContainerInput = {

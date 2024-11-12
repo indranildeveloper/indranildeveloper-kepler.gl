@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 
@@ -20,18 +20,18 @@ import {
   loadFiles,
   loadFilesErr,
   keplerGlInit
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 import {
   uiStateReducer as reducer,
   uiStateReducerFactory,
   INITIAL_UI_STATE
-} from '@kepler.gl/reducers';
+} from '@indranildeveloper-kepler.gl/reducers';
 import {
   EXPORT_DATA_TYPE,
   RESOLUTIONS,
   DEFAULT_NOTIFICATION_TOPICS,
   DEFAULT_NOTIFICATION_TYPES
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 test('#uiStateReducer', t => {
   t.deepEqual(

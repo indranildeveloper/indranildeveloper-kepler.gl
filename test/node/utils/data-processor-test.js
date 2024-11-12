@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import sinon from 'sinon';
@@ -30,7 +30,7 @@ import {
   processCsvData,
   processGeojson,
   processRowObject
-} from '@kepler.gl/processors';
+} from '@indranildeveloper-kepler.gl/processors';
 
 import {
   ACCEPTED_ANALYZER_TYPES,
@@ -39,11 +39,11 @@ import {
   validateInputData,
   getFieldsFromData,
   createDataContainer
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 
-import {formatCsv} from '@kepler.gl/reducers';
+import {formatCsv} from '@indranildeveloper-kepler.gl/reducers';
 
-import {ALL_FIELD_TYPES} from '@kepler.gl/constants';
+import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
 import {cmpFields} from '../../helpers/comparison-utils';
 
 test('Processor -> getFieldsFromData', t => {

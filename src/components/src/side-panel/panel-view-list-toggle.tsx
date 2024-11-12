@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 import OrderByList from '../common/icons/order-by-list';
 import OrderByDataset from '../common/icons/order-by-dataset';
 import {Tooltip} from '../common/styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {PanelListView} from '@kepler.gl/types';
-import {PANEL_VIEW_TOGGLES} from '@kepler.gl/constants';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {PanelListView} from '@indranildeveloper-kepler.gl/types';
+import {PANEL_VIEW_TOGGLES} from '@indranildeveloper-kepler.gl/constants';
 
 type ToggleOptionProps = {
   isActive: boolean;

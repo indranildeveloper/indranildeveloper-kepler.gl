@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {COORDINATE_SYSTEM} from '@deck.gl/core';
-import {GeoArrowTextLayer} from '@kepler.gl/deckgl-arrow-layers';
+import {GeoArrowTextLayer} from '@indranildeveloper-kepler.gl/deckgl-arrow-layers';
 import {DataFilterExtension} from '@deck.gl/extensions';
 import {TextLayer} from '@deck.gl/layers';
 import {console as Console} from 'global/window';
@@ -33,7 +33,7 @@ import {
   SCALE_TYPES,
   TEXT_OUTLINE_MULTIPLIER,
   UNKNOWN_COLOR_KEY
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import {
   DataContainerInterface,
@@ -47,9 +47,9 @@ import {
   toArray,
   notNullorUndefined,
   reverseColorRange
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 
-import {Datasets, GpuFilter, KeplerTable} from '@kepler.gl/table';
+import {Datasets, GpuFilter, KeplerTable} from '@indranildeveloper-kepler.gl/table';
 import {
   ColorUI,
   Field,
@@ -69,8 +69,8 @@ import {
   RGBAColor,
   RGBColor,
   ValueOf
-} from '@kepler.gl/types';
-import {getScaleFunction, initializeLayerColorMap} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/types';
+import {getScaleFunction, initializeLayerColorMap} from '@indranildeveloper-kepler.gl/utils';
 
 export type VisualChannelDomain = number[] | string[];
 export type VisualChannelField = Field | null;
@@ -1070,7 +1070,7 @@ class Layer {
   /**
    * Mapping from visual channels to deck.gl accesors
    * @param {Object} param Parameters
-   * @param {Function} param.dataAccessor Access kepler.gl layer data from deck.gl layer
+   * @param {Function} param.dataAccessor Access indranildeveloper-kepler.gl layer data from deck.gl layer
    * @param {import('utils/table-utils/data-container-interface').DataContainerInterface} param.dataContainer DataContainer to use use with dataAccessor
    * @return {Object} attributeAccessors - deck.gl layer attribute accessors
    */
@@ -1155,7 +1155,7 @@ class Layer {
   /**
    * Get longitude and latitude bounds of the data.
    * @param {import('utils/table-utils/data-container-interface').DataContainerInterface} dataContainer DataContainer to calculate bounds for.
-   * @param {(d: {index: number}, dc: import('utils/table-utils/data-container-interface').DataContainerInterface) => number[]} getPosition Access kepler.gl layer data from deck.gl layer
+   * @param {(d: {index: number}, dc: import('utils/table-utils/data-container-interface').DataContainerInterface) => number[]} getPosition Access indranildeveloper-kepler.gl layer data from deck.gl layer
    * @return {number[]|null} bounds of the data.
    */
   getPointsBounds(

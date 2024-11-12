@@ -97,7 +97,7 @@
 ### Improvements
 
 - **Layer** - Improved GeoJson and H3 layer geometry rendering
-- **UI** - Support custom side panel tabs. [example](https://github.com/keplergl/kepler.gl/tree/master/examples/replace-component)
+- **UI** - Support custom side panel tabs. [example](https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/examples/replace-component)
 
 ### Bug Fixes
 
@@ -110,7 +110,7 @@
 #### Dependency Upgrade
 
 - **react** and **react-dom**: minimum required version is now `^16.3`
-- **react-redux** is upgraded to `^7.1.3`. If you have older version of `react-redux` in your app. You will have error loading kepler.gl, likely due to multiple version of `react-redux` installed.
+- **react-redux** is upgraded to `^7.1.3`. If you have older version of `react-redux` in your app. You will have error loading indranildeveloper-kepler.gl, likely due to multiple version of `react-redux` installed.
 - **react-palm**: required version is now `^3.1.2`.
 - **react-route**: if you are using `react-router`, we suggest using `^3.2.5` to avoid `React 16.8` lifecycle deprecation warning in the console.
 
@@ -118,7 +118,7 @@
 
 - **Cluster Layer**: Fix incorrect cluster point count. Fix cluster layer missing in exported image.
 
-### Moved from `kepler.gl/utils` to `@kepler.gl/table`
+### Moved from `indranildeveloper-kepler.gl/utils` to `@indranildeveloper-kepler.gl/table`
 
 - `maybeToDate`
 - `getNewDatasetColor`
@@ -130,7 +130,7 @@
 - `getGpuFilterProps`
 - `getDatasetFieldIndexForFilter`
 
-### Moved from `kepler.gl/utils` to `@kepler.gl/reducers`
+### Moved from `indranildeveloper-kepler.gl/utils` to `@indranildeveloper-kepler.gl/reducers`
 
 - `findMapBounds`
 - `exportData`
@@ -155,7 +155,7 @@
 - `ComputeDeckLayersProps`
 - `computeDeckLayers`
 
-### Moved from `kepler.gl/processors` to `@kepler.gl/utils`
+### Moved from `indranildeveloper-kepler.gl/processors` to `@indranildeveloper-kepler.gl/utils`
 
 - `ACCEPTED_ANALYZER_TYPES`
 - `validateInputData`
@@ -164,11 +164,11 @@
 - `renameDuplicateFields`
 - `analyzerTypeToFieldType`
 
-### Moved from `kepler.gl/templates` to `@kepler.gl/utils`
+### Moved from `indranildeveloper-kepler.gl/templates` to `@indranildeveloper-kepler.gl/utils`
 
 - `exportMapToHTML`
 
-### Moved from `kepler.gl/layers` to `@kepler.gl/utils`
+### Moved from `indranildeveloper-kepler.gl/layers` to `@indranildeveloper-kepler.gl/utils`
 
 - `getCentroid`
 - `idToPolygonGeo`

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 import {routerReducer, routerMiddleware} from 'react-router-redux';
 import {browserHistory} from 'react-router';
-import {enhanceReduxMiddleware} from '@kepler.gl/reducers';
+import {enhanceReduxMiddleware} from '@indranildeveloper-kepler.gl/reducers';
 import thunk from 'redux-thunk';
 // eslint-disable-next-line no-unused-vars
 import window from 'global/window';
@@ -32,9 +32,9 @@ let composeEnhancers = compose;
 if (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
     actionsBlacklist: [
-      '@@kepler.gl/MOUSE_MOVE',
-      '@@kepler.gl/UPDATE_MAP',
-      '@@kepler.gl/LAYER_HOVER'
+      '@@indranildeveloper-kepler.gl/MOUSE_MOVE',
+      '@@indranildeveloper-kepler.gl/UPDATE_MAP',
+      '@@indranildeveloper-kepler.gl/LAYER_HOVER'
     ]
   });
 }

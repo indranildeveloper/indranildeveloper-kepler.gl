@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled, {withTheme} from 'styled-components';
 import {SketchPicker, ColorChangeHandler} from 'react-color';
 
-import {HexColor} from '@kepler.gl/types';
+import {HexColor} from '@indranildeveloper-kepler.gl/types';
 
 import useOnClickOutside from '../../hooks/use-on-click-outside';
 

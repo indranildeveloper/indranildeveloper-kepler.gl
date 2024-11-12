@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const {resolve} = require('path');
 
@@ -23,9 +23,9 @@ function onCreateWebpackConfig(opts, ocularOptions = global.ocularOptions) {
     'constants': resolve(__dirname, '../src/constants'),
     'actions': resolve(__dirname, '../src/actions'),
     'utils': resolve(__dirname, '../src/utils')
-    // 'kepler.gl/dist': libSources,
-    // // Imports the kepler.gl library from the src directory in this repo
-    // 'kepler.gl': libSources,
+    // 'indranildeveloper-kepler.gl/dist': libSources,
+    // // Imports the indranildeveloper-kepler.gl library from the src directory in this repo
+    // 'indranildeveloper-kepler.gl': libSources,
     // react: resolve(rootDir, './node_modules/react'),
     // 'styled-components': resolve(rootDir, './node_modules/styled-components'),
     // 'react-redux': resolve(rootDir, './node_modules/react-redux'),

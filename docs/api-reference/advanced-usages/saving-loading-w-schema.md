@@ -4,7 +4,7 @@
 
 Kelper.gl provides a schema manager to save and load maps. It converts current map data and configuration into a smaller JSON blob. You can then load that JSON blob into an empty map by passing it to `addDataToMap`.
 
-The reason kepler.gl provides a Schema manager is to make it easy for users to connect the kepler.gl client app to any database, saving map data / config and later load it back. With the schema manager, a map saved in an older version can still be parsed and loaded with the latest kepler.gl library.
+The reason indranildeveloper-kepler.gl provides a Schema manager is to make it easy for users to connect the indranildeveloper-kepler.gl client app to any database, saving map data / config and later load it back. With the schema manager, a map saved in an older version can still be parsed and loaded with the latest indranildeveloper-kepler.gl library.
 
 ### Save map
 
@@ -19,7 +19,7 @@ Under the hood, `SchemaManager.save()` calls `SchemaManager.getDatasetToSave()` 
 In the example blow, `foo` is the id of the KeplerGl instance to be save.
 
 ```js
-import KeplerGlSchema from 'kepler.gl/schemas';
+import KeplerGlSchema from 'indranildeveloper-kepler.gl/schemas';
 
 const mapToSave = KeplerGlSchema.save(state.keplerGl.foo);
 // mapToSave = {datasets: [], config: {}, info: {}};
@@ -41,8 +41,8 @@ Under the hood, `SchemaManager.load()` calls `SchemaManager.parseSavedData()` an
 - `SchemaManager.parseSavedConfig()` will output a JSON blob of the parsed config.
 
 ```js
-import KeplerGlSchema from 'kepler.gl/schemas';
-import {addDataToMap} from 'kepler.gl/actions';
+import KeplerGlSchema from 'indranildeveloper-kepler.gl/schemas';
+import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
 
 const mapToLoad = KeplerGlSchema.load(savedDatasets, savedConfig);
 // mapToLoad = {datasets: [], config: {}};
@@ -55,8 +55,8 @@ this.props.dispatch(addDataToMap(mapToLoad));
 Often times, people want to keep a map config as template, then load it with different datasets. To match a config with a different dataset, you need to make sure `data.id` in the new dataset matches the old one.
 
 ```js
-import KeplerGlSchema from 'kepler.gl/schemas';
-import {addDataToMap} from 'kepler.gl/actions';
+import KeplerGlSchema from 'indranildeveloper-kepler.gl/schemas';
+import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
 
 // save current map data and config
 const {datasets, config} = KeplerGlSchema.save(state.keplerGl.foo);
@@ -82,4 +82,4 @@ const mapToLoad = KeplerGlSchema.load(newDatasets, config);
 this.props.dispatch(addDataToMap(mapToLoad));
 ```
 
-[processor-schema]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/api_load-save.png
+[processor-schema]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/api_load-save.png

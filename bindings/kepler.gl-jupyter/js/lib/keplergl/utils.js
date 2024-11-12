@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {tableFromIPC} from 'apache-arrow';
-import {processCsvData, processGeojson, processArrowBatches} from '@kepler.gl/processors';
+import {processCsvData, processGeojson, processArrowBatches} from '@indranildeveloper-kepler.gl/processors';
 import log from '../log';
 import console from 'global/console';
 
@@ -64,7 +64,7 @@ function processReceivedData({data, info}) {
         : null;
   } catch (e) {
     console.log(
-      `Kepler.gl fails to parse data, detected data
+      `indranildeveloper-kepler.gl fails to parse data, detected data
     format is ${info.queryType}`,
       e
     );
@@ -77,7 +77,7 @@ function processDataFrame(data) {
   const fields = data.columns.map(name => ({name}));
   const rows = data.data;
 
-  // kepler.gl will detect field types
+  // indranildeveloper-kepler.gl will detect field types
   return {fields, rows};
 }
 

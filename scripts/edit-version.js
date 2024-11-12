@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import fs from 'fs';
 import {resolve, join} from 'path';
@@ -13,7 +13,7 @@ function readWritePackage(file, version) {
   fs.readFile(file, (err, data) => {
     if (err) throw err;
     const PackageContent = JSON.parse(data);
-    PackageContent.dependencies['kepler.gl'] = `^${version}`;
+    PackageContent.dependencies['indranildeveloper-kepler.gl'] = `^${version}`;
     const out = JSON.stringify(PackageContent, null, 2);
 
     fs.writeFile(file, out, error => {
@@ -51,7 +51,7 @@ function editUMDPackage(version) {
 
     const out = html.replace(
       /kepler\.gl@\d+.\d+.\d+\/umd/,
-      `kepler.gl@${version}/umd`
+      `indranildeveloper-kepler.gl@${version}/umd`
     );
     fs.writeFile(htmlFile, out, error => {
       if (error) throw error;
@@ -67,6 +67,6 @@ function editUMDPackage(version) {
   editUMDPackage(KeplerGlVersion);
 
   logSuccess(
-    `\n================= Edit example kepler.gl version to ${KeplerGlVersion} Success! =================\n`
+    `\n================= Edit example indranildeveloper-kepler.gl version to ${KeplerGlVersion} Success! =================\n`
   );
 })();

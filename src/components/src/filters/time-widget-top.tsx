@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import styled from 'styled-components';
@@ -7,7 +7,7 @@ import {Clock, Close, LineChart, ArrowDown, ArrowUp} from '../common/icons';
 import FieldSelectorFactory from '../common/field-selector';
 import {SelectTextBold, IconRoundSmall, CenterFlexbox} from '../common/styled-components';
 import {TimeWidgetTopProps, TopSectionWrapperProps} from './types';
-import {Field} from '@kepler.gl/types';
+import {Field} from '@indranildeveloper-kepler.gl/types';
 
 const TOP_SECTION_HEIGHT = '36px';
 

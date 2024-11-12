@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {push} from 'react-router-redux';
 import {fetch} from 'global';
 
-import {loadFiles, toggleModal} from '@kepler.gl/actions';
+import {loadFiles, toggleModal} from '@indranildeveloper-kepler.gl/actions';
 import {load} from '@loaders.gl/core';
 import {CSVLoader} from '@loaders.gl/csv';
 import {GeoArrowLoader} from '@loaders.gl/arrow';
@@ -68,7 +68,7 @@ export function setLoadingMapStatus(isMapLoading) {
 }
 
 /**
- * Actions passed to kepler.gl, called
+ * Actions passed to indranildeveloper-kepler.gl, called
  *
  * Note: exportFile is called on both saving and sharing
  *
@@ -96,11 +96,11 @@ export function onLoadCloudMapSuccess({provider, loadParams}) {
   };
 }
 
-// This can be moved into Kepler.gl to provide ability to load data from remote URLs
+// This can be moved into indranildeveloper-kepler.gl to provide ability to load data from remote URLs
 /**
- * The method is able to load both data and kepler.gl files.
+ * The method is able to load both data and indranildeveloper-kepler.gl files.
  * It uses loadFile action to dispatch and add new datasets/configs
- * to the kepler.gl instance
+ * to the indranildeveloper-kepler.gl instance
  * @param options
  * @param {string} options.dataUrl the URL to fetch data from. Current supported file type json,csv, kepler.json
  * @returns {Function}
@@ -155,8 +155,8 @@ function loadRemoteRawData(url) {
 /**
  *
  * @param {Object} options
- * @param {string} [options.dataUrl] the URL to fetch data from, e.g. https://raw.githubusercontent.com/keplergl/kepler.gl-data/master/earthquakes/data.csv
- * @param {string} [options.configUrl] the URL string to fetch kepler config from, e.g. https://raw.githubusercontent.com/keplergl/kepler.gl-data/master/earthquakes/config.json
+ * @param {string} [options.dataUrl] the URL to fetch data from, e.g. https://raw.githubusercontent.com/keplergl/indranildeveloper-kepler.gl-data/master/earthquakes/data.csv
+ * @param {string} [options.configUrl] the URL string to fetch kepler config from, e.g. https://raw.githubusercontent.com/keplergl/indranildeveloper-kepler.gl-data/master/earthquakes/config.json
  * @param {string} [options.id] the id used as dataset unique identifier, e.g. earthquakes
  * @param {string} [options.label] the label used to describe the new dataset, e.g. California Earthquakes
  * @param {string} [options.queryType] the type of query to execute to load data/config, e.g. sample
@@ -172,7 +172,7 @@ export function loadSample(options, pushRoute = true) {
     if (options.id && pushRoute) {
       dispatch(push(`/demo/${options.id}${routing.locationBeforeTransitions?.search ?? ''}`));
     }
-    // if the sample has a kepler.gl config file url we load it
+    // if the sample has a indranildeveloper-kepler.gl config file url we load it
     if (options.keplergl) {
       dispatch(loadRemoteMap({dataUrl: options.keplergl}));
     } else {

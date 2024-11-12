@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements, enzyme-deprecation/no-mount */
 import {mount} from 'enzyme';
@@ -8,7 +8,7 @@ import React from 'react';
 import sinon from 'sinon';
 import test from 'tape';
 
-import {appInjector, Button, ColorPalette} from '@kepler.gl/components';
+import {appInjector, Button, ColorPalette} from '@indranildeveloper-kepler.gl/components';
 
 import {
   AddColorStop,
@@ -30,11 +30,11 @@ import {
   PaletteConfig,
   Portaled,
   SingleColorPalette
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
-import {COLOR_RANGES} from '@kepler.gl/constants';
+import {COLOR_RANGES} from '@indranildeveloper-kepler.gl/constants';
 
-import {hexToRgb} from '@kepler.gl/utils';
+import {hexToRgb} from '@indranildeveloper-kepler.gl/utils';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
 import {StateWFilesFiltersLayerColor, StateWTrips} from 'test/helpers/mock-state';
 

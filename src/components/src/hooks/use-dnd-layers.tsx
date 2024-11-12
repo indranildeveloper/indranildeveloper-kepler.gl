@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {useCallback, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {DragEndEvent, DragStartEvent} from '@dnd-kit/core';
-import {layerConfigChange, reorderLayer, toggleLayerForMap} from '@kepler.gl/actions';
+import {layerConfigChange, reorderLayer, toggleLayerForMap} from '@indranildeveloper-kepler.gl/actions';
 import {
   DROPPABLE_MAP_CONTAINER_TYPE,
   SORTABLE_LAYER_TYPE,
   SORTABLE_SIDE_PANEL_TYPE
-} from '@kepler.gl/constants';
-import {reorderLayerOrder} from '@kepler.gl/reducers';
-import {Layer} from '@kepler.gl/layers';
+} from '@indranildeveloper-kepler.gl/constants';
+import {reorderLayerOrder} from '@indranildeveloper-kepler.gl/reducers';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
 
 type DndEffectsHook = {
   activeLayer: Layer | undefined;

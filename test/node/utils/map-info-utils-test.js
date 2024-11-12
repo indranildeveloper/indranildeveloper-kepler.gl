@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
-import {isValidMapInfo} from '@kepler.gl/utils';
+import {isValidMapInfo} from '@indranildeveloper-kepler.gl/utils';
 
 test('mapInfoUtils -> isValidMapInfo', t => {
   t.equal(

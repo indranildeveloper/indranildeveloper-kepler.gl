@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import AddByDatasetButton from '../add-by-dataset-button';
-import {Datasets} from '@kepler.gl/table';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 export type AddLayerButtonProps = {
   datasets: Datasets;

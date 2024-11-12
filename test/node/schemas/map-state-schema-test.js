@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import cloneDeep from 'lodash.clonedeep';
-import SchemaManager from '@kepler.gl/schemas';
+import SchemaManager from '@indranildeveloper-kepler.gl/schemas';
 import {InitialState} from 'test/helpers/mock-state';
 
 test('#mapStateSchema -> v1 -> save load mapState', t => {

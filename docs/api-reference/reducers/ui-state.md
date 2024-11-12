@@ -31,13 +31,13 @@
 
 ## uiStateUpdaters
 
-Updaters for `uiState` reducer. Can be used in your root reducer to directly modify kepler.gl's state.
+Updaters for `uiState` reducer. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
 Read more about [Using updaters][53]
 
 **Examples**
 
 ```javascript
-import keplerGlReducer, {uiStateUpdaters} from 'kepler.gl/reducers';
+import keplerGlReducer, {uiStateUpdaters} from 'indranildeveloper-kepler.gl/reducers';
 // Root Reducer
 const reducers = combineReducers({
  keplerGl: keplerGlReducer,

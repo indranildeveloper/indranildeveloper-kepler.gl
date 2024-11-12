@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import RangeSliderFactory from '../../common/range-slider';
 
 import {PanelLabel, SidePanelSection} from '../../common/styled-components';
-import {BRUSH_CONFIG} from '@kepler.gl/reducers';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {BRUSH_CONFIG} from '@indranildeveloper-kepler.gl/reducers';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 
 BrushConfigFactory.deps = [RangeSliderFactory];
 

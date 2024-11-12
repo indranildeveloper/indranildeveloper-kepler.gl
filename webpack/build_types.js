@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const resolve = require('path').resolve;
 const DtsBundleWebpack = require('dts-bundle-webpack');
@@ -35,7 +35,7 @@ const LIBRARY_BUNDLE_CONFIG = () => ({
 
   plugins: [
     new DtsBundleWebpack({
-      name: 'kepler.gl',
+      name: 'indranildeveloper-kepler.gl',
       main: `${SRC_DIR}/index.d.ts`,
       out: `${OUTPUT_DIR}/types.d.ts`,
       outputAsModuleFolder: true

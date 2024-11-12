@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled, {withTheme} from 'styled-components';
@@ -8,9 +8,9 @@ import DataTableFactory from '../common/data-table';
 import {createSelector} from 'reselect';
 import {renderedSize} from '../common/data-table/cell-size';
 import CanvasHack from '../common/data-table/canvas';
-import KeplerTable, {Datasets} from '@kepler.gl/table';
-import {UIStateActions} from '@kepler.gl/actions';
-import {UiState} from '@kepler.gl/types';
+import KeplerTable, {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {UIStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {UiState} from '@indranildeveloper-kepler.gl/types';
 import {Gear} from '../common/icons';
 import Portaled from '../common/portaled';
 import DataTableConfigFactory from '../common/data-table/display-format';

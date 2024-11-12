@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
-import {getBinThresholds, getTimelineFromFilter} from '@kepler.gl/utils';
-import {TimeRangeFilter} from '@kepler.gl/types';
-import {ANIMATION_WINDOW} from '@kepler.gl/constants';
+import {getBinThresholds, getTimelineFromFilter} from '@indranildeveloper-kepler.gl/utils';
+import {TimeRangeFilter} from '@indranildeveloper-kepler.gl/types';
+import {ANIMATION_WINDOW} from '@indranildeveloper-kepler.gl/constants';
 import AnimationControllerFactory from './common/animation-control/animation-controller';
-import {Timeline} from '@kepler.gl/types';
+import {Timeline} from '@indranildeveloper-kepler.gl/types';
 
 interface FilterAnimationControllerProps {
   filter: TimeRangeFilter & {animationWindow?: string};

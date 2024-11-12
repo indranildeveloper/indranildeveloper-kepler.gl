@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {PickInfo} from '@deck.gl/core/lib/deck';
-import {Editor, Feature, FeatureSelectionContext} from '@kepler.gl/types';
-import {EDITOR_LAYER_ID, EDITOR_MODES} from '@kepler.gl/constants';
+import {Editor, Feature, FeatureSelectionContext} from '@indranildeveloper-kepler.gl/types';
+import {EDITOR_LAYER_ID, EDITOR_MODES} from '@indranildeveloper-kepler.gl/constants';
 
 /**
  * Returns true if drawing is active.

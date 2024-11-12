@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {useIntl} from 'react-intl';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 import {Tooltip} from './styled-components';
 import {Docs} from './icons';
 import styled from 'styled-components';
-import {camelize} from '@kepler.gl/utils';
+import {camelize} from '@indranildeveloper-kepler.gl/utils';
 
 interface StyledInfoHelperProps {
   width?: number;

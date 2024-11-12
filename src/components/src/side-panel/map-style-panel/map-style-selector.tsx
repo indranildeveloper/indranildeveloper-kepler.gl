@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {ComponentType} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
-import {FormattedMessage} from '@kepler.gl/localization';
-import {MapStyle} from '@kepler.gl/reducers';
-import {NO_BASEMAP_ICON} from '@kepler.gl/constants';
-import {MapStyles} from '@kepler.gl/types';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {MapStyle} from '@indranildeveloper-kepler.gl/reducers';
+import {NO_BASEMAP_ICON} from '@indranildeveloper-kepler.gl/constants';
+import {MapStyles} from '@indranildeveloper-kepler.gl/types';
 
 import {ArrowDown} from '../../common/icons';
 import PanelHeaderActionFactory from '../panel-header-action';

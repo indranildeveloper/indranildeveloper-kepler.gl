@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {WebMercatorViewport} from '@deck.gl/core';
-import {MapState} from '@kepler.gl/types';
+import {MapState} from '@indranildeveloper-kepler.gl/types';
 
 /**
  * top left of the grid to a square polygon for the hover layer

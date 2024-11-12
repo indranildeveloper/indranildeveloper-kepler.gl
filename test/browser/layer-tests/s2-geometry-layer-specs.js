@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -13,8 +13,8 @@ import {
   testRows,
   preparedFilterDomain0
 } from 'test/helpers/layer-utils';
-import {s2DefaultElevation as defaultElevation, KeplerGlLayers} from '@kepler.gl/layers';
-import {copyTableAndUpdate} from '@kepler.gl/table';
+import {s2DefaultElevation as defaultElevation, KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
 
 const {S2GeometryLayer} = KeplerGlLayers;
 

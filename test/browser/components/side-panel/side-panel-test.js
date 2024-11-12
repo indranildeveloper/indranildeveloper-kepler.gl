@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
@@ -18,14 +18,14 @@ import {
   CustomPanelsFactory,
   ToolbarItem,
   appInjector
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import {
   VisStateActions,
   MapStyleActions,
   UIStateActions,
   MapStateActions
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
 
@@ -45,7 +45,7 @@ const SaveExportDropdown = appInjector.get(SaveExportDropdownFactory);
 import {InitialState} from 'test/helpers/mock-state';
 
 // Constants
-import {EXPORT_DATA_ID, EXPORT_MAP_ID, EXPORT_IMAGE_ID} from '@kepler.gl/constants';
+import {EXPORT_DATA_ID, EXPORT_MAP_ID, EXPORT_IMAGE_ID} from '@indranildeveloper-kepler.gl/constants';
 
 // default props from initial state
 const defaultProps = {

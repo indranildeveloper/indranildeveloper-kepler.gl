@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 
@@ -14,9 +14,9 @@ import {
   defaultFormatter,
   formatNumber,
   roundToFour
-} from '@kepler.gl/utils';
-import {processLayerBounds} from '@kepler.gl/reducers';
-import {ALL_FIELD_TYPES} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/utils';
+import {processLayerBounds} from '@indranildeveloper-kepler.gl/reducers';
+import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
 
 test('dataUtils -> clamp', t => {
   t.equal(clamp([0, 1], 2), 1, 'should clamp 2 to 1 for [0,1]');

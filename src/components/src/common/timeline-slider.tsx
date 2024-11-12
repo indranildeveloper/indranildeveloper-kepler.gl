@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 import throttle from 'lodash.throttle';
 import classnames from 'classnames';
-import {clamp, datetimeFormatter} from '@kepler.gl/utils';
-import {media} from '@kepler.gl/styles';
-import {DEFAULT_TIME_FORMAT, ANIMATION_WINDOW} from '@kepler.gl/constants';
-import {Timeline} from '@kepler.gl/types';
+import {clamp, datetimeFormatter} from '@indranildeveloper-kepler.gl/utils';
+import {media} from '@indranildeveloper-kepler.gl/styles';
+import {DEFAULT_TIME_FORMAT, ANIMATION_WINDOW} from '@indranildeveloper-kepler.gl/constants';
+import {Timeline} from '@indranildeveloper-kepler.gl/types';
 import Slider from './slider/slider';
 
 function noop() {

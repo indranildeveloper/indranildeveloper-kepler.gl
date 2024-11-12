@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, useCallback} from 'react';
 import styled from 'styled-components';
@@ -10,8 +10,8 @@ import KeplerGlLogo from '../common/logo';
 import {Save, DataTable, Save2, Picture, Db, Map as MapIcon, Share} from '../common/icons';
 import Toolbar from '../common/toolbar';
 import ToolbarItem, {ToolbarItemProps} from '../common/toolbar-item';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {UiState} from '@kepler.gl/types';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {UiState} from '@indranildeveloper-kepler.gl/types';
 import {BaseProps} from '../common/icons';
 import useOnClickOutside from '../hooks/use-on-click-outside';
 

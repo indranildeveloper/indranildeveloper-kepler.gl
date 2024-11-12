@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {forwardRef, useMemo, useCallback} from 'react';
 import styled, {withTheme} from 'styled-components';
 
-import {FILTER_VIEW_TYPES} from '@kepler.gl/constants';
-import {hasPortableWidth, isSideFilter, mergeFilterWithTimeline} from '@kepler.gl/utils';
-import {media, breakPointValues} from '@kepler.gl/styles';
-import {TimeRangeFilter} from '@kepler.gl/types';
+import {FILTER_VIEW_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {hasPortableWidth, isSideFilter, mergeFilterWithTimeline} from '@indranildeveloper-kepler.gl/utils';
+import {media, breakPointValues} from '@indranildeveloper-kepler.gl/styles';
+import {TimeRangeFilter} from '@indranildeveloper-kepler.gl/types';
 
 import TimeWidgetFactory from './filters/time-widget';
 import {bottomWidgetSelector} from './kepler-gl';

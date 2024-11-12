@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import memoize from 'lodash.memoize';
 import clondDeep from 'lodash.clonedeep';
@@ -8,8 +8,8 @@ import {
   DEFAULT_MAPBOX_API_URL,
   NO_MAP_ID,
   EMPTY_MAPBOX_STYLE
-} from '@kepler.gl/constants';
-import {BaseMapStyle, LayerGroup, MapState} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/constants';
+import {BaseMapStyle, LayerGroup, MapState} from '@indranildeveloper-kepler.gl/types';
 
 export function getDefaultLayerGroupVisibility({layerGroups = []}: {layerGroups: LayerGroup[]}) {
   return layerGroups.reduce(

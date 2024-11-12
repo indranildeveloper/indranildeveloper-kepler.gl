@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 
 import React from 'react';
 import test from 'tape';
 
-import {LayerPanelHeaderFactory, DragHandle, appInjector} from '@kepler.gl/components';
+import {LayerPanelHeaderFactory, DragHandle, appInjector} from '@indranildeveloper-kepler.gl/components';
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
 
 // components

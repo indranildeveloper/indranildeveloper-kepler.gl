@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
@@ -12,10 +12,10 @@ import LayerSelectorPanelFactory from './layer-selector-panel';
 import MapLegendPanelFactory from './map-legend-panel';
 import MapDrawPanelFactory from './map-draw-panel';
 import LocalePanelFactory from './locale-panel';
-import {Layer} from '@kepler.gl/layers';
-import {Editor, LayerVisConfig, MapControls, MapState} from '@kepler.gl/types';
-import {Datasets} from '@kepler.gl/table';
-import {MapStateActions, UIStateActions} from '@kepler.gl/actions';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {Editor, LayerVisConfig, MapControls, MapState} from '@indranildeveloper-kepler.gl/types';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {MapStateActions, UIStateActions} from '@indranildeveloper-kepler.gl/actions';
 
 interface StyledMapControlProps {
   top?: number;
@@ -37,7 +37,7 @@ const StyledMapControl = styled.div<StyledMapControlProps>`
   }
 `;
 
-const LegendLogo = <KeplerGlLogo version={false} appName="kepler.gl" />;
+const LegendLogo = <KeplerGlLogo version={false} appName="indranildeveloper-kepler.gl" />;
 
 export type MapControlProps = {
   availableLocales: ReadonlyArray<string>;

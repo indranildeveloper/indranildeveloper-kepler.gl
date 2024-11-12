@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 // NOTE: this is only used for exporting html template
 import createAppStore from './store';
 import renderRoot from './components/root';
 import document from 'global/document';
 import window from 'global/window';
-import {addDataConfigToKeplerGl} from './kepler.gl';
+import {addDataConfigToKeplerGl} from './indranildeveloper-kepler.gl';
 
 const map = (function initKeplerGl() {
   const id = 'keplergl-0';

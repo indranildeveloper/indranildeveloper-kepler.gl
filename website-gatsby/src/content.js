@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {cdnUrl} from './utils';
 
@@ -28,7 +28,7 @@ export const SECTIONS = [
   {
     id: 'examples',
     title: 'See What People Created',
-    description: 'See what others have been creating with Kepler.gl.',
+    description: 'See what others have been creating with indranildeveloper-kepler.gl.',
     icon: cdnUrl('icons/examples.png'),
     background: cdnUrl('examples/section-background.png')
   },
@@ -41,29 +41,29 @@ export const SECTIONS = [
 ];
 
 export const HERO_IMAGES = [
-  cdnUrl('hero/kepler.gl-hexagon.png'),
-  cdnUrl('hero/kepler.gl-points.png'),
-  cdnUrl('hero/kepler.gl-contours.png')
+  cdnUrl('hero/indranildeveloper-kepler.gl-hexagon.png'),
+  cdnUrl('hero/indranildeveloper-kepler.gl-points.png'),
+  cdnUrl('hero/indranildeveloper-kepler.gl-contours.png')
 ];
 
 export const HERO_IMAGES_SCALED = [
-  cdnUrl('hero/kepler.gl-hexagon_s.png'),
-  cdnUrl('hero/kepler.gl-points_s.png'),
-  cdnUrl('hero/kepler.gl-contours_s.png')
+  cdnUrl('hero/indranildeveloper-kepler.gl-hexagon_s.png'),
+  cdnUrl('hero/indranildeveloper-kepler.gl-points_s.png'),
+  cdnUrl('hero/indranildeveloper-kepler.gl-contours_s.png')
 ];
 
 export const HEADER_NAVS = [
   {
     text: 'User Guide',
-    link: 'https://docs.kepler.gl/docs/user-guides'
+    link: 'https://docs.indranildeveloper-kepler.gl/docs/user-guides'
   },
   {
     text: 'Documentation',
-    link: 'https://docs.kepler.gl/docs/api-reference'
+    link: 'https://docs.indranildeveloper-kepler.gl/docs/api-reference'
   },
   {
     text: 'Github',
-    link: 'https://github.com/keplergl/kepler.gl'
+    link: 'https://github.com/keplergl/indranildeveloper-kepler.gl'
   },
   {
     text: 'Support Policy',
@@ -145,7 +145,7 @@ export const FEATURES = [
   {
     title: 'Performance',
     description:
-      'Built with Deck.gl, Kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
+      'Built with Deck.gl, indranildeveloper-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
     image: cdnUrl('features/performance.svg')
   },
   {
@@ -157,7 +157,7 @@ export const FEATURES = [
   {
     title: 'Embeddable',
     description:
-      'Built on React & Redux, Kepler.gl can be embedded inside your own mapping applications.',
+      'Built on React & Redux, indranildeveloper-kepler.gl can be embedded inside your own mapping applications.',
     image: cdnUrl('features/embeddable.svg')
   }
 ];
@@ -221,14 +221,14 @@ export const TUTORIALS = [
     url: 'https://medium.com/vis-gl/mapping-the-parisian-trees-6dc30f6aabc7'
   },
   {
-    description: 'Visualizing U.S. County Unemployment with kepler.gl',
+    description: 'Visualizing U.S. County Unemployment with indranildeveloper-kepler.gl',
     title: 'Making a choropleth map',
     image: cdnUrl('examples/unemployment.png'),
     url: 'https://medium.com/vis-gl/visualizing-u-s-county-unemployment-with-kepler-gl-c5f2ed31c71'
   },
   {
-    title: 'Uber Movement and kepler.gl',
-    description: 'Using kepler.gl and Movement data to Visualize Traffic Effects of a Rainstorm',
+    title: 'Uber Movement and indranildeveloper-kepler.gl',
+    description: 'Using indranildeveloper-kepler.gl and Movement data to Visualize Traffic Effects of a Rainstorm',
     image: cdnUrl('examples/movement.png'),
     url: 'https://medium.com/@uber_movement/movement-in-kepler-d00e843f464d'
   }

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-export const ACTION_PREFIX = '@@kepler.gl/';
+export const ACTION_PREFIX = '@@indranildeveloper-kepler.gl/';
 
 /**
- * Kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in kepler.gl
+ * indranildeveloper-kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in indranildeveloper-kepler.gl
  * @constant
  * @type {Object}
  * @public
@@ -15,11 +15,11 @@ export const ACTION_PREFIX = '@@kepler.gl/';
  * import {createStore, combineReducers, applyMiddleware} from 'redux';
  * import {taskMiddleware} from 'react-palm/tasks';
  *
- * import keplerGlReducer from 'kepler.gl/reducers';
- * import {ActionTypes} from 'kepler.gl/actions';
+ * import keplerGlReducer from 'indranildeveloper-kepler.gl/reducers';
+ * import {ActionTypes} from 'indranildeveloper-kepler.gl/actions';
  *
  * const appReducer = handleActions({
- *   // listen on kepler.gl map update action to store a copy of viewport in app state
+ *   // listen on indranildeveloper-kepler.gl map update action to store a copy of viewport in app state
  *   [ActionTypes.UPDATE_MAP]: (state, action) => ({
  *     ...state,
  *     viewport: action.payload

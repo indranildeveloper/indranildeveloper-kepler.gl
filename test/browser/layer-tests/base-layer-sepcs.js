@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape-catch';
-import {Layer, AggregationLayer} from '@kepler.gl/layers';
+import {Layer, AggregationLayer} from '@indranildeveloper-kepler.gl/layers';
 
 /* Fixed in #618
 test('#BaseLayer -> updateLayerDomain', t => {

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {Feature, BBox} from 'geojson';
 import {getGeoMetadata} from '@loaders.gl/gis';
 
-import {Field, FieldPair, SupportedColumnMode, LayerColumn} from '@kepler.gl/types';
-import {DataContainerInterface, ArrowDataContainer} from '@kepler.gl/utils';
+import {Field, FieldPair, SupportedColumnMode, LayerColumn} from '@indranildeveloper-kepler.gl/types';
+import {DataContainerInterface, ArrowDataContainer} from '@indranildeveloper-kepler.gl/utils';
 import {
   getBinaryGeometriesFromArrow,
   parseGeometryFromArrow,
   BinaryGeometriesFromArrowOptions,
   updateBoundsFromGeoArrowSamples
 } from '@loaders.gl/arrow';
-import {EXTENSION_NAME} from '@kepler.gl/deckgl-arrow-layers';
+import {EXTENSION_NAME} from '@indranildeveloper-kepler.gl/deckgl-arrow-layers';
 
 import {WKBLoader} from '@loaders.gl/wkt';
 import {geojsonToBinary} from '@loaders.gl/gis';

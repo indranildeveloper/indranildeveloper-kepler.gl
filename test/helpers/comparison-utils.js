@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {FILTER_TYPES} from '@kepler.gl/constants';
-import {toArray} from '@kepler.gl/utils';
-import {KeplerTable} from '@kepler.gl/table';
+import {FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {toArray} from '@indranildeveloper-kepler.gl/utils';
+import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
 
 export function cmpObjectKeys(t, expectedObj, actualObj, name) {
   t.deepEqual(

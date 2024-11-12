@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, createRef} from 'react';
 import styled from 'styled-components';
@@ -8,14 +8,14 @@ import UploadButton from './upload-button';
 import {DragNDrop, FileType} from '../icons';
 import FileUploadProgress from './file-upload-progress';
 import FileDrop from './file-drop';
-import {FileLoading, FileLoadingProgress} from '@kepler.gl/types';
+import {FileLoading, FileLoadingProgress} from '@indranildeveloper-kepler.gl/types';
 
-import {isChrome} from '@kepler.gl/utils';
-import {GUIDES_FILE_FORMAT_DOC} from '@kepler.gl/constants';
+import {isChrome} from '@indranildeveloper-kepler.gl/utils';
+import {GUIDES_FILE_FORMAT_DOC} from '@indranildeveloper-kepler.gl/constants';
 import ReactMarkdown from 'react-markdown';
 // Breakpoints
-import {FormattedMessage} from '@kepler.gl/localization';
-import {media} from '@kepler.gl/styles';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {media} from '@indranildeveloper-kepler.gl/styles';
 
 /** @typedef {import('./file-upload').FileUploadProps} FileUploadProps */
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {HexagonLayer} from '@deck.gl/aggregation-layers';
 import CPUAggregator, {AggregationType, getAggregatedData} from '../layer-utils/cpu-aggregator';

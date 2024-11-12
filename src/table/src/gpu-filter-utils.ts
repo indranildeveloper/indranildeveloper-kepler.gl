@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import moment from 'moment';
-import {MAX_GPU_FILTERS, FILTER_TYPES} from '@kepler.gl/constants';
-import {Field, Filter} from '@kepler.gl/types';
+import {MAX_GPU_FILTERS, FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {Field, Filter} from '@indranildeveloper-kepler.gl/types';
 
-import {set, toArray, notNullorUndefined, DataContainerInterface} from '@kepler.gl/utils';
+import {set, toArray, notNullorUndefined, DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
 import {GpuFilter} from './kepler-table';
 
 /**

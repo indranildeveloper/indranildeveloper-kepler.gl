@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import styled from 'styled-components';
@@ -12,7 +12,7 @@ import {
   MAP_INFO_CHARACTER,
   ExportImage,
   dataTestIds
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import {
   StyledModalContent,
@@ -23,10 +23,10 @@ import {
   StyledModalInputFootnote
 } from '../common/styled-components';
 import ImagePreview from '../common/image-preview';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {MapInfo} from '@kepler.gl/types';
-import {Provider} from '@kepler.gl/cloud-providers';
-import {setMapInfo, cleanupExportImage as cleanupExportImageAction} from '@kepler.gl/actions';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {MapInfo} from '@indranildeveloper-kepler.gl/types';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {setMapInfo, cleanupExportImage as cleanupExportImageAction} from '@indranildeveloper-kepler.gl/actions';
 import {ModalFooter} from '../common/modal';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 
@@ -219,7 +219,7 @@ function SaveMapModalFactory() {
                         rel="noopener noreferrer"
                         style={PROVIDER_MANAGER_URL_STYLE}
                       >
-                        Go to your Kepler.gl {provider.displayName} page
+                        Go to your indranildeveloper-kepler.gl {provider.displayName} page
                       </a>
                     </div>
                   </StyledExportSection>

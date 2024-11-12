@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements, enzyme-deprecation/no-mount */
 import React from 'react';
@@ -13,11 +13,11 @@ import {console as Console} from 'global/window';
 import {
   keplerGlReducer as rootReducer,
   keplerGlReducerCore as coreReducer
-} from '@kepler.gl/reducers';
-import {keplerGlInit} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/reducers';
+import {keplerGlInit} from '@indranildeveloper-kepler.gl/actions';
 
-import Container, {ERROR_MSG} from '@kepler.gl/components';
-import {DEFAULT_MAPBOX_API_URL} from '@kepler.gl/constants';
+import Container, {ERROR_MSG} from '@indranildeveloper-kepler.gl/components';
+import {DEFAULT_MAPBOX_API_URL} from '@indranildeveloper-kepler.gl/constants';
 const initialCoreState = coreReducer(undefined, keplerGlInit());
 const initialState = {
   keplerGl: {}
@@ -29,7 +29,7 @@ test('Components -> Container -> Mount with mint:true', t => {
   let store = mockStore({});
   const spy = sinon.spy(Console, 'error');
 
-  // mount without id or a kepler.gl state
+  // mount without id or a indranildeveloper-kepler.gl state
   mount(
     <Provider store={store}>
       <Container />
@@ -40,10 +40,10 @@ test('Components -> Container -> Mount with mint:true', t => {
   t.equal(
     spy.getCall(0).args[0],
     ERROR_MSG.noState,
-    'should warn when cannot find kepler.gl state'
+    'should warn when cannot find indranildeveloper-kepler.gl state'
   );
 
-  // mount with kepler.gl state
+  // mount with indranildeveloper-kepler.gl state
   store = mockStore(initialState);
   let appReducer = combineReducers({
     keplerGl: rootReducer
@@ -59,7 +59,7 @@ test('Components -> Container -> Mount with mint:true', t => {
   let actions = store.getActions();
 
   let expectedActions0 = {
-    type: '@@kepler.gl/REGISTER_ENTRY',
+    type: '@@indranildeveloper-kepler.gl/REGISTER_ENTRY',
     payload: {
       id: 'map',
       mint: true,
@@ -110,7 +110,7 @@ test('Components -> Container -> Mount with mint:true', t => {
   actions = store.getActions();
 
   expectedActions0 = {
-    type: '@@kepler.gl/REGISTER_ENTRY',
+    type: '@@indranildeveloper-kepler.gl/REGISTER_ENTRY',
     payload: {
       id: 'milkshake',
       mint: true,
@@ -141,7 +141,7 @@ test('Components -> Container -> Mount with mint:true', t => {
 
   // unmount
   wrapper.unmount();
-  expectedActions0 = {type: '@@kepler.gl/DELETE_ENTRY', payload: 'milkshake'};
+  expectedActions0 = {type: '@@indranildeveloper-kepler.gl/DELETE_ENTRY', payload: 'milkshake'};
 
   actions = store.getActions();
   t.deepEqual(actions, [expectedActions0], 'should call unmount');
@@ -187,7 +187,7 @@ test('Components -> Container -> Mount with mint:false', t => {
   let actions = store.getActions();
 
   const expectedActions0 = {
-    type: '@@kepler.gl/REGISTER_ENTRY',
+    type: '@@indranildeveloper-kepler.gl/REGISTER_ENTRY',
     payload: {
       id: 'milkshake',
       mint: false,
@@ -255,7 +255,7 @@ test('Components -> Container -> Mount then rename', t => {
   }, 'Should not throw error when mount');
 
   const expectedActions0 = {
-    type: '@@kepler.gl/REGISTER_ENTRY',
+    type: '@@indranildeveloper-kepler.gl/REGISTER_ENTRY',
     payload: {
       id: 'milkshake',
       mint: true,
@@ -286,7 +286,7 @@ test('Components -> Container -> Mount then rename', t => {
   wrapper.setProps({id: 'milkshake-2'});
   // actions = store.getActions();
   const expectedActions1 = {
-    type: '@@kepler.gl/RENAME_ENTRY',
+    type: '@@indranildeveloper-kepler.gl/RENAME_ENTRY',
     payload: {oldId: 'milkshake', newId: 'milkshake-2'}
   };
 
@@ -303,7 +303,7 @@ test('Components -> Container -> Mount then rename', t => {
   // unmount
   wrapper.unmount();
 
-  const expectedActions2 = {type: '@@kepler.gl/DELETE_ENTRY', payload: 'milkshake-2'};
+  const expectedActions2 = {type: '@@indranildeveloper-kepler.gl/DELETE_ENTRY', payload: 'milkshake-2'};
 
   t.deepEqual(store.getActions().pop(), expectedActions2, 'should call unmount milkshake-2');
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 import {Minus} from '../icons';
-import {DEFAULT_TIME_FORMAT} from '@kepler.gl/constants';
+import {DEFAULT_TIME_FORMAT} from '@indranildeveloper-kepler.gl/constants';
 import {CenterFlexbox} from '../../common/styled-components';
-import {datetimeFormatter} from '@kepler.gl/utils';
+import {datetimeFormatter} from '@indranildeveloper-kepler.gl/utils';
 
 const StyledTimeDisplayWrapper = styled.div.attrs({
   className: 'floating-time-display'

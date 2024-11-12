@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright contributors to the kepler.gl project
+# Copyright contributors to the indranildeveloper-kepler.gl project
 
 #module for keplergl-jupyter
 import base64
@@ -16,7 +16,7 @@ import geoarrow.pandas as _
 import shapely.wkt
 from ._version import EXTENSION_SPEC_VERSION
 
-documentation = 'https://docs.kepler.gl/docs/keplergl-jupyter'
+documentation = 'https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter'
 
 # global variable use_arrow, which can be set by parameter use_arrow in KeplerGl
 g_use_arrow = False
@@ -36,26 +36,26 @@ def _arrow_table_to_base64(arrow_table):
     return base64_string
 
 def _df_to_dict(df):
-    ''' Create an input dict for Kepler.gl using a DataFrame object
+    ''' Create an input dict for indranildeveloper-kepler.gl using a DataFrame object
 
     Inputs:
     - df: a DataFrame object
 
     Returns:
-    - dictionary: a dictionary variable that can be used in Kepler.gl
+    - dictionary: a dictionary variable that can be used in indranildeveloper-kepler.gl
 
     '''
     return df.to_dict('split')
 
 
 def _df_to_arrow(df: pd.DataFrame):
-    ''' Create an arrow base64string for Kepler.gl using a DataFrame object
+    ''' Create an arrow base64string for indranildeveloper-kepler.gl using a DataFrame object
 
     Inputs:
     - df: a DataFrame object
 
     Returns:
-    - string: a base64 string that can be used in Kepler.gl
+    - string: a base64 string that can be used in indranildeveloper-kepler.gl
     '''
     arrow_table = pyarrow.Table.from_pandas(df)
     base64_string = _arrow_table_to_base64(arrow_table)
@@ -63,13 +63,13 @@ def _df_to_arrow(df: pd.DataFrame):
     return base64_string
 
 def _gdf_to_dict(gdf):
-    ''' Create an input dict for kepler.gl using a GeoDataFrame object
+    ''' Create an input dict for indranildeveloper-kepler.gl using a GeoDataFrame object
 
     Inputs:
     - gdf: a GeoDataFrame object
 
     Returns:
-    - dictionary: a dictionary variable that can be used in Kepler.gl
+    - dictionary: a dictionary variable that can be used in indranildeveloper-kepler.gl
     '''
     # reproject to 4326 if needed
     if gdf.crs and not gdf.crs == 4326:
@@ -89,7 +89,7 @@ def _gdf_to_dict(gdf):
 
 
 def _gdf_to_arrow(gdf):
-    ''' Create an arrow base64string for Kepler.gl using a GeoDataFrame object'''
+    ''' Create an arrow base64string for indranildeveloper-kepler.gl using a GeoDataFrame object'''
     # reproject to 4326 if needed
     if gdf.crs and not gdf.crs == 4326:
         gdf = gdf.to_crs(4326)

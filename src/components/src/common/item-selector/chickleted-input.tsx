@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {ElementType, MouseEventHandler, ReactNode, useMemo, useCallback} from 'react';
 
@@ -9,7 +9,7 @@ import {SortableContext, useSortable, arrayMove} from '@dnd-kit/sortable';
 import {restrictToParentElement} from '@dnd-kit/modifiers';
 
 import Delete from '../icons/delete';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 
 type Item = string | number | boolean | object | undefined;
 interface ChickletedInputProps {

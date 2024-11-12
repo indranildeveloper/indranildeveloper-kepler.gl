@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {processKeplerglJSON} from '@kepler.gl/processors';
+import {processKeplerglJSON} from '@indranildeveloper-kepler.gl/processors';
 import CloneDeep from 'lodash.clonedeep';
-import {keplerGlReducerCore as coreReducer} from '@kepler.gl/reducers';
-import {addDataToMap} from '@kepler.gl/actions';
+import {keplerGlReducerCore as coreReducer} from '@indranildeveloper-kepler.gl/reducers';
+import {addDataToMap} from '@indranildeveloper-kepler.gl/actions';
 import {InitialState} from '../helpers/mock-state';
 
 export const polygonFilterMap = {
@@ -2509,7 +2509,7 @@ export const polygonFilterMap = {
     }
   },
   info: {
-    app: 'kepler.gl',
+    app: 'indranildeveloper-kepler.gl',
     created_at: 'Thu Oct 21 2021 09:12:14 GMT-0400 (Eastern Daylight Time)',
     title: 'keplergl_rvxe1dv',
     description: ''

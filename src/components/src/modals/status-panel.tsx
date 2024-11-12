@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {ComponentType} from 'react';
 import styled from 'styled-components';
 import {MapIcon} from '../common/icons';
 import {StyledExportSection} from '../common/styled-components';
 import ErrorDisplay from './error-display';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {IconProps} from '@kepler.gl/cloud-providers';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {IconProps} from '@indranildeveloper-kepler.gl/cloud-providers';
 
 const StyledUploader = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape-catch';
@@ -11,9 +11,9 @@ import {
   ImagePreview,
   appInjector,
   SelectionButton
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
-import {INITIAL_UI_STATE} from '@kepler.gl/reducers';
+import {INITIAL_UI_STATE} from '@indranildeveloper-kepler.gl/reducers';
 
 const ExportImageModal = appInjector.get(ExportImageModalFactory);
 

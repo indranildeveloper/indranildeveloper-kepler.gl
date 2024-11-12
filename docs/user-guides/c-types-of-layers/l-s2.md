@@ -1,11 +1,11 @@
 # S2 Layer
 
-![S2 Layer](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/l-s2.png 'Grid layer')
+![S2 Layer](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/l-s2.png 'Grid layer')
 
 To use S2 layer, you need to assign a column containing S2 tokens.
 
 ### Naming Convention
-Kepler.gl __auto generates__ S2 layer from column named `s2` or `s2_token`
+indranildeveloper-kepler.gl __auto generates__ S2 layer from column named `s2` or `s2_token`
 
 
 ### Simple Dataset

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo, useState} from 'react';
 import styled from 'styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {Datasets} from '@kepler.gl/table';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 import Tippy from '@tippyjs/react';
 import {Add} from '../common/icons';

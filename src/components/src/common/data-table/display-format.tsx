@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useState} from 'react';
 import styled from 'styled-components';
 
-import {getFieldFormatLabels} from '@kepler.gl/utils';
-import {ALL_FIELD_TYPES, TooltipFormat} from '@kepler.gl/constants';
-import {ColMeta, ColMetaProps} from '@kepler.gl/types';
+import {getFieldFormatLabels} from '@indranildeveloper-kepler.gl/utils';
+import {ALL_FIELD_TYPES, TooltipFormat} from '@indranildeveloper-kepler.gl/constants';
+import {ColMeta, ColMetaProps} from '@indranildeveloper-kepler.gl/types';
 
 import {InputLight} from '../../common/styled-components';
 import {FormatterDropdown} from './option-dropdown';

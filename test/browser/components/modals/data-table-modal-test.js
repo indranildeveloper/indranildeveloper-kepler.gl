@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {act} from 'react-dom/test-utils';
@@ -9,10 +9,10 @@ import sinon from 'sinon';
 import flatten from 'lodash.flattendeep';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
 import CloneDeep from 'lodash.clonedeep';
-import {VisStateActions} from '@kepler.gl/actions';
-import {visStateReducer} from '@kepler.gl/reducers';
+import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {visStateReducer} from '@indranildeveloper-kepler.gl/reducers';
 
-import {TOOLTIP_FORMATS} from '@kepler.gl/constants';
+import {TOOLTIP_FORMATS} from '@indranildeveloper-kepler.gl/constants';
 import {
   FieldTokenFactory,
   Icons,
@@ -26,12 +26,12 @@ import {
   InputLight,
   DataTableConfigFactory,
   NumberFormatConfig
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 import {testFields, testAllData} from 'test/fixtures/test-csv-data';
 import {geoStyleFields, geoStyleRows} from 'test/fixtures/geojson';
 import {StateWFiles, testCsvDataId, testGeoJsonDataId} from 'test/helpers/mock-state';
 
-import {createDataContainer, getFieldFormatLabels} from '@kepler.gl/utils';
+import {createDataContainer, getFieldFormatLabels} from '@indranildeveloper-kepler.gl/utils';
 
 const {VertThreeDots} = Icons;
 const DataTableModal = appInjector.get(DataTableModalFactory);

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useState} from 'react';
 import styled from 'styled-components';
@@ -8,8 +8,8 @@ import {FormattedMessage} from 'react-intl';
 import Switch from '../../common/switch';
 import InfoHelperFactory from '../../common/info-helper';
 import {VertThreeDots} from '../../common/icons';
-import {Layer} from '@kepler.gl/layers';
-import {LayerVisConfig} from '@kepler.gl/types';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {LayerVisConfig} from '@indranildeveloper-kepler.gl/types';
 
 export type LayerConfigGroupLabelProps = {
   label?: string;

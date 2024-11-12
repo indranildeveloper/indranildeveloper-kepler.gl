@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 
 import SourceDataCatalogFactory from '../common/source-data-catalog';
 import LayerListFactory from './layer-list';
-import {Layer, LayerClassesType} from '@kepler.gl/layers';
-import {UIStateActions, ActionHandler, VisStateActions, MapStateActions} from '@kepler.gl/actions';
-import {KeplerTable, Datasets} from '@kepler.gl/table';
+import {Layer, LayerClassesType} from '@indranildeveloper-kepler.gl/layers';
+import {UIStateActions, ActionHandler, VisStateActions, MapStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {KeplerTable, Datasets} from '@indranildeveloper-kepler.gl/table';
 
 type DatasetLayerSectionProps = {
   datasets: Datasets;

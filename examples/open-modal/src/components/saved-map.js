@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
-import KeplerGl from '@kepler.gl/components';
+import KeplerGl from '@indranildeveloper-kepler.gl/components';
 
 export default class SavedMap extends Component {
   render() {

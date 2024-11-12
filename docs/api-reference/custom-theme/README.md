@@ -1,10 +1,10 @@
 # Custom Theme
 
-You can pass theme name or object used to customize Kepler.gl style. Kepler.gl provide an `'light'` theme besides the default 'dark' theme. When pass in a theme object Kepler.gl will use the value passed as input to overwrite values from [theme](https://github.com/keplergl/kepler.gl/blob/master/src/styles/src/base.ts).
+You can pass theme name or object used to customize indranildeveloper-kepler.gl style. indranildeveloper-kepler.gl provide an `'light'` theme besides the default 'dark' theme. When pass in a theme object indranildeveloper-kepler.gl will use the value passed as input to overwrite values from [theme](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/src/styles/src/base.ts).
 
 
 ```js
-import KeplerGl from 'kepler.gl';
+import KeplerGl from 'indranildeveloper-kepler.gl';
 
 const Map = props => (
   <KeplerGl

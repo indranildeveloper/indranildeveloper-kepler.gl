@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export {messages} from './messages';
 export {LOCALE_CODES, LOCALES} from './locales';

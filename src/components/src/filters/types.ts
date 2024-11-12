@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {
   Filter,
@@ -9,8 +9,8 @@ import {
   TimeRangeFilter,
   Timeline,
   AnimationConfig
-} from '@kepler.gl/types';
-import {Layer} from '@kepler.gl/layers';
+} from '@indranildeveloper-kepler.gl/types';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
 import {
   ActionHandler,
   setFilterAnimationTime,
@@ -19,8 +19,8 @@ import {
   setFilterPlot,
   toggleFilterAnimation,
   updateFilterAnimationSpeed
-} from '@kepler.gl/actions';
-import {Datasets} from '@kepler.gl/table';
+} from '@indranildeveloper-kepler.gl/actions';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 export type PolygonFilterProps = {
   filter: Filter;

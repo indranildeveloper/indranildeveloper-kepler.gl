@@ -1,6 +1,6 @@
 # Localization
 
-Kepler.gl supports localization through [react-intl]. Locale is determined by `uiState.locale` value.
+indranildeveloper-kepler.gl supports localization through [react-intl]. Locale is determined by `uiState.locale` value.
 Current supported languages are: 
 
 | locale code | Language   | Default? |
@@ -20,8 +20,8 @@ By default the first language is English `en`. The default language can be chang
 
 ```js
 import {combineReducers} from 'redux';
-import keplerGlReducer from 'kepler.gl/reducers';
-import {LOCALE_CODES} from 'kepler.gl/localization';
+import keplerGlReducer from 'indranildeveloper-kepler.gl/reducers';
+import {LOCALE_CODES} from 'indranildeveloper-kepler.gl/localization';
 
 const customizedKeplerGlReducer = keplerGlReducer.initialState({
   uiState: {
@@ -38,7 +38,7 @@ const reducers = combineReducers({
 
 ## Adding new language
 
-Let's say we want to add the Swedish language to kepler.gl. Easiest way to add translation of new language is to follow these 3 steps:
+Let's say we want to add the Swedish language to indranildeveloper-kepler.gl. Easiest way to add translation of new language is to follow these 3 steps:
 
 - Find out the [language code][language-codes] for Swedish: `sv`
 - Add new translation file `src/localization/translations/sv.js` by copying `src/localization/translations/en.js` and translating the strings

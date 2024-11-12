@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import tripGeojson, {
   timeStampDomain,
   tripBounds,
   dataToTimeStamp
 } from 'test/fixtures/trip-geojson';
-import {KeplerGlLayers} from '@kepler.gl/layers';
+import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
 import {
   DEFAULT_LAYER_OPACITY,
   DEFAULT_TEXT_LABEL,
   DEFAULT_COLOR_RANGE,
   DEFAULT_COLOR_UI
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 const {TripLayer} = KeplerGlLayers;
 
@@ -226,7 +226,7 @@ export const savedStateV1TripGeoJson = {
     }
   },
   info: {
-    app: 'kepler.gl',
+    app: 'indranildeveloper-kepler.gl',
     created_at: 'Sun Sep 15 2019 18:49:29 GMT-0700 (PDT)'
   }
 };

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
-import {setStyleSheetBaseHref} from '@kepler.gl/utils';
+import {setStyleSheetBaseHref} from '@indranildeveloper-kepler.gl/utils';
 
 const MOCK_CSS = `div#header { 
     background-image: url('images/header-background.jpg');

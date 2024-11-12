@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
@@ -7,16 +7,16 @@ import classnames from 'classnames';
 import {CSS} from '@dnd-kit/utilities';
 import {useSortable, SortableContext, verticalListSortingStrategy} from '@dnd-kit/sortable';
 
-import {dataTestIds, SORTABLE_EFFECT_TYPE, SORTABLE_EFFECT_PANEL_TYPE} from '@kepler.gl/constants';
-import {findById} from '@kepler.gl/utils';
-import {Effect} from '@kepler.gl/types';
+import {dataTestIds, SORTABLE_EFFECT_TYPE, SORTABLE_EFFECT_PANEL_TYPE} from '@indranildeveloper-kepler.gl/constants';
+import {findById} from '@indranildeveloper-kepler.gl/utils';
+import {Effect} from '@indranildeveloper-kepler.gl/types';
 import {
   addEffect,
   updateEffect,
   removeEffect,
   reorderEffect,
   ActionHandler
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 
 import EffectPanelFactory from './effect-panel';
 

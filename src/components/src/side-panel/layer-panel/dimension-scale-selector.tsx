@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {CHANNEL_SCALES, SCALE_TYPE_NAMES} from '@kepler.gl/constants';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {ColorUI, LayerVisConfig} from '@kepler.gl/types';
-import {camelize} from '@kepler.gl/utils';
-import {Layer, VisualChannel} from '@kepler.gl/layers';
+import {CHANNEL_SCALES, SCALE_TYPE_NAMES} from '@indranildeveloper-kepler.gl/constants';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {ColorUI, LayerVisConfig} from '@indranildeveloper-kepler.gl/types';
+import {camelize} from '@indranildeveloper-kepler.gl/utils';
+import {Layer, VisualChannel} from '@indranildeveloper-kepler.gl/layers';
 import {default as React, useCallback} from 'react';
-import {Field} from '@kepler.gl/types';
+import {Field} from '@indranildeveloper-kepler.gl/types';
 import ItemSelector from '../../common/item-selector/item-selector';
 import {PanelLabel, SidePanelSection} from '../../common/styled-components';
 import ColorScaleSelectorFactory from './color-scale-selector';

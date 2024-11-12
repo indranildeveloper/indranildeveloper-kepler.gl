@@ -14,7 +14,7 @@ as the first argument. Read more about [Using updaters][5]
 **Examples**
 
 ```javascript
-import keplerGlReducer, {combinedUpdaters} from 'kepler.gl/reducers';
+import keplerGlReducer, {combinedUpdaters} from 'indranildeveloper-kepler.gl/reducers';
 // Root Reducer
 const reducers = combineReducers({
  keplerGl: keplerGlReducer,
@@ -29,7 +29,7 @@ const composedReducer = (state, action) => {
        ...state,
        keplerGl: {
          ...state.keplerGl,
-         // pass in kepler.gl instance state to combinedUpdaters
+         // pass in indranildeveloper-kepler.gl instance state to combinedUpdaters
          map:  combinedUpdaters.addDataToMapUpdater(
           state.keplerGl.map,
           {
@@ -57,7 +57,7 @@ Combine data and full configuration update in a single action
 
 **Parameters**
 
--   `state` **[Object][7]** kepler.gl instance state, containing all subreducer state
+-   `state` **[Object][7]** indranildeveloper-kepler.gl instance state, containing all subreducer state
 -   `action` **[Object][7]** 
     -   `action.payload` **[Object][7]** `{datasets, options, config}`
         -   `action.payload.datasets` **([Array][8]&lt;[Object][7]> | [Object][7])** **\*required** datasets can be a dataset or an array of datasets

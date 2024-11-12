@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import Checkbox from './checkbox';
-import {generateHashId} from '@kepler.gl/utils';
+import {generateHashId} from '@indranildeveloper-kepler.gl/utils';
 
 const MapLayerSelect = styled.div`
   padding: 12px;

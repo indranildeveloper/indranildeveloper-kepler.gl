@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -16,9 +16,9 @@ import {
 } from 'test/helpers/layer-utils';
 import testArcData, {arcFromHex, arcFromNeighbor} from 'test/fixtures/test-arc-data';
 import {StateWArcNeighbors} from 'test/helpers/mock-state';
-import {PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@kepler.gl/constants';
-import {KeplerGlLayers} from '@kepler.gl/layers';
-import {copyTableAndUpdate} from '@kepler.gl/table';
+import {PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
 import {h3ToGeo} from 'h3-js';
 
 const {ArcLayer} = KeplerGlLayers;

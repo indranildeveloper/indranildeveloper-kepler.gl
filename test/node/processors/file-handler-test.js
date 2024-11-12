@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
-import {isKeplerGlMap, makeProgressIterator, filesToDataPayload} from '@kepler.gl/processors';
+import {isKeplerGlMap, makeProgressIterator, filesToDataPayload} from '@indranildeveloper-kepler.gl/processors';
 import {parsedFields, parsedRows} from 'test/fixtures/row-object';
 import {
   savedStateV1InteractionCoordinate as keplerglMap,
@@ -11,19 +11,19 @@ import {
 
 test('#file-handler -> isKeplerGlMap', t => {
   t.equal(
-    isKeplerGlMap('{datasets: [], info: {app: "kepler.gl"}, config: {}}'),
+    isKeplerGlMap('{datasets: [], info: {app: "indranildeveloper-kepler.gl"}, config: {}}'),
     false,
     'Should return false when passing a json string'
   );
 
   t.equal(
-    isKeplerGlMap({datasets: [], info: {app: 'kepler.gl'}, config: {}}),
+    isKeplerGlMap({datasets: [], info: {app: 'indranildeveloper-kepler.gl'}, config: {}}),
     true,
     'Should return true when object is a kepler map'
   );
 
   t.equal(
-    isKeplerGlMap({datasets: [], info: {app: 'kepler.gl'}}),
+    isKeplerGlMap({datasets: [], info: {app: 'indranildeveloper-kepler.gl'}}),
     false,
     'Should return false when object is not a kepler map'
   );

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {addDataToMap, wrapTo} from '@kepler.gl/actions';
+import {addDataToMap, wrapTo} from '@indranildeveloper-kepler.gl/actions';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
 import styled from 'styled-components';
-import {theme} from '@kepler.gl/styles';
+import {theme} from '@indranildeveloper-kepler.gl/styles';
 
 import sampleData, {config} from './data/sample-data';
 
@@ -19,7 +19,7 @@ import {
   CustomPanelsFactory,
   MapPopoverFactory,
   injectComponents
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import CustomPanelHeaderFactory from './components/panel-header';
 import CustomSidebarFactory from './components/side-bar';

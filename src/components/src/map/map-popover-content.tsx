@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {injectIntl, IntlShape} from 'react-intl';
-import {LayerHoverProp} from '@kepler.gl/reducers';
+import {LayerHoverProp} from '@indranildeveloper-kepler.gl/reducers';
 import LayerHoverInfoFactory from './layer-hover-info';
 import CoordinateInfoFactory from './coordinate-info';
 

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import cloneDeep from 'lodash.clonedeep';
-import {processCsvData, processGeojson} from '@kepler.gl/processors';
-import {LayerClasses, KeplerGlLayers} from '@kepler.gl/layers';
-import {GEOJSON_FIELDS} from '@kepler.gl/constants';
-import {findDefaultLayer, getLayerHoverProp, getLayerOrderFromLayers} from '@kepler.gl/reducers';
+import {processCsvData, processGeojson} from '@indranildeveloper-kepler.gl/processors';
+import {LayerClasses, KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {GEOJSON_FIELDS} from '@indranildeveloper-kepler.gl/constants';
+import {findDefaultLayer, getLayerHoverProp, getLayerOrderFromLayers} from '@indranildeveloper-kepler.gl/reducers';
 import {StateWTripGeojson, StateWFiles} from 'test/helpers/mock-state';
 
 const {PointLayer, ArcLayer, GeojsonLayer, LineLayer} = KeplerGlLayers;
@@ -16,8 +16,8 @@ import {cmpLayers} from 'test/helpers/comparison-utils';
 import {getNextColorMakerValue} from 'test/helpers/layer-utils';
 import tripGeojson, {timeStampDomain, tripBounds} from 'test/fixtures/trip-geojson';
 import {geoJsonWithStyle} from 'test/fixtures/geojson';
-import {KeplerTable, findPointFieldPairs, createNewDataEntry} from '@kepler.gl/table';
-import {createDataContainer} from '@kepler.gl/utils';
+import {KeplerTable, findPointFieldPairs, createNewDataEntry} from '@indranildeveloper-kepler.gl/table';
+import {createDataContainer} from '@indranildeveloper-kepler.gl/utils';
 
 test('layerUtils -> findDefaultLayer.1', t => {
   const inputFields = [

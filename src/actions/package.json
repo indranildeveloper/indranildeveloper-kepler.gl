@@ -1,8 +1,8 @@
 {
-  "name": "@kepler.gl/actions",
+  "name": "@indranildeveloper-kepler.gl/actions",
   "author": "Shan He <shan@uber.com>",
   "version": "3.0.0",
-  "description": "kepler.gl constants used by kepler.gl components, actions and reducers",
+  "description": "indranildeveloper-kepler.gl constants used by indranildeveloper-kepler.gl components, actions and reducers",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/kepler.gl.git"
+    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
   },
   "scripts": {
     "build": "rm -fr dist && babel src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js,.jsx' --ignore '**/*.d.ts'",
@@ -31,11 +31,11 @@
   ],
   "dependencies": {
     "@deck.gl/core": "^8.9.27",
-    "@kepler.gl/cloud-providers": "3.0.0",
-    "@kepler.gl/constants": "3.0.0",
-    "@kepler.gl/layers": "3.0.0",
-    "@kepler.gl/processors": "3.0.0",
-    "@kepler.gl/types": "3.0.0",
+    "@indranildeveloper-kepler.gl/cloud-providers": "3.0.0",
+    "@indranildeveloper-kepler.gl/constants": "3.0.0",
+    "@indranildeveloper-kepler.gl/layers": "3.0.0",
+    "@indranildeveloper-kepler.gl/processors": "3.0.0",
+    "@indranildeveloper-kepler.gl/types": "3.0.0",
     "@reduxjs/toolkit": "^1.7.2",
     "@types/lodash.curry": "^4.1.7",
     "@types/react-redux": "^7.1.23",

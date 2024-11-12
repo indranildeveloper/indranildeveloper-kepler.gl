@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
@@ -129,7 +129,7 @@ export default class Footer extends PureComponent {
     return (
       <Container>
         <LogosContainer>
-          <img style={{width: '120px'}} src={cdnUrl('icons/kepler.gl-logo.png')} />
+          <img style={{width: '120px'}} src={cdnUrl('icons/indranildeveloper-kepler.gl-logo.png')} />
           <BrandingContainer>
             <img src={cdnUrl('icons/uber.svg')} />
             <MapboxLogo/>
@@ -155,18 +155,18 @@ export default class Footer extends PureComponent {
             <LinkButton
               large
               outlineDark
-              href="https://github.com/keplergl/kepler.gl"
+              href="https://github.com/keplergl/indranildeveloper-kepler.gl"
               style={{marginLeft: '5px'}}
             >
               <img src={cdnUrl('icons/github.svg')} /> Github
             </LinkButton>
           </ButtonContainer>
           <SocialContainer>
-            <FacebookShareButton url="https://kepler.gl/">
+            <FacebookShareButton url="https://indranildeveloper-kepler.gl/">
               <FacebookIcon size={32} />
             </FacebookShareButton>
             {' '}
-            <TwitterShareButton url="https://kepler.gl/" hashtags={['keplergl']}>
+            <TwitterShareButton url="https://indranildeveloper-kepler.gl/" hashtags={['keplergl']}>
               <TwitterIcon size={32} />
             </TwitterShareButton>
           </SocialContainer>

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import styled from 'styled-components';
 import React from 'react';
 
-import {MapState} from '@kepler.gl/types';
+import {MapState} from '@indranildeveloper-kepler.gl/types';
 
 import {MapViewStateContextProvider} from './map-view-state-context';
 

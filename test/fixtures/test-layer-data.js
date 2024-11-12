@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export default `utc_timestamp,lat,lng,lat_1,lng_1,types,has_result,id,hex_id,trip_distance,icon,s2x
 Null,37.778564,-122.39096,37.769897,-122.41168,driver_analytics_0,FALSE,1,89283082c2fffff,1.59,accel,80858004

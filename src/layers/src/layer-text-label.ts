@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {getDistanceScales} from 'viewport-mercator-project';
-import {notNullorUndefined, DataContainerInterface, ArrowDataContainer} from '@kepler.gl/utils';
+import {notNullorUndefined, DataContainerInterface, ArrowDataContainer} from '@indranildeveloper-kepler.gl/utils';
 import uniq from 'lodash.uniq';
 
 export const defaultPadding = 20;

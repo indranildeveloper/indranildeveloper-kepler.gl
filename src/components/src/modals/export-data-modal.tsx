@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 
-import {EXPORT_DATA_TYPE_OPTIONS} from '@kepler.gl/constants';
+import {EXPORT_DATA_TYPE_OPTIONS} from '@indranildeveloper-kepler.gl/constants';
 import {FileType} from '../common/icons';
 import {
   StyledExportSection,
@@ -13,8 +13,8 @@ import {
   CheckMark
 } from '../common/styled-components';
 import {injectIntl, IntlShape} from 'react-intl';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {Datasets} from '@kepler.gl/table';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 const getDataRowCount = (
   datasets: Datasets,

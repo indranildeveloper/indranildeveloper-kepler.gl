@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 
-import {notNullorUndefined} from '@kepler.gl/utils';
+import {notNullorUndefined} from '@indranildeveloper-kepler.gl/utils';
 import {ComponentType} from 'react';
 import {ArrowDown, Delete} from '../icons';
 import {ListItem} from './dropdown-list';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 
 export type ListItemProps<Option> = {
   value: Option;

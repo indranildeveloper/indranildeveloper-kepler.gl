@@ -1,13 +1,13 @@
 {
   "name": "keplergl-jupyter",
   "version": "0.3.4a0",
-  "description": "This is a simple jupyter widget for kepler.gl, an advanced geo-spatial visualization tool, to render large-scale interactive maps.",
+  "description": "This is a simple jupyter widget for indranildeveloper-kepler.gl, an advanced geo-spatial visualization tool, to render large-scale interactive maps.",
   "author": "Shan He",
   "license": "MIT",
   "main": "babel/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/kepler.gl.git"
+    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
   },
   "keywords": [
     "jupyter",
@@ -71,12 +71,12 @@
   "dependencies": {
     "@jupyter-widgets/base": "^2 || ^3 || ^4.0.0",
     "@jupyterlab/builder": "^4.0.0",
-    "@kepler.gl/actions": "^3.0.0",
-    "@kepler.gl/components": "^3.0.0",
-    "@kepler.gl/processors": "^3.0.0",
-    "@kepler.gl/reducers": "^3.0.0",
-    "@kepler.gl/schemas": "^3.0.0",
-    "@kepler.gl/styles": "^3.0.0",
+    "@indranildeveloper-kepler.gl/actions": "^3.0.0",
+    "@indranildeveloper-kepler.gl/components": "^3.0.0",
+    "@indranildeveloper-kepler.gl/processors": "^3.0.0",
+    "@indranildeveloper-kepler.gl/reducers": "^3.0.0",
+    "@indranildeveloper-kepler.gl/schemas": "^3.0.0",
+    "@indranildeveloper-kepler.gl/styles": "^3.0.0",
     "@loaders.gl/arrow": "^4.1.0",
     "@loaders.gl/core": "^4.1.0",
     "@loaders.gl/csv": "^4.1.0",

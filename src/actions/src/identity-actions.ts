@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {default as ActionTypes} from './action-types';
-import {UiState} from '@kepler.gl/types';
+import {UiState} from '@indranildeveloper-kepler.gl/types';
 
 export type RegisterEntryUpdaterAction = {
   payload: {
@@ -17,8 +17,8 @@ export type RegisterEntryUpdaterAction = {
 };
 /**
  *
- * Add a new kepler.gl instance in `keplerGlReducer`. This action is called under-the-hood when a `KeplerGl` component is **mounted** to the dom.
- * Note that if you dispatch actions such as adding data to a kepler.gl instance before the React component is mounted, the action will not be
+ * Add a new indranildeveloper-kepler.gl instance in `keplerGlReducer`. This action is called under-the-hood when a `KeplerGl` component is **mounted** to the dom.
+ * Note that if you dispatch actions such as adding data to a indranildeveloper-kepler.gl instance before the React component is mounted, the action will not be
  * performed. Instance reducer can only handle actions when it is instantiated.
  * @memberof rootActions
  * @param payload

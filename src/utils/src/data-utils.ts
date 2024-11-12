@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import assert from 'assert';
 import {format as d3Format} from 'd3-format';
@@ -11,8 +11,8 @@ import {
   TOOLTIP_FORMAT_TYPES,
   TOOLTIP_KEY,
   TooltipFormat
-} from '@kepler.gl/constants';
-import {Field, Millisecond} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/constants';
+import {Field, Millisecond} from '@indranildeveloper-kepler.gl/types';
 
 import {snapToMarks} from './plot';
 import {isPlainObject} from './utils';

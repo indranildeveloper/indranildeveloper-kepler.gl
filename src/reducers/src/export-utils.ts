@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {Blob} from 'global/window';
 import {csvFormatRows} from 'd3-dsv';
 
-import {EXPORT_DATA_TYPE} from '@kepler.gl/constants';
-import {Field} from '@kepler.gl/types';
-import KeplerTable, {Datasets} from '@kepler.gl/table';
+import {EXPORT_DATA_TYPE} from '@indranildeveloper-kepler.gl/constants';
+import {Field} from '@indranildeveloper-kepler.gl/types';
+import KeplerTable, {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 import {
   createIndexedDataContainer,
   DataContainerInterface,
   parseFieldValue,
   downloadFile
-} from '@kepler.gl/utils';
-import {getApplicationConfig} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
+import {getApplicationConfig} from '@indranildeveloper-kepler.gl/utils';
 
 interface StateType {
   visState: {datasets: Datasets};

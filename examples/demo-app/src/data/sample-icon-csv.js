@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export default `time,event_lat,event_lng,icon,icon-bk,annotation-severity,annotation-html
 2016-06-28 20:02:06,37.778564,-122.39096,accel,accel,3,"Braking at 10:32pm, -0.3g"

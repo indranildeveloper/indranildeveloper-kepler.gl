@@ -1,6 +1,6 @@
 # User guides
 
-Kepler.gl is designed for geospatial data analysis. It allows technical and non-technical audiences to visualize trends in a city or region. With Kepler.gl, you can…
+indranildeveloper-kepler.gl is designed for geospatial data analysis. It allows technical and non-technical audiences to visualize trends in a city or region. With indranildeveloper-kepler.gl, you can…
 
 Visualize a large amount of location data in your browser.
 Playback geo-temporal trends over time.
@@ -8,15 +8,15 @@ Explore, filter, and deeply engage with location data to gain insight
 
 See the sample maps in the demo app for more examples.
 
-![Kepler.gl sample map](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image11.png "Kepler.gl sample map")
+![indranildeveloper-kepler.gl sample map](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image11.png "indranildeveloper-kepler.gl sample map")
 
-This guide will teach you how to perform data analysis in Kepler.gl by adding data to a map, creating layers, adding filters, and more.
+This guide will teach you how to perform data analysis in indranildeveloper-kepler.gl by adding data to a map, creating layers, adding filters, and more.
 
 ## Table of contents:
 
 #### [Get Started](./j-get-started.md)
 
-#### [The kepler.gl workflow](./b-kepler-gl-workflow/README.md)
+#### [The indranildeveloper-kepler.gl workflow](./b-kepler-gl-workflow/README.md)
 * [Add data to the map](./b-kepler-gl-workflow/a-add-data-to-the-map.md)
 * [Adding data layers](./b-kepler-gl-workflow/b-add-data-layers/a-adding-data-layers.md)
 * [Create a layer](./b-kepler-gl-workflow/b-add-data-layers/b-create-a-layer.md)

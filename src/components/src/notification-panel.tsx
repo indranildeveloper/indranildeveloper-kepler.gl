@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
 import NotificationItemFactory from './notification-panel/notification-item';
-import {DEFAULT_NOTIFICATION_TOPICS} from '@kepler.gl/constants';
-import {Notifications} from '@kepler.gl/types';
-import {removeNotification} from '@kepler.gl/actions';
+import {DEFAULT_NOTIFICATION_TOPICS} from '@indranildeveloper-kepler.gl/constants';
+import {Notifications} from '@indranildeveloper-kepler.gl/types';
+import {removeNotification} from '@indranildeveloper-kepler.gl/actions';
 
 const NotificationPanelContent = styled.div`
   background: transparent;

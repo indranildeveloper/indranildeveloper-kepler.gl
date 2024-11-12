@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const {resolve} = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

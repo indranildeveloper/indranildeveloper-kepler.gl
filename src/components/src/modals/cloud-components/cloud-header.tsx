@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import {Button} from '../../common/styled-components';
 import {ArrowLeft} from '../../common/icons';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 import styled from 'styled-components';
-import {dataTestIds} from '@kepler.gl/constants';
-import {Provider} from '@kepler.gl/cloud-providers';
+import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
 
 const StyledStorageHeader = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import {
@@ -12,8 +12,8 @@ import {
 import {StateWFiles, testCsvDataId} from 'test/helpers/mock-state';
 import {gpsPointBounds} from 'test/fixtures/test-csv-data';
 
-import {MAX_ZOOM_LEVEL, KeplerGlLayers} from '@kepler.gl/layers';
-import {copyTableAndUpdate} from '@kepler.gl/table';
+import {MAX_ZOOM_LEVEL, KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
 
 const {HeatmapLayer} = KeplerGlLayers;
 

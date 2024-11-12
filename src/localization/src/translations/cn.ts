@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {LOCALES} from '../locales';
 
@@ -273,7 +273,7 @@ export default {
       publishSubtitle4: '。',
       publishSubtitle5: '使用私有样式，需粘贴',
       publishSubtitle6: '访问令牌（access token）',
-      publishSubtitle7: '。* Kepler.gl 是一个客户端应用程序，数据保留在您的浏览器中。',
+      publishSubtitle7: '。* indranildeveloper-kepler.gl 是一个客户端应用程序，数据保留在您的浏览器中。',
       exampleToken: '例) pk.abcdefg.xxxxxx',
       pasteTitle: '1. 粘贴样式 url',
       pasteSubtitle0: '样式 url 可以是 Mapbox 的',
@@ -289,9 +289,9 @@ export default {
       cloudTitle: '云存储',
       cloudSubtitle: '登录并将地图数据上传到个人云存储',
       shareDisclaimer:
-        'kepler.gl 将创建的地图存储在个人云存储中，因此只有知道 URL 的人才能访问地图及其数据。' +
+        'indranildeveloper-kepler.gl 将创建的地图存储在个人云存储中，因此只有知道 URL 的人才能访问地图及其数据。' +
         '可以随时使用个人云存储帐户编辑/删除数据文件。',
-      gotoPage: '跳转到Kepler.gl的{currentProvider}页面'
+      gotoPage: '跳转到indranildeveloper-kepler.gl的{currentProvider}页面'
     },
     statusPanel: {
       mapUploading: '地图上传中',
@@ -323,9 +323,9 @@ export default {
       json: {
         configTitle: '地图配置',
         configDisclaimer:
-          '地图配置将包含在 Json 文件中。如果您在自己的应用程序中使用 kepler.gl。您可以复制此配置并将其传递给',
+          '地图配置将包含在 Json 文件中。如果您在自己的应用程序中使用 indranildeveloper-kepler.gl。您可以复制此配置并将其传递给',
         selection:
-          '将当前地图数据和配置导出到单个 Json 文件中。稍后您可以通过将此文件上传到 kepler.gl 来打开同一张地图。',
+          '将当前地图数据和配置导出到单个 Json 文件中。稍后您可以通过将此文件上传到 indranildeveloper-kepler.gl 来打开同一张地图。',
         disclaimer:
           '* 地图配置与加载的数据集相结合。 “dataId”用于将图层、过滤器和工具提示绑定到特定数据集。' +
           '将此配置传递给 addDataToMap 时，请确保数据集 ID 与此配置中的 dataId/s 匹配。'
@@ -352,7 +352,7 @@ export default {
       description1:
         '在您的 csv 中，创建一列，将您要绘制的图标的名称放入其中。如果不想在某些点上显示图标，可以将单元格留空。当列被命名为',
       code: '图标',
-      description2: '时，kepler.gl 会自动为你创建一个图标层。',
+      description2: '时，indranildeveloper-kepler.gl 会自动为你创建一个图标层。',
       example: '例:',
       icons: '图标一览'
     },
@@ -366,7 +366,7 @@ export default {
     },
     loadStorageMap: {
       back: '返回',
-      goToPage: '跳转到 Kepler.gl 的 {displayName} 页面',
+      goToPage: '跳转到 indranildeveloper-kepler.gl 的 {displayName} 页面',
       storageMaps: '存储 / 地図',
       noSavedMaps: '还没有保存的地图'
     }
@@ -426,7 +426,7 @@ export default {
     chromeMessage:
       '*对于 Chrome 用户：文件大小最大为 250mb。如果需要上传更多文件，请尝试使用 Safari。',
     disclaimer:
-      '* kepler.gl 在客户端上工作。数据仅保留在您自己的设备/浏览器中。' +
+      '* indranildeveloper-kepler.gl 在客户端上工作。数据仅保留在您自己的设备/浏览器中。' +
       '没有信息或地图数据被发送到任何服务器。',
     configUploadMessage:
       '上传 {fileFormatNames} 或保存的地图 **Json**。阅读更多关于[**支持的文件格式**]',

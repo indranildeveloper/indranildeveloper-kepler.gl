@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo, useState} from 'react';
 import styled from 'styled-components';
@@ -7,10 +7,10 @@ import classnames from 'classnames';
 import geocoderService from '@mapbox/mapbox-sdk/services/geocoding';
 import {injectIntl, IntlShape} from 'react-intl';
 import {WebMercatorViewport} from 'viewport-mercator-project';
-import {KeyEvent} from '@kepler.gl/constants';
+import {KeyEvent} from '@indranildeveloper-kepler.gl/constants';
 import {Input} from '../common/styled-components';
 import {Search, Delete} from '../common/icons';
-import {Viewport} from '@kepler.gl/types';
+import {Viewport} from '@indranildeveloper-kepler.gl/types';
 
 type StyledContainerProps = {
   width?: number;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Fragment, useCallback, useMemo} from 'react';
 import styled from 'styled-components';
@@ -14,9 +14,9 @@ import Checkbox from '../../common/checkbox';
 import {MinimalField} from '../../common/field-selector';
 import PanelHeaderActionFactory from '../panel-header-action';
 import LayerColumnConfigFactory from './layer-column-config';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {Layer, LayerInfoModal, LayerBaseConfig} from '@kepler.gl/layers';
-import {SupportedColumnMode, FieldPair, LayerColumns} from '@kepler.gl/types';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {Layer, LayerInfoModal, LayerBaseConfig} from '@indranildeveloper-kepler.gl/layers';
+import {SupportedColumnMode, FieldPair, LayerColumns} from '@indranildeveloper-kepler.gl/types';
 
 import {Help} from '../../common/icons';
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
@@ -13,7 +13,7 @@ import {
   MapPopoverFactory,
   mapFieldsSelector,
   MapViewStateContextProvider
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 // import {Map} from 'react-map-gl'; // see other TODO below
 import {gl, InteractionTestRunner} from '@deck.gl/test-utils';
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {ValueOf} from '@kepler.gl/types';
+import {ValueOf} from '@indranildeveloper-kepler.gl/types';
 
 export const TOOLTIP_FORMAT_TYPES = {
   NONE: 'none',

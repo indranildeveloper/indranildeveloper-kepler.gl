@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import InfoHelperFactory from '../../common/info-helper';
 import Switch from '../../common/switch';
 import {SidePanelSection, PanelLabel} from '../../common/styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {capitalizeFirstLetter} from '@kepler.gl/utils';
-import {Layer} from '@kepler.gl/layers';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {capitalizeFirstLetter} from '@indranildeveloper-kepler.gl/utils';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
 
 type VisConfigSwitchProps = {
   layer: Layer;

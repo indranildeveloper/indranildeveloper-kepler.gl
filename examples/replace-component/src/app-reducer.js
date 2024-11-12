@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {createAction, handleActions} from 'redux-actions';
-import KeplerGlSchema from '@kepler.gl/schemas';
+import KeplerGlSchema from '@indranildeveloper-kepler.gl/schemas';
 
 // CONSTANTS
 export const INIT = 'INIT';

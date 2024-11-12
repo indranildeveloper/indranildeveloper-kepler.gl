@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import {drainTasksForTesting, succeedTaskWithValues, errorTaskInTest} from 'react-palm/tasks';
@@ -9,7 +9,7 @@ import {
   INITIAL_MAP_STYLE,
   loadMapStylesUpdater,
   getInitialInputStyle
-} from '@kepler.gl/reducers';
+} from '@indranildeveloper-kepler.gl/reducers';
 import {
   keplerGlInit,
   receiveMapConfig,
@@ -19,9 +19,9 @@ import {
   inputMapStyle,
   editCustomMapStyle,
   removeCustomMapStyle
-} from '@kepler.gl/actions';
-import SchemaManager from '@kepler.gl/schemas';
-import {DEFAULT_MAP_STYLES, DEFAULT_MAPBOX_API_URL, NO_MAP_ID} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/actions';
+import SchemaManager from '@indranildeveloper-kepler.gl/schemas';
+import {DEFAULT_MAP_STYLES, DEFAULT_MAPBOX_API_URL, NO_MAP_ID} from '@indranildeveloper-kepler.gl/constants';
 
 // helpers
 import {

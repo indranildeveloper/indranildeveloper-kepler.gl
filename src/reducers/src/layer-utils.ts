@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import Console from 'global/console';
 
 import {arrayMove} from '@dnd-kit/sortable';
-import {GEOCODER_LAYER_ID} from '@kepler.gl/constants';
+import {GEOCODER_LAYER_ID} from '@indranildeveloper-kepler.gl/constants';
 import {Layer as DeckLayer, LayerProps as DeckLayerProps} from '@deck.gl/core/typed';
 import {
   Field,
@@ -16,19 +16,19 @@ import {
   Feature,
   FeatureSelectionContext,
   Viewport
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 import {
   FindDefaultLayerPropsReturnValue,
   Layer,
   LayerClassesType,
   OVERLAY_TYPE_CONST,
   getEditorLayer
-} from '@kepler.gl/layers';
+} from '@indranildeveloper-kepler.gl/layers';
 
-import KeplerTable, {Datasets} from '@kepler.gl/table';
-import {VisState} from '@kepler.gl/schemas';
-import {isFunction, getMapLayersFromSplitMaps, DataRow} from '@kepler.gl/utils';
-import {ThreeDBuildingLayer} from '@kepler.gl/deckgl-layers';
+import KeplerTable, {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {VisState} from '@indranildeveloper-kepler.gl/schemas';
+import {isFunction, getMapLayersFromSplitMaps, DataRow} from '@indranildeveloper-kepler.gl/utils';
+import {ThreeDBuildingLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
 
 export type LayersToRender = {
   [layerId: string]: boolean;

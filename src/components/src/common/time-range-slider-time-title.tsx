@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import {Minus} from './icons';
-import {datetimeFormatter} from '@kepler.gl/utils';
+import {datetimeFormatter} from '@indranildeveloper-kepler.gl/utils';
 
 interface TimeValueWrapperProps {
   isEnlarged?: boolean;

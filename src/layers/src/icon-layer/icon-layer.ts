@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import window from 'global/window';
 import {BrushingExtension} from '@deck.gl/extensions';
 import GL from '@luma.gl/constants';
 
-import {SvgIconLayer} from '@kepler.gl/deckgl-layers';
+import {SvgIconLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
 import IconLayerIcon from './icon-layer-icon';
-import {ICON_FIELDS, KEPLER_UNFOLDED_BUCKET, ColorRange} from '@kepler.gl/constants';
+import {ICON_FIELDS, KEPLER_UNFOLDED_BUCKET, ColorRange} from '@indranildeveloper-kepler.gl/constants';
 import IconInfoModalFactory from './icon-info-modal';
 import Layer, {LayerBaseConfig, LayerBaseConfigPartial} from '../base-layer';
 import {assignPointPairToLayerColumn} from '../layer-utils';
-import {isTest} from '@kepler.gl/utils';
+import {isTest} from '@indranildeveloper-kepler.gl/utils';
 import {getTextOffsetByRadius, formatTextLabelData} from '../layer-text-label';
-import {default as KeplerTable} from '@kepler.gl/table';
-import {DataContainerInterface} from '@kepler.gl/utils';
+import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
+import {DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
 import {
   VisConfigBoolean,
   VisConfigColorRange,
@@ -22,7 +22,7 @@ import {
   VisConfigRange,
   Merge,
   LayerColumn
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 export type IconLayerColumnsConfig = {
   lat: LayerColumn;

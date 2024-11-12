@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {handleActions} from 'redux-actions';
-import {ActionTypes} from '@kepler.gl/actions';
+import {ActionTypes} from '@indranildeveloper-kepler.gl/actions';
 import * as uiStateUpdaters from './ui-state-updaters';
 
 /**

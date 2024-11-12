@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {
   ADD_DATA_ID,
@@ -13,9 +13,9 @@ import {
   RESOLUTIONS,
   MAP_CONTROLS,
   ExportImage
-} from '@kepler.gl/constants';
-import {LOCALE_CODES} from '@kepler.gl/localization';
-import {createNotification, errorNotification, calculateExportImageSize} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/constants';
+import {LOCALE_CODES} from '@indranildeveloper-kepler.gl/localization';
+import {createNotification, errorNotification, calculateExportImageSize} from '@indranildeveloper-kepler.gl/utils';
 import {payload_, apply_, compose_} from './composer-helpers';
 
 import {
@@ -23,7 +23,7 @@ import {
   KeplerGlInitPayload,
   LoadFilesErrUpdaterAction,
   UIStateActions
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 import {
   ExportData,
   ExportHtml,
@@ -32,19 +32,19 @@ import {
   MapControlItem,
   MapControls,
   UiState
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 export const DEFAULT_ACTIVE_SIDE_PANEL = 'layer';
 export const DEFAULT_MODAL = ADD_DATA_ID;
 
 /**
- * Updaters for `uiState` reducer. Can be used in your root reducer to directly modify kepler.gl's state.
+ * Updaters for `uiState` reducer. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
  * Read more about [Using updaters](../advanced-usage/using-updaters.md)
  *
  * @public
  * @example
  *
- * import keplerGlReducer, {uiStateUpdaters} from 'kepler.gl/reducers';
+ * import keplerGlReducer, {uiStateUpdaters} from 'indranildeveloper-kepler.gl/reducers';
  * // Root Reducer
  * const reducers = combineReducers({
  *  keplerGl: keplerGlReducer,

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo, FC} from 'react';
 import styled from 'styled-components';
 import {scaleSqrt} from 'd3-scale';
-import {SCALE_TYPES} from '@kepler.gl/constants';
-import {formatNumber} from '@kepler.gl/utils';
+import {SCALE_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {formatNumber} from '@indranildeveloper-kepler.gl/utils';
 import {max} from 'd3-array';
 import {console as Console} from 'global/window';
 

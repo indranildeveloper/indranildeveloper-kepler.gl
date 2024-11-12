@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 // This file contains the javascript that is run when the notebook is loaded.
 // It contains some requirejs configuration and the `load_ipython_extension`

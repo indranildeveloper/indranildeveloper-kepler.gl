@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 
 import {screen} from '@testing-library/react';
-import {dataTestIds} from '@kepler.gl/constants';
-import {NotificationItemFactory, appInjector} from '@kepler.gl/components';
-import {createNotification} from '@kepler.gl/utils';
+import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
+import {NotificationItemFactory, appInjector} from '@indranildeveloper-kepler.gl/components';
+import {createNotification} from '@indranildeveloper-kepler.gl/utils';
 
 import {renderWithTheme} from '../../../helpers/component-jest-utils';
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import {
@@ -7,7 +7,7 @@ import {
   assignGpuChannel,
   assignGpuChannels,
   getDatasetFieldIndexForFilter
-} from '@kepler.gl/table';
+} from '@indranildeveloper-kepler.gl/table';
 
 test('gpuFilterUtils -> resetFilterGpuMode', t => {
   const testFilters = [

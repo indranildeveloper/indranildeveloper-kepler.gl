@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
-import {addDataToMap, wrapTo} from '@kepler.gl/actions';
-import KeplerGl from '@kepler.gl/components';
+import {addDataToMap, wrapTo} from '@indranildeveloper-kepler.gl/actions';
+import KeplerGl from '@indranildeveloper-kepler.gl/components';
 
 import sampleData from '../data/sample-data';
 import config from '../configurations/config';

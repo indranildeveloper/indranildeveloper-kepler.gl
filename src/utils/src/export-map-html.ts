@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 // @ts-nocheck
-import {EXPORT_HTML_MAP_MODES, KEPLER_GL_VERSION} from '@kepler.gl/constants';
+import {EXPORT_HTML_MAP_MODES, KEPLER_GL_VERSION} from '@indranildeveloper-kepler.gl/constants';
 
 /**
  * This method is used to create an html file which will inlcude kepler and map data
  * @param {Object} options Object that collects all necessary data to  create the html file
  * @param {string} options.mapboxApiAccessToken Mapbox token used to fetch mapbox tiles
  * @param {Array<Object>} options.datasets Data to include in the map
- * @param {Object} options.config this object will contain the full kepler.gl instance configuration {mapState, mapStyle, visState}
- * @param {string} version which version of Kepler.gl to load.
+ * @param {Object} options.config this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+ * @param {string} version which version of indranildeveloper-kepler.gl to load.
  */
 export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
   return `
@@ -18,20 +18,20 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
     <html>
       <head>
         <meta charset="UTF-8"/>
-        <title>Kepler.gl embedded map</title>
+        <title>indranildeveloper-kepler.gl embedded map</title>
 
         <!--Uber Font-->
-        <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
+        <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/uber-fonts/4.0.0/superfine.css">
 
         <!--MapBox css-->
         <link href="https:https://unpkg.com/maplibre-gl@^3/dist/maplibre-gl.css" rel="stylesheet">
 
         <!-— facebook open graph tags -->
-        <meta property="og:url" content="http://kepler.gl/" />
+        <meta property="og:url" content="http://indranildeveloper-kepler.gl/" />
         <meta property="og:title" content="Large-scale WebGL-powered Geospatial Data Visualization Tool" />
-        <meta property="og:description" content="Kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets." />
-        <meta property="og:site_name" content="kepler.gl" />
-        <meta property="og:image" content="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/kepler.gl-meta-tag.png" />
+        <meta property="og:description" content="indranildeveloper-kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets." />
+        <meta property="og:site_name" content="indranildeveloper-kepler.gl" />
+        <meta property="og:image" content="https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/indranildeveloper-kepler.gl-meta-tag.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="800" />
@@ -41,8 +41,8 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
         <meta name="twitter:site" content="@openjsf">
         <meta name="twitter:creator" content="@openjsf">
         <meta name="twitter:title" content="Large-scale WebGL-powered Geospatial Data Visualization Tool">
-        <meta name="twitter:description" content="Kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets.">
-        <meta name="twitter:image" content="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/kepler.gl-meta-tag.png" />
+        <meta name="twitter:description" content="indranildeveloper-kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets.">
+        <meta name="twitter:image" content="https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/indranildeveloper-kepler.gl-meta-tag.png" />
 
         <!-- Load React/Redux -->
         <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js" crossorigin></script>
@@ -51,8 +51,8 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
         <script src="https://unpkg.com/react-redux@8.1.2/dist/react-redux.min.js" crossorigin></script>
         <script src="https://unpkg.com/styled-components@4.4.1/dist/styled-components.min.js" crossorigin></script>
 
-        <!-- Load Kepler.gl -->
-        <script src="https://unpkg.com/kepler.gl@${version}/umd/keplergl.min.js" crossorigin></script>
+        <!-- Load indranildeveloper-kepler.gl -->
+        <script src="https://unpkg.com/indranildeveloper-kepler.gl@${version}/umd/keplergl.min.js" crossorigin></script>
 
         <style type="text/css">
           body {margin: 0; padding: 0; overflow: hidden;}
@@ -64,10 +64,10 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
            * Provide your MapBox Token
            **/
           const MAPBOX_TOKEN = '${options.mapboxApiAccessToken || 'PROVIDE_MAPBOX_TOKEN'}';
-          const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
+          const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use indranildeveloper-kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
         </script>
 
-        <!-- GA: Delete this as you wish, However to pat ourselves on the back, we only track anonymous pageview to understand how many people are using kepler.gl. -->
+        <!-- GA: Delete this as you wish, However to pat ourselves on the back, we only track anonymous pageview to understand how many people are using indranildeveloper-kepler.gl. -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -90,7 +90,7 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
       <body>
         <!-- We will put our React component inside this div. -->
         <div id="app">
-          <!-- Kepler.gl map will be placed here-->
+          <!-- indranildeveloper-kepler.gl map will be placed here-->
         </div>
 
         <!-- Load our React component. -->
@@ -218,7 +218,7 @@ export const exportMapToHTML = (options, version = KEPLER_GL_VERSION) => {
         <script>
           /**
            * Customize map.
-           * In the following section you can use the store object to dispatch Kepler.gl actions
+           * In the following section you can use the store object to dispatch indranildeveloper-kepler.gl actions
            * to add new data and customize behavior
            */
           (function customize(keplerGl, store) {

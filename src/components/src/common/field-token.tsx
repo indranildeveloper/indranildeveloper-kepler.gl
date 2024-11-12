@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
-import {FIELD_TYPE_DISPLAY, FIELD_COLORS} from '@kepler.gl/constants';
+import {FIELD_TYPE_DISPLAY, FIELD_COLORS} from '@indranildeveloper-kepler.gl/constants';
 
 export type FieldTokenProps = {
   type: string;

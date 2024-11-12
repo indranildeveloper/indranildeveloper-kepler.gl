@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import sinon from 'sinon';
@@ -14,12 +14,12 @@ import {
   NewFilterPanelFactory,
   appInjector,
   AddFilterButtonFactory
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
-import {keplerGlReducerCore as keplerGlReducer} from '@kepler.gl/reducers';
-import {VisStateActions} from '@kepler.gl/actions';
+import {keplerGlReducerCore as keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
+import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
 import {testFields, testAllData} from 'test/fixtures/test-csv-data';
-import {ALL_FIELD_TYPES} from '@kepler.gl/constants';
+import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
 import {assertDatasetIsTable} from '../../../helpers/comparison-utils';
 
 // components

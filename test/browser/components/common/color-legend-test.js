@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
 import {mountWithTheme} from 'test/helpers/component-utils';
 
-import {ColorLegendFactory, LegendRowFactory, appInjector} from '@kepler.gl/components';
+import {ColorLegendFactory, LegendRowFactory, appInjector} from '@indranildeveloper-kepler.gl/components';
 import {StateWLayerCustomColorBreaks} from 'test/helpers/mock-state';
 
 const ColorLegend = appInjector.get(ColorLegendFactory);

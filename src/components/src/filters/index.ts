@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export {default as SingleSelectFilter} from './single-select-filter';
 export {default as MultiSelectFilter} from './multi-select-filter';

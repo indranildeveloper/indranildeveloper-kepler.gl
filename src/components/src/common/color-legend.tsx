@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {ColorRange} from '@kepler.gl/constants';
-import {Layer} from '@kepler.gl/layers';
-import {HexColor, MapState} from '@kepler.gl/types';
+import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {HexColor, MapState} from '@indranildeveloper-kepler.gl/types';
 import {
   getLayerColorScale,
   getLegendOfScale,
   getVisualChannelScaleByZoom,
   isObject
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 import React, {useCallback, useMemo} from 'react';
 import styled, {css} from 'styled-components';
 import {Reset} from './icons';

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, CSSProperties, KeyboardEvent} from 'react';
 import {createPortal} from 'react-dom';
@@ -15,11 +15,11 @@ import {
   EDITOR_MODES,
   GEOCODER_LAYER_ID,
   KeyEvent
-} from '@kepler.gl/constants';
-import {Layer, EditorLayerUtils} from '@kepler.gl/layers';
-import {Filter, FeatureSelectionContext, Feature} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/constants';
+import {Layer, EditorLayerUtils} from '@indranildeveloper-kepler.gl/layers';
+import {Filter, FeatureSelectionContext, Feature} from '@indranildeveloper-kepler.gl/types';
 import {FeatureOf, Polygon} from '@nebula.gl/edit-modes';
-import {Datasets} from '@kepler.gl/table';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 import {RootContext} from '../context';
 

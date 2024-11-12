@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape-catch';
 import cloneDeep from 'lodash.clonedeep';
 import {drainTasksForTesting} from 'react-palm/tasks';
 
-import {getInitialInputStyle, keplerGlReducerCore as keplerGlReducer} from '@kepler.gl/reducers';
+import {getInitialInputStyle, keplerGlReducerCore as keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
 
 import {
   VizColorPalette,
@@ -15,8 +15,8 @@ import {
   DEFAULT_COLOR_RANGE,
   DEFAULT_HIGHLIGHT_COLOR,
   DEFAULT_LAYER_LABEL
-} from '@kepler.gl/constants';
-import {DEFAULT_KEPLER_GL_PROPS, getUpdateVisDataPayload} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/constants';
+import {DEFAULT_KEPLER_GL_PROPS, getUpdateVisDataPayload} from '@indranildeveloper-kepler.gl/components';
 import {
   addDataToMap,
   VisStateActions,
@@ -24,7 +24,7 @@ import {
   MapStyleActions,
   UIStateActions,
   ProviderActions
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 
 // fixtures
 import {
@@ -52,7 +52,7 @@ import tripCsvData, {
 } from '../fixtures/test-trip-csv-data';
 import testArcData, {arcDataInfo, config as arcDataConfig} from '../fixtures/test-arc-data';
 import tripGeojson, {tripDataInfo} from '../fixtures/trip-geojson';
-import {processCsvData, processGeojson, processRowObject} from '@kepler.gl/processors';
+import {processCsvData, processGeojson, processRowObject} from '@indranildeveloper-kepler.gl/processors';
 import {MOCK_MAP_STYLE} from './mock-map-styles';
 
 const geojsonFields = cloneDeep(fields);

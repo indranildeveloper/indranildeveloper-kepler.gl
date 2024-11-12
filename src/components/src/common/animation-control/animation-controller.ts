@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import {bisectLeft} from 'd3-array';
 import {requestAnimationFrame, cancelAnimationFrame} from 'global/window';
 import Console from 'global/console';
-import {BASE_SPEED, FPS, ANIMATION_WINDOW} from '@kepler.gl/constants';
-import {Timeline} from '@kepler.gl/types';
+import {BASE_SPEED, FPS, ANIMATION_WINDOW} from '@indranildeveloper-kepler.gl/constants';
+import {Timeline} from '@indranildeveloper-kepler.gl/types';
 
 interface AnimationControllerProps<T extends number | number[]> {
   isAnimating?: boolean;

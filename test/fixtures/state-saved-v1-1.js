@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {KeplerGlLayers} from '@kepler.gl/layers';
-import {DEFAULT_TEXT_LABEL, DEFAULT_COLOR_UI, BINS} from '@kepler.gl/constants';
+import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {DEFAULT_TEXT_LABEL, DEFAULT_COLOR_UI, BINS} from '@indranildeveloper-kepler.gl/constants';
 
 const {GeojsonLayer} = KeplerGlLayers;
-import {defaultInteractionConfig} from '@kepler.gl/reducers';
+import {defaultInteractionConfig} from '@indranildeveloper-kepler.gl/reducers';
 
-import {histogramFromDomain} from '@kepler.gl/utils';
+import {histogramFromDomain} from '@indranildeveloper-kepler.gl/utils';
 
 export const savedStateV1 = {
   datasets: [

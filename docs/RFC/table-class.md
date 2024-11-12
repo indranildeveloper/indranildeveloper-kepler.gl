@@ -1,4 +1,4 @@
-Replace kepler.gl dataset with table class
+Replace indranildeveloper-kepler.gl dataset with table class
 
 ## Current Dataset structure
 
@@ -64,7 +64,7 @@ Missing features
 - Copy over column meta, if replacing an existing column
 - Recompute fieldPairs
 
-#### Current kepler.gl methods:
+#### Current indranildeveloper-kepler.gl methods:
 
 1. `initalize`
 

@@ -1,6 +1,6 @@
 # Node/Express
 
-This example shows how to embed Kepler.gl in a node/express/webpack application. 
+This example shows how to embed indranildeveloper-kepler.gl in a node/express/webpack application. 
 
 #### 1. Install
 

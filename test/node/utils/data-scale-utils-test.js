@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 
@@ -9,7 +9,7 @@ import {
   getLinearDomain,
   getLogDomain,
   createDataContainer
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 
 function numberSort(a, b) {
   return a - b;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {EditableGeoJsonLayer} from '@nebula.gl/layers';
 import {Layer as DeckLayer, LayerProps as DeckLayerProps} from '@deck.gl/core/typed';
@@ -11,9 +11,9 @@ import {
 } from '@nebula.gl/edit-modes';
 import {PathStyleExtension} from '@deck.gl/extensions';
 
-import {EDITOR_LAYER_ID, EDITOR_MODES, EDITOR_LAYER_PICKING_RADIUS} from '@kepler.gl/constants';
-import {Viewport, Editor, Feature, FeatureSelectionContext} from '@kepler.gl/types';
-import {generateHashId} from '@kepler.gl/utils';
+import {EDITOR_LAYER_ID, EDITOR_MODES, EDITOR_LAYER_PICKING_RADIUS} from '@indranildeveloper-kepler.gl/constants';
+import {Viewport, Editor, Feature, FeatureSelectionContext} from '@indranildeveloper-kepler.gl/types';
+import {generateHashId} from '@indranildeveloper-kepler.gl/utils';
 
 import {EDIT_TYPES} from './constants';
 import {LINE_STYLE, FEATURE_STYLE, EDIT_HANDLE_STYLE} from './feature-styles';

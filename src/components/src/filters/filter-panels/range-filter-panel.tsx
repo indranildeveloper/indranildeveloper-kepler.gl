@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback} from 'react';
 import RangeFilterFactory from '../range-filter';
-import {RangeFilter} from '@kepler.gl/types';
+import {RangeFilter} from '@indranildeveloper-kepler.gl/types';
 import FieldPanelWithFieldSelectFactory from './filter-panel-with-field-select';
 import {FilterPanelComponent} from './types';
 

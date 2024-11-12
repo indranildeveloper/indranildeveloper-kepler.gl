@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {ScenegraphLayer as DeckScenegraphLayer} from '@deck.gl/mesh-layers';
 import {load} from '@loaders.gl/core';
@@ -8,10 +8,10 @@ import {GLTFLoader, postProcessGLTF} from '@loaders.gl/gltf';
 import Layer, {LayerBaseConfig} from '../base-layer';
 import ScenegraphLayerIcon from './scenegraph-layer-icon';
 import ScenegraphInfoModalFactory from './scenegraph-info-modal';
-import {LAYER_VIS_CONFIGS, ColorRange} from '@kepler.gl/constants';
-import {Merge, VisConfigColorRange, VisConfigNumber, LayerColumn} from '@kepler.gl/types';
-import {default as KeplerTable} from '@kepler.gl/table';
-import {DataContainerInterface} from '@kepler.gl/utils';
+import {LAYER_VIS_CONFIGS, ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {Merge, VisConfigColorRange, VisConfigNumber, LayerColumn} from '@indranildeveloper-kepler.gl/types';
+import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
+import {DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
 
 export type ScenegraphLayerVisConfigSettings = {
   opacity: VisConfigNumber;

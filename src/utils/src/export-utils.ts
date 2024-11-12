@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {Blob, URL, atob, Uint8Array, ArrayBuffer, document} from 'global/window';
 import get from 'lodash.get';
@@ -12,7 +12,7 @@ import {
   FourByThreeRatioOption,
   OneXResolutionOption,
   ExportImage
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 import domtoimage from './dom-to-image';
 import {generateHashId, set} from './utils';
 import {exportMapToHTML} from './export-map-html';
@@ -162,7 +162,7 @@ export function getMapJSON(state, options = getApplicationConfig().defaultExport
 
 export function exportJson(state, options: any = {}) {
   const map = getMapJSON(state, options);
-  map.info.source = 'kepler.gl';
+  map.info.source = 'indranildeveloper-kepler.gl';
   const fileBlob = new Blob([exportToJsonString(map)], {type: 'application/json'});
   const fileName = state.appName ? `${state.appName}.json` : getApplicationConfig().defaultJsonName;
   downloadFile(fileBlob, fileName);

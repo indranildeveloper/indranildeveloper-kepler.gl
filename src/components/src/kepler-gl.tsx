@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, createRef, Dispatch} from 'react';
 import Console from 'global/console';
@@ -8,9 +8,9 @@ import styled, {ThemeProvider, withTheme} from 'styled-components';
 import {createSelector} from 'reselect';
 import {connect as keplerGlConnect} from './connect/keplergl-connect';
 import {IntlProvider} from 'react-intl';
-import {messages} from '@kepler.gl/localization';
+import {messages} from '@indranildeveloper-kepler.gl/localization';
 import {RootContext, FeatureFlagsContextProvider, FeatureFlags} from './context';
-import {OnErrorCallBack, OnSuccessCallBack, Viewport} from '@kepler.gl/types';
+import {OnErrorCallBack, OnSuccessCallBack, Viewport} from '@indranildeveloper-kepler.gl/types';
 
 import {
   MapStateActions,
@@ -18,7 +18,7 @@ import {
   ProviderActions,
   UIStateActions,
   VisStateActions
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 
 type KeplerGlActions = {
   visStateActions: typeof VisStateActions;
@@ -36,7 +36,7 @@ import {
   DEFAULT_MAPBOX_API_URL,
   GEOCODER_DATASET_NAME,
   MISSING_MAPBOX_TOKEN
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import SidePanelFactory from './side-panel';
 import MapContainerFactory from './map-container';
@@ -58,11 +58,11 @@ import {
   observeDimensions,
   unobserveDimensions,
   hasPortableWidth
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 
-import {theme as basicTheme, themeLT, themeBS, breakPointValues} from '@kepler.gl/styles';
-import {KeplerGlState} from '@kepler.gl/reducers';
-import {Provider} from '@kepler.gl/cloud-providers';
+import {theme as basicTheme, themeLT, themeBS, breakPointValues} from '@indranildeveloper-kepler.gl/styles';
+import {KeplerGlState} from '@indranildeveloper-kepler.gl/reducers';
+import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
 
 // Maybe we should think about exporting this or creating a variable
 // as part of the base.js theme
@@ -635,7 +635,7 @@ function makeMapDispatchToProps() {
 }
 
 /**
- * Override default kepler.gl actions with user defined actions using the same key
+ * Override default indranildeveloper-kepler.gl actions with user defined actions using the same key
  */
 function mergeActions(actions, userActions) {
   const overrides = {};

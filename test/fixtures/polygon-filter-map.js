@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export const polygonFilterMap = {
   datasets: [
@@ -374,7 +374,7 @@ export const polygonFilterMap = {
     }
   },
   info: {
-    app: 'kepler.gl',
+    app: 'indranildeveloper-kepler.gl',
     created_at: 'Thu Dec 26 2019 16:00:54 GMT+0100 (Central European Standard Time)'
   }
 };

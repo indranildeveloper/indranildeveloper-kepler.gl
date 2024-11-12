@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {console as Console} from 'global/console';
 import {ascending, descending} from 'd3-array';
@@ -10,7 +10,7 @@ import {
   ALL_FIELD_TYPES,
   ALTITUDE_FIELDS,
   SCALE_TYPES
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 import {
   RGBColor,
   Field,
@@ -24,11 +24,11 @@ import {
   SelectFieldDomain,
   MultiSelectFieldDomain,
   TimeRangeFieldDomain
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 import {getGpuFilterProps, getDatasetFieldIndexForFilter} from './gpu-filter-utils';
 
-import {Layer} from '@kepler.gl/layers';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
 import {
   generateHashId,
   getSortingFunction,
@@ -50,7 +50,7 @@ import {
   DataContainerInterface,
   notNullorUndefined,
   FilterChanged
-} from '@kepler.gl/utils';
+} from '@indranildeveloper-kepler.gl/utils';
 
 export type GpuFilter = {
   filterRange: number[][];

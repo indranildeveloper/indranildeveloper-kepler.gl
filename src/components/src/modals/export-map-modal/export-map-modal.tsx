@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 
 import {FileType} from '../../common/icons';
 import {StyledModalContent, StyledType, CheckMark} from '../../common/styled-components';
-import {EXPORT_MAP_FORMATS, EXPORT_MAP_FORMAT_OPTIONS} from '@kepler.gl/constants';
+import {EXPORT_MAP_FORMATS, EXPORT_MAP_FORMAT_OPTIONS} from '@indranildeveloper-kepler.gl/constants';
 import {StyledExportMapSection} from './components';
 import ExportHtmlMapFactory from './export-html-map';
 import ExportJsonMapFactory from './export-json-map';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {ActionHandler, setExportHTMLMapMode, setUserMapboxAccessToken} from '@kepler.gl/actions';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {ActionHandler, setExportHTMLMapMode, setUserMapboxAccessToken} from '@indranildeveloper-kepler.gl/actions';
 
 interface ExportMapModalFactoryProps {
   options?: {format: string};

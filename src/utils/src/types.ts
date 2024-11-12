@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {Filter, Field, FilterDatasetOpt} from '@kepler.gl/types';
+import {Filter, Field, FilterDatasetOpt} from '@indranildeveloper-kepler.gl/types';
 
 import {DataContainerInterface} from './data-container-interface';
 

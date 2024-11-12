@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import memoize from 'lodash.memoize';
 import Layer, {
@@ -10,16 +10,16 @@ import Layer, {
   VisualChannelDescription,
   VisualChannels
 } from './base-layer';
-import {hexToRgb, aggregate} from '@kepler.gl/utils';
+import {hexToRgb, aggregate} from '@indranildeveloper-kepler.gl/utils';
 import {
   HIGHLIGH_COLOR_3D,
   CHANNEL_SCALES,
   FIELD_OPTS,
   DEFAULT_AGGREGATION,
   ColorRange
-} from '@kepler.gl/constants';
-import {Merge, LayerColumn} from '@kepler.gl/types';
-import {KeplerTable, Datasets} from '@kepler.gl/table';
+} from '@indranildeveloper-kepler.gl/constants';
+import {Merge, LayerColumn} from '@indranildeveloper-kepler.gl/types';
+import {KeplerTable, Datasets} from '@indranildeveloper-kepler.gl/table';
 
 type AggregationLayerColumns = {
   lat: LayerColumn;

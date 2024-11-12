@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable guard-for-in */
 import {AGGREGATION_OPERATION, _BinSorter as BinSorter} from '@deck.gl/aggregation-layers';
 import {console as Console} from 'global/window';
 
-import {aggregate} from '@kepler.gl/utils';
-import {AGGREGATION_TYPES, SCALE_FUNC} from '@kepler.gl/constants';
-import {RGBAColor} from '@kepler.gl/types';
+import {aggregate} from '@indranildeveloper-kepler.gl/utils';
+import {AGGREGATION_TYPES, SCALE_FUNC} from '@indranildeveloper-kepler.gl/constants';
+import {RGBAColor} from '@indranildeveloper-kepler.gl/types';
 
 export type UpdaterType = (this: CPUAggregator, step, props, dimensionUpdater) => void;
 export type BindedUpdaterType = () => void;

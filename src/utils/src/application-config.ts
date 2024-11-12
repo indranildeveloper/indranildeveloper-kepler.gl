@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {MapLib, MapRef} from 'react-map-gl';
 
@@ -26,10 +26,10 @@ export type KeplerApplicationConfig<Map> = {
 };
 
 const DEFAULT_APPLICATION_CONFIG: Required<KeplerApplicationConfig<mapboxgl.Map>> = {
-  defaultHtmlName: 'kepler.gl.html',
-  defaultImageName: 'kepler.gl.png',
-  defaultJsonName: 'kepler.gl.json',
-  defaultDataName: 'kepler.gl',
+  defaultHtmlName: 'indranildeveloper-kepler.gl.html',
+  defaultImageName: 'indranildeveloper-kepler.gl.png',
+  defaultJsonName: 'indranildeveloper-kepler.gl.json',
+  defaultDataName: 'indranildeveloper-kepler.gl',
   defaultExportJsonSettings: {
     hasData: true
   },

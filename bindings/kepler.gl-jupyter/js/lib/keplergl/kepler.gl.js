@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {addDataToMap, ActionTypes} from '@kepler.gl/actions';
-import {KeplerGlSchema} from '@kepler.gl/schemas';
+import {addDataToMap, ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {KeplerGlSchema} from '@indranildeveloper-kepler.gl/schemas';
 import document from 'global/document';
 
 import renderRoot from './components/root';
@@ -48,7 +48,7 @@ class KeplerGlJupyter {
   }
 
   create(that) {
-    log('kepler.gl create');
+    log('indranildeveloper-kepler.gl create');
     let previousValue;
 
     function handleStoreChange(action, nextStore) {
@@ -113,14 +113,14 @@ class KeplerGlJupyter {
   }
 
   onDataChange(that) {
-    log('kepler.gl onDataChange');
+    log('indranildeveloper-kepler.gl onDataChange');
     const data = getData(that);
 
     addDataConfigToKeplerGl({data, store: this.store});
   }
 
   onConfigChange(that) {
-    log('kepler.gl onConfigChange');
+    log('indranildeveloper-kepler.gl onConfigChange');
     const config = getConfig(that);
 
     const currentValue = getConfigInStore({hash: true, store: this.store});

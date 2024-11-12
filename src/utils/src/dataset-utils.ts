@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {console as globalConsole} from 'global/window';
 import {
@@ -7,7 +7,7 @@ import {
   FIELD_OPTS,
   TOOLTIP_FORMATS,
   TOOLTIP_FORMAT_TYPES
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 import {Analyzer, DATA_TYPES as AnalyzerDATA_TYPES} from 'type-analyzer';
 import assert from 'assert';
 
@@ -20,8 +20,8 @@ import {
   TimeLabelFormat,
   TooltipFields,
   ProtoDataset
-} from '@kepler.gl/types';
-import {TooltipFormat} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/types';
+import {TooltipFormat} from '@indranildeveloper-kepler.gl/constants';
 
 import {isPlainObject} from './utils';
 import {notNullorUndefined, getFormatter} from './data-utils';
@@ -403,7 +403,7 @@ export function isHexWkb(str: string | null): boolean {
  * @public
  * @example
  *
- * import {getFieldsFromData} from 'kepler.gl/processors';
+ * import {getFieldsFromData} from 'indranildeveloper-kepler.gl/processors';
  * const data = [{
  *   time: '2016-09-17 00:09:55',
  *   value: '4',
@@ -515,7 +515,7 @@ export function renameDuplicateFields(fieldOrder: string[]): {
 }
 
 /**
- * Convert type-analyzer output to kepler.gl field types
+ * Convert type-analyzer output to indranildeveloper-kepler.gl field types
  *
  * @param aType
  * @returns corresponding type in `ALL_FIELD_TYPES`

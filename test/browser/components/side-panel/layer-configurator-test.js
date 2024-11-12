@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 
@@ -17,7 +17,7 @@ import {
   appInjector,
   dropdownListClassList,
   Checkbox
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import {StateWFiles, StateWTripGeojson, testCsvDataId} from 'test/helpers/mock-state';
 import {

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {ComponentType, useCallback, useContext, useState} from 'react';
 import styled from 'styled-components';
@@ -10,11 +10,11 @@ import MapControlTooltipFactory from './map-control-tooltip';
 import MapControlPanelFactory from './map-control-panel';
 import MapLegendFactory from './map-legend';
 import {createPortal} from 'react-dom';
-import {DIMENSIONS} from '@kepler.gl/constants';
-import {LayerVisConfig, MapControlMapLegend, MapControls, MapState} from '@kepler.gl/types';
-import {Layer} from '@kepler.gl/layers';
-import {media} from '@kepler.gl/styles';
-import {ActionHandler, toggleSplitMapViewport} from '@kepler.gl/actions';
+import {DIMENSIONS} from '@indranildeveloper-kepler.gl/constants';
+import {LayerVisConfig, MapControlMapLegend, MapControls, MapState} from '@indranildeveloper-kepler.gl/types';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {media} from '@indranildeveloper-kepler.gl/styles';
+import {ActionHandler, toggleSplitMapViewport} from '@indranildeveloper-kepler.gl/actions';
 
 import {RootContext} from '../context';
 

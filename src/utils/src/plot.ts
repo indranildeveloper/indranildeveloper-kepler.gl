@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {bisectLeft, bisector, extent, histogram as d3Histogram, ticks} from 'd3-array';
 import {getFilterMappedValue, getInitialInterval, intervalToFunction} from './time';
@@ -16,7 +16,7 @@ import {
   Field,
   ValueOf,
   LineDatum
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 import {
   ANIMATION_WINDOW,
   BINS,
@@ -25,8 +25,8 @@ import {
   AGGREGATION_TYPES,
   PLOT_TYPES,
   AggregationTypes
-} from '@kepler.gl/constants';
-import {VisState} from '@kepler.gl/schemas';
+} from '@indranildeveloper-kepler.gl/constants';
+import {VisState} from '@indranildeveloper-kepler.gl/schemas';
 
 import {notNullOrUndefined, roundValToStep} from './data-utils';
 import {aggregate, AGGREGATION_NAME} from './aggregation';

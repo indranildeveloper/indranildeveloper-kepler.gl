@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import document from 'global/document';
-import {DataContainerInterface, parseFieldValue} from '@kepler.gl/utils';
+import {DataContainerInterface, parseFieldValue} from '@indranildeveloper-kepler.gl/utils';
 
 const MIN_GHOST_CELL_SIZE = 200;
 const MIN_CELL_SIZE = 45;

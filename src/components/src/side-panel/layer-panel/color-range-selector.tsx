@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import uniq from 'lodash.uniq';
 import React, {MouseEvent, useCallback, useMemo} from 'react';
 import styled from 'styled-components';
 
-import {COLOR_RANGES, ColorRange} from '@kepler.gl/constants';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {ColorUI, NestedPartial} from '@kepler.gl/types';
-import {hasColorMap, numberSort, reverseColorRange, updateColorRange} from '@kepler.gl/utils';
+import {COLOR_RANGES, ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {ColorUI, NestedPartial} from '@indranildeveloper-kepler.gl/types';
+import {hasColorMap, numberSort, reverseColorRange, updateColorRange} from '@indranildeveloper-kepler.gl/utils';
 import ItemSelector from '../../common/item-selector/item-selector';
 import {PanelLabel, Tooltip} from '../../common/styled-components';
 import Switch from '../../common/switch';

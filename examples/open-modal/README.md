@@ -1,6 +1,6 @@
 # Open modal
 
-Example showing how to open kepler.gl in a modal.
+Example showing how to open indranildeveloper-kepler.gl in a modal.
 
 #### 1. Install
 

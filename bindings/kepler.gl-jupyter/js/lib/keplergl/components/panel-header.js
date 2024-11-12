@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {PanelHeaderFactory, Icons, withState} from '@kepler.gl/components';
-import {toggleModal} from '@kepler.gl/actions';
+import {PanelHeaderFactory, Icons, withState} from '@indranildeveloper-kepler.gl/components';
+import {toggleModal} from '@indranildeveloper-kepler.gl/actions';
 import React from 'react';
 import {IntlProvider} from 'react-intl';
 
-const KEPLER_DOC = 'https://docs.kepler.gl/docs/keplergl-jupyter';
+const KEPLER_DOC = 'https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter';
 
 export function CustomPanelHeaderFactory() {
   const PanelHeader = PanelHeaderFactory();

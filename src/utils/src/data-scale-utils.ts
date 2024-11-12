@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {ALL_FIELD_TYPES, ColorMap, ColorRange, SCALE_FUNC, SCALE_TYPES} from '@kepler.gl/constants';
-import {Layer, VisualChannel, VisualChannelDomain} from '@kepler.gl/layers';
-import {HexColor, MapState} from '@kepler.gl/types';
+import {ALL_FIELD_TYPES, ColorMap, ColorRange, SCALE_FUNC, SCALE_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {Layer, VisualChannel, VisualChannelDomain} from '@indranildeveloper-kepler.gl/layers';
+import {HexColor, MapState} from '@indranildeveloper-kepler.gl/types';
 import {bisectLeft, quantileSorted as d3Quantile, extent} from 'd3-array';
 import moment from 'moment';
 import {isRgbColor, rgbToHex} from './color-utils';

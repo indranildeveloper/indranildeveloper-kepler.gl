@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
-import {Icons} from '@kepler.gl/components';
+import {Icons} from '@indranildeveloper-kepler.gl/components';
 import PropTypes from 'prop-types';
 
 const style = {

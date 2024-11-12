@@ -1,6 +1,6 @@
 # Demo App
 
-This is the src code of kepler.gl demo app. You can copy this folder out and run it locally.
+This is the src code of indranildeveloper-kepler.gl demo app. You can copy this folder out and run it locally.
 
 #### Pre requirement
 - [Node.js ^18.x](http://nodejs.org): We use Node to generate the documentation, run a

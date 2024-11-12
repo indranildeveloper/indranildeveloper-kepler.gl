@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import {CenterFlexbox, DatasetSquare} from './styled-components';
-import {RGBColor} from '@kepler.gl/types';
+import {RGBColor} from '@indranildeveloper-kepler.gl/types';
 
 const DatasetName = styled.div.attrs({
   className: 'dataset-name'

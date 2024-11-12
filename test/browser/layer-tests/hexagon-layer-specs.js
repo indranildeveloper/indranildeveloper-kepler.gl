@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import sinon from 'sinon';
@@ -14,7 +14,7 @@ import {
   pointLayerMeta
 } from 'test/helpers/layer-utils';
 
-import {KeplerGlLayers} from '@kepler.gl/layers';
+import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
 const {HexagonLayer} = KeplerGlLayers;
 
 const columns = {

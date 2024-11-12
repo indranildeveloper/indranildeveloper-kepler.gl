@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
@@ -14,11 +14,11 @@ import {
   AddLayerButtonFactory,
   appInjector,
   Layers
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
 
-import {VisStateActions, UIStateActions, MapStateActions} from '@kepler.gl/actions';
+import {VisStateActions, UIStateActions, MapStateActions} from '@indranildeveloper-kepler.gl/actions';
 
 import {StateWMultiH3Layers} from 'test/helpers/mock-state';
 

@@ -1,4 +1,4 @@
-This is the source code of the demo website for kepler.gl.
+This is the source code of the demo website for indranildeveloper-kepler.gl.
 
 ## Developing
 

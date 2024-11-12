@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import classnames from 'classnames';
@@ -9,7 +9,7 @@ import {
   EFFECT_DESCRIPTIONS,
   LIGHT_AND_SHADOW_EFFECT,
   POSTPROCESSING_EFFECTS
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import PanelHeaderActionFactory, {PanelHeaderActionIcon} from '../side-panel/panel-header-action';
 import {

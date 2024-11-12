@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useState} from 'react';
 import classnames from 'classnames';
 import styled from 'styled-components';
-import {Icons, IconRoundSmall, MapControlButton} from '@kepler.gl/components';
+import {Icons, IconRoundSmall, MapControlButton} from '@indranildeveloper-kepler.gl/components';
 
 import ReactMarkdown from 'react-markdown';
 
@@ -96,8 +96,8 @@ const LinkRenderer = props => {
   );
 };
 
-// convert https://raw.githubusercontent.com/keplergl/kepler.gl-data/master/nyctrips/config.json
-// to https://github.com/keplergl/kepler.gl-data/blob/master/movement_pittsburgh/config.json
+// convert https://raw.githubusercontent.com/keplergl/indranildeveloper-kepler.gl-data/master/nyctrips/config.json
+// to https://github.com/keplergl/indranildeveloper-kepler.gl-data/blob/master/movement_pittsburgh/config.json
 function getURL(url) {
   return url
     ? url

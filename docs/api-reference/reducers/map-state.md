@@ -13,13 +13,13 @@
 
 ## mapStateUpdaters
 
-Updaters for `mapState` reducer. Can be used in your root reducer to directly modify kepler.gl's state.
+Updaters for `mapState` reducer. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
 Read more about [Using updaters][17]
 
 **Examples**
 
 ```javascript
-import keplerGlReducer, {mapStateUpdaters} from 'kepler.gl/reducers';
+import keplerGlReducer, {mapStateUpdaters} from 'indranildeveloper-kepler.gl/reducers';
 // Root Reducer
 const reducers = combineReducers({
  keplerGl: keplerGlReducer,

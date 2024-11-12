@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, ReactNode, PropsWithChildren} from 'react';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 
 import styled, {FlattenSimpleInterpolation} from 'styled-components';
 import Modal from 'react-modal';
 import {Delete} from './icons';
 import {Button} from './styled-components';
-import {media} from '@kepler.gl/styles';
+import {media} from '@indranildeveloper-kepler.gl/styles';
 
 interface ModalContentWrapperProps {
   cssStyle?: FlattenSimpleInterpolation | string;

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 
-import {registerEntry} from '@kepler.gl/actions';
-import keplerGlReducer from '@kepler.gl/reducers';
+import {registerEntry} from '@indranildeveloper-kepler.gl/actions';
+import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
 import {
   getMapJSON,
   exportToJsonString,
   getScaleFromImageSize,
   isMSEdge,
   calculateExportImageSize
-} from '@kepler.gl/utils';
-import {EXPORT_IMG_RATIOS, RESOLUTIONS} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/utils';
+import {EXPORT_IMG_RATIOS, RESOLUTIONS} from '@indranildeveloper-kepler.gl/constants';
 
 test('exportUtils -> ExportJson', t => {
   const state = keplerGlReducer(undefined, registerEntry({id: 'test'})).test;

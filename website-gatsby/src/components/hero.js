@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled, {keyframes} from 'styled-components';
@@ -86,7 +86,7 @@ export default class Hero extends PureComponent {
               Make an impact with your location data
             </div>
             <div className="kg-home__caption__description">
-              <span>Kepler.gl is a powerful </span>
+              <span>indranildeveloper-kepler.gl is a powerful </span>
               <span className="t-bold"> open source </span>
               <span>geospatial analysis tool&nbsp;for </span>
               <span className="t-bold">large-scale&nbsp;</span>
@@ -99,7 +99,7 @@ export default class Hero extends PureComponent {
               <LinkButton
                 large
                 outlineDark
-                href="https://github.com/keplergl/kepler.gl"
+                href="https://github.com/keplergl/indranildeveloper-kepler.gl"
                 style={{marginLeft: '5px'}}
               >
                 <img src={cdnUrl('icons/github.svg')} /> Github

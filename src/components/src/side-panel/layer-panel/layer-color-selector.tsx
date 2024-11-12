@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback} from 'react';
 
-import {ColorRange} from '@kepler.gl/constants';
-import {Layer} from '@kepler.gl/layers';
-import {NestedPartial, RGBColor, ColorUI} from '@kepler.gl/types';
+import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {NestedPartial, RGBColor, ColorUI} from '@indranildeveloper-kepler.gl/types';
 
 import ColorSelectorFactory from './color-selector';
 import {SidePanelSection} from '../../common/styled-components';

@@ -1,4 +1,4 @@
-# Kepler.gl workflow
+# indranildeveloper-kepler.gl workflow
 
 ## Table of contents
 * [Add data to the map](./a-add-data-to-the-map.md)

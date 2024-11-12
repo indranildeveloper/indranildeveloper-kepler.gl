@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {LightingEffect, PostProcessEffect} from '@deck.gl/core';
 import test from 'tape';
 
-import {computeDeckEffects, validateEffectParameters} from '@kepler.gl/utils';
-import {VisStateActions} from '@kepler.gl/actions';
-import {visStateReducer} from '@kepler.gl/reducers';
-import {createEffect} from '@kepler.gl/effects';
+import {computeDeckEffects, validateEffectParameters} from '@indranildeveloper-kepler.gl/utils';
+import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {visStateReducer} from '@indranildeveloper-kepler.gl/reducers';
+import {createEffect} from '@indranildeveloper-kepler.gl/effects';
 import {
   POSTPROCESSING_EFFECTS,
   LIGHT_AND_SHADOW_EFFECT,
   DEFAULT_POST_PROCESSING_EFFECT_TYPE
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import {InitialState} from 'test/helpers/mock-state';
 

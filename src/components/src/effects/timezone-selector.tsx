@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo} from 'react';
 import moment from 'moment-timezone';
 import styled, {withTheme} from 'styled-components';
 
-import {DEFAULT_TIMEZONE} from '@kepler.gl/constants';
+import {DEFAULT_TIMEZONE} from '@indranildeveloper-kepler.gl/constants';
 
 import ItemSelector from '../common/item-selector/item-selector';
 

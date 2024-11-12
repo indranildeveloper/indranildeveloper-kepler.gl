@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {LOCALES} from '../locales';
 
@@ -278,7 +278,7 @@ export default {
       publishSubtitle5: 'Чтобы использовать частный стиль, вставьте свой',
       publishSubtitle6: 'token доступа',
       publishSubtitle7:
-        'прим. kepler.gl - это клиентское приложение, данные остаются в вашем браузере .',
+        'прим. indranildeveloper-kepler.gl - это клиентское приложение, данные остаются в вашем браузере .',
       exampleToken: 'например pk.abcdefg.xxxxxx',
       pasteTitle: '1. Вставить URL стиля',
       pasteSubtitle0: 'URL стиля может быть mapbox',
@@ -294,9 +294,9 @@ export default {
       cloudTitle: 'Облачное хранилище',
       cloudSubtitle: 'Войдите и загрузите данные карты в свое личное облачное хранилище',
       shareDisclaimer:
-        'kepler.gl сохранит данные вашей карты в вашем личном облачном хранилище, только люди с URL-адресом могут получить доступ к вашей карте и данным. ' +
+        'indranildeveloper-kepler.gl сохранит данные вашей карты в вашем личном облачном хранилище, только люди с URL-адресом могут получить доступ к вашей карте и данным. ' +
         'Вы можете редактировать / удалить файл данных в своей облачной учетной записи в любое время.',
-      gotoPage: 'Перейти на страницу Kepler.gl {currentProvider}'
+      gotoPage: 'Перейти на страницу indranildeveloper-kepler.gl {currentProvider}'
     },
     statusPanel: {
       mapUploading: 'Загрузка карты',
@@ -329,9 +329,9 @@ export default {
       json: {
         configTitle: 'Конфигурация карты',
         configDisclaimer:
-          'Конфигурация карты будет включена в файл Json. Если вы используете kepler.gl в своем собственном приложении. Вы можете скопировать этот конфиг и передать его ',
+          'Конфигурация карты будет включена в файл Json. Если вы используете indranildeveloper-kepler.gl в своем собственном приложении. Вы можете скопировать этот конфиг и передать его ',
         selection:
-          'Экспорт текущих данных карты и конфигурации в один файл Json. Позже вы сможете открыть ту же карту, загрузив этот файл на kepler.gl.',
+          'Экспорт текущих данных карты и конфигурации в один файл Json. Позже вы сможете открыть ту же карту, загрузив этот файл на indranildeveloper-kepler.gl.',
         disclaimer:
           '* Конфигурация карты связана с загруженными наборами данных. DataId используется для привязки слоев, фильтров и всплывающих подсказок к определенному набору данных. ' +
           'При передаче этой конфигурации addDataToMap, убедитесь, что идентификатор набора данных совпадает с dataId / s в этой конфигурации.'
@@ -358,7 +358,7 @@ export default {
       description1:
         'В вашем csv создайте столбец, поместите в него имя значка, который вы хотите нарисовать. Вы можете оставить ячейку пустой, если не хотите, чтобы значок отображался для некоторых точек. Когда столбец назван',
       code: 'значек',
-      description2: ' kepler.gl автоматически создаст для вас слой значков.',
+      description2: ' indranildeveloper-kepler.gl автоматически создаст для вас слой значков.',
       example: 'Пример:',
       icons: 'Значки'
     },
@@ -372,7 +372,7 @@ export default {
     },
     loadStorageMap: {
       back: 'Назад',
-      goToPage: 'Перейти на страницу Kepler.gl {displayName}',
+      goToPage: 'Перейти на страницу indranildeveloper-kepler.gl {displayName}',
       storageMaps: 'Хранилище / Карты',
       noSavedMaps: 'Нет сохраненных карт'
     }
@@ -436,7 +436,7 @@ export default {
     chromeMessage:
       '*Пользователь Chrome: ограничьте размер файла до 250 МБ, если нужно загрузить файл большего размера, попробуйте Safari',
     disclaimer:
-      '*kepler.gl - это клиентское приложение без серверной части. Данные живут только на вашем компьютере. ' +
+      '*indranildeveloper-kepler.gl - это клиентское приложение без серверной части. Данные живут только на вашем компьютере. ' +
       'Никакая информация или данные карты не отправляются ни на один сервер.',
     configUploadMessage:
       'Загрузите {fileFormatNames} или сохраненную карту **Json**. Подробнее [**supported file formats**]',

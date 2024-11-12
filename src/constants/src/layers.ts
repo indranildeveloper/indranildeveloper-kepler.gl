@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import keyMirror from 'keymirror';
 
@@ -12,7 +12,7 @@ import {
   LayerTextLabel,
   LayerVisConfigSettings,
   RGBAColor
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 export type AggregationTypes = keyof typeof AGGREGATION_TYPES;
 

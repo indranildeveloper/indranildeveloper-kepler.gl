@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
-import {media} from '@kepler.gl/styles';
-import {Timeline} from '@kepler.gl/types';
+import {media} from '@indranildeveloper-kepler.gl/styles';
+import {Timeline} from '@indranildeveloper-kepler.gl/types';
 
 import TimelineSliderFactory from '../timeline-slider';
 import PlaybackControlsFactory from './playback-controls';

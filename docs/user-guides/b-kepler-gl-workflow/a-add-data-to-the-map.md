@@ -1,23 +1,23 @@
 # Add Data to the Map
 
 ## Ways to Add Data
-- Open kepler.gl/demo. You should see the following prompt:
+- Open indranildeveloper-kepler.gl/demo. You should see the following prompt:
 
-![Add data to the map pop up](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image42.png "Add data to the map pop up")
+![Add data to the map pop up](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image42.png "Add data to the map pop up")
 
-**kepler.gl is a pure client side app. Data lives only in your machine/browser.  No information or maps is sent back up to our server.**
+**indranildeveloper-kepler.gl is a pure client side app. Data lives only in your machine/browser.  No information or maps is sent back up to our server.**
 
 - Choose one of three ways to add data to your map
 
 |   |   |
 |---|---|
 | **Local files**  | <span style="font-weight:normal">Upload CSV / GeoJSON files. Because data is only stored in your browser, there is a **250mb** limit on how much data Chrome allows you to upload into a browser. For datasets larger than **250mb** you should directly load them from a remote URL. See below.<span>  |
-| **From URL**  | Directly load data or map json by pasting a remote URL. You can link it to CSV | JSON | Kepler.gl config json. Make sure the url contains the file extension. CORS policy must be defined on your custom url domain. |
-| **Sample data**  | Load one of kepler.gl’s sample datasets. The sample map data and config are directly loaded from  [kepler.gl-data github][kepler.gl-data-github] repo  |
+| **From URL**  | Directly load data or map json by pasting a remote URL. You can link it to CSV | JSON | indranildeveloper-kepler.gl config json. Make sure the url contains the file extension. CORS policy must be defined on your custom url domain. |
+| **Sample data**  | Load one of indranildeveloper-kepler.gl’s sample datasets. The sample map data and config are directly loaded from  [indranildeveloper-kepler.gl-data github][indranildeveloper-kepler.gl-data-github] repo  |
 
 
 ## Supported Projection Coordinate System
-kepler.gl only supports **[Web Mercator]([https://en.wikipedia.org/wiki/Web_Mercator_projection) EPSG:3857 -- WGS84**.
+indranildeveloper-kepler.gl only supports **[Web Mercator]([https://en.wikipedia.org/wiki/Web_Mercator_projection) EPSG:3857 -- WGS84**.
 
 Geometry coordinates should be presented with a geographic coordinate reference system, using the WGS84 datum, and with longitude and latitude units of decimal degrees.
 
@@ -25,12 +25,12 @@ Geometry coordinates should be presented with a geographic coordinate reference 
  - [CSV](#csv)
  - [GeoJSON](#geojson)
  - [GeoArrow](#geoarrow)
- - [kepler.gl Json](#keplergl-json)
+ - [indranildeveloper-kepler.gl Json](#keplergl-json)
 
 
 ### CSV
 
-CSV file should contain header row and multiple columns. Each row should be 1 feature. Each column should contain only 1 data type, based on which kepler.gl will use to create layers and filters.
+CSV file should contain header row and multiple columns. Each row should be 1 feature. Each column should contain only 1 data type, based on which indranildeveloper-kepler.gl will use to create layers and filters.
 
 | id | point_latitude | point_longitude | value | start_time
 |---|---|---|---|---
@@ -41,7 +41,7 @@ CSV file should contain header row and multiple columns. Each row should be 1 fe
 
 #### 1. Data type detection
 
-Because CSV file content is uploaded as strings, kepler.gl will attempt to detect column data type by parsing a sample of data in each column. kepler.gl can detect
+Because CSV file content is uploaded as strings, indranildeveloper-kepler.gl will attempt to detect column data type by parsing a sample of data in each column. indranildeveloper-kepler.gl can detect
 
 | type | data
 |---|---
@@ -53,11 +53,11 @@ Because CSV file content is uploaded as strings, kepler.gl will attempt to detec
 |**_`string`_** | `hello`, `world` |
 |**_`timestamp`_** | `2018-09-01 00:00`, `1570306147`, `1570306147000`|
 
-**Note:** Make sure to clean up values such as `N/A`, `Null`, `\N`. If your column contains mixed type, kepler.gl will treat it as **_`string`_** to be safe.
+**Note:** Make sure to clean up values such as `N/A`, `Null`, `\N`. If your column contains mixed type, indranildeveloper-kepler.gl will treat it as **_`string`_** to be safe.
 
 #### 2. Layer detection based on column names
 
-kepler.gl will auto detect layer, if the column names follows certain naming convention. kepler.gl creates a point layer if  your CSV has columns that are named `<name>_lat` and `<name>_lng` or `<name>_latitude` and `<name>_longitude`, or `<name>_lat` and `<name>_lon`.
+indranildeveloper-kepler.gl will auto detect layer, if the column names follows certain naming convention. indranildeveloper-kepler.gl creates a point layer if  your CSV has columns that are named `<name>_lat` and `<name>_lng` or `<name>_latitude` and `<name>_longitude`, or `<name>_lat` and `<name>_lon`.
 
 | layer | auto create layer from column names
 |---|---
@@ -92,7 +92,7 @@ id,geometry
 
 #### 1. Feature types
 
-- kepler.gl accepts GeoJSON formatted JSON that contains a single [Feature](https://tools.ietf.org/html/rfc7946#section-3.2) object or a [FeatureCollection](https://tools.ietf.org/html/rfc7946#section-3.3) object. kepler.gl creates one **`Polygon`** layer per GeoJSON file.
+- indranildeveloper-kepler.gl accepts GeoJSON formatted JSON that contains a single [Feature](https://tools.ietf.org/html/rfc7946#section-3.2) object or a [FeatureCollection](https://tools.ietf.org/html/rfc7946#section-3.3) object. indranildeveloper-kepler.gl creates one **`Polygon`** layer per GeoJSON file.
 
   - A single GeoJSON Feature:
 
@@ -147,7 +147,7 @@ id,geometry
   }
   ```
 
-  kepler.gl will render all features in one `Polygon` layer even though they have different geometry types. Acceptable geometry types are
+  indranildeveloper-kepler.gl will render all features in one `Polygon` layer even though they have different geometry types. Acceptable geometry types are
 
   - [Point](https://tools.ietf.org/html/rfc7946#section-3.1.2)
   - [MultiPoint](https://tools.ietf.org/html/rfc7946#section-3.1.3)
@@ -159,7 +159,7 @@ id,geometry
   Feature properties will be parsed as columns. You can apply color, filters based on them.
 
 #### 2. Auto styling
-kepler.gl will read styles from GeoJSON files. If you are a GeoJSON expert, you can add style declarations to feature properties. kepler.gl will use the declarations to automatically style your feature. The acceptable style properties are:
+indranildeveloper-kepler.gl will read styles from GeoJSON files. If you are a GeoJSON expert, you can add style declarations to feature properties. indranildeveloper-kepler.gl will use the declarations to automatically style your feature. The acceptable style properties are:
   ```json
   "properties": {
     "lineColor": [130, 154, 227],
@@ -193,31 +193,31 @@ kepler.gl will read styles from GeoJSON files. If you are a GeoJSON expert, you 
 
 ### GeoArrow
 
-[GeoArrow](https://geoarrow.org/) file, a binary data format which can be visualized with the [PolygonLayer](https://docs.kepler.gl/docs/user-guides/c-types-of-layers/e-polygon).
+[GeoArrow](https://geoarrow.org/) file, a binary data format which can be visualized with the [PolygonLayer](https://docs.indranildeveloper-kepler.gl/docs/user-guides/c-types-of-layers/e-polygon).
 
-### kepler.gl JSON
+### indranildeveloper-kepler.gl JSON
 
-JSON file exported from kepler.gl. See "[Export Map as JSON](https://docs.kepler.gl/docs/user-guides/k-save-and-export#export-map-as-json)".
+JSON file exported from indranildeveloper-kepler.gl. See "[Export Map as JSON](https://docs.indranildeveloper-kepler.gl/docs/user-guides/k-save-and-export#export-map-as-json)".
 
 ### Load Map Using URL
 
-You load data or map through custom URL. It currently supports URLs with file extension of `csv`, `json` and `kepler.gl.json`
+You load data or map through custom URL. It currently supports URLs with file extension of `csv`, `json` and `indranildeveloper-kepler.gl.json`
 
 In addition, this also by-passes 250mb file upload size limit which allows you to upload larger file to Kepler.
 
-![Load Map Using URL](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/a-load-map-using-url.gif "Load Map Using URL")
+![Load Map Using URL](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/a-load-map-using-url.gif "Load Map Using URL")
 
-### Use Kepler.gl’s Sample Maps
+### Use indranildeveloper-kepler.gl’s Sample Maps
 
-The sample maps are a great option for new users to explore Kepler.gl and get a feel for how it works.
+The sample maps are a great option for new users to explore indranildeveloper-kepler.gl and get a feel for how it works.
 
 1. At the initial load prompt select “Try sample data” in the top right corner.
 
-![Try sample data pop up](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image2.png "Try sample data pop up")
+![Try sample data pop up](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image2.png "Try sample data pop up")
 
 2. Choose from the options to load the sample map and explore the configurations applied.
 
-![Choose sample data pop up](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image5.png "Choose sample data pop up")
+![Choose sample data pop up](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image5.png "Choose sample data pop up")
 
 ### Add multiple datasets
 
@@ -225,13 +225,13 @@ To add additional datasets to your map:
 
 1. Click __Add More Data__ in the top right corner.
 
-![Add more data](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/image22.png "Add more data")
+![Add more data](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image22.png "Add more data")
 
-2. Choose one of the options above: upload a JSON/CSV file, or use Kepler.gl’s sample data.
+2. Choose one of the options above: upload a JSON/CSV file, or use indranildeveloper-kepler.gl’s sample data.
 
 3. Repeat as needed. There is no limit on the number of datasets you can add. However, adding too many might cause its performance to suffer.
 
 [Back to table of contents](../README.md)
 
 
-[kepler.gl-data-github]: https://github.com/keplergl/kepler.gl-data
+[indranildeveloper-kepler.gl-data-github]: https://github.com/keplergl/indranildeveloper-kepler.gl-data

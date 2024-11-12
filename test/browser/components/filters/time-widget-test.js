@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 import React from 'react';
@@ -8,8 +8,8 @@ import sinon from 'sinon';
 import moment from 'moment';
 
 import {IntlWrapper, mountWithTheme, mockHTMLElementClientSize} from 'test/helpers/component-utils';
-import {setFilterAnimationTimeConfig} from '@kepler.gl/actions';
-import {visStateReducer as reducer, DEFAULT_ANIMATION_CONFIG} from '@kepler.gl/reducers';
+import {setFilterAnimationTimeConfig} from '@indranildeveloper-kepler.gl/actions';
+import {visStateReducer as reducer, DEFAULT_ANIMATION_CONFIG} from '@indranildeveloper-kepler.gl/reducers';
 
 import {
   TimeWidgetFactory,
@@ -26,7 +26,7 @@ import {
   SliderHandle,
   Typeahead,
   appInjector
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 const TimeWidget = appInjector.get(TimeWidgetFactory);
 const TimeRangeSlider = appInjector.get(TimeRangeSliderFactory);

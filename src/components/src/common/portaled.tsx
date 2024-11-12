@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component, createRef, ElementType, PropsWithChildren} from 'react';
 import debounce from 'lodash.debounce';
@@ -10,7 +10,7 @@ import {withTheme} from 'styled-components';
 import {RootContext} from '../context';
 import Modal from 'react-modal';
 import window from 'global/window';
-import {theme} from '@kepler.gl/styles';
+import {theme} from '@indranildeveloper-kepler.gl/styles';
 
 const listeners = {};
 

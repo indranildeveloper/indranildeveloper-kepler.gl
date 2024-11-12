@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 import test from 'tape';
@@ -9,9 +9,9 @@ import {
   tripDefaultLineWidth as defaultLineWidth,
   parseTripGeoJsonTimestamp,
   KeplerGlLayers
-} from '@kepler.gl/layers';
+} from '@indranildeveloper-kepler.gl/layers';
 
-import {copyTableAndUpdate} from '@kepler.gl/table';
+import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
 const {TripLayer} = KeplerGlLayers;
 
 import {

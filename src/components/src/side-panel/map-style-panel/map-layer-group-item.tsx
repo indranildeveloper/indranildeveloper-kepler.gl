@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback} from 'react';
 import styled from 'styled-components';
 
-import {FormattedMessage} from '@kepler.gl/localization';
-import {camelize} from '@kepler.gl/utils';
-import {RGBColor} from '@kepler.gl/types';
-import {MapConfigChangeUpdaterAction} from '@kepler.gl/actions';
-import {MapStyle} from '@kepler.gl/reducers';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {camelize} from '@indranildeveloper-kepler.gl/utils';
+import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {MapConfigChangeUpdaterAction} from '@indranildeveloper-kepler.gl/actions';
+import {MapStyle} from '@indranildeveloper-kepler.gl/reducers';
 
 import LayerGroupColorPickerFactory from './map-layer-group-color-picker';
 import {PanelHeaderActionProps, PanelHeaderActionIcon} from '../panel-header-action';

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 
-import SchemaManager from '@kepler.gl/schemas';
+import SchemaManager from '@indranildeveloper-kepler.gl/schemas';
 import {cmpParsedAppConfigs} from 'test/helpers/comparison-utils';
 import {logStep} from '../../../scripts/log';
 

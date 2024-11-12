@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo, useState, useCallback} from 'react';
 import styled from 'styled-components';
@@ -11,9 +11,9 @@ import {
   removeEffect,
   reorderEffect,
   ActionHandler
-} from '@kepler.gl/actions';
-import {LIGHT_AND_SHADOW_EFFECT, EFFECT_DESCRIPTIONS} from '@kepler.gl/constants';
-import {Effect} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/actions';
+import {LIGHT_AND_SHADOW_EFFECT, EFFECT_DESCRIPTIONS} from '@indranildeveloper-kepler.gl/constants';
+import {Effect} from '@indranildeveloper-kepler.gl/types';
 
 import {withState} from '../injector';
 import SidePanelTitleFactory from './side-panel-title';

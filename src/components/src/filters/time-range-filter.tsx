@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import TimeRangeSliderFactory from '../common/time-range-slider';
-import {DEFAULT_TIME_FORMAT, FILTER_VIEW_TYPES} from '@kepler.gl/constants';
-import {TimeRangeFilter} from '@kepler.gl/types';
-import {Datasets} from '@kepler.gl/table';
-import {Layer} from '@kepler.gl/layers';
+import {DEFAULT_TIME_FORMAT, FILTER_VIEW_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {TimeRangeFilter} from '@indranildeveloper-kepler.gl/types';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
 import {TimeRangeFilterProps} from './types';
 /*
  * TimeRangeFilter -> TimeRangeSlider -> RangeSlider

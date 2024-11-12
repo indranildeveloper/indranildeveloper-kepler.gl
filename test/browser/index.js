@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const configure = require('enzyme').configure;
 const Adapter = require('@cfaester/enzyme-adapter-react-18').default;

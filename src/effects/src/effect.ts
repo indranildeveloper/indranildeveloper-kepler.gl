@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {generateHashId, validateEffectParameters} from '@kepler.gl/utils';
+import {generateHashId, validateEffectParameters} from '@indranildeveloper-kepler.gl/utils';
 import {
   Effect as EffectInterface,
   EffectProps,
   EffectPropsPartial,
   EffectParameterDescription
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 import {
   DEFAULT_POST_PROCESSING_EFFECT_TYPE,
   POSTPROCESSING_EFFECTS,
   LIGHT_AND_SHADOW_EFFECT
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 export class Effect implements EffectInterface {
   id: string;

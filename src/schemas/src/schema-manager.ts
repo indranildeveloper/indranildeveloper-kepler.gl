@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {console as Console} from 'global/window';
 
-import {Datasets} from '@kepler.gl/table';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 import datasetSchema from './dataset-schema';
 import mapStyleSchema from './map-style-schema';
 import mapStateSchema from './map-state-schema';
@@ -11,9 +11,9 @@ import {SavedDatasetV1, ParsedDataset} from './dataset-schema';
 import {visStateSchema} from './vis-state-schema';
 
 import {CURRENT_VERSION, VERSIONS} from './versions';
-import {isPlainObject} from '@kepler.gl/utils';
+import {isPlainObject} from '@indranildeveloper-kepler.gl/utils';
 
-import {MapInfo, SavedVisState, SavedMapStyle, ParsedConfig, BaseMapStyle} from '@kepler.gl/types';
+import {MapInfo, SavedVisState, SavedMapStyle, ParsedConfig, BaseMapStyle} from '@indranildeveloper-kepler.gl/types';
 
 export type SavedMapState = {
   bearing: number;
@@ -119,7 +119,7 @@ export class KeplerGLSchema {
    *     config: {}
    *   },
    *   info: {
-   *     app: 'kepler.gl',
+   *     app: 'indranildeveloper-kepler.gl',
    *     create_at: 'Mon May 28 2018 21:04:46 GMT-0700 (PDT)'
    *   }
    * }
@@ -133,7 +133,7 @@ export class KeplerGLSchema {
       datasets: this.getDatasetToSave(state),
       config: this.getConfigToSave(state),
       info: {
-        app: 'kepler.gl',
+        app: 'indranildeveloper-kepler.gl',
         created_at: new Date().toString(),
         ...this.getMapInfo(state)
       }

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import DatasetLabel from '../common/dataset-label';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {Layer} from '@kepler.gl/layers';
-import {KeplerTable} from '@kepler.gl/table';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
 
 const StyledMsg = styled.div`
   margin-top: 24px;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
@@ -12,7 +12,7 @@ import {
   SidePanelTitleFactory,
   EffectTypeSelectorFactory,
   appInjector
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
 import {StateWEffects} from 'test/helpers/mock-state';

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {combineReducers} from 'redux';
 import {handleActions} from 'redux-actions';
 
-import keplerGlReducer from '@kepler.gl/reducers';
+import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
 
 import {INIT} from '../actions';
 

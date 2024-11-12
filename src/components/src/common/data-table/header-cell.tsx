@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {CSSProperties, useState, useCallback} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 import Button from './button';
 import {ArrowUp, ArrowDown, VertThreeDots, Hash} from '../../common/icons';
-import {SORT_ORDER} from '@kepler.gl/constants';
+import {SORT_ORDER} from '@indranildeveloper-kepler.gl/constants';
 import OptionDropdown, {FormatterDropdown} from './option-dropdown';
-import {getFieldFormatLabels} from '@kepler.gl/utils';
-import {ColMeta} from '@kepler.gl/types';
+import {getFieldFormatLabels} from '@indranildeveloper-kepler.gl/utils';
+import {ColMeta} from '@indranildeveloper-kepler.gl/types';
 import FieldTokenFactory, {FieldTokenProps} from '../../common/field-token';
 import {DataTableProps} from './index';
 

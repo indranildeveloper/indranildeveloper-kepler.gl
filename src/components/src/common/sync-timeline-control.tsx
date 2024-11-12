@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {Tooltip} from '../common/styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
-import {SYNC_TIMELINE_MODES} from '@kepler.gl/constants';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {SYNC_TIMELINE_MODES} from '@indranildeveloper-kepler.gl/constants';
 import IconButton from './icon-button';
 
 export type SyncTimelineAnimationItem = {

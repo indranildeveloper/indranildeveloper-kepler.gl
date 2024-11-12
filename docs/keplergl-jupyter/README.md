@@ -1,10 +1,10 @@
 # Jupyter Notebook
 
-## kepler.gl for Jupyter User Guide
+## indranildeveloper-kepler.gl for Jupyter User Guide
 
 ### Table of contents
 - [Install](#install)
-- [1. Load kepler.gl Map](#1-load-keplergl-map)
+- [1. Load indranildeveloper-kepler.gl Map](#1-load-keplergl-map)
   - [`KeplerGl()`](#keplergl)
 - [2. Add Data](#2-add-data)
   - [`.add_data()`](#add_data)
@@ -85,9 +85,9 @@ $ jupyter labextension install @jupyter-widgets/jupyterlab-manager keplergl-jupy
 
   - __`show_docs`__ `bool` _optional_
 
-      By default, the User Guide URL (<https://docs.kepler.gl/docs/keplergl-jupyter>) will be printed when a map is created. To hide the User Guide URL, set `show_docs=False`.
+      By default, the User Guide URL (<https://docs.indranildeveloper-kepler.gl/docs/keplergl-jupyter>) will be printed when a map is created. To hide the User Guide URL, set `show_docs=False`.
 
-The following command will load kepler.gl widget below a cell.
+The following command will load indranildeveloper-kepler.gl widget below a cell.
 **The map object created here is `map_1` it will be used throughout the code example in this doc.**
 
 
@@ -121,7 +121,7 @@ map_2
 
 `name` of the dataset will be the saved to the `dataId` property of each `layer`, `filter` and `interactionConfig` in the config.
 
-kepler.gl expected the data to be **CSV**,  **GeoJSON**, **DataFrame** or **GeoDataFrame**. You can call __`add_data`__ multiple times to add multiple datasets to kepler.gl
+indranildeveloper-kepler.gl expected the data to be **CSV**,  **GeoJSON**, **DataFrame** or **GeoDataFrame**. You can call __`add_data`__ multiple times to add multiple datasets to indranildeveloper-kepler.gl
 
 ```python
 # DataFrame
@@ -153,7 +153,7 @@ map_1.data
 ```
 
 ## 3. Data Format
-kepler.gl supports **CSV**,  **GeoJSON**, Pandas **DataFrame** or GeoPandas **GeoDataFrame**.
+indranildeveloper-kepler.gl supports **CSV**,  **GeoJSON**, Pandas **DataFrame** or GeoPandas **GeoDataFrame**.
 
 ### `CSV`
 You can create a `CSV` string by reading from a CSV file.
@@ -167,7 +167,7 @@ map_1.add_data(data=csvData, name='data_2')
 ### `GeoJSON`
 According to [GeoJSON Specification (RFC 7946)][geojson]: GeoJSON is a format for encoding a variety of geographic data structures. A GeoJSON object may represent a region of space (a `Geometry`), a spatially bounded entity (a Feature), or a list of Features (a `FeatureCollection`). GeoJSON supports the following geometry types: `Point`, `LineString`, `Polygon`, `MultiPoint`, `MultiLineString`, `MultiPolygon`, and `GeometryCollection`. Features in GeoJSON contain a Geometry object and additional properties, and a FeatureCollection contains a list of Features.
 
-kepler.gl supports all the GeoJSON types above excepts `GeometryCollection`. You can pass in either a single [`Feature`][features] or a [`FeatureCollection`][feature_collection]. You can format the  `GeoJSON` either as a `string` or a `dict` type
+indranildeveloper-kepler.gl supports all the GeoJSON types above excepts `GeometryCollection`. You can pass in either a single [`Feature`][features] or a [`FeatureCollection`][feature_collection]. You can format the  `GeoJSON` either as a `string` or a `dict` type
 
 
 ```python
@@ -213,7 +213,7 @@ map_1.add_data(df_with_geometry, "df_with_geometry")
 ```
 
 ### `DataFrame`
-kepler.gl accepts [pandas.DataFrame][data_frame]
+indranildeveloper-kepler.gl accepts [pandas.DataFrame][data_frame]
 ```python
 df = pd.DataFrame(
     {'City': ['Buenos Aires', 'Brasilia', 'Santiago', 'Bogota', 'Caracas'],
@@ -224,7 +224,7 @@ w1.add_data(data=df, name='cities')
 ```
 
 ### `GeoDataFrame`
-kepler.gl accepts [geopandas.GeoDataFrame][geo_data_frame], it automatically converts the current `geometry` column from shapely to wkt string and re-projects geometries to latitude and longitude (EPSG:4326) if the active `geometry` column is in a different projection.
+indranildeveloper-kepler.gl accepts [geopandas.GeoDataFrame][geo_data_frame], it automatically converts the current `geometry` column from shapely to wkt string and re-projects geometries to latitude and longitude (EPSG:4326) if the active `geometry` column is in a different projection.
 ```python
 url = 'http://eric.clst.org/assets/wiki/uploads/Stuff/gz_2010_us_040_00_500k.json'
 country_gdf = geopandas.read_file(url)
@@ -251,7 +251,7 @@ map_1.add_data(df_w_wkt, "df_w_wkt")
 
 ## 4. Customize the map
 
-Interact with kepler.gl and customize layers and filters. Map data and config will be stored locally to the widget state. To make sure the map state is saved, select `Widgets > Save Notebook Widget State`, before shutting down the kernel.
+Interact with indranildeveloper-kepler.gl and customize layers and filters. Map data and config will be stored locally to the widget state. To make sure the map state is saved, select `Widgets > Save Notebook Widget State`, before shutting down the kernel.
 
 ![Map interaction][map_interaction]
 
@@ -364,16 +364,16 @@ if __name__ == '__main__':
 ```
 
 # Demo Notebooks
-- [Load kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/Load%20kepler.gl.ipynb): Load kepler.gl widget, add data and config
-- [Geometry as String](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/Geometry%20as%20String.ipynb): Embed Polygon geometries as `GeoJson` and `WKT` inside a `CSV`
-- [GeoJSON](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/GeoJSON.ipynb): Load GeoJSON to kepler.gl
-- [DataFrame](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/DataFrame.ipynb): Load DataFrame to kepler.gl
-- [GeoDataFrame](https://github.com/keplergl/kepler.gl/blob/master/bindings/kepler.gl-jupyter/notebooks/GeoDataFrame.ipynb): Load GeoDataFrame to kepler.gl
+- [Load indranildeveloper-kepler.gl](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/Load%20indranildeveloper-kepler.gl.ipynb): Load indranildeveloper-kepler.gl widget, add data and config
+- [Geometry as String](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/Geometry%20as%20String.ipynb): Embed Polygon geometries as `GeoJson` and `WKT` inside a `CSV`
+- [GeoJSON](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/GeoJSON.ipynb): Load GeoJSON to indranildeveloper-kepler.gl
+- [DataFrame](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/DataFrame.ipynb): Load DataFrame to indranildeveloper-kepler.gl
+- [GeoDataFrame](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/bindings/indranildeveloper-kepler.gl-jupyter/notebooks/GeoDataFrame.ipynb): Load GeoDataFrame to indranildeveloper-kepler.gl
 
 # FAQ & Troubleshoot
 
 #### 1. What about Microsoft Windows?
-keplergl is currently only published to PyPI, and unfortunately I use a Mac. If you encounter errors installing it on windows, [this issue](https://github.com/keplergl/kepler.gl/issues/557) might shed some light. Follow this issue for [conda](https://github.com/keplergl/kepler.gl/issues/646) support.
+keplergl is currently only published to PyPI, and unfortunately I use a Mac. If you encounter errors installing it on windows, [this issue](https://github.com/keplergl/indranildeveloper-kepler.gl/issues/557) might shed some light. Follow this issue for [conda](https://github.com/keplergl/indranildeveloper-kepler.gl/issues/646) support.
 
 #### 2. Install keplergl-jupyter on Jupyter Lab failed?
 
@@ -429,14 +429,14 @@ node==8.15.0
 yarn==1.7.0
 ```
 
-[jupyter_widget]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_widget.png
-[empty_map]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_empty_map.png
-[geodataframe_map]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_geodataframe.png
-[map_interaction]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_custom_map.gif
-[load_map_w_data]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_widget.png
-[map_add_data]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_add_data.png
-[connect_data_config]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_connect_data_w_config.png
-[save_widget_state]: https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/jupyter_save_state.png
+[jupyter_widget]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_widget.png
+[empty_map]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_empty_map.png
+[geodataframe_map]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_geodataframe.png
+[map_interaction]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_custom_map.gif
+[load_map_w_data]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_widget.png
+[map_add_data]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_add_data.png
+[connect_data_config]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_connect_data_w_config.png
+[save_widget_state]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/jupyter_save_state.png
 
 [wkt]: https://dev.mysql.com/doc/refman/5.7/en/gis-data-formats.html#gis-wkt-format
 [geojson]: https://tools.ietf.org/html/rfc7946

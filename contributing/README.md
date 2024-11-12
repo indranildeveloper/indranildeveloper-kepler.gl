@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-Great to have you here. Here are a few ways you can help make kepler.gl even better!
+Great to have you here. Here are a few ways you can help make indranildeveloper-kepler.gl even better!
 
 * [Developer Certification of Origin \(DCO\)](./#developer-certification-of-origin-dco)
 * [Code of Conduct](./#code-of-conduct)
@@ -12,7 +12,7 @@ Great to have you here. Here are a few ways you can help make kepler.gl even bet
 
 ## Developer Certification of Origin (DCO)
 
-When committing code, kepler.gl requires [Developer Certificate of Origin (DCO)][dco] process to be followed.
+When committing code, indranildeveloper-kepler.gl requires [Developer Certificate of Origin (DCO)][dco] process to be followed.
 
 The DCO is a lightweight way for contributors to certify that they wrote or otherwise have the right to submit the code they are contributing to the project. Here is the full text of the DCO, reformatted for readability:
 
@@ -42,7 +42,7 @@ $ git commit -s -m 'This is my commit message'
 ```
 
 ## Code of Conduct
-Help us keep kepler.gl open and inclusive. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+Help us keep indranildeveloper-kepler.gl open and inclusive. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Questions and Problems
 We are trying to keep our Github page for issues, bugs and feature requests only. You've got much better chances of getting supports on [Stack Overflow][stack]. Many people including our engineers are ready to answer questions on Stack Overflow. Your question might already been answered there.
@@ -68,7 +68,7 @@ If you would like to implement a new feature then consider what kind of change i
 
 ## Improving Documentation
 
-Questions about kepler.gl? you can checkout the examples and medium articles on [kepler.gl][website].
+Questions about indranildeveloper-kepler.gl? you can checkout the examples and medium articles on [indranildeveloper-kepler.gl][website].
 
 [User Guides][user-guide] and API Docs are saved in the [docs][api-docs] folder on Github. Help us improve documentation here by submitting a Pull Request.
 
@@ -90,17 +90,17 @@ $ git checkout -b my-fix-branch master
 * Commit your changes using a descriptive commit message that follows our
   [commit message conventions][developers.commits]. Adherence to the conventions is required, because release notes are automatically generated from these messages.
 
-[cla]: https://cla-assistant.io/keplergl/kepler.gl
-[github]: https://github.com/keplergl/kepler.gl
-[git-iss]: https://github.com/keplergl/kepler.gl/issues
-[git-pr]: https://github.com/keplergl/kepler.gl/pulls
-[git-feature]: https://github.com/keplergl/kepler.gl/issues/new?template=feature_request.md
-[git-bug]: https://github.com/keplergl/kepler.gl/issues/new?template=bug_report.md
-[stack]: https://stackoverflow.com/questions/tagged/kepler.gl
-[api-docs]: https://github.com/keplergl/kepler.gl/tree/master/docs
-[website]: https://keplergl.github.io/kepler.gl
-[user-guide]: https://github.com/keplergl/kepler.gl/blob/master/docs/a-introduction.md
-[roadmap]: https://github.com/keplergl/kepler.gl/wiki/Roadmap
+[cla]: https://cla-assistant.io/keplergl/indranildeveloper-kepler.gl
+[github]: https://github.com/keplergl/indranildeveloper-kepler.gl
+[git-iss]: https://github.com/keplergl/indranildeveloper-kepler.gl/issues
+[git-pr]: https://github.com/keplergl/indranildeveloper-kepler.gl/pulls
+[git-feature]: https://github.com/keplergl/indranildeveloper-kepler.gl/issues/new?template=feature_request.md
+[git-bug]: https://github.com/keplergl/indranildeveloper-kepler.gl/issues/new?template=bug_report.md
+[stack]: https://stackoverflow.com/questions/tagged/indranildeveloper-kepler.gl
+[api-docs]: https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/docs
+[website]: https://keplergl.github.io/indranildeveloper-kepler.gl
+[user-guide]: https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/docs/a-introduction.md
+[roadmap]: https://github.com/keplergl/indranildeveloper-kepler.gl/wiki/Roadmap
 [developers]: DEVELOPERS.md
 [developers.commits]: ./#commits
 [developers.documentation]: ./#documentation

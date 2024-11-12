@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export const rawData = `tooltip,num_array,str_array,bool_array
 "{""b"": 1}","[1,2]","[""a"", ""b"", ""c""]","[true]"

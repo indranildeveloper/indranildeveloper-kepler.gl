@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import test from 'tape';
 
-import {appInjector, EffectConfiguratorFactory} from '@kepler.gl/components';
-import {VisStateActions} from '@kepler.gl/actions';
-import {visStateReducer} from '@kepler.gl/reducers';
+import {appInjector, EffectConfiguratorFactory} from '@indranildeveloper-kepler.gl/components';
+import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {visStateReducer} from '@indranildeveloper-kepler.gl/reducers';
 
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
 import {StateWEffects, InitialState} from 'test/helpers/mock-state';

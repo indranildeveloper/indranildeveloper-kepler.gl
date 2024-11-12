@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import {useIntl} from 'react-intl';
 
-import {InteractionConfig} from '@kepler.gl/types';
-import {VisStateActions} from '@kepler.gl/actions';
-import {Datasets} from '@kepler.gl/table';
+import {InteractionConfig} from '@indranildeveloper-kepler.gl/types';
+import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
 
 import InteractionPanelFactory from './interaction-panel/interaction-panel';
 import PanelTitleFactory from './panel-title';

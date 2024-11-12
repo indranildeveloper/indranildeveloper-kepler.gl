@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
@@ -7,8 +7,8 @@ import sinon from 'sinon';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 
-import {LIGHT_AND_SHADOW_EFFECT_TIME_MODES} from '@kepler.gl/constants';
-import {appInjector, EffectTimeConfiguratorFactory} from '@kepler.gl/components';
+import {LIGHT_AND_SHADOW_EFFECT_TIME_MODES} from '@indranildeveloper-kepler.gl/constants';
+import {appInjector, EffectTimeConfiguratorFactory} from '@indranildeveloper-kepler.gl/components';
 
 import {mountWithTheme, IntlWrapper} from 'test/helpers/component-utils';
 

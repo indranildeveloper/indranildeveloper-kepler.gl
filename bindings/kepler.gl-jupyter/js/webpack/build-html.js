@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -24,7 +24,7 @@ const VERSIONS = {
   reactIntl: '4.7.6',
   reactCopyToClipboard: clearCarats(dependencies['react-copy-to-clipboard']),
   styledComponents: clearCarats(dependencies['styled-components']),
-  keplergl: clearCarats(dependencies['@kepler.gl/components'])
+  keplergl: clearCarats(dependencies['@indranildeveloper-kepler.gl/components'])
 };
 
 const externals = [
@@ -35,12 +35,12 @@ const externals = [
   {'react-intl': 'ReactIntl'},
   {'react-copy-to-clipboard': 'CopyToClipboard'},
   {'styled-components': 'styled'},
-  {'kepler.gl/reducers': 'KeplerGl'},
-  {'kepler.gl/components': 'KeplerGl'},
-  {'kepler.gl/actions': 'KeplerGl'},
-  {'kepler.gl/processors': 'KeplerGl'},
-  {'kepler.gl/schemas': 'KeplerGl'},
-  {'kepler.gl/middleware': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/reducers': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/components': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/actions': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/processors': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/schemas': 'KeplerGl'},
+  {'indranildeveloper-kepler.gl/middleware': 'KeplerGl'},
   {'react-helmet': 'Helmet'}
 ].reduce((accu, ext) => ({
   ...accu,
@@ -74,7 +74,7 @@ module.exports = (rules, plugins) => ({
       filename: 'keplergl.html',
       inject: true,
       links: [
-        'https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css',
+        'https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/uber-fonts/4.0.0/superfine.css',
         'https://unpkg.com/maplibre-gl@^3/dist/maplibre-gl.css'
       ],
       scripts: [
@@ -88,10 +88,10 @@ module.exports = (rules, plugins) => ({
 
         `https://unpkg.com/styled-components@${VERSIONS.styledComponents}/dist/styled-components.min.js`,
 
-        // load kepler.gl last
-        `https://unpkg.com/kepler.gl@${VERSIONS.keplergl}/umd/keplergl.min.js`
+        // load indranildeveloper-kepler.gl last
+        `https://unpkg.com/indranildeveloper-kepler.gl@${VERSIONS.keplergl}/umd/keplergl.min.js`
       ],
-      title: 'Kepler.gl'
+      title: 'indranildeveloper-kepler.gl'
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/main/])
   ],

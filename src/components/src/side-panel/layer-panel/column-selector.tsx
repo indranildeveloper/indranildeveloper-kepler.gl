@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useMemo, ReactNode} from 'react';
 import styled from 'styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 import {PanelLabel} from '../../common/styled-components';
 import FieldSelectorFactory from '../../common/field-selector';
-import {validateColumn} from '@kepler.gl/reducers';
-import {LayerColumn, LayerColumns, EnhancedFieldPair} from '@kepler.gl/types';
+import {validateColumn} from '@indranildeveloper-kepler.gl/reducers';
+import {LayerColumn, LayerColumns, EnhancedFieldPair} from '@indranildeveloper-kepler.gl/types';
 import {MinimalField} from '../../common/field-selector';
 
 export type ColumnSelectorProps<FieldOption extends MinimalField> = {

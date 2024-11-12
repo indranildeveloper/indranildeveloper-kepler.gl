@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {ArrowDataContainer} from './arrow-data-container';
 import {RowDataContainer} from './row-data-container';
 import {IndexedDataContainer} from './indexed-data-container';
 
 import {DataContainerInterface} from './data-container-interface';
-import {Field} from '@kepler.gl/types';
+import {Field} from '@indranildeveloper-kepler.gl/types';
 
 export type DataContainerOptions = {
   inputDataFormat?: string; // one of DataForm

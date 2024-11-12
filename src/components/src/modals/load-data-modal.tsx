@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useState} from 'react';
 import styled from 'styled-components';
@@ -11,8 +11,8 @@ import LoadStorageMapFactory from './load-storage-map';
 import ModalTabsFactory from './modal-tabs';
 import LoadingDialog from './loading-dialog';
 
-import {LOADING_METHODS} from '@kepler.gl/constants';
-import {FileLoading, FileLoadingProgress, LoadFiles} from '@kepler.gl/types';
+import {LOADING_METHODS} from '@indranildeveloper-kepler.gl/constants';
+import {FileLoading, FileLoadingProgress, LoadFiles} from '@indranildeveloper-kepler.gl/types';
 
 /** @typedef {import('./load-data-modal').LoadDataModalProps} LoadDataModalProps */
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 const resolve = require('path').resolve;
 
@@ -35,9 +35,9 @@ const GATSBY_CONFIG = {
 
         PROJECT_TYPE: 'github',
 
-        PROJECT_NAME: 'kepler.gl',
+        PROJECT_NAME: 'indranildeveloper-kepler.gl',
         PROJECT_ORG: 'keplergl',
-        PROJECT_URL: 'https://github.com/kepler/kepler.gl',
+        PROJECT_URL: 'https://github.com/kepler/indranildeveloper-kepler.gl',
         PROJECT_DESC: 'Open source exploratory geospatial data analysis',
         PATH_PREFIX: '/',
 
@@ -58,7 +58,7 @@ const GATSBY_CONFIG = {
         HOME_BULLETS: [
           {
             text: 'Performance',
-            desc: 'Built with deck.gl, kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
+            desc: 'Built with deck.gl, indranildeveloper-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
             img: 'images/icon-high-precision.svg'
             // TODO image: cdnUrl('features/performance.svg')
           },
@@ -72,7 +72,7 @@ const GATSBY_CONFIG = {
           {
             text: 'Embeddable',
             desc:
-              'Built on React & Redux, Kepler.gl can be embedded inside your own mapping applications.',
+              'Built on React & Redux, indranildeveloper-kepler.gl can be embedded inside your own mapping applications.',
             // TODO image: cdnUrl('features/embeddable.svg')
             img: 'images/icon-high-precision.svg'
           }

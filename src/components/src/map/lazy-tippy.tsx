@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 // @ts-nocheck
 import React, {useState, forwardRef} from 'react';
 import Tippy from '@tippyjs/react/headless';
-import {isTest} from '@kepler.gl/utils';
+import {isTest} from '@indranildeveloper-kepler.gl/utils';
 
 const isTestEnv = isTest();
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {ColorRange} from '@kepler.gl/constants';
-import {HexColor, RGBColor} from '@kepler.gl/types';
+import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {HexColor, RGBColor} from '@indranildeveloper-kepler.gl/types';
 import {rgb as d3Rgb} from 'd3-color';
 import {interpolate} from 'd3-interpolate';
 import {arrayInsert, arrayMove} from './utils';

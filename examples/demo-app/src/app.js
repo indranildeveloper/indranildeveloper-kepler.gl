@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {Component} from 'react';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
@@ -8,7 +8,7 @@ import window from 'global/window';
 import {connect} from 'react-redux';
 import cloneDeep from 'lodash.clonedeep';
 
-import {theme} from '@kepler.gl/styles';
+import {theme} from '@indranildeveloper-kepler.gl/styles';
 import Banner from './components/banner';
 import Announcement, {FormLink} from './components/announcement';
 import {replaceLoadDataModal} from './factories/load-data-modal';
@@ -24,10 +24,10 @@ import {
   onLoadCloudMapSuccess
 } from './actions';
 
-import {loadCloudMap, addDataToMap, addNotification, replaceDataInMap} from '@kepler.gl/actions';
+import {loadCloudMap, addDataToMap, addNotification, replaceDataInMap} from '@indranildeveloper-kepler.gl/actions';
 import {CLOUD_PROVIDERS} from './cloud-providers';
 
-const KeplerGl = require('@kepler.gl/components').injectComponents([
+const KeplerGl = require('@indranildeveloper-kepler.gl/components').injectComponents([
   replaceLoadDataModal(),
   replaceMapControl(),
   replacePanelHeader()
@@ -45,7 +45,7 @@ import sampleAnimateTrip, {animateTripDataId} from './data/sample-animate-trip-d
 import sampleIconCsv, {config as savedMapConfig} from './data/sample-icon-csv';
 import sampleGpsData from './data/sample-gps-data';
 import sampleRowData, {config as rowDataConfig} from './data/sample-row-data';
-import {processCsvData, processGeojson, processRowObject} from '@kepler.gl/processors';
+import {processCsvData, processGeojson, processRowObject} from '@indranildeveloper-kepler.gl/processors';
 /* eslint-enable no-unused-vars */
 
 const BannerHeight = 48;
@@ -151,7 +151,7 @@ class App extends Component {
 
   _loadMockNotifications = () => {
     const notifications = [
-      [{message: 'Welcome to Kepler.gl'}, 3000],
+      [{message: 'Welcome to indranildeveloper-kepler.gl'}, 3000],
       [{message: 'Something is wrong', type: 'error'}, 1000],
       [{message: 'I am getting better', type: 'warning'}, 1000],
       [{message: 'Everything is fine', type: 'success'}, 1000]
@@ -429,7 +429,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle
-          // this is to apply the same modal style as kepler.gl core
+          // this is to apply the same modal style as indranildeveloper-kepler.gl core
           // because styled-components doesn't always return a node
           // https://github.com/styled-components/styled-components/issues/617
           ref={node => {

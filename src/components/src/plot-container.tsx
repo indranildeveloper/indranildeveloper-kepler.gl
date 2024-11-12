@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 // libraries
 import React, {Component, createRef} from 'react';
@@ -13,21 +13,21 @@ import {
   getCenterAndZoomFromBounds,
   convertToPng,
   getScaleFromImageSize
-} from '@kepler.gl/utils';
-import {findMapBounds} from '@kepler.gl/reducers';
+} from '@indranildeveloper-kepler.gl/utils';
+import {findMapBounds} from '@indranildeveloper-kepler.gl/reducers';
 import MapContainerFactory from './map-container';
 import MapsLayoutFactory from './maps-layout';
 import {MapViewStateContextProvider} from './map-view-state-context';
 
-import {GEOCODER_LAYER_ID, ExportImage} from '@kepler.gl/constants';
-import {SplitMap} from '@kepler.gl/types';
+import {GEOCODER_LAYER_ID, ExportImage} from '@indranildeveloper-kepler.gl/constants';
+import {SplitMap} from '@indranildeveloper-kepler.gl/types';
 import {
   ActionHandler,
   addNotification,
   setExportImageDataUri,
   setExportImageError,
   setExportImageSetting
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 import {mapFieldsSelector} from './kepler-gl';
 
 const CLASS_FILTER = [

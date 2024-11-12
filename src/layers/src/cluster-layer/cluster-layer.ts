@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import AggregationLayer, {AggregationLayerConfig} from '../aggregation-layer';
 import {ScatterplotLayer} from '@deck.gl/layers';
 
-import {DeckGLClusterLayer} from '@kepler.gl/deckgl-layers';
+import {DeckGLClusterLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
 import ClusterLayerIcon from './cluster-layer-icon';
 import {
   VisConfigColorRange,
@@ -12,8 +12,8 @@ import {
   VisConfigRange,
   VisConfigSelection,
   Merge
-} from '@kepler.gl/types';
-import {CHANNEL_SCALES, AggregationTypes, ColorRange} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/types';
+import {CHANNEL_SCALES, AggregationTypes, ColorRange} from '@indranildeveloper-kepler.gl/constants';
 import {VisualChannels} from '../base-layer';
 
 export type ClusterLayerVisConfigSettings = {

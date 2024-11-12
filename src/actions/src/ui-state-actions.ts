@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {default as ActionTypes} from './action-types';
-import {Merge} from '@kepler.gl/types';
-import {ExportImage} from '@kepler.gl/constants';
+import {Merge} from '@indranildeveloper-kepler.gl/types';
+import {ExportImage} from '@indranildeveloper-kepler.gl/constants';
 
 /** TOGGLE_SIDE_PANEL */
 export type ToggleSidePanelUpdaterAction = {

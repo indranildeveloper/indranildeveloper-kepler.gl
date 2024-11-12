@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright contributors to the kepler.gl project
+# Copyright contributors to the indranildeveloper-kepler.gl project
 
 from __future__ import print_function
 from distutils import log
@@ -55,12 +55,12 @@ else:
     cmdclass['jsdeps'] = skip_if_exists(jstargets, js_command)
 
 
-LONG_DESCRIPTION = 'A jupyter widget for kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.'
+LONG_DESCRIPTION = 'A jupyter widget for indranildeveloper-kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.'
 
 setup_args = {
     'name': 'keplergl',
     'version': version,
-    'description': 'This is a simple jupyter widget for kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.',
+    'description': 'This is a simple jupyter widget for indranildeveloper-kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.',
     'long_description': LONG_DESCRIPTION,
     'include_package_data': True,
     'install_requires': [
@@ -82,7 +82,7 @@ setup_args = {
     'cmdclass': cmdclass,
     'author': 'Shan He',
     'author_email': 'shan@uber.com',
-    'url': 'https://github.com/keplergl/kepler.gl/tree/master/bindings/kepler.gl-jupyter',
+    'url': 'https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/bindings/indranildeveloper-kepler.gl-jupyter',
     'keywords': [
         'ipython',
         'jupyter',

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import keyMirror from 'keymirror';
 import get from 'lodash.get';
@@ -16,8 +16,8 @@ import {
   PLOT_TYPES,
   LAYER_TYPES,
   FILTER_VIEW_TYPES
-} from '@kepler.gl/constants';
-import {VisState} from '@kepler.gl/schemas';
+} from '@indranildeveloper-kepler.gl/constants';
+import {VisState} from '@indranildeveloper-kepler.gl/schemas';
 import * as ScaleUtils from './data-scale-utils';
 import {h3IsValid} from 'h3-js';
 
@@ -39,7 +39,7 @@ import {
   FilterDatasetOpt,
   FilterRecord,
   AnimationConfig
-} from '@kepler.gl/types';
+} from '@indranildeveloper-kepler.gl/types';
 
 import {DataContainerInterface} from './data-container-interface';
 import {generateHashId, set, toArray} from './utils';

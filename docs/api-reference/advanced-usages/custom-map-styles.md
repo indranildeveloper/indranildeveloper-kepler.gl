@@ -1,13 +1,13 @@
-# Using kepler.gl with basemap services other than Mapbox
+# Using indranildeveloper-kepler.gl with basemap services other than Mapbox
 
-By default, kepler.gl uses mapbox-gl.js to render its base maps, displayed in [map style selection panel](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/f-map-styles/1-base-map-styles.md).
+By default, indranildeveloper-kepler.gl uses mapbox-gl.js to render its base maps, displayed in [map style selection panel](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/docs/user-guides/f-map-styles/1-base-map-styles.md).
 
-![base map panel](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/f-map-styles-1.png "base map panel")
+![base map panel](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/f-map-styles-1.png "base map panel")
 
-You can custom kepler.gl to use other base map services, by passing in style.json written in [Mapbox GL Style Spec](https://docs.mapbox.com/mapbox-gl-js/style-spec/). With custom style.json kepler.gl can render base map independent of mapbox vector tile service.
+You can custom indranildeveloper-kepler.gl to use other base map services, by passing in style.json written in [Mapbox GL Style Spec](https://docs.mapbox.com/mapbox-gl-js/style-spec/). With custom style.json indranildeveloper-kepler.gl can render base map independent of mapbox vector tile service.
 
 
-For instance. there is a example [style.json](https://raw.githubusercontent.com/heshan0131/kepler.gl-data/master/style/basic.json).  It points to the tile server described in the `sources` field.
+For instance. there is a example [style.json](https://raw.githubusercontent.com/heshan0131/indranildeveloper-kepler.gl-data/master/style/basic.json).  It points to the tile server described in the `sources` field.
 
 ```json
   "sources": {
@@ -48,9 +48,9 @@ __style properties__
 - `label` (String, required) name to be displayed in map style selection panel
 - `url` (String, required) a url pointing to the map style json object written in [Mapbox GL Style Spec](https://docs.mapbox.com/mapbox-gl-js/style-spec/). 
 - `icon` (String, optional) image icon of the style, it can be a url, or an [image data url](https://flaviocopes.com/data-urls/#how-does-a-data-url-look)
-- `layerGroups` (Array, optional) Supply your own `layerGroups` to override default for more accurate layer grouping. When `undefined` kepler.gl will attempt to group layers of your style based on its `id` naming convention and use it to allow toggle visibility of [base map layers](https://github.com/keplergl/kepler.gl/blob/master/docs/user-guides/f-map-styles/2-map-layers.md). 
+- `layerGroups` (Array, optional) Supply your own `layerGroups` to override default for more accurate layer grouping. When `undefined` indranildeveloper-kepler.gl will attempt to group layers of your style based on its `id` naming convention and use it to allow toggle visibility of [base map layers](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/docs/user-guides/f-map-styles/2-map-layers.md). 
 
-### 2. Two Ways to supply kepler.gl with custom base map styles
+### 2. Two Ways to supply indranildeveloper-kepler.gl with custom base map styles
 
 
 #### Option 1. `mapStyles` prop
@@ -75,13 +75,13 @@ const App = () => (
 ```
 
 - `mapStyles` (Array) array of custom map styles.
-- `mapStylesReplaceDefault` (Boolean) pass `true` if you want to replace all default kepler.gl base map options.
+- `mapStylesReplaceDefault` (Boolean) pass `true` if you want to replace all default indranildeveloper-kepler.gl base map options.
 - `mapboxApiAccessToken`. Optional if `mapStylesReplaceDefault` is `true` and your `mapStyles` does not use Mapbox services
 
 #### Option 2. Reducer `initialState`
-Pass custom `mapStyles` to kepler.gl `mapStyle` reducer using the `initialState` plugin. And set default style by passing `styleType`.
+Pass custom `mapStyles` to indranildeveloper-kepler.gl `mapStyle` reducer using the `initialState` plugin. And set default style by passing `styleType`.
 
-This method is demoed in the example app [Custom Map Style](https://github.com/keplergl/kepler.gl/tree/master/examples/custom-map-style)
+This method is demoed in the example app [Custom Map Style](https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/examples/custom-map-style)
 
 ```js
 const customizedKeplerGlReducer = keplerGlReducer.initialState({
@@ -124,12 +124,12 @@ const customizedKeplerGlReducer = keplerGlReducer.initialState({
 __Which option is for me?__ If you want to replace all basemap styles, we recommends __Option 2__. So you can also set the initial style with `styleType`. If you are adding more options as basemaps, __Option 1__ is ideal.
 
 ### 3. `mapboxApiAccessToken`
-If your map styles are not using Mapbox services, and you replaced all kepler.gl default map styles. `mapboxApiAccessToken` will not be required in `KeplerGl` component.
+If your map styles are not using Mapbox services, and you replaced all indranildeveloper-kepler.gl default map styles. `mapboxApiAccessToken` will not be required in `KeplerGl` component.
 
 
 #### 4. `DEFAULT_LAYER_GROUPS`
 
-If `layerGroups` is not suppied, kepler.gl uses the default layer groups below. 
+If `layerGroups` is not suppied, indranildeveloper-kepler.gl uses the default layer groups below. 
 
 
 ```js

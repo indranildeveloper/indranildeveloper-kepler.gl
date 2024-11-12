@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 export {default as Provider, FILE_CONFLICT_MSG, KEPLER_FORMAT} from './provider';
 // eslint-disable-next-line prettier/prettier

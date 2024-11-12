@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useState, ComponentType, ReactElement, useCallback} from 'react';
 import styled from 'styled-components';
 import Switch from '../../common/switch';
 import BrushConfigFactory from './brush-config';
 import TooltipConfigFactory from './tooltip-config';
-import {Datasets} from '@kepler.gl/table';
-import {InteractionConfig, ValueOf} from '@kepler.gl/types';
+import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {InteractionConfig, ValueOf} from '@indranildeveloper-kepler.gl/types';
 import {
   setColumnDisplayFormat as setColumnDisplayFormatAction,
   ActionHandler
-} from '@kepler.gl/actions';
+} from '@indranildeveloper-kepler.gl/actions';
 
 import {
   StyledPanelHeader,
@@ -21,7 +21,7 @@ import {
 } from '../../common/styled-components';
 import {Messages, Crosshairs, CursorClick, Pin} from '../../common/icons';
 
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 
 interface InteractionPanelProps {
   datasets: Datasets;

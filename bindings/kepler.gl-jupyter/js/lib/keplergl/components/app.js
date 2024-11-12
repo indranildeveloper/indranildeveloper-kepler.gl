@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useEffect, useState, useRef} from 'react';
 import styled from 'styled-components';
@@ -12,7 +12,7 @@ import {
   PanelHeaderFactory,
   CustomPanelsFactory,
   injectComponents
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import CustomPanelHeaderFactory from './panel-header';
 import CustomSidebarFactory from './side-bar';
@@ -82,7 +82,7 @@ function App() {
           <meta charSet="utf-8" />
           <link
             rel="stylesheet"
-            href="http://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css"
+            href="http://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/uber-fonts/4.0.0/superfine.css"
           />
           <link
             rel="stylesheet"
@@ -120,7 +120,7 @@ function App() {
         mapboxApiAccessToken={MAPBOX_TOKEN}
         width={windowDimension.width || 800}
         height={windowDimension.height || 400}
-        appName="Kepler.gl Jupyter"
+        appName="indranildeveloper-kepler.gl Jupyter"
         version={KEPLER_GL_JUPYTER_VERSION}
         getMapboxRef={handleResize}
       />

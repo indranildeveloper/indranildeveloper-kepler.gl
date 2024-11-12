@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {csvParseRows} from 'd3-dsv';
 import {DATA_TYPES as AnalyzerDATA_TYPES} from 'type-analyzer';
 import normalize from '@mapbox/geojson-normalize';
 import {ArrowTable} from '@loaders.gl/schema';
-import {ALL_FIELD_TYPES, DATASET_FORMATS, GUIDES_FILE_FORMAT_DOC} from '@kepler.gl/constants';
-import {ProcessorResult, Field} from '@kepler.gl/types';
+import {ALL_FIELD_TYPES, DATASET_FORMATS, GUIDES_FILE_FORMAT_DOC} from '@indranildeveloper-kepler.gl/constants';
+import {ProcessorResult, Field} from '@indranildeveloper-kepler.gl/types';
 import {
   arrowDataTypeToAnalyzerDataType,
   arrowDataTypeToFieldType,
@@ -18,8 +18,8 @@ import {
   getSampleForTypeAnalyze,
   getFieldsFromData,
   toArray
-} from '@kepler.gl/utils';
-import {KeplerGlSchema, ParsedDataset, SavedMap, LoadedMap} from '@kepler.gl/schemas';
+} from '@indranildeveloper-kepler.gl/utils';
+import {KeplerGlSchema, ParsedDataset, SavedMap, LoadedMap} from '@indranildeveloper-kepler.gl/schemas';
 import {Feature} from '@nebula.gl/edit-modes';
 
 // if any of these value occurs in csv, parse it to null;
@@ -75,7 +75,7 @@ export const PARSE_FIELD_VALUE_FROM_STRING = {
  * @returns data object `{fields: [], rows: []}` can be passed to addDataToMaps
  * @public
  * @example
- * import {processCsvData} from 'kepler.gl/processors';
+ * import {processCsvData} from 'indranildeveloper-kepler.gl/processors';
  *
  * const testData = `gps_data.utc_timestamp,gps_data.lat,gps_data.lng,gps_data.types,epoch,has_result,id,time,begintrip_ts_utc,begintrip_ts_local,date
  * 2016-09-17 00:09:55,29.9900937,31.2590542,driver_analytics,1472688000000,False,1,2016-09-23T00:00:00.000Z,2016-10-01 09:41:39+00:00,2016-10-01 09:41:39+00:00,2016-09-23
@@ -218,8 +218,8 @@ export function parseCsvRowsByFieldType(
  * @returns dataset containing `fields` and `rows`
  * @public
  * @example
- * import {addDataToMap} from 'kepler.gl/actions';
- * import {processRowObject} from 'kepler.gl/processors';
+ * import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {processRowObject} from 'indranildeveloper-kepler.gl/processors';
  *
  * const data = [
  *  {lat: 31.27, lng: 127.56, value: 3},
@@ -263,8 +263,8 @@ export function processRowObject(rawData: unknown[]): ProcessorResult {
  * @returns dataset containing `fields` and `rows`
  * @public
  * @example
- * import {addDataToMap} from 'kepler.gl/actions';
- * import {processGeojson} from 'kepler.gl/processors';
+ * import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {processGeojson} from 'indranildeveloper-kepler.gl/processors';
  *
  * const geojson = {
  * 	"type" : "FeatureCollection",
@@ -340,15 +340,15 @@ export function processGeojson(rawData: unknown): ProcessorResult {
 }
 
 /**
- * Process saved kepler.gl json to be pass to [`addDataToMap`](../actions/actions.md#adddatatomap).
+ * Process saved indranildeveloper-kepler.gl json to be pass to [`addDataToMap`](../actions/actions.md#adddatatomap).
  * The json object should contain `datasets` and `config`.
  * @param rawData
  * @param schema
  * @returns datasets and config `{datasets: {}, config: {}}`
  * @public
  * @example
- * import {addDataToMap} from 'kepler.gl/actions';
- * import {processKeplerglJSON} from 'kepler.gl/processors';
+ * import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {processKeplerglJSON} from 'indranildeveloper-kepler.gl/processors';
  *
  * dispatch(addDataToMap(processKeplerglJSON(keplerGlJson)));
  */
@@ -357,7 +357,7 @@ export function processKeplerglJSON(rawData: SavedMap, schema = KeplerGlSchema):
 }
 
 /**
- * Parse a single or an array of datasets saved using kepler.gl schema
+ * Parse a single or an array of datasets saved using indranildeveloper-kepler.gl schema
  * @param rawData
  * @param schema
  */

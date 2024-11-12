@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {ComponentType, MouseEventHandler} from 'react';
 import {TooltipProps} from 'react-tooltip';
 import classnames from 'classnames';
 import styled from 'styled-components';
-import {FormattedMessage} from '@kepler.gl/localization';
+import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
 import {Tooltip} from '../common/styled-components';
 import {BaseProps} from '../common/icons';
 

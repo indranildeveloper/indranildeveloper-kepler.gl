@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for kepler.gl
+about: Suggest an idea for indranildeveloper-kepler.gl
 title: ''
 labels: ''
 assignees: heshan0131

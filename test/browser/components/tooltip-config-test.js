@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
 import sinon from 'sinon';
@@ -17,7 +17,7 @@ import {
   Typeahead,
   Icons,
   appInjector
-} from '@kepler.gl/components';
+} from '@indranildeveloper-kepler.gl/components';
 
 import {StateWFiles, StateWithGeocoderDataset} from 'test/helpers/mock-state';
 

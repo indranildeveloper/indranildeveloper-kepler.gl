@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 
@@ -13,7 +13,7 @@ import {
   EXPORT_IMAGE_ID,
   ADD_DATA_ID,
   ADD_MAP_STYLE_ID
-} from '@kepler.gl/constants';
+} from '@indranildeveloper-kepler.gl/constants';
 
 import {CursorClick, Layers, FilterFunnel, Settings} from './common/icons';
 
@@ -145,7 +145,7 @@ export default function SidePanelFactory(
     );
     const onClickSaveAsToStorage = useCallback(() => {
       setMapInfo({
-        title: `${title || 'Kepler.gl'} (Copy)`
+        title: `${title || 'indranildeveloper-kepler.gl'} (Copy)`
       });
 
       toggleModal(SAVE_MAP_ID);

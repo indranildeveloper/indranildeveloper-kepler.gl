@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {console as globalConsole} from 'global/window';
 import {DATA_TYPES as AnalyzerDATA_TYPES} from 'type-analyzer';
-import {Field} from '@kepler.gl/types';
-import {ALL_FIELD_TYPES} from '@kepler.gl/constants';
+import {Field} from '@indranildeveloper-kepler.gl/types';
+import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
 
 import {DataRow, SharedRowOptions} from './data-row';
 import {DataContainerInterface, RangeOptions} from './data-container-interface';
@@ -220,7 +220,7 @@ export class ArrowDataContainer implements DataContainerInterface {
 }
 
 /**
- * Convert arrow data type to kepler.gl field types
+ * Convert arrow data type to indranildeveloper-kepler.gl field types
  *
  * @param arrowType the arrow data type
  * @returns corresponding type in `ALL_FIELD_TYPES`

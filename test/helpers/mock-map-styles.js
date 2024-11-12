@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
-import {BASE_MAP_COLOR_MODES, DEFAULT_LAYER_GROUPS} from '@kepler.gl/constants';
+import {BASE_MAP_COLOR_MODES, DEFAULT_LAYER_GROUPS} from '@indranildeveloper-kepler.gl/constants';
 
-/** @type {import('@kepler.gl/reducers').BaseMapStyle} */
+/** @type {import('@indranildeveloper-kepler.gl/reducers').BaseMapStyle} */
 export const MOCK_MAP_STYLE = {
   id: 'dark-matter',
   label: 'DarkMatter',
   url: 'mapbox://styles/xxxxx/abcdefg',
-  icon: 'https://my.icon.net/kepler.gl/test/taro.png',
+  icon: 'https://my.icon.net/indranildeveloper-kepler.gl/test/taro.png',
   layerGroups: DEFAULT_LAYER_GROUPS,
   colorMode: BASE_MAP_COLOR_MODES.DARK,
   complimentaryStyleId: 'positron',
@@ -57,12 +57,12 @@ export const MOCK_MAP_STYLE = {
   }
 };
 
-/** @type {import('@kepler.gl/reducers').BaseMapStyle} */
+/** @type {import('@indranildeveloper-kepler.gl/reducers').BaseMapStyle} */
 export const MOCK_MAP_STYLE_LIGHT = {
   id: 'positron',
   label: 'Positron',
   url: 'mapbox://styles/xxxxx/hijklmn',
-  icon: 'https://my.icon.net/kepler.gl/test/blue.png',
+  icon: 'https://my.icon.net/indranildeveloper-kepler.gl/test/blue.png',
   layerGroups: DEFAULT_LAYER_GROUPS,
   colorMode: BASE_MAP_COLOR_MODES.LIGHT,
   complimentaryStyleId: 'dark-matter',
@@ -111,7 +111,7 @@ export const MOCK_MAP_STYLE_LIGHT = {
   }
 };
 
-/** @type {import('@kepler.gl/reducers').MapStyles} */
+/** @type {import('@indranildeveloper-kepler.gl/reducers').MapStyles} */
 export const MOCK_MAP_STYLES = {
   [MOCK_MAP_STYLE.id]: MOCK_MAP_STYLE,
   [MOCK_MAP_STYLE_LIGHT.id]: MOCK_MAP_STYLE_LIGHT

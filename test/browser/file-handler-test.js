@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 /* eslint-disable max-statements */
 import test from 'tape';
-import {generateHashIdFromString} from '@kepler.gl/utils';
-import {processFileData, readFileInBatches, csvWithNull} from '@kepler.gl/processors';
+import {generateHashIdFromString} from '@indranildeveloper-kepler.gl/utils';
+import {processFileData, readFileInBatches, csvWithNull} from '@indranildeveloper-kepler.gl/processors';
 import {dataWithNulls, testFields, parsedDataWithNulls} from 'test/fixtures/test-csv-data';
 import geojsonString, {
   featureString,
@@ -623,7 +623,7 @@ test('#file-handler -> readFileInBatches.keplerMap -> processFileData', async t 
   t.deepEqual(batch4.value.progress, expected4.value.progress, 'batch4 should have progress');
   t.deepEqual(batch4.value.batchType, expected4.value.batchType, 'batch4 should have batchType');
   t.equal(batch4.value.fileName, expected4.value.fileName, 'batch4 should have fileName');
-  t.deepEqual(batch4.value.data, keplerglMap, 'batch4 should return saved kepler.gl map json');
+  t.deepEqual(batch4.value.data, keplerglMap, 'batch4 should return saved indranildeveloper-kepler.gl map json');
 
   const batch5 = await gen.next();
   t.deepEqual(batch5, {value: undefined, done: true}, 'batch5 should be done');

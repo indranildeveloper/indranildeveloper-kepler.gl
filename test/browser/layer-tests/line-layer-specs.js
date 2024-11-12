@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -14,9 +14,9 @@ import {
   arcLayerMeta
 } from 'test/helpers/layer-utils';
 
-import {PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@kepler.gl/constants';
-import {KeplerGlLayers} from '@kepler.gl/layers';
-import {copyTable, copyTableAndUpdate} from '@kepler.gl/table';
+import {PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {copyTable, copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
 
 const {LineLayer} = KeplerGlLayers;
 const columns = {

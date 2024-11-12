@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the kepler.gl project
+// Copyright contributors to the indranildeveloper-kepler.gl project
 
 import React from 'react';
-import {SidebarFactory, Icons} from '@kepler.gl/components';
+import {SidebarFactory, Icons} from '@indranildeveloper-kepler.gl/components';
 import styled from 'styled-components';
 
 const StyledSideBarContainer = styled.div`
@@ -47,7 +47,7 @@ const CloseButtonFactory = () => {
   return CloseButton;
 };
 
-// Custom sidebar will render kepler.gl default side bar
+// Custom sidebar will render indranildeveloper-kepler.gl default side bar
 // adding a wrapper component to edit its style
 function CustomSidebarFactory(CloseButton) {
   const SideBar = SidebarFactory(CloseButton);

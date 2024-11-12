@@ -1,4 +1,4 @@
-# Developing Kepler.gl
+# Developing indranildeveloper-kepler.gl
 
 ## Table of contents
 
@@ -7,18 +7,18 @@
 - [Coding Rules](./#coding-rules)
 - [Commit Message Guidelines](./#git-commit-guidelines)
 - [Writing Documentation](./#writing-documentation-this-part-is-not-available-yet)
-- [Developing kepler.gl Website](./#develop-the-kepler-gl-website)
+- [Developing indranildeveloper-kepler.gl Website](./#develop-the-kepler-gl-website)
 - [Publish the website](./#publish-the-website)
 - [Publish a new version](./#publish-kepler-gl-package-to-npm)
 
 ## Development Setup
 
-This document describes how to set up your development environment to build and test Kepler.gl, and
+This document describes how to set up your development environment to build and test indranildeveloper-kepler.gl, and
 explains the basic mechanics of using `git`, `node`, `yarn`.
 
 ### Installing Dependencies
 
-Before you can build Kepler.gl, you must install and configure the following dependencies on your
+Before you can build indranildeveloper-kepler.gl, you must install and configure the following dependencies on your
 machine:
 
 - [Git](http://git-scm.com/): The [Github Guide to Installing Git][git-setup] is a good source of information.
@@ -36,24 +36,24 @@ machine:
 
 - [Volta](https://volta.sh/): We use Volta to manage Node and Yarn versions without you manually switching them
 
-#### Fork Kepler.gl Repo
+#### Fork indranildeveloper-kepler.gl Repo
 
-If you plan to contribute code to kepler.gl, you must have a [GitHub account](https://github.com/signup/free) so you can push code and open Pull Requests in the [GitHub Repository][github]. You must [fork](http://help.github.com/forking) the
-[main kepler.gl repository][github] to [create a Pull Request][github-pr].
+If you plan to contribute code to indranildeveloper-kepler.gl, you must have a [GitHub account](https://github.com/signup/free) so you can push code and open Pull Requests in the [GitHub Repository][github]. You must [fork](http://help.github.com/forking) the
+[main indranildeveloper-kepler.gl repository][github] to [create a Pull Request][github-pr].
 
-#### Developing kepler.gl
+#### Developing indranildeveloper-kepler.gl
 
-To develop features, debug code, run tests, we use webpack to start a local web server and serve the kepler.gl demo app from the src directory.
+To develop features, debug code, run tests, we use webpack to start a local web server and serve the indranildeveloper-kepler.gl demo app from the src directory.
 
 ```bash
-# Clone your kepler.gl fork repository:
-git clone git@github.com:<github username>/kepler.gl.git
+# Clone your indranildeveloper-kepler.gl fork repository:
+git clone git@github.com:<github username>/indranildeveloper-kepler.gl.git
 
-# Go to the kepler.gl directory:
-cd kepler.gl
+# Go to the indranildeveloper-kepler.gl directory:
+cd indranildeveloper-kepler.gl
 
-# Add the main kepler.gl repository as an upstream remote to your repository:
-git remote add upstream "git@github.com:keplergl/kepler.gl.git"
+# Add the main indranildeveloper-kepler.gl repository as an upstream remote to your repository:
+git remote add upstream "git@github.com:keplergl/indranildeveloper-kepler.gl.git"
 ```
 
 Install [volta](https://docs.volta.sh/guide/getting-started)
@@ -84,13 +84,13 @@ yarn bootstrap
 # Setup mapbox access token locally
 export MapboxAccessToken=<insert_your_token>
 
-# Start the kepler.gl demo app
+# Start the indranildeveloper-kepler.gl demo app
 yarn start
 ```
 
 An demo app will be served at `http://localhost:8080/`
 
-This is the demo app we hosted on [http://kepler.gl/#/demo][demo-app]. By default, it serves non-minified source code inside the src directory.
+This is the demo app we hosted on [http://indranildeveloper-kepler.gl/#/demo][demo-app]. By default, it serves non-minified source code inside the src directory.
 
 #### Develop with deck.gl
 
@@ -100,7 +100,7 @@ When develop, upgrade, debug deck.gl, Demo app can load deck.gl directly from sr
 // load deck.gl from node_modules/deck.gl/src, sub-modules from node_modules/@deck.gl/<module>/src
 npm run start:deck
 
-// load deck.gl src from the deck.gl folder parallel to kepler.gl
+// load deck.gl src from the deck.gl folder parallel to indranildeveloper-kepler.gl
 npm run start:deck-src
 ```
 
@@ -190,7 +190,7 @@ yarn lint
 ## Git Commit Guidelines
 
 To commit your changes, please follow our rules over how our git commit messages can be formatted. This leads to **more readable and unified messages** that are easy to follow. But also,
-we use the git commit messages to **generate the kepler.gl change log**.
+we use the git commit messages to **generate the indranildeveloper-kepler.gl change log**.
 
 ### Commit Message Format
 
@@ -256,16 +256,16 @@ The rest of the commit message is then used for this.
 
 ## Writing Documentation (THIS PART IS NOT AVAILABLE YET)
 
-The Kepler.gl project uses [jsdoc](http://usejsdoc.org/)
+The indranildeveloper-kepler.gl project uses [jsdoc](http://usejsdoc.org/)
 
 This means that all the docs are stored inline in the source code and so are kept in sync as it
 changes.
 
 There is also extra content (the developer guide, error pages, the tutorial,
-and misceallenous pages) that live inside the Kepler.gl repository as markdown files.
+and misceallenous pages) that live inside the indranildeveloper-kepler.gl repository as markdown files.
 
 This means that since we generate the documentation from the source code, we can easily provide
-version-specific documentation by simply checking out a version of Kepler.gl and running the build.
+version-specific documentation by simply checking out a version of indranildeveloper-kepler.gl and running the build.
 
 ### Building and viewing the docs locally
 
@@ -293,7 +293,7 @@ putting the `[name]` in square brackets.
 Default values are only possible with the second syntax by appending `=<value>` to the parameter
 name, e.g. `@param {boolean} [ownPropsOnly=false]`.
 
-## Develop The kepler.gl Website
+## Develop The indranildeveloper-kepler.gl Website
 
 Make sure to export mapbox token in the same terminal before start the server.
 
@@ -315,7 +315,7 @@ $ cd website && yarn build
 
 ## Publish the website
 
-[Netlify](https://www.netlify.com/) is used to support kepler.gl demo website.
+[Netlify](https://www.netlify.com/) is used to support indranildeveloper-kepler.gl demo website.
 
 Netlify is connected to the following github triggers:
 
@@ -323,12 +323,12 @@ Netlify is connected to the following github triggers:
 - Updated an existing PR
 - Merge PR onto master
 
-A new production version of kepler.gl website is automatically created and deployed every time a PR is merged onto master.
+A new production version of indranildeveloper-kepler.gl website is automatically created and deployed every time a PR is merged onto master.
 
 In order to support testing environment, Netlify is setup to generate build every time a PR is created or updated.
 By generating builds for new and updated PRs we support CI/CD so developers can test their own build in a production like environment
 
-### Publish kepler.gl package to NPM
+### Publish indranildeveloper-kepler.gl package to NPM
 
 #### Requirements
 
@@ -340,7 +340,7 @@ Setup `gh-release` with your github api token ([instructions](https://www.npmjs.
 
 ### Push a new release
 
-In order to publish a new version of kepler.gl a developer must perform the following steps:
+In order to publish a new version of indranildeveloper-kepler.gl a developer must perform the following steps:
 
 1. Update **package.json** file with the new version value. Run `npm version major | minor | patch` to update version accordingly.
 2. Update **CHANGELOG.md** with the latest commit changes. Print commits with `git log --pretty=oneline --abbrev-commit`
@@ -351,7 +351,7 @@ In order to publish a new version of kepler.gl a developer must perform the foll
 
 **After Release is completed and pushed**
 
-- Update each of the example folder package.json kepler.gl dependency with the newer. To update all examples, run
+- Update each of the example folder package.json indranildeveloper-kepler.gl dependency with the newer. To update all examples, run
 
 ```bash
 npm run example-version
@@ -361,7 +361,7 @@ This step is required after the new version is published otherwise it would fail
 
 ## Gitbook documentation
 
-Kepler.gl documentation is hosted on [gitbook](https://kepler-gl.gitbook.io/kepler-gl/). For more information [read here](https://docs.gitbook.com/)
+indranildeveloper-kepler.gl documentation is hosted on [gitbook](https://kepler-gl.gitbook.io/kepler-gl/). For more information [read here](https://docs.gitbook.com/)
 
 ### Documentation structure
 
@@ -373,7 +373,7 @@ The documentation layout is defined by **SUMMARY.md** file where the table of co
 - [Welcome](README.md)
 ```
 
-The above file is used by Gitbook to generate the doc navigation visible on the left-hand side of Kepler.gl doc website.
+The above file is used by Gitbook to generate the doc navigation visible on the left-hand side of indranildeveloper-kepler.gl doc website.
 Gitbook also has the ability to show description for each folder/section of the documentation by creating an entry in **SUMMARY.md**
 and create a new **README.md** file within said folder. The README.md file is a Gitbook convention that treats README files as if they were the main entry file for each folder.
 
@@ -387,18 +387,18 @@ The following is an example of doc section in SUMMARY.md file:
 
 The integration with Gitbook allows to update the documentation in two different ways:
 
-- Update doc files in the Kepler.gl repo. Follow the PR flow like any other changes
+- Update doc files in the indranildeveloper-kepler.gl repo. Follow the PR flow like any other changes
 - Update documentation directly on Gitbook.
 
-For both scenarios, changes will be propagated from one system to the other and vice versa. When updating Gitbook, a new git commit will be push to the Kepler.gl master branch.
+For both scenarios, changes will be propagated from one system to the other and vice versa. When updating Gitbook, a new git commit will be push to the indranildeveloper-kepler.gl master branch.
 
-[demo-app]: http://kepler.gl/#/demo
+[demo-app]: http://indranildeveloper-kepler.gl/#/demo
 [documentationjs]: https://documentation.js.org/
 [eslint]: https://eslint.org/
 [enzyme]: https://airbnb.io/enzyme/
 [git-revert]: https://git-scm.com/docs/git-revert
 [git-setup]: https://help.github.com/articles/set-up-git
-[github]: https://github.com/keplergl/kepler.gl
+[github]: https://github.com/keplergl/indranildeveloper-kepler.gl
 [github-pr]: https://help.github.com/articles/creating-a-pull-request/
 [jsDoc]: http://usejsdoc.org/
 [tape]: https://github.com/substack/tape

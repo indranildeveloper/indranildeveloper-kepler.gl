@@ -1,6 +1,6 @@
 # kperlgl-jupyter
 
-This is a simple jupyter widget for kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.
+This is a simple jupyter widget for indranildeveloper-kepler.gl, an advanced geospatial visualization tool, to render large-scale interactive maps.
 
 ## Package Install
 
