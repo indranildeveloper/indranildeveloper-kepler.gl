@@ -7,7 +7,7 @@
   "main": "babel/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/indranil-kepler.gl.git"
+    "url": "https://github.com/indranildeveloper/indranildeveloper-kepler.gl.git"
   },
   "keywords": [
     "jupyter",

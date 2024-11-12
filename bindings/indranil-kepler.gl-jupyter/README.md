@@ -283,7 +283,7 @@ pip install geopandas
 #### Clone Repo
 
 ```shell
-git clone https://github.com/keplergl/indranil-kepler.gl.git
+git clone https://github.com/indranildeveloper/indranildeveloper-kepler.gl.git
 ```
 
 ### Setup JS

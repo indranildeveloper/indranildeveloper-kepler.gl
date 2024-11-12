@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/indranil-kepler.gl.git"
+    "url": "https://github.com/indranildeveloper/indranildeveloper-kepler.gl.git"
   },
   "scripts": {
     "build": "rm -fr dist && babel src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js,.jsx' --ignore '**/*.d.ts'",
