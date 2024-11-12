@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import {Provider} from 'react-redux';
@@ -8,10 +8,10 @@ import {ThemeProvider} from 'styled-components';
 import {IntlProvider} from 'react-intl';
 
 import {render} from '@testing-library/react';
-import {theme} from '@indranildeveloper-kepler.gl/styles';
-import {messages} from '@indranildeveloper-kepler.gl/localization';
-import {keplerGlReducerCore as coreReducer} from '@indranildeveloper-kepler.gl/reducers';
-import {keplerGlInit} from '@indranildeveloper-kepler.gl/actions';
+import {theme} from '@indranil-kepler.gl/styles';
+import {messages} from '@indranil-kepler.gl/localization';
+import {keplerGlReducerCore as coreReducer} from '@indranil-kepler.gl/reducers';
+import {keplerGlInit} from '@indranil-kepler.gl/actions';
 
 const mockStore = configureStore();
 const initialCoreState = coreReducer(undefined, keplerGlInit({}));

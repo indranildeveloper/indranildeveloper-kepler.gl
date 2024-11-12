@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
-import {openDeleteModal, VisStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
-import KeplerTable from '@indranildeveloper-kepler.gl/table';
+import {openDeleteModal, VisStateActions, ActionHandler} from '@indranil-kepler.gl/actions';
+import {RGBColor} from '@indranil-kepler.gl/types';
+import KeplerTable from '@indranil-kepler.gl/table';
 
 export type PanelMeta = {
   id: string;

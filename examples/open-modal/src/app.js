@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {addDataToMap, wrapTo} from '@indranildeveloper-kepler.gl/actions';
+import {addDataToMap, wrapTo} from '@indranil-kepler.gl/actions';
 
 import Modal from 'react-modal';
 import {showModal} from './app-reducer';
@@ -50,21 +50,21 @@ class App extends Component {
 
     return (
       <div style={{position: 'absolute', width: '100%', height: '100%'}}>
-        <button onClick={() => this._openModal('foo')}>Show indranildeveloper-kepler.gl id: foo</button>
-        <button onClick={() => this._openModal('bar')}>Show indranildeveloper-kepler.gl id: bar</button>
+        <button onClick={() => this._openModal('foo')}>Show indranil-kepler.gl id: foo</button>
+        <button onClick={() => this._openModal('bar')}>Show indranil-kepler.gl id: bar</button>
 
         <Modal isOpen={modal === 'foo'}>
           <div>
-            This indranildeveloper-kepler.gl component will always load a fresh state when re mounted, state inside
-            this component will be destroyed once its unmounted.
+            This indranil-kepler.gl component will always load a fresh state when re mounted, state
+            inside this component will be destroyed once its unmounted.
           </div>
           <button onClick={this._closeModal}>Close</button>
           <FreshMap dispatch={this.props.dispatch} mapboxApiAccessToken={MAPBOX_TOKEN} id="foo" />
         </Modal>
 
         <Modal isOpen={modal === 'bar'}>
-          By passing in mint: false, This indranildeveloper-kepler.gl instance will keep the state of "bar" even when
-          it is unmounted.
+          By passing in mint: false, This indranil-kepler.gl instance will keep the state of "bar"
+          even when it is unmounted.
           <button onClick={this._closeModal}>Close</button>
           <SavedMap dispatch={this.props.dispatch} mapboxApiAccessToken={MAPBOX_TOKEN} id="bar" />
         </Modal>

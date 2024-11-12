@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {AmbientLight, _SunLight as SunLight} from '@deck.gl/core';
 import moment from 'moment-timezone';
 
-import {LIGHT_AND_SHADOW_EFFECT, DEFAULT_LIGHT_AND_SHADOW_PROPS} from '@indranildeveloper-kepler.gl/constants';
-import {normalizeColor} from '@indranildeveloper-kepler.gl/utils';
-import {EffectProps, EffectPropsPartial} from '@indranildeveloper-kepler.gl/types';
+import {
+  LIGHT_AND_SHADOW_EFFECT,
+  DEFAULT_LIGHT_AND_SHADOW_PROPS
+} from '@indranil-kepler.gl/constants';
+import {normalizeColor} from '@indranil-kepler.gl/utils';
+import {EffectProps, EffectPropsPartial} from '@indranil-kepler.gl/types';
 
 import Effect from './effect';
 import CustomDeckLightingEffect from './custom-deck-lighting-effect';

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {
   DEFAULT_TOOLTIP_FIELDS,
@@ -8,9 +8,9 @@ import {
   TOOLTIP_FORMATS,
   TOOLTIP_KEY,
   COMPARE_TYPES
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
-import {Field, TooltipField, CompareType} from '@indranildeveloper-kepler.gl/types';
+import {Field, TooltipField, CompareType} from '@indranil-kepler.gl/types';
 import {
   DataRow,
   parseFieldValue,
@@ -18,7 +18,7 @@ import {
   isNumber,
   defaultFormatter,
   notNullorUndefined
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 
 /**
  * Minus sign used in tooltip formatting.

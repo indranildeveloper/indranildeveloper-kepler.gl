@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useState, useCallback} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 import {Reset, Play, Pause, Save, Rocket, AnchorWindow, FreeWindow} from '../icons';
-import {ANIMATION_WINDOW} from '@indranildeveloper-kepler.gl/constants';
+import {ANIMATION_WINDOW} from '@indranil-kepler.gl/constants';
 import AnimationSpeedSliderFactory from './animation-speed-slider';
 import WindowActionControlFactory from './window-action-control';
 import AnimationWindowControlFactory, {AnimationItem} from './animation-window-control';

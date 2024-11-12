@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {css} from 'styled-components';
@@ -7,14 +7,14 @@ import get from 'lodash.get';
 import document from 'global/document';
 
 import ModalDialogFactory from './modals/modal-dialog';
-import {exportHtml, exportMap, exportJson, exportImage} from '@indranildeveloper-kepler.gl/utils';
+import {exportHtml, exportMap, exportJson, exportImage} from '@indranil-kepler.gl/utils';
 import {
   exportData,
   getFileFormatNames,
   getFileExtensions,
   MapStyle,
   ProviderState
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 
 // modals
 import DeleteDatasetModalFactory from './modals/delete-data-modal';
@@ -29,7 +29,7 @@ import SaveMapModalFactory from './modals/save-map-modal';
 import ShareMapModalFactory from './modals/share-map-modal';
 
 // Breakpoints
-import {media} from '@indranildeveloper-kepler.gl/styles';
+import {media} from '@indranil-kepler.gl/styles';
 
 // Template
 import {
@@ -46,20 +46,20 @@ import {
   SAVE_MAP_ID,
   SHARE_MAP_ID,
   OVERWRITE_MAP_ID
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
-import {MapState, UiState, OnSuccessCallBack, OnErrorCallBack} from '@indranildeveloper-kepler.gl/types';
+import {MapState, UiState, OnSuccessCallBack, OnErrorCallBack} from '@indranil-kepler.gl/types';
 
 import {
   VisStateActions,
   UIStateActions,
   MapStyleActions,
   ProviderActions
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 import {ModalDialogProps} from './common/modal';
-import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {Provider} from '@indranil-kepler.gl/cloud-providers';
 import {findDOMNode} from 'react-dom';
-import {VisState} from '@indranildeveloper-kepler.gl/schemas';
+import {VisState} from '@indranil-kepler.gl/schemas';
 
 const DataTableModalStyle = css`
   top: 70px;

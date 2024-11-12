@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 
@@ -101,10 +101,10 @@ export const Logo = styled.img`
 
 /* eslint-disable react/display-name */
 export const HeroImage = React.forwardRef((props, ref) => (
-  <BackgroundImage {...props} ref={ref} src={cdnUrl('hero/indranildeveloper-kepler.gl-background.png')}/>
+  <BackgroundImage {...props} ref={ref} src={cdnUrl('hero/indranil-kepler.gl-background.png')} />
 ));
 
 export const LogoImage = React.forwardRef((props, ref) => (
-  <Logo {...props} src={cdnUrl('icons/indranildeveloper-kepler.gl-logo.png')} />
+  <Logo {...props} src={cdnUrl('icons/indranil-kepler.gl-logo.png')} />
 ));
 /* eslint-enable react/display-name */

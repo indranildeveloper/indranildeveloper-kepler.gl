@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // This file sends actions on the demo app to Google analytics
 
-import {ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {ActionTypes} from '@indranil-kepler.gl/actions';
 import {LOCATION_CHANGE} from 'react-router-redux';
 import window from 'global/window';
-import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {ALL_FIELD_TYPES} from '@indranil-kepler.gl/constants';
 import get from 'lodash.get';
 
 const getPayload = action => (action ? action.payload : null);

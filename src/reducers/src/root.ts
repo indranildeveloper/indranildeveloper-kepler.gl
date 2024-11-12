@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {ActionTypes, keplerGlInit, _actionFor, _updateProperty} from '@indranildeveloper-kepler.gl/actions';
+import {ActionTypes, keplerGlInit, _actionFor, _updateProperty} from '@indranil-kepler.gl/actions';
 import {handleActions} from 'redux-actions';
 
 import {coreReducerFactory} from './core';
@@ -30,7 +30,7 @@ export function provideInitialState(initialState, extraReducers?) {
     const previousState = state[id] && mint === false ? state[id] : undefined;
 
     return {
-      // register entry to indranildeveloper-kepler.gl passing in mapbox config to mapStyle
+      // register entry to indranil-kepler.gl passing in mapbox config to mapStyle
       ...state,
       [id]: coreReducer(
         previousState,
@@ -99,12 +99,12 @@ function decorate(target, savedInitialState = {}) {
   const targetInitialState = savedInitialState;
 
   /**
-   * Returns a indranildeveloper-kepler.gl reducer that will also pass each action through additional reducers spiecified.
+   * Returns a indranil-kepler.gl reducer that will also pass each action through additional reducers spiecified.
    * The parameter should be either a reducer map or a reducer function.
    * The state passed into the additional action handler is the instance state.
    * It will include all the subreducers `visState`, `uiState`, `mapState` and `mapStyle`.
    * `.plugin` is only meant to be called once when mounting the keplerGlReducer to the store.
-   * **Note** This is an advanced option to give you more freedom to modify the internal state of the indranildeveloper-kepler.gl instance.
+   * **Note** This is an advanced option to give you more freedom to modify the internal state of the indranil-kepler.gl instance.
    * You should only use this to adding additional actions instead of replacing default actions.
    *
    * @mixin keplerGlReducer.plugin
@@ -196,17 +196,17 @@ function decorate(target, savedInitialState = {}) {
 }
 
 /**
- * indranildeveloper-kepler.gl reducer to be mounted to your store. You can mount `keplerGlReducer` at property `keplerGl`, if you choose
+ * indranil-kepler.gl reducer to be mounted to your store. You can mount `keplerGlReducer` at property `keplerGl`, if you choose
  * to mount it at another address e.g. `foo` you will need to specify it when you mount `KeplerGl` component in your app with `getState: state => state.foo`
  * @public
  * @example
- * import keplerGlReducer from 'indranildeveloper-kepler.gl/reducers';
+ * import keplerGlReducer from 'indranil-kepler.gl/reducers';
  * import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
  * import {taskMiddleware} from 'react-palm/tasks';
  *
  * const initialState = {};
  * const reducers = combineReducers({
- *   // <-- mount indranildeveloper-kepler.gl reducer in your app
+ *   // <-- mount indranil-kepler.gl reducer in your app
  *   keplerGl: keplerGlReducer,
  *
  *   // Your other reducers here

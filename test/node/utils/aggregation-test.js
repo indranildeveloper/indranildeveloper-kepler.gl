@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
-import {getFrequency, getMode, aggregate} from '@indranildeveloper-kepler.gl/utils';
-import {AGGREGATION_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {getFrequency, getMode, aggregate} from '@indranil-kepler.gl/utils';
+import {AGGREGATION_TYPES} from '@indranil-kepler.gl/constants';
 
 test('Aggregate - GetFrequency', t => {
   t.deepEqual(

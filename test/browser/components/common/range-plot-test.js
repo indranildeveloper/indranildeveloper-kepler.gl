@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
 import test from 'tape';
 import {mountWithTheme} from 'test/helpers/component-utils';
-import {appInjector, RangePlotFactory, LoadingSpinner} from '@indranildeveloper-kepler.gl/components';
+import {appInjector, RangePlotFactory, LoadingSpinner} from '@indranil-kepler.gl/components';
 import sinon from 'sinon';
 
 const RangePlot = appInjector.get(RangePlotFactory);

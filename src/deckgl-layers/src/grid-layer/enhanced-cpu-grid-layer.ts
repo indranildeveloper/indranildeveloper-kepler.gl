@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {CPUGridLayer} from '@deck.gl/aggregation-layers';
 import CPUAggregator, {AggregationType, getAggregatedData} from '../layer-utils/cpu-aggregator';

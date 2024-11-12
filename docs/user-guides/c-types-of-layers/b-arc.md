@@ -1,6 +1,6 @@
 # Arc
 
-![Arc layer](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image37.png "Arc layer")
+![Arc layer](https://d1a3f4spazzrp4.cloudfront.net/indranil-kepler.gl/documentation/image37.png 'Arc layer')
 
 Arc layers draw an arc between two points. They’re useful for visualizing the distance between two points as well as comparing distances in 3D. Note that arc layers don’t show routes between points, but simply the distance between the two points. The tallest arc represents the greatest distance.
 

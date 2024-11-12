@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import {StyledExportSection, StyledType, CheckMark} from '../../common/styled-components';
@@ -8,13 +8,17 @@ import {
   EXPORT_HTML_MAP_MODE_OPTIONS,
   EXPORT_HTML_MAP_DOC,
   EXPORT_HTML_MAP_MODES_DOC
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 import styled from 'styled-components';
 import {injectIntl} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {IntlShape} from 'react-intl';
 
-import {setUserMapboxAccessToken, setExportHTMLMapMode, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
+import {
+  setUserMapboxAccessToken,
+  setExportHTMLMapMode,
+  ActionHandler
+} from '@indranil-kepler.gl/actions';
 
 const ExportMapStyledExportSection = styled(StyledExportSection)`
   .disclaimer {

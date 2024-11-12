@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useRef, useEffect, useMemo} from 'react';
 import moment from 'moment-timezone';
@@ -7,7 +7,7 @@ import {NumberValue, scaleUtc} from 'd3-scale';
 import {select} from 'd3-selection';
 import {axisBottom} from 'd3-axis';
 import styled from 'styled-components';
-import {datetimeFormatter} from '@indranildeveloper-kepler.gl/utils';
+import {datetimeFormatter} from '@indranil-kepler.gl/utils';
 
 const MIN_TICK_WIDTH_LARGE = 80;
 const MIN_TICK_WIDTH_SMALL = 50;

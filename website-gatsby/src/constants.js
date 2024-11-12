@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 export const CLOUDFRONT = 'https://d1a3f4spazzrp4.cloudfront.net';
-export const KEPLER_GL_BUCKET = 'indranildeveloper-kepler.gl';
+export const KEPLER_GL_BUCKET = 'indranil-kepler.gl';
 export const WEBSITE_ASSET_FOLDER = 'website';
 export const DEMO_LINK = '/demo';

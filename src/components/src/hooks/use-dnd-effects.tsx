@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {useCallback, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {DragEndEvent, DragStartEvent} from '@dnd-kit/core';
 
-import {reorderEffect, updateEffect} from '@indranildeveloper-kepler.gl/actions';
-import {SORTABLE_EFFECT_PANEL_TYPE, SORTABLE_EFFECT_TYPE} from '@indranildeveloper-kepler.gl/constants';
-import {reorderEffectOrder} from '@indranildeveloper-kepler.gl/utils';
-import {Effect} from '@indranildeveloper-kepler.gl/types';
+import {reorderEffect, updateEffect} from '@indranil-kepler.gl/actions';
+import {SORTABLE_EFFECT_PANEL_TYPE, SORTABLE_EFFECT_TYPE} from '@indranil-kepler.gl/constants';
+import {reorderEffectOrder} from '@indranil-kepler.gl/utils';
+import {Effect} from '@indranil-kepler.gl/types';
 
 type DndEffectsHook = {
   activeEffect: Effect | undefined;

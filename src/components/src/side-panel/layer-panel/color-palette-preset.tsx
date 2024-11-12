@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import {range} from 'd3-array';
 
-import {ColorsByTheme} from '@indranildeveloper-kepler.gl/constants';
-import {HexColor} from '@indranildeveloper-kepler.gl/types';
+import {ColorsByTheme} from '@indranil-kepler.gl/constants';
+import {HexColor} from '@indranil-kepler.gl/types';
 
 const PALETTE_HEIGHT = '8px';
 const ROWS = 22;

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import styled from 'styled-components';
 import {DatasetSquare, Tooltip} from '../..';
 import {UpdateTableColorTypes} from './types';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
-import {VisStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
+import {RGBColor} from '@indranil-kepler.gl/types';
+import {VisStateActions, ActionHandler} from '@indranil-kepler.gl/actions';
 
 function nop() {
   return;

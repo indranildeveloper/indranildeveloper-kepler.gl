@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {ActionTypes} from '@indranil-kepler.gl/actions';
 import * as combinedUpdaters from './combined-updaters';
 
 /**

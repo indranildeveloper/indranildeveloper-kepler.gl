@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {cdnUrl, fsqCdnUrl} from './utils';
 
@@ -26,7 +26,7 @@ export const SECTIONS = [
   {
     id: 'studio',
     title: 'Take The Next Step',
-    description: `Built on top of indranildeveloper-kepler.gl’s framework, Foursquare Studio is a free,
+    description: `Built on top of indranil-kepler.gl’s framework, Foursquare Studio is a free,
 powerful geospatial analytics and visualization tool, with new features and updates released every few weeks.`,
     icon: fsqCdnUrl('fsqlogo.png'),
     isDark: true
@@ -34,14 +34,14 @@ powerful geospatial analytics and visualization tool, with new features and upda
   {
     id: 'examples',
     title: 'See What People Created',
-    description: 'See what others have been creating with indranildeveloper-kepler.gl.',
+    description: 'See what others have been creating with indranil-kepler.gl.',
     icon: cdnUrl('icons/examples.png'),
     background: cdnUrl('examples/section-background.png')
   },
   {
     id: 'ecosystems',
     title: 'Ecosystem',
-    description: 'A collection of indranildeveloper-kepler.gl plugins built for common data analytics tools',
+    description: 'A collection of indranil-kepler.gl plugins built for common data analytics tools',
     icon: fsqCdnUrl('ecosystem.png'),
     isDark: true
   },
@@ -54,29 +54,29 @@ powerful geospatial analytics and visualization tool, with new features and upda
 ];
 
 export const HERO_IMAGES = [
-  cdnUrl('hero/indranildeveloper-kepler.gl-hexagon.png'),
-  cdnUrl('hero/indranildeveloper-kepler.gl-points.png'),
-  cdnUrl('hero/indranildeveloper-kepler.gl-contours.png')
+  cdnUrl('hero/indranil-kepler.gl-hexagon.png'),
+  cdnUrl('hero/indranil-kepler.gl-points.png'),
+  cdnUrl('hero/indranil-kepler.gl-contours.png')
 ];
 
 export const HERO_IMAGES_SCALED = [
-  cdnUrl('hero/indranildeveloper-kepler.gl-hexagon_s.png'),
-  cdnUrl('hero/indranildeveloper-kepler.gl-points_s.png'),
-  cdnUrl('hero/indranildeveloper-kepler.gl-contours_s.png')
+  cdnUrl('hero/indranil-kepler.gl-hexagon_s.png'),
+  cdnUrl('hero/indranil-kepler.gl-points_s.png'),
+  cdnUrl('hero/indranil-kepler.gl-contours_s.png')
 ];
 
 export const HEADER_NAVS = [
   {
     text: 'User Guide',
-    link: 'https://docs.indranildeveloper-kepler.gl/docs/user-guides'
+    link: 'https://docs.indranil-kepler.gl/docs/user-guides'
   },
   {
     text: 'Documentation',
-    link: 'https://docs.indranildeveloper-kepler.gl/docs/api-reference'
+    link: 'https://docs.indranil-kepler.gl/docs/api-reference'
   },
   {
     text: 'Github',
-    link: 'https://github.com/keplergl/indranildeveloper-kepler.gl'
+    link: 'https://github.com/keplergl/indranil-kepler.gl'
   },
   {
     text: 'Support Policy',
@@ -154,7 +154,7 @@ export const FEATURES = [
   {
     title: 'Performance',
     description:
-      'Built with Deck.gl, indranildeveloper-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
+      'Built with Deck.gl, indranil-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
     image: cdnUrl('features/performance.svg')
   },
   {
@@ -166,7 +166,7 @@ export const FEATURES = [
   {
     title: 'Embeddable',
     description:
-      'Built on React & Redux, indranildeveloper-kepler.gl can be embedded inside your own mapping applications.',
+      'Built on React & Redux, indranil-kepler.gl can be embedded inside your own mapping applications.',
     image: cdnUrl('features/embeddable.svg')
   }
 ];
@@ -175,20 +175,21 @@ export const ECOSYSTEM = [
   {
     title: 'Jupyter',
     description:
-      'Built with Deck.gl, indranildeveloper-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
+      'Built with Deck.gl, indranil-kepler.gl utilizes WebGL to render large datasets quickly and efficiently.',
     image: fsqCdnUrl('ecosystem-jupyter.png'),
-    githubUrl: 'https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/bindings/indranildeveloper-kepler.gl-jupyter'
+    githubUrl:
+      'https://github.com/keplergl/indranil-kepler.gl/tree/master/bindings/indranil-kepler.gl-jupyter'
   },
   {
     title: 'Tableau',
     description:
       'You can easily drag and drop a dataset, add filters, apply scales, and do aggregation on the fly.',
     image: fsqCdnUrl('ecosystem-tableau.png'),
-    githubUrl: 'https://github.com/keplergl/indranildeveloper-kepler.gl-tableau'
+    githubUrl: 'https://github.com/keplergl/indranil-kepler.gl-tableau'
   },
   {
     title: 'Visual Studio Code',
-    description: 'Geo Data Analytics tool for VS Code with indranildeveloper-kepler.gl',
+    description: 'Geo Data Analytics tool for VS Code with indranil-kepler.gl',
     image: fsqCdnUrl('ecosystem-vscode.png'),
     githubUrl: 'https://github.com/RandomFractals/geo-data-viewer'
   }
@@ -254,14 +255,15 @@ export const TUTORIALS = [
     url: 'https://medium.com/vis-gl/mapping-the-parisian-trees-6dc30f6aabc7'
   },
   {
-    description: 'Visualizing U.S. County Unemployment with indranildeveloper-kepler.gl',
+    description: 'Visualizing U.S. County Unemployment with indranil-kepler.gl',
     title: 'Making a choropleth map',
     image: cdnUrl('examples/unemployment.png'),
     url: 'https://medium.com/vis-gl/visualizing-u-s-county-unemployment-with-kepler-gl-c5f2ed31c71'
   },
   {
-    title: 'Uber Movement and indranildeveloper-kepler.gl',
-    description: 'Using indranildeveloper-kepler.gl and Movement data to Visualize Traffic Effects of a Rainstorm',
+    title: 'Uber Movement and indranil-kepler.gl',
+    description:
+      'Using indranil-kepler.gl and Movement data to Visualize Traffic Effects of a Rainstorm',
     image: cdnUrl('examples/movement.png'),
     url: 'https://medium.com/@uber_movement/movement-in-kepler-d00e843f464d'
   }

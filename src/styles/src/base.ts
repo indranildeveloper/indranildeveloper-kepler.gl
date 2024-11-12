@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {css} from 'styled-components';
-import {DIMENSIONS} from '@indranildeveloper-kepler.gl/constants';
+import {DIMENSIONS} from '@indranil-kepler.gl/constants';
 
 type InputProps = {
   active: boolean;
@@ -484,7 +484,7 @@ export const effectPanelElementColorSun = '#F7B26B';
 export const rightPanelMarginTop = 12;
 export const rightPanelMarginRight = 12;
 
-// theme is passed to indranildeveloper-kepler.gl when it's mounted,
+// theme is passed to indranil-kepler.gl when it's mounted,
 // it is used by styled-components to pass along to
 // all child components
 

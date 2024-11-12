@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 
 import {BrushingExtension} from '@deck.gl/extensions';
 import {ScatterplotLayer} from '@deck.gl/layers';
 
-import {GeoArrowScatterplotLayer} from '@indranildeveloper-kepler.gl/deckgl-arrow-layers';
-import {FilterArrowExtension} from '@indranildeveloper-kepler.gl/deckgl-layers';
+import {GeoArrowScatterplotLayer} from '@indranil-kepler.gl/deckgl-arrow-layers';
+import {FilterArrowExtension} from '@indranil-kepler.gl/deckgl-layers';
 
 import Layer, {
   LayerBaseConfig,
@@ -21,15 +21,15 @@ import {
   findDefaultColorField,
   DataContainerInterface,
   ArrowDataContainer
-} from '@indranildeveloper-kepler.gl/utils';
-import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/utils';
+import {default as KeplerTable} from '@indranil-kepler.gl/table';
 import PointLayerIcon from './point-layer-icon';
 import {
   LAYER_VIS_CONFIGS,
   DEFAULT_LAYER_COLOR,
   CHANNEL_SCALES,
   ColorRange
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 import {getTextOffsetByRadius, formatTextLabelData} from '../layer-text-label';
 import {
@@ -52,7 +52,7 @@ import {
   LayerColumn,
   Field,
   AnimationConfig
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 
 export type PointLayerVisConfigSettings = {
   radius: VisConfigNumber;
@@ -222,7 +222,7 @@ export default class PointLayer extends Layer {
   /*
    * CPU filtering an arrow table by values and assembling a partial copy of the raw table is expensive
    * so we will use filteredIndex to create an attribute e.g. filteredIndex [0|1] for GPU filtering
-   * in deck.gl layer, see: FilterArrowExtension in @indranildeveloper-kepler.gl/deckgl-layers.
+   * in deck.gl layer, see: FilterArrowExtension in @indranil-kepler.gl/deckgl-layers.
    * Note that this approach can create visible lags in case of a lot of discarted geometry.
    */
   filteredIndex: Uint8ClampedArray | null = null;

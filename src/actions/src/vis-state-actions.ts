@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // vis-state-reducer
 import {PickInfo} from '@deck.gl/core/lib/deck';
 import {default as ActionTypes} from './action-types';
-import {FileCacheItem} from '@indranildeveloper-kepler.gl/processors';
-import {Layer, LayerBaseConfig} from '@indranildeveloper-kepler.gl/layers';
+import {FileCacheItem} from '@indranil-kepler.gl/processors';
+import {Layer, LayerBaseConfig} from '@indranil-kepler.gl/layers';
 import {
   AddDataToMapPayload,
   ValueOf,
@@ -22,7 +22,7 @@ import {
   ParsedLayer,
   EffectPropsPartial,
   SyncTimelineMode
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 // TODO - import LoaderObject type from @loaders.gl/core when supported
 // TODO - import LoadOptions type from @loaders.gl/core when supported
 
@@ -809,11 +809,11 @@ export type UpdateVisDataUpdaterAction = {
  * @param datasets - ***required** datasets can be a dataset or an array of datasets
  * Each dataset object needs to have `info` and `data` property.
  * @param {object} options
- * @param options.centerMap `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+ * @param options.centerMap `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
  * place the map view within the data points boundaries
  * @param options.readOnly `default: false` if `readOnly` is set to `true`
  * the left setting panel will be hidden
- * @param config this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+ * @param config this object will contain the full indranil-kepler.gl instance configuration {mapState, mapStyle, visState}
  * @returns action
  * @public
  */
@@ -1381,8 +1381,8 @@ export type SetEditorModeUpdaterAction = {
  * @returns action
  * @public
  * @example
- * import {setMapMode} from 'indranildeveloper-kepler.gl/actions';
- * import {EDITOR_MODES} from 'indranildeveloper-kepler.gl/constants';
+ * import {setMapMode} from 'indranil-kepler.gl/actions';
+ * import {EDITOR_MODES} from 'indranil-kepler.gl/constants';
  *
  * this.props.dispatch(setMapMode(EDITOR_MODES.DRAW_POLYGON));
  */

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import documentation from 'documentation';
 import fs from 'fs';
@@ -77,9 +77,7 @@ const TREE = {
 function _overrideHeading(nodes) {
   const contents = ['Examples', 'Parameters'];
   const mdContents = contents.map(text => {
-    return unified()
-      .use(markdown)
-      .parse(`__${text}__`);
+    return unified().use(markdown).parse(`__${text}__`);
   });
 
   return nodes.map(node => {
@@ -159,9 +157,7 @@ function _appendActionToUpdaters(node, actionMap) {
 }
 
 function _appendListToDescription(node, mdContent) {
-  const tree = unified()
-    .use(markdown)
-    .parse(mdContent);
+  const tree = unified().use(markdown).parse(mdContent);
 
   if (typeof node.description === 'object') {
     node.description.children = (node.description.children || []).concat(tree.children);

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useState, useCallback, useContext} from 'react';
 import styled from 'styled-components';
 import MapPopoverContentFactory from './map-popover-content';
 import {Pin, ArrowLeft, ArrowRight, CursorPoint} from '../common/icons';
 import {injectIntl, IntlShape} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {RootContext} from '../context';
-import {parseGeoJsonRawFeature} from '@indranildeveloper-kepler.gl/layers';
-import {idToPolygonGeo, generateHashId} from '@indranildeveloper-kepler.gl/utils';
-import {LAYER_TYPES} from '@indranildeveloper-kepler.gl/constants';
-import {LayerHoverProp} from '@indranildeveloper-kepler.gl/reducers';
-import {Feature, FeatureSelectionContext} from '@indranildeveloper-kepler.gl/types';
+import {parseGeoJsonRawFeature} from '@indranil-kepler.gl/layers';
+import {idToPolygonGeo, generateHashId} from '@indranil-kepler.gl/utils';
+import {LAYER_TYPES} from '@indranil-kepler.gl/constants';
+import {LayerHoverProp} from '@indranil-kepler.gl/reducers';
+import {Feature, FeatureSelectionContext} from '@indranil-kepler.gl/types';
 import {
   FloatingPortal,
   flip,

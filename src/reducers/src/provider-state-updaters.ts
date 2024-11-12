@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {withTask} from 'react-palm/tasks';
 import Console from 'global/console';
-import {generateHashId, getError, isPlainObject, toArray} from '@indranildeveloper-kepler.gl/utils';
+import {generateHashId, getError, isPlainObject, toArray} from '@indranil-kepler.gl/utils';
 import {
   EXPORT_FILE_TO_CLOUD_TASK,
   ACTION_TASK,
   DELAY_TASK,
   LOAD_CLOUD_MAP_TASK
-} from '@indranildeveloper-kepler.gl/tasks';
+} from '@indranil-kepler.gl/tasks';
 import {
   exportFileSuccess,
   exportFileError,
@@ -22,17 +22,17 @@ import {
   addNotification,
   addDataToMap,
   ProviderActions
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 import {
   DEFAULT_NOTIFICATION_TYPES,
   DEFAULT_NOTIFICATION_TOPICS,
   DATASET_FORMATS,
   OVERWRITE_MAP_ID
-} from '@indranildeveloper-kepler.gl/constants';
-import {ExportFileToCloudPayload} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/constants';
+import {ExportFileToCloudPayload} from '@indranil-kepler.gl/types';
 
-import {FILE_CONFLICT_MSG, MapListItem} from '@indranildeveloper-kepler.gl/cloud-providers';
-import {DATASET_HANDLERS} from '@indranildeveloper-kepler.gl/processors';
+import {FILE_CONFLICT_MSG, MapListItem} from '@indranil-kepler.gl/cloud-providers';
+import {DATASET_HANDLERS} from '@indranil-kepler.gl/processors';
 
 type ActionPayload<P> = {
   type?: string;

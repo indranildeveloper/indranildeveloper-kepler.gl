@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {Feature, Position, BBox} from 'geojson';
 import normalize from '@mapbox/geojson-normalize';
@@ -11,10 +11,10 @@ import {parseSync} from '@loaders.gl/core';
 import {WKBLoader, WKTLoader} from '@loaders.gl/wkt';
 import {binaryToGeometry} from '@loaders.gl/gis';
 import {BinaryFeatureCollection} from '@loaders.gl/schema';
-import {DataContainerInterface, getSampleData} from '@indranildeveloper-kepler.gl/utils';
-import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
-import {LayerColumns} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
+import {DataContainerInterface, getSampleData} from '@indranil-kepler.gl/utils';
+import {ALL_FIELD_TYPES} from '@indranil-kepler.gl/constants';
+import {LayerColumns} from '@indranil-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
 
 import {GeojsonLayerMetaProps, assignPointPairToLayerColumn} from '../layer-utils';
 import {LayerBaseConfig} from '../base-layer';

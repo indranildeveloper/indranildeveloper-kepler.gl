@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Console from 'global/console';
 import window from 'global/window';
 import document from 'global/document';
-import {IMAGE_EXPORT_ERRORS} from '@indranildeveloper-kepler.gl/constants';
+import {IMAGE_EXPORT_ERRORS} from '@indranil-kepler.gl/constants';
 
 export function processClone(original, clone) {
   if (!(clone instanceof window.Element)) {

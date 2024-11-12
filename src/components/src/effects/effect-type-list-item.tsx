@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled, {withTheme} from 'styled-components';
 import classNames from 'classnames';
 
-import {KEPLER_UNFOLDED_BUCKET} from '@indranildeveloper-kepler.gl/constants';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {KEPLER_UNFOLDED_BUCKET} from '@indranil-kepler.gl/constants';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 
 import {Add} from '../common/icons';
 
@@ -30,7 +30,7 @@ const StyledListItem = styled.div`
 
   .effect-type-selector__item__icon {
     display: flex;
-    background-image: url(${`${KEPLER_UNFOLDED_BUCKET}/images/indranildeveloper-kepler.gl-layer-icon-bg.png`});
+    background-image: url(${`${KEPLER_UNFOLDED_BUCKET}/images/indranil-kepler.gl-layer-icon-bg.png`});
     background-size: ${props => props.theme.effectTypeIconSizeL}px
       ${props => props.theme.effectTypeIconSizeL}px;
     height: ${props => props.theme.effectTypeIconSizeL}px;

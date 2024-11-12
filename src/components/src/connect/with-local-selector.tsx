@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {createSelector} from 'reselect';
 import KeplerGlContext from '../context';
-import {KeplerGlState} from '@indranildeveloper-kepler.gl/reducers';
+import {KeplerGlState} from '@indranil-kepler.gl/reducers';
 
 const identity = state => state;
 

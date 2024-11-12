@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Tippy from '@tippyjs/react/headless';
 import React, {useCallback, useMemo, useState} from 'react';
 import styled from 'styled-components';
 
-import {Accessor, DropdownList, Typeahead} from '@indranildeveloper-kepler.gl/components';
-import {ColorRange, SCALE_TYPES} from '@indranildeveloper-kepler.gl/constants';
-import {Layer, VisualChannelDomain} from '@indranildeveloper-kepler.gl/layers';
-import {ColorUI, Field} from '@indranildeveloper-kepler.gl/types';
-import {getLayerColorScale, getLegendOfScale, hasColorMap} from '@indranildeveloper-kepler.gl/utils';
+import {Accessor, DropdownList, Typeahead} from '@indranil-kepler.gl/components';
+import {ColorRange, SCALE_TYPES} from '@indranil-kepler.gl/constants';
+import {Layer, VisualChannelDomain} from '@indranil-kepler.gl/layers';
+import {ColorUI, Field} from '@indranil-kepler.gl/types';
+import {getLayerColorScale, getLegendOfScale, hasColorMap} from '@indranil-kepler.gl/utils';
 import ColorBreaksPanelFactory, {ColorBreaksPanelProps} from './color-breaks-panel';
 import {SetColorUIFunc} from './custom-palette';
 import DropdownSelect from '../../common/item-selector/dropdown-select';

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -15,14 +15,14 @@ import {
   pointLayerMeta,
   fieldDomain
 } from 'test/helpers/layer-utils';
-import {processGeojson} from '@indranildeveloper-kepler.gl/processors';
+import {processGeojson} from '@indranil-kepler.gl/processors';
 import {geoJsonWithStyle, geojsonData} from 'test/fixtures/geojson';
 import testArcData, {pointFromNeighbor} from 'test/fixtures/test-arc-data';
 import {StateWArcNeighbors} from 'test/helpers/mock-state';
-import {copyTableAndUpdate, createNewDataEntry} from '@indranildeveloper-kepler.gl/table';
-import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
-import {INITIAL_MAP_STATE} from '@indranildeveloper-kepler.gl/reducers';
-import {DEFAULT_TEXT_LABEL, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {copyTableAndUpdate, createNewDataEntry} from '@indranil-kepler.gl/table';
+import {KeplerGlLayers} from '@indranil-kepler.gl/layers';
+import {INITIAL_MAP_STATE} from '@indranil-kepler.gl/reducers';
+import {DEFAULT_TEXT_LABEL, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranil-kepler.gl/constants';
 import cloneDeep from 'lodash.clonedeep';
 
 const {PointLayer} = KeplerGlLayers;

@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // Reducers
-export * from '@indranildeveloper-kepler.gl/reducers';
+export * from '@indranil-kepler.gl/reducers';
 
 // Schemas
-export * from '@indranildeveloper-kepler.gl/schemas';
+export * from '@indranil-kepler.gl/schemas';
 
 // Actions
-export * from '@indranildeveloper-kepler.gl/actions';
+export * from '@indranil-kepler.gl/actions';
 
 // Constants
-export * from '@indranildeveloper-kepler.gl/constants';
+export * from '@indranil-kepler.gl/constants';
 
 // Processors
-export * from '@indranildeveloper-kepler.gl/processors';
+export * from '@indranil-kepler.gl/processors';
 
 // Components
-export * from '@indranildeveloper-kepler.gl/components';
+export * from '@indranil-kepler.gl/components';
 
 // Layers
-export * from '@indranildeveloper-kepler.gl/layers';
+export * from '@indranil-kepler.gl/layers';
 
 // Styles
-export * from '@indranildeveloper-kepler.gl/styles';
+export * from '@indranil-kepler.gl/styles';
 
 // Utils
-export * from '@indranildeveloper-kepler.gl/utils';
+export * from '@indranil-kepler.gl/utils';
 
 // Default export
-export {default} from '@indranildeveloper-kepler.gl/components';
+export {default} from '@indranil-kepler.gl/components';

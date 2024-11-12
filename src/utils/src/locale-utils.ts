@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {isObject} from './utils';
 import Console from 'global/console';
@@ -22,7 +22,7 @@ export const flattenMessages = (nestedMessages, prefix = '') => {
 export const mergeMessages = (defaultMessages, userMessages) => {
   if (!isObject(userMessages) || !isObject(userMessages.en)) {
     Console.error(
-      'message should be an object and contain at least the `en` translation. Read more at https://docs.indranildeveloper-kepler.gl/docs/api-reference/localization'
+      'message should be an object and contain at least the `en` translation. Read more at https://docs.indranil-kepler.gl/docs/api-reference/localization'
     );
 
     return defaultMessages;

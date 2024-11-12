@@ -1,9 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import keyMirror from 'keymirror';
 
-import {BaseMapStyle, EffectDescription, RGBAColor, SyncTimelineMode} from '@indranildeveloper-kepler.gl/types';
+import {
+  BaseMapStyle,
+  EffectDescription,
+  RGBAColor,
+  SyncTimelineMode
+} from '@indranil-kepler.gl/types';
 import {
   scaleLinear,
   scaleLog,
@@ -16,7 +21,7 @@ import {
 } from 'd3-scale';
 import {TOOLTIP_FORMAT_TYPES} from './tooltip';
 
-export const ACTION_PREFIX = '@@indranildeveloper-kepler.gl/';
+export const ACTION_PREFIX = '@@indranil-kepler.gl/';
 export const KEPLER_UNFOLDED_BUCKET = 'https://studio-public-data.foursquare.com/statics/keplergl';
 export const BASEMAP_ICON_PREFIX = `${KEPLER_UNFOLDED_BUCKET}/geodude`;
 export const DEFAULT_MAPBOX_API_URL = 'https://api.mapbox.com';
@@ -94,14 +99,14 @@ export const OVERWRITE_MAP_ID = 'overwriteMap';
  */
 export const SHARE_MAP_ID = 'shareMap';
 
-export const KEPLER_GL_NAME = 'indranildeveloper-kepler.gl';
+export const KEPLER_GL_NAME = 'indranil-kepler.gl';
 
 // __PACKAGE_VERSION__ is automatically injected by Babel/Esbuild during the build process
 // Since we are injecting this during the build process with babel
 // while developing VERSION is not defined, we capture the exception and return
 // an empty string which will allow us to retrieve the latest umd version
 export const KEPLER_GL_VERSION = '__PACKAGE_VERSION__';
-export const KEPLER_GL_WEBSITE = 'http://indranildeveloper-kepler.gl/';
+export const KEPLER_GL_WEBSITE = 'http://indranil-kepler.gl/';
 
 export const DIMENSIONS = {
   sidePanel: {
@@ -1041,7 +1046,7 @@ export const EXPORT_MAP_FORMAT_OPTIONS = Object.entries(EXPORT_MAP_FORMATS).map(
 );
 
 export function getHTMLMapModeTileUrl(mode: string): string {
-  return `https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/map-${mode.toLowerCase()}-mode.png`;
+  return `https://d1a3f4spazzrp4.cloudfront.net/indranil-kepler.gl/documentation/map-${mode.toLowerCase()}-mode.png`;
 }
 
 export const EXPORT_HTML_MAP_MODE_OPTIONS = Object.entries(EXPORT_HTML_MAP_MODES).map(

@@ -1,12 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import memoize from 'lodash.memoize';
 import uniq from 'lodash.uniq';
 import Layer, {LayerBaseConfig, defaultGetFieldValue} from '../base-layer';
 import {TripsLayer as DeckGLTripsLayer} from '@deck.gl/geo-layers';
 
-import {GEOJSON_FIELDS, ColorRange, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {
+  GEOJSON_FIELDS,
+  ColorRange,
+  PROJECTED_PIXEL_SIZE_MULTIPLIER
+} from '@indranil-kepler.gl/constants';
 import TripLayerIcon from './trip-layer-icon';
 
 import {
@@ -28,9 +32,9 @@ import {
   VisConfigNumber,
   VisConfigRange,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
-import {default as KeplerTable, Datasets} from '@indranildeveloper-kepler.gl/table';
-import {DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/types';
+import {default as KeplerTable, Datasets} from '@indranil-kepler.gl/table';
+import {DataContainerInterface} from '@indranil-kepler.gl/utils';
 
 export type TripLayerVisConfigSettings = {
   opacity: VisConfigNumber;

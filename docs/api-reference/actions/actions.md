@@ -103,7 +103,7 @@ Returns an action dispatcher that wraps and forwards the actions to a specific i
 
 ```javascript
 // action and forward dispatcher
-import {toggleSplitMap, forwardTo} from '@indranildeveloper-kepler.gl/actions';
+import {toggleSplitMap, forwardTo} from '@indranil-kepler.gl/actions';
 import {connect} from 'react-redux';
 
 const MapContainer = props => (
@@ -146,7 +146,7 @@ Returns **[Object][164]** unwrapped action
 ### wrapTo
 
 Wrap an action into a forward action that only modify the state of a specific
-indranildeveloper-kepler.gl instance. indranildeveloper-kepler.gl reducer will look for signatures in the action to
+indranil-kepler.gl instance. indranil-kepler.gl reducer will look for signatures in the action to
 determine whether it needs to be forwarded to a specific instance reducer.
 
 wrapTo can be curried. You can create a curried action wrapper by only supply the `id` argument
@@ -155,9 +155,9 @@ A forward action looks like this
 
 ```js
  {
-   type: "@@indranildeveloper-kepler.gl/LAYER_CONFIG_CHANGE",
+   type: "@@indranil-kepler.gl/LAYER_CONFIG_CHANGE",
    payload: {
-     type: '@@indranildeveloper-kepler.gl/LAYER_CONFIG_CHANGE',
+     type: '@@indranil-kepler.gl/LAYER_CONFIG_CHANGE',
      payload: {},
      meta: {
       // id of instance
@@ -180,7 +180,7 @@ A forward action looks like this
 **Examples**
 
 ```javascript
-import {wrapTo, togglePerspective} from '@indranildeveloper-kepler.gl/actions';
+import {wrapTo, togglePerspective} from '@indranil-kepler.gl/actions';
 
 // This action will only dispatch to the KeplerGl instance with `id: map_1`
 this.props.dispatch(wrapTo('map_1', togglePerspective()));
@@ -192,7 +192,7 @@ this.props.dispatch(wrapToMap1(togglePerspective()));
 
 ## ActionTypes
 
-indranildeveloper-kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in indranildeveloper-kepler.gl
+indranil-kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in indranil-kepler.gl
 
 Type: [Object][164]
 
@@ -204,12 +204,12 @@ import {handleActions} from 'redux-actions';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {taskMiddleware} from 'react-palm/tasks';
 
-import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
-import {ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import keplerGlReducer from '@indranil-kepler.gl/reducers';
+import {ActionTypes} from '@indranil-kepler.gl/actions';
 
 const appReducer = handleActions(
   {
-    // listen on indranildeveloper-kepler.gl map update action to store a copy of viewport in app state
+    // listen on indranil-kepler.gl map update action to store a copy of viewport in app state
     [ActionTypes.UPDATE_MAP]: (state, action) => ({
       ...state,
       viewport: action.payload
@@ -236,7 +236,7 @@ hiding and showing map layers, user input of custom map style url.
 
 Add map style from user input to reducer and set it to current style
 This action is called when user click confirm after putting in a valid style url in the custom map style dialog.
-It should not be called from outside indranildeveloper-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
+It should not be called from outside indranil-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
 param {void}
 
 - **ActionTypes**: [`ActionTypes.ADD_CUSTOM_MAP_STYLE`][12]
@@ -342,18 +342,18 @@ Set 3d building layer group color
 
 ## main
 
-Main indranildeveloper-kepler.gl actions, these actions handles loading data and config into indranildeveloper-kepler.gl reducer. These actions
+Main indranil-kepler.gl actions, these actions handles loading data and config into indranil-kepler.gl reducer. These actions
 is listened by all subreducers,
 
 ### addDataToMap
 
-Add data to indranildeveloper-kepler.gl reducer, prepare map with preset configuration if config is passed.
-indranildeveloper-kepler.gl provides a handy set of utils to parse data from different formats to the `data` object required in dataset. You rarely need to manually format the data obejct.
+Add data to indranil-kepler.gl reducer, prepare map with preset configuration if config is passed.
+indranil-kepler.gl provides a handy set of utils to parse data from different formats to the `data` object required in dataset. You rarely need to manually format the data obejct.
 
 Use `KeplerGlSchema.getConfigToSave` to generate a json blob of the currents instance config.
 The config object value will always have higher precedence than the options properties.
 
-indranildeveloper-kepler.gl uses `dataId` in the config to match with loaded dataset. If you pass a config object, you need
+indranil-kepler.gl uses `dataId` in the config to match with loaded dataset. If you pass a config object, you need
 to match the `info.id` of your dataset to the `dataId` in each `layer`, `filter` and `interactionConfig.tooltips.fieldsToShow`
 
 - **ActionTypes**: [`ActionTypes.ADD_DATA_TO_MAP`][12]
@@ -372,18 +372,18 @@ to match the `info.id` of your dataset to the `dataId` in each `layer`, `filter`
         - `data.datasets.data.fields.name` **[string][162]** **\*required** Name of the field,
       - `data.datasets.data.rows` **[Array][174]&lt;[Array][174]>** **\*required** Array of rows, in a tabular format with `fields` and `rows`
   - `data.options` **[Object][164]**
-    - `data.options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+    - `data.options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
       place the map view within the data points boundaries. `options.centerMap` will override `config.mapState` if passed in.
     - `data.options.readOnly` **[boolean][165]** `default: false` if `readOnly` is set to `true`
       the left setting panel will be hidden
     - `data.options.keepExistingConfig` **[boolean][165]** whether to keep exiting map data and associated layer filter interaction config `default: false`.
-  - `data.config` **[Object][164]** this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+  - `data.config` **[Object][164]** this object will contain the full indranil-kepler.gl instance configuration {mapState, mapStyle, visState}
 
 **Examples**
 
 ```javascript
 // app.js
-import {addDataToMap} from '@indranildeveloper-kepler.gl/actions';
+import {addDataToMap} from '@indranil-kepler.gl/actions';
 
 const sampleTripData = {
   fields: [
@@ -437,7 +437,7 @@ this.props.dispatch(
 
 ### keplerGlInit
 
-Initialize indranildeveloper-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
+Initialize indranil-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
 
 - **ActionTypes**: [`ActionTypes.INIT`][12]
 - **Updaters**: [`mapStyleUpdaters.initMapStyleUpdater`][177]
@@ -451,15 +451,15 @@ Initialize indranildeveloper-kepler.gl reducer. It is used to pass in `mapboxApi
 
 ### receiveMapConfig
 
-Pass config to indranildeveloper-kepler.gl instance, prepare the state with preset configs.
+Pass config to indranil-kepler.gl instance, prepare the state with preset configs.
 Calling `KeplerGlSchema.parseSavedConfig` to convert saved config before passing it in is required.
 
 You can call `receiveMapConfig` before passing in any data. The reducer will store layer and filter config, waiting for
 data to come in. When data arrives, you can call `addDataToMap` without passing any config, and the reducer will try to match
 preloaded configs. This behavior is designed to allow asynchronous data loading.
 
-It is also useful when you want to prepare the indranildeveloper-kepler.gl instance with some preset layer and filter settings.
-**Note** Sequence is important, `receiveMapConfig` needs to be called **before** data is loaded. Currently indranildeveloper-kepler.gl doesn't allow calling `receiveMapConfig` after data is loaded.
+It is also useful when you want to prepare the indranil-kepler.gl instance with some preset layer and filter settings.
+**Note** Sequence is important, `receiveMapConfig` needs to be called **before** data is loaded. Currently indranil-kepler.gl doesn't allow calling `receiveMapConfig` after data is loaded.
 It will reset current configuration first then apply config to it.
 
 - **ActionTypes**: [`ActionTypes.RECEIVE_MAP_CONFIG`][12]
@@ -469,7 +469,7 @@ It will reset current configuration first then apply config to it.
 
 - `config` **[Object][164]** **\*required** The Config Object
 - `options` **[Object][164]** **\*optional** The Option object
-  - `options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+  - `options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
     place the map view within the data points boundaries
   - `options.readOnly` **[boolean][165]** `default: false` if `readOnly` is set to `true`
     the left setting panel will be hidden
@@ -478,8 +478,8 @@ It will reset current configuration first then apply config to it.
 **Examples**
 
 ```javascript
-import {receiveMapConfig} from '@indranildeveloper-kepler.gl/actions';
-import KeplerGlSchema from '@indranildeveloper-kepler.gl/schemas';
+import {receiveMapConfig} from '@indranil-kepler.gl/actions';
+import KeplerGlSchema from '@indranil-kepler.gl/schemas';
 
 const parsedConfig = KeplerGlSchema.parseSavedConfig(config);
 this.props.dispatch(receiveMapConfig(parsedConfig));
@@ -784,8 +784,8 @@ Set the map mode
 **Examples**
 
 ```javascript
-import {setMapMode} from '@indranildeveloper-kepler.gl/actions';
-import {EDITOR_MODES} from '@indranildeveloper-kepler.gl/constants';
+import {setMapMode} from '@indranil-kepler.gl/actions';
+import {EDITOR_MODES} from '@indranil-kepler.gl/constants';
 
 this.props.dispatch(setMapMode(EDITOR_MODES.DRAW_POLYGON));
 ```
@@ -947,11 +947,11 @@ Add new dataset to `visState`, with option to load a map config along with the d
       - `datasets.data.fields.name` **[string][162]** **\*required** Name of the field,
     - `datasets.data.rows` **[Array][174]&lt;[Array][174]>** **\*required** Array of rows, in a tabular format with `fields` and `rows`
 - `options` **[Object][164]**
-  - `options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+  - `options.centerMap` **[boolean][165]** `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
     place the map view within the data points boundaries
   - `options.readOnly` **[boolean][165]** `default: false` if `readOnly` is set to `true`
     the left setting panel will be hidden
-- `config` **[Object][164]** this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+- `config` **[Object][164]** this object will contain the full indranil-kepler.gl instance configuration {mapState, mapStyle, visState}
 
 Returns **{type: ActionTypes.UPDATE_VIS_DATA, datasets: datasets, options: options, config: config}**
 
@@ -1162,8 +1162,8 @@ the instance state and later transfer it to a newly mounted component with the s
 
 ### registerEntry
 
-Add a new indranildeveloper-kepler.gl instance in `keplerGlReducer`. This action is called under-the-hood when a `KeplerGl` component is **mounted** to the dom.
-Note that if you dispatch actions such as adding data to a indranildeveloper-kepler.gl instance before the React component is mounted, the action will not be
+Add a new indranil-kepler.gl instance in `keplerGlReducer`. This action is called under-the-hood when a `KeplerGl` component is **mounted** to the dom.
+Note that if you dispatch actions such as adding data to a indranil-kepler.gl instance before the React component is mounted, the action will not be
 performed. Instance reducer can only handle actions when it is instantiated.
 
 - **ActionTypes**: [`ActionTypes.REGISTER_ENTRY`][12]
@@ -1211,7 +1211,7 @@ Fit map viewport to bounds
 **Examples**
 
 ```javascript
-import {fitBounds} from '@indranildeveloper-kepler.gl/actions';
+import {fitBounds} from '@indranil-kepler.gl/actions';
 this.props.dispatch(fitBounds([-122.23, 37.127, -122.11, 37.456]));
 ```
 
@@ -1225,7 +1225,7 @@ Toggle between 3d and 2d map.
 **Examples**
 
 ```javascript
-import {togglePerspective} from '@indranildeveloper-kepler.gl/actions';
+import {togglePerspective} from '@indranil-kepler.gl/actions';
 this.props.dispatch(togglePerspective());
 ```
 
@@ -1243,7 +1243,7 @@ Toggle between single map or split maps
 **Examples**
 
 ```javascript
-import {toggleSplitMap} from '@indranildeveloper-kepler.gl/actions';
+import {toggleSplitMap} from '@indranil-kepler.gl/actions';
 this.props.dispatch(toggleSplitMap());
 ```
 
@@ -1269,7 +1269,7 @@ Update map viewport
 **Examples**
 
 ```javascript
-import {updateMap} from '@indranildeveloper-kepler.gl/actions';
+import {updateMap} from '@indranil-kepler.gl/actions';
 this.props.dispatch(
   updateMap({latitude: 37.75043, longitude: -122.34679, width: 800, height: 1200})
 );

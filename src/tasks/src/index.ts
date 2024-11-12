@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Task, {taskCreator} from 'react-palm/tasks';
-import {readFileInBatches, processFileData} from '@indranildeveloper-kepler.gl/processors';
+import {readFileInBatches, processFileData} from '@indranil-kepler.gl/processors';
 
 export const LOAD_FILE_TASK = Task.fromPromise(
   ({file, fileCache, loaders, loadOptions}) =>

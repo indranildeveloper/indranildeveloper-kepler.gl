@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to indranildeveloper-kepler.gl will be documented in this file.
+All notable changes to indranil-kepler.gl will be documented in this file.
 
 <!--
 Each version should:
@@ -118,7 +118,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - a59d8342 [Fix] Resize observer crashes when passed a non-Element target (#2340)
 - ec35ea97 [feat] introduced jest to replace tape/sinon/enzyme for browser tests; upgrade typescript to 4.5.5 (#2339)
 - 85fa66f3 [feat] Adding applyLayerConfig action (#2337)
-- ae26de55 [fix] Fix website indranildeveloper-kepler.gl example (#2338)
+- ae26de55 [fix] Fix website indranil-kepler.gl example (#2338)
 - d14e7ff4 [chore] Updated more deps to be compatible with react 18 (#2335)
 - 70128119 [chore] updated modal and panel title types to react 18 (#2334)
 - a0e5db72 [chore] Upgrade to react 18 (#2323)
@@ -200,7 +200,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - 28fbcdbf [feat] Convert layer order from idx to layer IDs (#2203)
 - e1ccfdff [Enhancement] Allow empty column when layer created from config (#2206)
 - 30792f47 [Fix] Add selected style for light dropdowns (#2207)
-- 44aafd15 [Feat] add indranildeveloper-kepler.gl to info.source in exported indranildeveloper-kepler.gl.json (#2195)
+- 44aafd15 [Feat] add indranil-kepler.gl to info.source in exported indranil-kepler.gl.json (#2195)
 - 95fd2369 [fix] Empty cells with date time data are filled with Invalid date (#2201)
 - 3b73dc07 [Feat] Add display format setting for table/tooltip (#2199)
 - 87b79c3b [Feat] add replaceDataInMap action (#2198)
@@ -297,7 +297,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - a865ce8b [fix] correct provider downloadMap type (#2049)
 - c53d81fd Bump moment-timezone from 0.5.33 to 0.5.35 (#1966)
 - efa32f75 [fix] include CenterFlexbox in common components (#2035)
-- 5f3d185f correct @indranildeveloper-kepler.gl/styles types file location (#2034)
+- 5f3d185f correct @indranil-kepler.gl/styles types file location (#2034)
 - 76e1a4d0 [fix] Updated dataset item cursor style (#2013)
 - d0bcaa89 [Fix][perf] String filter freezes browser when loading a large dataset (#2012)
 - 1214bd9d [fix] Time filter: Add padding if min/max values are the same (#2011)
@@ -313,7 +313,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 ## [3.0.0-alpha.0] - November 5 2022
 
 - 4eb6b24b [Chore] dependencies update + publish process update (#1978)
-- 72f201c9 indranildeveloper-kepler.gl-jupyter: Fixed wording in documentation (#1938)
+- 72f201c9 indranil-kepler.gl-jupyter: Fixed wording in documentation (#1938)
 - 791bbe21 [Feat] make data table header cell overridable (#1995)
 - 77ba9509 deck upgrade fix (#1997)
 - 9b483b22 better regex for mapbox style boundary detection (#1996)
@@ -357,7 +357,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - f21afd8d [Chore]: Technical: Isolate tasks (#1941)
 - 88039cd3 [Chore]: Technical: Isolate cloud-providers (#1942)
 - a98a015b [Bug] Fix getSampleData util import (#1947)
-- 4615c480 [Fix]: indranildeveloper-kepler.gl site issue fixed (#1944)
+- 4615c480 [Fix]: indranil-kepler.gl site issue fixed (#1944)
 - f2459c6c [Chore]: Technical: Isolate utils (#1876)
 - 88e15d5e [Fix] fix lint (#1932)
 - 3301a7c5 [Chore]: bump deck to 8.5.4, loaders to 3.0.9 (#1928)
@@ -524,7 +524,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - 5b442c5d [Jupyter] keplergl==0.3.2 (#1619)
 - a56206c8 keplergl-jupyter v0.3.1
 - e12039c6 [Feat] Add Copy Button to Export Map Dialog (#1609)
-- 3f876ac1 [Jupyter] bump indranildeveloper-kepler.gl js version release keplergl-jupyter=0.3.1 (#1617)
+- 3f876ac1 [Jupyter] bump indranil-kepler.gl js version release keplergl-jupyter=0.3.1 (#1617)
 
 ## [2.5.5] - September 12 2021
 
@@ -822,7 +822,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Enhancement] Move layer panel visible toggle to end (#1017)
 - [Bug] export formatCsv (#1022)
 - [Enhancement] Refactor load file tasks to better handle multiple file types (#986)
-- [Bug] Fixed carto-provider example: importing the correct indranildeveloper-kepler.gl processor path (#1016)
+- [Bug] Fixed carto-provider example: importing the correct indranil-kepler.gl processor path (#1016)
 - [Feat] Add satellite basemap (#1007)
 - [Feat] Improved data table rendering (#1010)
 - [Chore] Upgrade to Node 10 (#1009)
@@ -957,7 +957,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Enhancement] Express example (#704)
 - [Bug] check new layers based on new dataset id (#721)
 - [Feat] Add Log and Sqrt scale (#670)
-- [Chore] Add a script to automatically edit indranildeveloper-kepler.gl version (#714)
+- [Chore] Add a script to automatically edit indranil-kepler.gl version (#714)
 
 ## [1.1.6] - Sep 5 2019
 
@@ -977,7 +977,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Enhancement] Switch from callback refs to createRef (#622)
 - [Bug] Fix uglify error compiling dom-to-image in prod (#682)
 - [Enhancement] pass set useDevicePixels to deck.gl to plot container (#663)
-- [jupyter] Upgrade to indranildeveloper-kepler.gl v1.1.3 (#660)
+- [jupyter] Upgrade to indranil-kepler.gl v1.1.3 (#660)
 - [Chore] use xvfb as a service in travis-ci (#669)
 
 ## [1.1.3] - Aug 5 2019
@@ -1007,7 +1007,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - Update build command: remove yarn since netlify runs yarn by default (#585)
 - [Jupyter] cleanup examples (#574)
 - [Feat] Publish keplergl jupyter 0.1.0a5 (#572)
-- [Chore] Add issue template for indranildeveloper-kepler.gl Jupyter
+- [Chore] Add issue template for indranil-kepler.gl Jupyter
 - [Bug] Solve issue #547 avoid crash application (#564)
 
 ## [1.1.1] - Jun 24 2019
@@ -1021,7 +1021,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Chore] Add jupyter widget issue templates (a40c1fe)
 - [Feat] Bump deck.gl to v7.1.5 (#568)
 - [Feat] Add ScenegraphLayer (#540)
-- [Feat] Add indranildeveloper-kepler.gl-jupyter python package (#543)
+- [Feat] Add indranil-kepler.gl-jupyter python package (#543)
 
 ## [1.1.0] - Jun 15 2019
 
@@ -1060,7 +1060,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Bug] Fix browse for file upload (#486)
 - [Enhancement] Cleanup load map style tasks (#472)
 - [Enhancement] load svg icons from aws, add bundle analyzer, reduce bundle size -1mb (#479)
-- [Bug] upgrade indranildeveloper-kepler.gl version in examples
+- [Bug] upgrade indranil-kepler.gl version in examples
 - [Docs] Fixed link to addDataToMap (#459)
 - [Enhancement] expand bottom widget to full length if in read only mode(#465)
 
@@ -1085,7 +1085,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 
 ## [0.2.4] - Mar 13 2019
 
-- [Enhancement] Slider: use clientX to calculate delta to support windows IE and Tableau indranildeveloper-kepler.gl (#431)
+- [Enhancement] Slider: use clientX to calculate delta to support windows IE and Tableau indranil-kepler.gl (#431)
 - [Bug] Range slider: correctly setting ranch brush selection when mount (#433)
 - [Feat] Add getMapboxRef prop (#372)
 - [Enhancement] Automatically loading custom dependencies when inject custom component factor (#430)
@@ -1136,7 +1136,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Enhancement] Hexbin Layer: smaller radius step and dynamic hover (#310)
 - [Bug] remove unpm from yarn.lock (#303)
 - [Enhancement] use mapbox style url for default (published) uber map styles (#292)
-- [Feature] Load data and indranildeveloper-kepler.gl file using URLs (#260)
+- [Feature] Load data and indranil-kepler.gl file using URLs (#260)
 
 ## [0.2.1-beta.0] - Nov 16 2018
 
@@ -1148,7 +1148,7 @@ Ref: http://keepachangelog.com/en/0.3.0/
 - [Enhancement] Export side panel component factories (#282)
 - [Feature] Upgrade to deck.gl v6 (#272)
 - [Refactor] Small update of readability (#250)
-- [website] Click logo should go to indranildeveloper-kepler.gl website (#251)
+- [website] Click logo should go to indranil-kepler.gl website (#251)
 - [Enhancement] Add contribution guidelines on contributing.md file (#108)
 - [Enhancement] Scan through all text labels to get the entire character set (#245)
 

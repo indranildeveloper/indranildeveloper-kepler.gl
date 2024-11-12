@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Task, {withTask} from 'react-palm/tasks';
 import cloneDeep from 'lodash.clonedeep';
@@ -17,7 +17,7 @@ import {
   isPlainObject,
   hexToRgb,
   colorMaybeToRGB
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 import {
   DEFAULT_MAP_STYLES,
   DEFAULT_LAYER_GROUPS,
@@ -26,8 +26,8 @@ import {
   DEFAULT_BLDG_COLOR,
   DEFAULT_BACKGROUND_COLOR,
   BASE_MAP_BACKGROUND_LAYER_IDS
-} from '@indranildeveloper-kepler.gl/constants';
-import {ACTION_TASK, LOAD_MAP_STYLE_TASK} from '@indranildeveloper-kepler.gl/tasks';
+} from '@indranil-kepler.gl/constants';
+import {ACTION_TASK, LOAD_MAP_STYLE_TASK} from '@indranil-kepler.gl/tasks';
 import {rgb} from 'd3-color';
 
 import {
@@ -37,7 +37,7 @@ import {
   MapStyles,
   InputStyle,
   VisibleLayerGroups
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 import {
   ActionTypes,
   ReceiveMapConfigPayload,
@@ -45,7 +45,7 @@ import {
   MapStyleActions,
   loadMapStyles,
   loadMapStyleErr
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 
 export type MapboxStyleUrl = string;
 
@@ -101,12 +101,12 @@ const getDefaultState = (): MapStyle => {
 };
 
 /**
- * Updaters for `mapStyle`. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
+ * Updaters for `mapStyle`. Can be used in your root reducer to directly modify indranil-kepler.gl's state.
  * Read more about [Using updaters](../advanced-usage/using-updaters.md)
  * @public
  * @example
  *
- * import keplerGlReducer, {mapStyleUpdaters} from 'indranildeveloper-kepler.gl/reducers';
+ * import keplerGlReducer, {mapStyleUpdaters} from 'indranil-kepler.gl/reducers';
  * // Root Reducer
  * const reducers = combineReducers({
  *  keplerGl: keplerGlReducer,
@@ -724,7 +724,7 @@ export const inputMapStyleUpdater = (
 /**
  * Add map style from user input to reducer and set it to current style
  * This action is called when user click confirm after putting in a valid style url in the custom map style dialog.
- * It should not be called from outside indranildeveloper-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
+ * It should not be called from outside indranil-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
  * @memberof mapStyleUpdaters
  */
 export const addCustomMapStyleUpdater = (state: MapStyle): MapStyle => {
@@ -739,7 +739,7 @@ export const addCustomMapStyleUpdater = (state: MapStyle): MapStyle => {
 /**
  * Edit map style from user input to reducer.
  * This action is called when user clicks confirm after editing an existing custom style in the custom map style dialog.
- * It should not be called from outside indranildeveloper-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
+ * It should not be called from outside indranil-kepler.gl without a valid `inputStyle` in the `mapStyle` reducer.
  * @memberof mapStyleUpdaters
  */
 export const editCustomMapStyleUpdater = (state: MapStyle): MapStyle => {

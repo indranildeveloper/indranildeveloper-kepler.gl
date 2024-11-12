@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /*
  THIS FILE IS DEPRECATED: do not use enzyme for your tests but only jest.
@@ -10,11 +10,11 @@
 import React from 'react';
 import sinon from 'sinon';
 import {mount} from 'enzyme';
-import {theme} from '@indranildeveloper-kepler.gl/styles';
+import {theme} from '@indranil-kepler.gl/styles';
 import {ThemeProvider} from 'styled-components';
 import {IntlProvider} from 'react-intl';
-import {messages} from '@indranildeveloper-kepler.gl/localization';
-import {Typeahead} from '@indranildeveloper-kepler.gl/components';
+import {messages} from '@indranil-kepler.gl/localization';
+import {Typeahead} from '@indranil-kepler.gl/components';
 
 export function mountWithTheme(node, options) {
   return mount(node, {

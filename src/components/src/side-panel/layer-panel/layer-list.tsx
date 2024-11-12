@@ -1,19 +1,23 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
-import {Layer, LayerClassesType} from '@indranildeveloper-kepler.gl/layers';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {UIStateActions, VisStateActions, MapStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {Layer, LayerClassesType} from '@indranil-kepler.gl/layers';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {UIStateActions, VisStateActions, MapStateActions} from '@indranil-kepler.gl/actions';
 
 import {useSortable, SortableContext, verticalListSortingStrategy} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
 import LayerPanelFactory from './layer-panel';
-import {findById} from '@indranildeveloper-kepler.gl/utils';
-import {dataTestIds, SORTABLE_LAYER_TYPE, SORTABLE_SIDE_PANEL_TYPE} from '@indranildeveloper-kepler.gl/constants';
+import {findById} from '@indranil-kepler.gl/utils';
+import {
+  dataTestIds,
+  SORTABLE_LAYER_TYPE,
+  SORTABLE_SIDE_PANEL_TYPE
+} from '@indranil-kepler.gl/constants';
 
 export type LayerListProps = {
   datasets: Datasets;

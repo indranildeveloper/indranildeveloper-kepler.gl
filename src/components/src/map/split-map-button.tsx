@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {ComponentType, useCallback, useMemo} from 'react';
 import classnames from 'classnames';
 import {MapControlButton} from '../common/styled-components';
 import {Delete, Split} from '../common/icons';
 import MapControlTooltipFactory from './map-control-tooltip';
-import {MapControlItem, MapControls} from '@indranildeveloper-kepler.gl/types';
+import {MapControlItem, MapControls} from '@indranil-kepler.gl/types';
 
 SplitMapButtonFactory.deps = [MapControlTooltipFactory];
 

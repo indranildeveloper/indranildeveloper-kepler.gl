@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import styled, {StyledComponent} from 'styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {CenterFlexbox, IconRoundSmall} from '../common/styled-components';
 import {Close, Pin} from '../common/icons';
 import Switch from '../common/switch';
-import {MapState} from '@indranildeveloper-kepler.gl/types';
-import {ActionHandler, toggleSplitMapViewport} from '@indranildeveloper-kepler.gl/actions';
+import {MapState} from '@indranil-kepler.gl/types';
+import {ActionHandler, toggleSplitMapViewport} from '@indranil-kepler.gl/actions';
 
 const StyledMapControlPanel = styled.div`
   background-color: ${props => props.theme.mapPanelBackgroundColor};

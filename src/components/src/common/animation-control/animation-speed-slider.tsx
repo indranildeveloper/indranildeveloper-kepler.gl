@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import styled from 'styled-components';
 import RangeSliderFactory from '../range-slider';
-import {SPEED_CONTROL_RANGE, SPEED_CONTROL_STEP} from '@indranildeveloper-kepler.gl/constants';
+import {SPEED_CONTROL_RANGE, SPEED_CONTROL_STEP} from '@indranil-kepler.gl/constants';
 import useOnClickOutside from '../../hooks/use-on-click-outside';
 
 const SliderWrapper = styled.div`

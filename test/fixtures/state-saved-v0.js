@@ -1,11 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {KeplerGlLayers} from '@indranil-kepler.gl/layers';
 const {PointLayer, ArcLayer, HexagonLayer, GeojsonLayer} = KeplerGlLayers;
-import {DEFAULT_TEXT_LABEL, DEFAULT_COLOR_UI, BINS} from '@indranildeveloper-kepler.gl/constants';
-import {defaultInteractionConfig} from '@indranildeveloper-kepler.gl/reducers';
-import {getBinThresholds, histogramFromThreshold, histogramFromDomain} from '@indranildeveloper-kepler.gl/utils';
+import {DEFAULT_TEXT_LABEL, DEFAULT_COLOR_UI, BINS} from '@indranil-kepler.gl/constants';
+import {defaultInteractionConfig} from '@indranil-kepler.gl/reducers';
+import {
+  getBinThresholds,
+  histogramFromThreshold,
+  histogramFromDomain
+} from '@indranil-kepler.gl/utils';
 
 export const savedStateV0 = {
   config: {
@@ -922,15 +926,8 @@ export const mergedFilters = [
         '5-second': histogramFromThreshold(
           getBinThresholds('5-second', [1453770124000, 1453770810000]),
           [
-            1453770810000,
-            1453770279000,
-            1453770358000,
-            1453770124000,
-            1453770131000,
-            1453770395000,
-            1453770173000,
-            1453770394000,
-            1453770540000
+            1453770810000, 1453770279000, 1453770358000, 1453770124000, 1453770131000,
+            1453770395000, 1453770173000, 1453770394000, 1453770540000
           ],
           [0, 1, 2, 3, 4, 5, 6, 7, 8]
         )

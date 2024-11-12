@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {Analyzer, DATA_TYPES} from 'type-analyzer';
 
-import {Field} from '@indranildeveloper-kepler.gl/types';
+import {Field} from '@indranil-kepler.gl/types';
 
 import {parseGeoJsonRawFeature, getGeojsonFeatureTypes} from '../geojson-layer/geojson-utils';
 import {
@@ -11,7 +11,7 @@ import {
   getSampleContainerData,
   notNullorUndefined,
   timeToUnixMilli
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 import {Feature} from '@turf/helpers';
 import {GeoJsonProperties, Geometry} from 'geojson';
 

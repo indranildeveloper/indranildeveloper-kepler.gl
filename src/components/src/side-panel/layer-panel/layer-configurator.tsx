@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable complexity */
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import React, {Component, Fragment} from 'react';
 import styled from 'styled-components';
 
@@ -26,14 +26,14 @@ import TextLabelPanelFactory from './text-label-panel';
 import VisConfigSliderFactory from './vis-config-slider';
 import VisConfigSwitchFactory from './vis-config-switch';
 
-import {capitalizeFirstLetter} from '@indranildeveloper-kepler.gl/utils';
+import {capitalizeFirstLetter} from '@indranil-kepler.gl/utils';
 
-import {AGGREGATION_TYPE_OPTIONS, LAYER_TYPES} from '@indranildeveloper-kepler.gl/constants';
-import {AggregationLayer, Layer, LayerBaseConfig, VisualChannel} from '@indranildeveloper-kepler.gl/layers';
+import {AGGREGATION_TYPE_OPTIONS, LAYER_TYPES} from '@indranil-kepler.gl/constants';
+import {AggregationLayer, Layer, LayerBaseConfig, VisualChannel} from '@indranil-kepler.gl/layers';
 
-import {ActionHandler, toggleModal} from '@indranildeveloper-kepler.gl/actions';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {ColorUI, LayerVisConfig, NestedPartial} from '@indranildeveloper-kepler.gl/types';
+import {ActionHandler, toggleModal} from '@indranil-kepler.gl/actions';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {ColorUI, LayerVisConfig, NestedPartial} from '@indranil-kepler.gl/types';
 
 type LayerConfiguratorProps = {
   layer: Layer;

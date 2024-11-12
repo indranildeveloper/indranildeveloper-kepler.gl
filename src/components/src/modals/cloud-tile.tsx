@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {Logout, Login} from '../common/icons';
 import {CenterVerticalFlexbox, Button, CheckMark} from '../common/styled-components';
-import {Provider, CloudUser} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {Provider, CloudUser} from '@indranil-kepler.gl/cloud-providers';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 
 interface StyledTileWrapperProps {

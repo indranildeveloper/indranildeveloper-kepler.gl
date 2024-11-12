@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
-import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
+import keplerGlReducer from '@indranil-kepler.gl/reducers';
 import {
   registerEntry,
   resetMapConfig,
@@ -12,7 +12,7 @@ import {
   layerTypeChange,
   addDataToMap,
   ActionTypes
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 import {createAction, handleActions} from 'redux-actions';
 
 test('keplerGlReducer.initialState', t => {
@@ -344,7 +344,7 @@ test('keplerGlReducer.plugin override', t => {
 });
 
 test('keplerGlReducer - splitMap and mapControl interaction', t => {
-  // init indranildeveloper-kepler.gl root and instance
+  // init indranil-kepler.gl root and instance
   let state = keplerGlReducer(undefined, registerEntry({id: 'test'}));
 
   state = keplerGlReducer(state, toggleMapControl('mapDraw'));

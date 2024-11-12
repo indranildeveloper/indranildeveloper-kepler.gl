@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled, {css} from 'styled-components';
@@ -77,13 +77,7 @@ const Link = styled.div`
   color: black;
 `;
 
-export const VerticalCard = ({
-  title,
-  description,
-  image,
-  linkText,
-  linkUrl
-}) => (
+export const VerticalCard = ({title, description, image, linkText, linkUrl}) => (
   <VerticalContainer>
     <VerticalCardImage src={image} />
     <Content>
@@ -94,13 +88,7 @@ export const VerticalCard = ({
   </VerticalContainer>
 );
 
-export const HorizontalCard = ({
-  title,
-  description,
-  image,
-  linkText,
-  linkUrl
-}) => (
+export const HorizontalCard = ({title, description, image, linkText, linkUrl}) => (
   <HorizontalContainer>
     <HorizontalCardImage src={image} />
     <Content>

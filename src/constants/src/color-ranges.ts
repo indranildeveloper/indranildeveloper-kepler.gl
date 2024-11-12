@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {HexColor} from '@indranildeveloper-kepler.gl/types';
+import {HexColor} from '@indranil-kepler.gl/types';
 import colorbrewer from 'colorbrewer';
 import {VizColorPalette} from './custom-color-ranges';
 

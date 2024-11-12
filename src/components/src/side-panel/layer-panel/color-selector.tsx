@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
-import {ColorUI, NestedPartial, RGBAColor, RGBColor} from '@indranildeveloper-kepler.gl/types';
-import {rgbToHex} from '@indranildeveloper-kepler.gl/utils';
+import {ColorRange} from '@indranil-kepler.gl/constants';
+import {ColorUI, NestedPartial, RGBAColor, RGBColor} from '@indranil-kepler.gl/types';
+import {rgbToHex} from '@indranil-kepler.gl/utils';
 import React, {MouseEvent, ComponentType, useState, useCallback} from 'react';
 import {FormattedMessage} from 'react-intl';
 import styled from 'styled-components';

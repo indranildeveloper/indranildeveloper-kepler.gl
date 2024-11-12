@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled, {withTheme} from 'styled-components';
 import classnames from 'classnames';
 import ProgressBar from '../progress-bar';
 import {TruncatedTitleText} from '../styled-components';
-import {getError} from '@indranildeveloper-kepler.gl/utils';
-import {FileLoadingProgress} from '@indranildeveloper-kepler.gl/types';
+import {getError} from '@indranil-kepler.gl/utils';
+import {FileLoadingProgress} from '@indranil-kepler.gl/types';
 
 const StyledFileProgress = styled.div.attrs(props => ({
   className: classnames('file-upload__progress', props.className)

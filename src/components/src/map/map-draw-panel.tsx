@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import classnames from 'classnames';
 
-import {EDITOR_MODES} from '@indranildeveloper-kepler.gl/constants';
+import {EDITOR_MODES} from '@indranil-kepler.gl/constants';
 import {CursorClick, DrawPolygon, EyeSeen, EyeUnseen, Polygon, Rectangle} from '../common/icons';
 import {MapControlButton} from '../common/styled-components';
 import ToolbarItem from '../common/toolbar-item';
 import MapControlTooltipFactory from './map-control-tooltip';
 import MapControlToolbarFactory from './map-control-toolbar';
-import {Editor, MapControls} from '@indranildeveloper-kepler.gl/types';
+import {Editor, MapControls} from '@indranil-kepler.gl/types';
 import {BaseProps} from '../common/icons';
 
 MapDrawPanelFactory.deps = [MapControlTooltipFactory, MapControlToolbarFactory];

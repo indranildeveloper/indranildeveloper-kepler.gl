@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, ComponentType, createRef, ElementType} from 'react';
 import {polyfill} from 'react-lifecycles-compat';
@@ -15,10 +15,10 @@ import {
   roundValToStep,
   clamp,
   scaleSourceDomainToDestination
-} from '@indranildeveloper-kepler.gl/utils';
-import {LineChart, Filter, Bins} from '@indranildeveloper-kepler.gl/types';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {ActionHandler, setFilterPlot} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/utils';
+import {LineChart, Filter, Bins} from '@indranil-kepler.gl/types';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {ActionHandler, setFilterPlot} from '@indranil-kepler.gl/actions';
 
 interface SliderInputProps {
   flush?: boolean;

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import styled from 'styled-components';
 import {injectIntl, IntlShape} from 'react-intl';
 
-import {LIGHT_AND_SHADOW_EFFECT} from '@indranildeveloper-kepler.gl/constants';
-import {isNumber} from '@indranildeveloper-kepler.gl/utils';
-import {Effect, EffectUpdateProps} from '@indranildeveloper-kepler.gl/types';
+import {LIGHT_AND_SHADOW_EFFECT} from '@indranil-kepler.gl/constants';
+import {isNumber} from '@indranil-kepler.gl/utils';
+import {Effect, EffectUpdateProps} from '@indranil-kepler.gl/types';
 
 import RangeSliderFactory from '../common/range-slider';
 import {ArrowDownSmall} from '../common/icons';

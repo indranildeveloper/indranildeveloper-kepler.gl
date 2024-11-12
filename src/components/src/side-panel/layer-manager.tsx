@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, useCallback} from 'react';
 
 import {injectIntl, WrappedComponentProps} from 'react-intl';
 import styled from 'styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 
 import LayerListFactory from './layer-panel/layer-list';
 import DatasetLayerGroupFactory from './layer-panel/dataset-layer-group';
@@ -18,12 +18,21 @@ import ItemSelector from '../common/item-selector/item-selector';
 import {PanelLabel, SidePanelDivider, SidePanelSection} from '../common/styled-components';
 import InfoHelperFactory from '../common/info-helper';
 
-import {LAYER_BLENDINGS, OVERLAY_BLENDINGS, PANEL_VIEW_TOGGLES} from '@indranildeveloper-kepler.gl/constants';
-import {Layer, LayerClassesType} from '@indranildeveloper-kepler.gl/layers';
-import {UIStateActions, VisStateActions, MapStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
+import {
+  LAYER_BLENDINGS,
+  OVERLAY_BLENDINGS,
+  PANEL_VIEW_TOGGLES
+} from '@indranil-kepler.gl/constants';
+import {Layer, LayerClassesType} from '@indranil-kepler.gl/layers';
+import {
+  UIStateActions,
+  VisStateActions,
+  MapStateActions,
+  ActionHandler
+} from '@indranil-kepler.gl/actions';
 import {SidePanelItem} from '../types';
-import {PanelListView} from '@indranildeveloper-kepler.gl/types';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {PanelListView} from '@indranil-kepler.gl/types';
+import {Datasets} from '@indranil-kepler.gl/table';
 
 type LayerBlendingSelectorProps = {
   layerBlending: string;

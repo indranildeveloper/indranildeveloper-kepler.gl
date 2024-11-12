@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import TimeRangeFilterFactory from '../time-range-filter';
 import {Clock} from '../../common/icons';
 import {TimeRangeFilterPanelComponent} from './types';
-import {isSideFilter, getTimelineFromFilter} from '@indranildeveloper-kepler.gl/utils';
+import {isSideFilter, getTimelineFromFilter} from '@indranil-kepler.gl/utils';
 import FilterPanelHeaderFactory from '../../side-panel/filter-panel/filter-panel-header';
 import PanelHeaderActionFactory from '../../side-panel/panel-header-action';
 import FieldSelectorFactory from '../../common/field-selector';
 import {StyledFilterContent} from '../../common/styled-components';
 import {getSupportedFilterFields} from './new-filter-panel';
-import {FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {FILTER_TYPES} from '@indranil-kepler.gl/constants';
 import TimeSyncedFieldSelectorFactory from './time-synced-field-selector';
 import FilterSyncedDatasetPanelFactory from './filter-synced-dataset-panel';
 

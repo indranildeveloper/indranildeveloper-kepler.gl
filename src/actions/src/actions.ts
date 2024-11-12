@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {default as ActionTypes} from './action-types';
 import {createAction} from '@reduxjs/toolkit';
@@ -11,7 +11,7 @@ import {
   UiState,
   ParsedConfig,
   ProtoDataset
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 
 type Handler = (...args: any) => any;
 
@@ -22,13 +22,13 @@ export type ActionHandlers<T extends {[k: string]: Handler}> = {
 };
 
 /**
- * Add data to indranildeveloper-kepler.gl reducer, prepare map with preset configuration if config is passed.
- * indranildeveloper-kepler.gl provides a handy set of utils to parse data from different formats to the `data` object required in dataset. You rarely need to manually format the data obejct.
+ * Add data to indranil-kepler.gl reducer, prepare map with preset configuration if config is passed.
+ * indranil-kepler.gl provides a handy set of utils to parse data from different formats to the `data` object required in dataset. You rarely need to manually format the data obejct.
  *
  * Use `KeplerGlSchema.getConfigToSave` to generate a json blob of the currents instance config.
  * The config object value will always have higher precedence than the options properties.
  *
- * indranildeveloper-kepler.gl uses `dataId` in the config to match with loaded dataset. If you pass a config object, you need
+ * indranil-kepler.gl uses `dataId` in the config to match with loaded dataset. If you pass a config object, you need
  * to match the `info.id` of your dataset to the `dataId` in each `layer`, `filter` and `interactionConfig.tooltips.fieldsToShow`
  *
  * @memberof main
@@ -44,17 +44,17 @@ export type ActionHandlers<T extends {[k: string]: Handler}> = {
  * @param {Array<Array>} data.datasets.data.rows - ***required** Array of rows, in a tabular format with `fields` and `rows`
  *
  * @param {Object} data.options
- * @param {boolean} data.options.centerMap `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+ * @param {boolean} data.options.centerMap `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
  * place the map view within the data points boundaries.  `options.centerMap` will override `config.mapState` if passed in.
  * @param {boolean} data.options.readOnly `default: false` if `readOnly` is set to `true`
  * the left setting panel will be hidden
  * @param {boolean} data.options.keepExistingConfig whether to keep exiting map data and associated layer filter  interaction config `default: false`.
- * @param {Object} data.config this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+ * @param {Object} data.config this object will contain the full indranil-kepler.gl instance configuration {mapState, mapStyle, visState}
  * @public
  * @example
  *
  * // app.js
- * import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {addDataToMap} from 'indranil-kepler.gl/actions';
  *
  * const sampleTripData = {
  *  fields: [
@@ -125,20 +125,20 @@ export type ReceiveMapConfigPayload = {
   bounds?: Bounds;
 };
 /**
- * Pass config to indranildeveloper-kepler.gl instance, prepare the state with preset configs.
+ * Pass config to indranil-kepler.gl instance, prepare the state with preset configs.
  * Calling `KeplerGlSchema.parseSavedConfig` to convert saved config before passing it in is required.
  *
  * You can call `receiveMapConfig` before passing in any data. The reducer will store layer and filter config, waiting for
  * data to come in. When data arrives, you can call `addDataToMap` without passing any config, and the reducer will try to match
  * preloaded configs. This behavior is designed to allow asynchronous data loading.
  *
- * It is also useful when you want to prepare the indranildeveloper-kepler.gl instance with some preset layer and filter settings.
- * **Note** Sequence is important, `receiveMapConfig` needs to be called __before__ data is loaded. Currently indranildeveloper-kepler.gl doesn't allow calling `receiveMapConfig` after data is loaded.
+ * It is also useful when you want to prepare the indranil-kepler.gl instance with some preset layer and filter settings.
+ * **Note** Sequence is important, `receiveMapConfig` needs to be called __before__ data is loaded. Currently indranil-kepler.gl doesn't allow calling `receiveMapConfig` after data is loaded.
  * It will reset current configuration first then apply config to it.
  * @memberof main
  * @param {Object} config - ***required** The Config Object
  * @param {Object} options - ***optional** The Option object
- * @param {boolean} options.centerMap `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will
+ * @param {boolean} options.centerMap `default: true` if `centerMap` is set to `true` indranil-kepler.gl will
  * place the map view within the data points boundaries
  * @param {boolean} options.readOnly `default: false` if `readOnly` is set to `true`
  * the left setting panel will be hidden
@@ -146,8 +146,8 @@ export type ReceiveMapConfigPayload = {
  * @param {boolean} options.autoCreateLayers whether to automatically create layers based on dataset columns `default: true`.
  * @public
  * @example
- * import {receiveMapConfig} from 'indranildeveloper-kepler.gl/actions';
- * import KeplerGlSchema from 'indranildeveloper-kepler.gl/schemas';
+ * import {receiveMapConfig} from 'indranil-kepler.gl/actions';
+ * import KeplerGlSchema from 'indranil-kepler.gl/schemas';
  *
  * const parsedConfig = KeplerGlSchema.parseSavedConfig(config);
  * this.props.dispatch(receiveMapConfig(parsedConfig));
@@ -175,7 +175,7 @@ export type KeplerGlInitPayload = {
   initialUiState?: Partial<UiState>;
 };
 /**
- * Initialize indranildeveloper-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
+ * Initialize indranil-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
  * @memberof main
  * @param {object} payload
  * @param payload.mapboxApiAccessToken - mapboxApiAccessToken to be saved to mapStyle reducer
@@ -202,7 +202,7 @@ export type ReplaceDataInMapPayload = {
 };
 
 /**
- * Initialize indranildeveloper-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
+ * Initialize indranil-kepler.gl reducer. It is used to pass in `mapboxApiAccessToken` to `mapStyle` reducer.
  * @memberof main
  * @param {object} payload
  * @param payload.datasetToReplaceId - mapboxApiAccessToken to be saved to mapStyle reducer
@@ -220,7 +220,7 @@ export const replaceDataInMap: (payload: ReplaceDataInMapPayload) => {
  * This declaration is needed to group actions in docs
  */
 /**
- * Main indranildeveloper-kepler.gl actions, these actions handles loading data and config into indranildeveloper-kepler.gl reducer. These actions
+ * Main indranil-kepler.gl actions, these actions handles loading data and config into indranil-kepler.gl reducer. These actions
  * is listened by all subreducers,
  * @public
  */

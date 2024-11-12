@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import styled from 'styled-components';
 import PanelTabFactory, {PanelItem} from './panel-tab';
-import {toggleSidePanel, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
+import {toggleSidePanel, ActionHandler} from '@indranil-kepler.gl/actions';
 
 type PanelToggleProps = {
   panels: PanelItem[];

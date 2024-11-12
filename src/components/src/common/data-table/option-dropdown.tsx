@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useState} from 'react';
 import styled from 'styled-components';
@@ -11,9 +11,9 @@ import {
   TABLE_OPTION_LIST,
   TooltipFormat,
   TableOption
-} from '@indranildeveloper-kepler.gl/constants';
-import {getFieldFormatLabels} from '@indranildeveloper-kepler.gl/utils';
-import {ColMeta} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/constants';
+import {getFieldFormatLabels} from '@indranil-kepler.gl/utils';
+import {ColMeta} from '@indranil-kepler.gl/types';
 import {ArrowDown, ArrowUp, Clipboard, Pin, Cancel, Hash} from '../icons';
 
 const ListItem = ({value}) => (

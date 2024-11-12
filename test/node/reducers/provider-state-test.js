@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import {drainTasksForTesting, succeedTaskInTest, errorTaskInTest} from 'react-palm/tasks';
 import sinon from 'sinon';
 import {default as Console} from 'global/console';
 
-import {ActionTypes, exportFileToCloud, resetProviderStatus} from '@indranildeveloper-kepler.gl/actions';
+import {ActionTypes, exportFileToCloud, resetProviderStatus} from '@indranil-kepler.gl/actions';
 import {
   providerReducer as reducer,
   providerStateReducerFactory,
   INITIAL_PROVIDER_STATE
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 import MockProvider from 'test/helpers/mock-provider';
 
 test('#providerStateReducer', t => {
@@ -49,7 +49,7 @@ test('#providerStateReducer -> EXPORT_FILE_TO_CLOUD', t => {
   t.equal(
     errSpy.getCall(0).args[0],
     'provider is not defined',
-    'should warn when cannot find indranildeveloper-kepler.gl state'
+    'should warn when cannot find indranil-kepler.gl state'
   );
   reducer(undefined, exportFileToCloud({provider: {name: 'taro', hello: true}}));
 

@@ -1,6 +1,6 @@
 # Replacing components
 
-Example showing how to replace indranildeveloper-kepler.gl default components using `injectComponents` method.
+Example showing how to replace indranil-kepler.gl default components using `injectComponents` method.
 
 #### 1. Install
 

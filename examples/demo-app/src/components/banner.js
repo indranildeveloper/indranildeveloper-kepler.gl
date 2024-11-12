@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
-import {Icons} from '@indranildeveloper-kepler.gl/components';
+import {Icons} from '@indranil-kepler.gl/components';
 
 const StyledBanner = styled.div`
   align-items: center;

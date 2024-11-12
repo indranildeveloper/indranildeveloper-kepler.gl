@@ -2,30 +2,30 @@
 
 ### Table of Contents
 
--   [keplerGlReducer][1]
-    -   [keplerGlReducer.initialState][3]
-    -   [keplerGlReducer.plugin][6]
--   [mapStateLens][9]
--   [mapStyleLens][11]
--   [providerStateLens][13]
--   [uiStateLens][15]
--   [visStateLens][17]
+- [keplerGlReducer][1]
+  - [keplerGlReducer.initialState][3]
+  - [keplerGlReducer.plugin][6]
+- [mapStateLens][9]
+- [mapStyleLens][11]
+- [providerStateLens][13]
+- [uiStateLens][15]
+- [visStateLens][17]
 
 ## keplerGlReducer
 
-indranildeveloper-kepler.gl reducer to be mounted to your store. You can mount `keplerGlReducer` at property `keplerGl`, if you choose
+indranil-kepler.gl reducer to be mounted to your store. You can mount `keplerGlReducer` at property `keplerGl`, if you choose
 to mount it at another address e.g. `foo` you will need to specify it when you mount `KeplerGl` component in your app with `getState: state => state.foo`
 
 **Examples**
 
 ```javascript
-import keplerGlReducer from 'indranildeveloper-kepler.gl/reducers';
+import keplerGlReducer from 'indranil-kepler.gl/reducers';
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
 import {taskMiddleware} from 'react-palm/tasks';
 
 const initialState = {};
 const reducers = combineReducers({
-  // <-- mount indranildeveloper-kepler.gl reducer in your app
+  // <-- mount indranil-kepler.gl reducer in your app
   keplerGl: keplerGlReducer,
 
   // Your other reducers here
@@ -44,62 +44,66 @@ which will be shallow **merged** with default initial state.
 
 Default subreducer state:
 
--   [`visState`][19]
--   [`mapState`][20]
--   [`mapStyle`][21]
--   [`uiState`][22]
+- [`visState`][19]
+- [`mapState`][20]
+- [`mapStyle`][21]
+- [`uiState`][22]
 
 **Parameters**
 
--   `iniSt` **[Object][23]** custom state to be merged with default initial state
+- `iniSt` **[Object][23]** custom state to be merged with default initial state
 
 **Examples**
 
 ```javascript
-const myKeplerGlReducer = keplerGlReducer
- .initialState({
-   uiState: {readOnly: true}
- });
+const myKeplerGlReducer = keplerGlReducer.initialState({
+  uiState: {readOnly: true}
+});
 ```
 
 ### keplerGlReducer.plugin
 
-Returns a indranildeveloper-kepler.gl reducer that will also pass each action through additional reducers spiecified.
+Returns a indranil-kepler.gl reducer that will also pass each action through additional reducers spiecified.
 The parameter should be either a reducer map or a reducer function.
 The state passed into the additional action handler is the instance state.
 It will include all the subreducers `visState`, `uiState`, `mapState` and `mapStyle`.
 `.plugin` is only meant to be called once when mounting the keplerGlReducer to the store.
-**Note** This is an advanced option to give you more freedom to modify the internal state of the indranildeveloper-kepler.gl instance.
+**Note** This is an advanced option to give you more freedom to modify the internal state of the indranil-kepler.gl instance.
 You should only use this to adding additional actions instead of replacing default actions.
 
 **Parameters**
 
--   `customReducer` **([Object][23] \| [Function][24])** A reducer map or a reducer
+- `customReducer` **([Object][23] \| [Function][24])** A reducer map or a reducer
 
 **Examples**
 
 ```javascript
 const myKeplerGlReducer = keplerGlReducer
- .plugin({
-   // 1. as reducer map
-   HIDE_AND_SHOW_SIDE_PANEL: (state, action) => ({
-     ...state,
-     uiState: {
-       ...state.uiState,
-       readOnly: !state.uiState.readOnly
-     }
-   })
- })
-.plugin(handleActions({
-  // 2. as reducer
-  'HIDE_MAP_CONTROLS': (state, action) => ({
-    ...state,
-    uiState: {
-      ...state.uiState,
-      mapControls: hiddenMapControl
-    }
+  .plugin({
+    // 1. as reducer map
+    HIDE_AND_SHOW_SIDE_PANEL: (state, action) => ({
+      ...state,
+      uiState: {
+        ...state.uiState,
+        readOnly: !state.uiState.readOnly
+      }
+    })
   })
-}, {}));
+  .plugin(
+    handleActions(
+      {
+        // 2. as reducer
+        HIDE_MAP_CONTROLS: (state, action) => ({
+          ...state,
+          uiState: {
+            ...state.uiState,
+            mapControls: hiddenMapControl
+          }
+        })
+      },
+      {}
+    )
+  );
 ```
 
 ## mapStateLens
@@ -109,7 +113,7 @@ Connect subreducer `mapState`, used with `injectComponents`. Learn more at
 
 **Parameters**
 
--   `reduxState` **any** 
+- `reduxState` **any**
 
 ## mapStyleLens
 
@@ -118,7 +122,7 @@ Connect subreducer `mapStyle`, used with `injectComponents`. Learn more at
 
 **Parameters**
 
--   `reduxState` **any** 
+- `reduxState` **any**
 
 ## providerStateLens
 
@@ -127,7 +131,7 @@ Connect subreducer `providerState`, used with `injectComponents`. Learn more at
 
 **Parameters**
 
--   `reduxState` **any** 
+- `reduxState` **any**
 
 ## uiStateLens
 
@@ -136,7 +140,7 @@ Connect subreducer `uiState`, used with `injectComponents`. Learn more at
 
 **Parameters**
 
--   `reduxState` **any** 
+- `reduxState` **any**
 
 ## visStateLens
 
@@ -145,54 +149,30 @@ Connect subreducer `visState`, used with `injectComponents`. Learn more at
 
 **Parameters**
 
--   `reduxState` **any** 
+- `reduxState` **any**
 
 [1]: #keplerglreducer
-
 [2]: #examples
-
 [3]: #keplerglreducerinitialstate
-
 [4]: #parameters
-
 [5]: #examples-1
-
 [6]: #keplerglreducerplugin
-
 [7]: #parameters-1
-
 [8]: #examples-2
-
 [9]: #mapstatelens
-
 [10]: #parameters-2
-
 [11]: #mapstylelens
-
 [12]: #parameters-3
-
 [13]: #providerstatelens
-
 [14]: #parameters-4
-
 [15]: #uistatelens
-
 [16]: #parameters-5
-
 [17]: #visstatelens
-
 [18]: #parameters-6
-
 [19]: ./vis-state.md#INITIAL_VIS_STATE
-
 [20]: ./map-state.md#INITIAL_MAP_STATE
-
 [21]: ./map-style.md#INITIAL_MAP_STYLE
-
 [22]: ./ui-state.md#INITIAL_UI_STATE
-
 [23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
 [24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
-
 [25]: ../advanced-usages/replace-ui-component.md#pass-custom-component-props

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount,enzyme-deprecation/no-shallow */
 import React from 'react';
@@ -10,7 +10,7 @@ import {
   SaveExportDropdownFactory,
   PanelHeaderDropdownFactory,
   ToolbarItem
-} from '@indranildeveloper-kepler.gl/components';
+} from '@indranil-kepler.gl/components';
 import {IntlWrapper} from 'test/helpers/component-utils';
 
 test('SaveExportDropdown', t => {

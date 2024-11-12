@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {createSelector} from 'reselect';
 import styled from 'styled-components';
 import get from 'lodash.get';
-import {ALL_FIELD_TYPES, FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {ALL_FIELD_TYPES, FILTER_TYPES} from '@indranil-kepler.gl/constants';
 
 import NewFilterPanelFactory from '../../filters/filter-panels/new-filter-panel';
 import TimeRangeFilterPanelFactory from '../../filters/filter-panels/time-range-filter-panel';
@@ -13,9 +13,9 @@ import SingleSelectFilterPanelFactory from '../../filters/filter-panels/single-s
 import MultiSelectFilterPanelFactory from '../../filters/filter-panels/multi-select-filter-panel';
 import RangeFilterPanelFactory from '../../filters/filter-panels/range-filter-panel';
 import PolygonFilterPanelFactory from '../../filters/filter-panels/polygon-filter-panel';
-import {Field, Filter} from '@indranildeveloper-kepler.gl/types';
+import {Field, Filter} from '@indranil-kepler.gl/types';
 import {FilterPanelProps} from '../../filters/filter-panels/types';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {Layer} from '@indranil-kepler.gl/layers';
 
 const StyledFilterPanel = styled.div`
   margin-bottom: 12px;

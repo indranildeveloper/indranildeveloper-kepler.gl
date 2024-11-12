@@ -6055,9 +6055,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"indranildeveloper-kepler.gl-website@workspace:.":
+"indranil-kepler.gl-website@workspace:.":
   version: 0.0.0-use.local
-  resolution: "indranildeveloper-kepler.gl-website@workspace:."
+  resolution: "indranil-kepler.gl-website@workspace:."
   dependencies:
     "@babel/core": "npm:^7.12.1"
     "@babel/plugin-transform-class-properties": "npm:^7.12.1"

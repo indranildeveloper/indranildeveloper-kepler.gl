@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 
@@ -11,19 +11,19 @@ import Layer, {
   LayerBaseConfigPartial
 } from '../base-layer';
 import {BrushingExtension} from '@deck.gl/extensions';
-import {GeoArrowArcLayer} from '@indranildeveloper-kepler.gl/deckgl-arrow-layers';
-import {FilterArrowExtension} from '@indranildeveloper-kepler.gl/deckgl-layers';
+import {GeoArrowArcLayer} from '@indranil-kepler.gl/deckgl-arrow-layers';
+import {FilterArrowExtension} from '@indranil-kepler.gl/deckgl-layers';
 import {ArcLayer as DeckArcLayer} from '@deck.gl/layers';
 import {h3ToGeo} from 'h3-js';
 
-import {hexToRgb, DataContainerInterface, ArrowDataContainer} from '@indranildeveloper-kepler.gl/utils';
+import {hexToRgb, DataContainerInterface, ArrowDataContainer} from '@indranil-kepler.gl/utils';
 import ArcLayerIcon from './arc-layer-icon';
 import {isLayerHoveredFromArrow, createGeoArrowPointVector, getFilteredIndex} from '../layer-utils';
 import {
   DEFAULT_LAYER_COLOR,
   ColorRange,
   PROJECTED_PIXEL_SIZE_MULTIPLIER
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 import {
   RGBColor,
@@ -35,8 +35,8 @@ import {
   LayerColumn,
   Field,
   AnimationConfig
-} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
 
 export type ArcLayerVisConfigSettings = {
   opacity: VisConfigNumber;
@@ -221,7 +221,7 @@ export default class ArcLayer extends Layer {
   /*
    * CPU filtering an arrow table by values and assembling a partial copy of the raw table is expensive
    * so we will use filteredIndex to create an attribute e.g. filteredIndex [0|1] for GPU filtering
-   * in deck.gl layer, see: FilterArrowExtension in @indranildeveloper-kepler.gl/deckgl-layers.
+   * in deck.gl layer, see: FilterArrowExtension in @indranil-kepler.gl/deckgl-layers.
    * Note that this approach can create visible lags in case of a lot of discarted geometry.
    */
   filteredIndex: Uint8ClampedArray | null = null;

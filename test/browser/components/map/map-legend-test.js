@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount */
 import React from 'react';
@@ -15,7 +15,7 @@ import {
   SingleColorLegendFactory,
   LayerColorLegendFactory,
   appInjector
-} from '@indranildeveloper-kepler.gl/components';
+} from '@indranil-kepler.gl/components';
 import {
   StateWFilesFiltersLayerColor,
   expectedSavedLayer1 as pointLayer,

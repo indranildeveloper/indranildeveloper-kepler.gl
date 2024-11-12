@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 
-import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {ALL_FIELD_TYPES} from '@indranil-kepler.gl/constants';
 import FieldTokenFactory from '../../common/field-token';
 
 const StyledSyncTimeHeader = styled.div`

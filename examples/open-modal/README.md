@@ -1,6 +1,6 @@
 # Open modal
 
-Example showing how to open indranildeveloper-kepler.gl in a modal.
+Example showing how to open indranil-kepler.gl in a modal.
 
 #### 1. Install
 
@@ -14,8 +14,8 @@ or
 yarn
 ```
 
-
 #### 2. Mapbox Token
+
 add mapbox access token to node env
 
 ```sh

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // Schemas
 export {
@@ -10,12 +10,7 @@ export {
 } from './schema-manager';
 
 // eslint-disable-next-line prettier/prettier
-export type {
-  SavedConfigV1,
-  SavedMap,
-  LoadedMap,
-  SavedMapState
-} from './schema-manager';
+export type {SavedConfigV1, SavedMap, LoadedMap, SavedMapState} from './schema-manager';
 export {CURRENT_VERSION, VERSIONS} from './versions';
 export {
   visStateSchemaV1,

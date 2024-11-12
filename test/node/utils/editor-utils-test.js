@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import {EditableGeoJsonLayer} from '@nebula.gl/layers';
 
-import {INITIAL_VIS_STATE} from '@indranildeveloper-kepler.gl/reducers';
-import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
-import {EDITOR_LAYER_ID, EDITOR_MODES} from '@indranildeveloper-kepler.gl/constants';
-import {EditorLayerUtils, getEditorLayer} from '@indranildeveloper-kepler.gl/layers';
+import {INITIAL_VIS_STATE} from '@indranil-kepler.gl/reducers';
+import {VisStateActions} from '@indranil-kepler.gl/actions';
+import {EDITOR_LAYER_ID, EDITOR_MODES} from '@indranil-kepler.gl/constants';
+import {EditorLayerUtils, getEditorLayer} from '@indranil-kepler.gl/layers';
 
 test('editorLayerUtils -> isDrawingActive', t => {
   t.equal(

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable max-statements */
 
@@ -9,9 +9,9 @@ import keplerGlReducer, {
   replaceDataInMapUpdater,
   fitBoundsUpdater,
   INITIAL_UI_STATE
-} from '@indranildeveloper-kepler.gl/reducers';
-import {processCsvData} from '@indranildeveloper-kepler.gl/processors';
-import {registerEntry} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/reducers';
+import {processCsvData} from '@indranil-kepler.gl/processors';
+import {registerEntry} from '@indranil-kepler.gl/actions';
 
 import testCsvData, {sampleConfig, dataWithNulls} from 'test/fixtures/test-csv-data';
 import testHexIdData, {
@@ -61,7 +61,7 @@ const mockRawData = {
 };
 
 test('#composerStateReducer - addDataToMapUpdater: mapStyle', t => {
-  // init indranildeveloper-kepler.gl root and instance
+  // init indranil-kepler.gl root and instance
   const state = keplerGlReducer(undefined, registerEntry({id: 'test'})).test;
 
   const newState = addDataToMapUpdater(state, {
@@ -87,7 +87,7 @@ test('#composerStateReducer - addDataToMapUpdater: mapStyle', t => {
 });
 
 test('#composerStateReducer - addDataToMapUpdater: mapState should be centered', t => {
-  // init indranildeveloper-kepler.gl root and instance
+  // init indranil-kepler.gl root and instance
   const state = keplerGlReducer({}, registerEntry({id: 'test'})).test;
   const mapStateProperties = {
     latitude: 33.88608913680742,
@@ -117,7 +117,7 @@ test('#composerStateReducer - addDataToMapUpdater: mapState should be centered',
 });
 
 test('#composerStateReducer - addDataToMapUpdater: uiState', t => {
-  // init indranildeveloper-kepler.gl root and instance
+  // init indranil-kepler.gl root and instance
   const state = keplerGlReducer(undefined, registerEntry({id: 'test'})).test;
 
   const newState = addDataToMapUpdater(state, {

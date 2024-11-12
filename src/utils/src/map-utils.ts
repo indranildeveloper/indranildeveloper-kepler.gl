@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import WebMercatorViewport from 'viewport-mercator-project';
 
-import {TRANSITION_DURATION} from '@indranildeveloper-kepler.gl/constants';
-import {SplitMapLayers, SplitMap, Viewport, MapState} from '@indranildeveloper-kepler.gl/types';
+import {TRANSITION_DURATION} from '@indranil-kepler.gl/constants';
+import {SplitMapLayers, SplitMap, Viewport, MapState} from '@indranil-kepler.gl/types';
 
 export const onViewPortChange = (
   viewState: Viewport,

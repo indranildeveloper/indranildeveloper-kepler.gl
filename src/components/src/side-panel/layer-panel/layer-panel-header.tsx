@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {
   useState,
@@ -25,9 +25,9 @@ import {
 } from '../../common/icons';
 
 import {InlineInput, StyledPanelHeader} from '../../common/styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
+import {RGBColor} from '@indranil-kepler.gl/types';
 import {BaseProps} from '../../common/icons';
 
 export type LayerLabelEditorProps = {

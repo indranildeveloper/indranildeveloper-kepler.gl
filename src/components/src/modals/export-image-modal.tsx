@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import ImagePreview from '../common/image-preview';
-import {SetExportImageSettingUpdaterAction} from '@indranildeveloper-kepler.gl/actions';
+import {SetExportImageSettingUpdaterAction} from '@indranil-kepler.gl/actions';
 
 import {
   EXPORT_IMG_RATIO_OPTIONS,
   EXPORT_IMG_RESOLUTION_OPTIONS,
   ExportImage
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 import {StyledModalContent, SelectionButton, CheckMark} from '../common/styled-components';
 import Switch from '../common/switch';
 import {injectIntl, IntlShape} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 
 const ImageOptionList = styled.div`
   display: flex;

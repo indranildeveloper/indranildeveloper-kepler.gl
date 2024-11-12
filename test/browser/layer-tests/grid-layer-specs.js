@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import sinon from 'sinon';
@@ -14,9 +14,9 @@ import {
   pointLayerMeta
 } from 'test/helpers/layer-utils';
 
-import {pointToPolygonGeo, KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {pointToPolygonGeo, KeplerGlLayers} from '@indranil-kepler.gl/layers';
 const {GridLayer} = KeplerGlLayers;
-import {INITIAL_MAP_STATE} from '@indranildeveloper-kepler.gl/reducers';
+import {INITIAL_MAP_STATE} from '@indranil-kepler.gl/reducers';
 
 const columns = {
   lat: 'lat',

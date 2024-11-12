@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {
   CSSProperties,
@@ -10,11 +10,16 @@ import React, {
 } from 'react';
 import styled from 'styled-components';
 
-import {ActionHandler, MapStateActions, VisStateActions, toggleModal} from '@indranildeveloper-kepler.gl/actions';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
-import {Layer, LayerBaseConfig} from '@indranildeveloper-kepler.gl/layers';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {ColorUI, LayerVisConfig, NestedPartial} from '@indranildeveloper-kepler.gl/types';
+import {
+  ActionHandler,
+  MapStateActions,
+  VisStateActions,
+  toggleModal
+} from '@indranil-kepler.gl/actions';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
+import {Layer, LayerBaseConfig} from '@indranil-kepler.gl/layers';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {ColorUI, LayerVisConfig, NestedPartial} from '@indranil-kepler.gl/types';
 import LayerConfiguratorFactory from './layer-configurator';
 import LayerPanelHeaderFactory from './layer-panel-header';
 

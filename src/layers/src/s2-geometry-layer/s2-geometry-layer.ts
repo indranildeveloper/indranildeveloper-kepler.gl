@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {S2Layer} from '@deck.gl/geo-layers';
 import {
@@ -7,8 +7,8 @@ import {
   CHANNEL_SCALES,
   ColorRange,
   LAYER_VIS_CONFIGS
-} from '@indranildeveloper-kepler.gl/constants';
-import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/constants';
+import {default as KeplerTable} from '@indranil-kepler.gl/table';
 import Layer, {
   LayerBaseConfig,
   LayerBaseConfigPartial,
@@ -26,10 +26,10 @@ import {
   VisConfigNumber,
   VisConfigRange,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 import S2LayerIcon from './s2-layer-icon';
 import {getS2Center, validS2Token} from './s2-utils';
-import {DataContainerInterface, createDataContainer} from '@indranildeveloper-kepler.gl/utils';
+import {DataContainerInterface, createDataContainer} from '@indranil-kepler.gl/utils';
 
 export type S2GeometryLayerVisConfigSettings = {
   opacity: VisConfigNumber;

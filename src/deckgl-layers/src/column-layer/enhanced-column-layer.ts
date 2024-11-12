@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {UNIT} from '@deck.gl/core';
 import {ColumnLayer, ColumnLayerProps} from '@deck.gl/layers/typed';
@@ -28,7 +28,7 @@ type EnhancedColumnLayerProps = ColumnLayerProps<any> & {
   strokeOpacity: any;
 };
 
-// TODO: export all deck.gl layers from indranildeveloper-kepler.gl
+// TODO: export all deck.gl layers from indranil-kepler.gl
 class EnhancedColumnLayer extends ColumnLayer<any, EnhancedColumnLayerProps> {
   getShaders() {
     const shaders = super.getShaders();

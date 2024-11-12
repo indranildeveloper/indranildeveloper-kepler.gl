@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
@@ -39,7 +39,7 @@ const VideoDescription = styled.div`
 
 const VideoWrapperHeader = styled.div`
   height: 15px;
-  background: #E5E5E4;
+  background: #e5e5e4;
   border-radius: 3px 3px 0px 0px;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ class Walkthrough extends PureComponent {
     selectedIndex: 0
   };
 
-  _onChange = (index) => {
+  _onChange = index => {
     this.setState({selectedIndex: index});
     const videoElement = this.videoElements[index];
     videoElement.load();
@@ -105,7 +105,7 @@ class Walkthrough extends PureComponent {
                     src={videoUrl}
                     poster={imageUrl}
                     autoPlay={i === selectedIndex}
-                    ref={(elt) => this._assignVideoRef(elt, i)}
+                    ref={elt => this._assignVideoRef(elt, i)}
                     onEnded={this._onVideoEnded}
                   />
                 </VideoContainer>

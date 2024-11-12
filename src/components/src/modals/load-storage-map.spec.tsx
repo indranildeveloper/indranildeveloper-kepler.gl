@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // @ts-nocheck
 import React from 'react';
@@ -7,7 +7,7 @@ import {fireEvent, waitFor} from '@testing-library/react';
 import LoadStorageMapFactory from './load-storage-map';
 import {renderWithTheme} from 'test/helpers/component-jest-utils';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
 
 const LoadStorageMap = LoadStorageMapFactory();
 

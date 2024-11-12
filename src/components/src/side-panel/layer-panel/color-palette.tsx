@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
-import {HexColor, RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {HexColor, RGBColor} from '@indranil-kepler.gl/types';
 import styled from 'styled-components';
 import classnames from 'classnames';
 

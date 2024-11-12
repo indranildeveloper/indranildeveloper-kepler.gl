@@ -1,11 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {FunctionComponent, ComponentType, ReactNode} from 'react';
-import {Filter, PolygonFilter, TimeRangeFilter, Field} from '@indranildeveloper-kepler.gl/types';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {setFilter, setFilterPlot, syncTimeFilterWithLayerTimeline} from '@indranildeveloper-kepler.gl/actions';
+import {Filter, PolygonFilter, TimeRangeFilter, Field} from '@indranil-kepler.gl/types';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {
+  setFilter,
+  setFilterPlot,
+  syncTimeFilterWithLayerTimeline
+} from '@indranil-kepler.gl/actions';
 
 interface PanelAction {
   id: string;

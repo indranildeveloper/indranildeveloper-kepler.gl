@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {Effect as EffectInterface, EffectPropsPartial} from '@indranildeveloper-kepler.gl/types';
-import {LIGHT_AND_SHADOW_EFFECT} from '@indranildeveloper-kepler.gl/constants';
+import {Effect as EffectInterface, EffectPropsPartial} from '@indranil-kepler.gl/types';
+import {LIGHT_AND_SHADOW_EFFECT} from '@indranil-kepler.gl/constants';
 
 import LightingEffect from './lighting-effect';
 import PostProcessEffect from './post-processing-effect';

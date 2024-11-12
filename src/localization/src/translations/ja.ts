@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {LOCALES} from '../locales';
 
@@ -279,7 +279,7 @@ export default {
       publishSubtitle5: '非公開のスタイルを使用するには、自身の',
       publishSubtitle6: 'アクセストークン',
       publishSubtitle7:
-        'をここに入力します。*indranildeveloper-kepler.glはクライアント上で動作するため、データは自身のブラウザに保持されます。',
+        'をここに入力します。*indranil-kepler.glはクライアント上で動作するため、データは自身のブラウザに保持されます。',
       exampleToken: '例) pk.abcdefg.xxxxxx',
       pasteTitle: '1. スタイルのURLをペースト',
       pasteSubtitle0: 'スタイルのURLはMapboxの',
@@ -295,9 +295,9 @@ export default {
       cloudTitle: 'クラウドストレージ',
       cloudSubtitle: 'ログインして地図データを個人用クラウドストレージにアップロード',
       shareDisclaimer:
-        'indranildeveloper-kepler.glは作成した地図をあなたのクラウドストレージに保存するため、そのURLを知っている人のみが地図やそのデータにアクセス可能です。' +
+        'indranil-kepler.glは作成した地図をあなたのクラウドストレージに保存するため、そのURLを知っている人のみが地図やそのデータにアクセス可能です。' +
         'クラウドストレージのアカウントでいつでもデータファイルを編集/削除することができます。',
-      gotoPage: 'indranildeveloper-kepler.glの{currentProvider}ページに移動'
+      gotoPage: 'indranil-kepler.glの{currentProvider}ページに移動'
     },
     statusPanel: {
       mapUploading: '地図をアップロード中',
@@ -329,9 +329,9 @@ export default {
       json: {
         configTitle: '地図の設定',
         configDisclaimer:
-          '地図の設定はjsonファイルに収められます。他のアプリケーションでindranildeveloper-kepler.glを使用する場合、この設定をコピーペーストすることが可能です：',
+          '地図の設定はjsonファイルに収められます。他のアプリケーションでindranil-kepler.glを使用する場合、この設定をコピーペーストすることが可能です：',
         selection:
-          '現在の地図データと設定を単一のjsonファイルに出力します。このファイルをindranildeveloper-kepler.glにアップロードすることで、同じ地図を後から開くことが可能になります。',
+          '現在の地図データと設定を単一のjsonファイルに出力します。このファイルをindranil-kepler.glにアップロードすることで、同じ地図を後から開くことが可能になります。',
         disclaimer:
           '* 地図の設定は読み込まれたデータセットとセットになっています。‘dataId’によってレイヤ、フィルター、ツールチップは特定のデータセットに紐づけられます。 ' +
           'この設定をaddDataToMapに渡す際は、データセットIDがこの設定内のdataIdと一致するようにしてください。'
@@ -358,7 +358,7 @@ export default {
       description1:
         'CSVファイルに列を作成し、描画したいアイコンの名称を記載します。アイコンの描画が不要な点があれば、セルを空白にすることも可能です。列名が',
       code: 'icon',
-      description2: 'の場合、indranildeveloper-kepler.glは自動的にアイコンレイヤを作成します。',
+      description2: 'の場合、indranil-kepler.glは自動的にアイコンレイヤを作成します。',
       example: '例:',
       icons: 'アイコン一覧'
     },
@@ -372,7 +372,7 @@ export default {
     },
     loadStorageMap: {
       back: '戻る',
-      goToPage: 'indranildeveloper-kepler.glの{displayName}ページに移動',
+      goToPage: 'indranil-kepler.glの{displayName}ページに移動',
       storageMaps: 'ストレージ / 地図',
       noSavedMaps: '保存済の地図はまだありません'
     }
@@ -432,7 +432,7 @@ export default {
     chromeMessage:
       '*Chromeユーザーの場合: ファイルサイズは250mbまでにしてください。それ以上のファイルをアップロードする必要がある場合、Safariを試してください。',
     disclaimer:
-      '*indranildeveloper-kepler.glはクライアント上で動作します。データは自身の機器・ブラウザにのみ保持されます。' +
+      '*indranil-kepler.glはクライアント上で動作します。データは自身の機器・ブラウザにのみ保持されます。' +
       '情報や地図データは、いかなるサーバーにも送信されません。',
     configUploadMessage:
       '{fileFormatNames} または保存済地図の**Json**をアップロードします。詳細は以下を参照してください：[**対応ファイル形式**]',

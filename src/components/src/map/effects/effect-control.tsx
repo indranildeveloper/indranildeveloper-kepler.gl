@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, ComponentType} from 'react';
 
-import {MapControls} from '@indranildeveloper-kepler.gl/types';
+import {MapControls} from '@indranil-kepler.gl/types';
 
 import {MagicWand} from '../../common/icons';
 import {MapControlButton} from '../../common/styled-components';

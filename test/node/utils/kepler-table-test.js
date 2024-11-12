@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
 import testData, {numericRangesCsv, testFields} from 'test/fixtures/test-csv-data';
 
-import {preciseRound, getFilterFunction} from '@indranildeveloper-kepler.gl/utils';
-import {createNewDataEntry, findPointFieldPairs} from '@indranildeveloper-kepler.gl/table';
+import {preciseRound, getFilterFunction} from '@indranil-kepler.gl/utils';
+import {createNewDataEntry, findPointFieldPairs} from '@indranil-kepler.gl/table';
 
-import {processCsvData} from '@indranildeveloper-kepler.gl/processors';
+import {processCsvData} from '@indranil-kepler.gl/processors';
 import {cmpFields} from '../../helpers/comparison-utils';
-import {FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {FILTER_TYPES} from '@indranil-kepler.gl/constants';
 
 function testGetTimeFieldDomain(table, t) {
   const test_cases = [

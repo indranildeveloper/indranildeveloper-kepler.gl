@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import {ThemeProvider} from 'styled-components';
@@ -66,27 +66,25 @@ export default class Home extends PureComponent {
             bgColor={BACKGROUND_COLOR}
             onClose={this._hideBanner}
           >
-            <Announcement onDisable={this._disableBanner}/>
+            <Announcement onDisable={this._disableBanner} />
           </Banner>
-          <Header/>
+          <Header />
           <Hero />
-          {SECTIONS.map(
-            ({id, title, description, icon, isDark, background}, i) => {
-              const SectionContent = SECTION_CONTENT[id];
-              return (
-                <Section
-                  key={`section-${i}`}
-                  title={title}
-                  description={description}
-                  icon={icon}
-                  isDark={isDark}
-                  background={background}
-                >
-                  <SectionContent />
-                </Section>
-              );
-            }
-          )}
+          {SECTIONS.map(({id, title, description, icon, isDark, background}, i) => {
+            const SectionContent = SECTION_CONTENT[id];
+            return (
+              <Section
+                key={`section-${i}`}
+                title={title}
+                description={description}
+                icon={icon}
+                isDark={isDark}
+                background={background}
+              >
+                <SectionContent />
+              </Section>
+            );
+          })}
           <Footer />
         </div>
       </ThemeProvider>

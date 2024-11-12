@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /**
  * This file is copied from https://github.com/tsayen/dom-to-image
@@ -10,7 +10,7 @@ import window from 'global/window';
 import document from 'global/document';
 import Console from 'global/console';
 import svgToMiniDataURI from 'mini-svg-data-uri';
-import {IMAGE_EXPORT_ERRORS} from '@indranildeveloper-kepler.gl/constants';
+import {IMAGE_EXPORT_ERRORS} from '@indranil-kepler.gl/constants';
 
 import {
   canvasToBlob,

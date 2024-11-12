@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 const gps = `timestamp,location-lng,location-lat,ground-speed,heading,id,location-alt
 2014-08-01 00:00:23.000,90.2266981,27.6162803,0.22,0.0,Thang Kaar Thuub (3552),3217.0

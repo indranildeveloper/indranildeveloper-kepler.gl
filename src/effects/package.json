@@ -1,8 +1,8 @@
 {
-  "name": "@indranildeveloper-kepler.gl/effects",
+  "name": "@indranil-kepler.gl/effects",
   "author": "Shan He <shan@uber.com>",
-  "version": "3.0.0",
-  "description": "indranildeveloper-kepler.gl viaual effects",
+  "version": "1.0.0",
+  "description": "indranil-kepler.gl viaual effects",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
+    "url": "https://github.com/keplergl/indranil-kepler.gl.git"
   },
   "scripts": {
     "build": "rm -fr dist && babel src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js,.jsx' --ignore '**/*.d.ts'",
@@ -31,9 +31,9 @@
   ],
   "dependencies": {
     "@deck.gl/core": "^8.9.27",
-    "@indranildeveloper-kepler.gl/constants": "3.0.0",
-    "@indranildeveloper-kepler.gl/types": "3.0.0",
-    "@indranildeveloper-kepler.gl/utils": "3.0.0",
+    "@indranil-kepler.gl/constants": "3.0.0",
+    "@indranil-kepler.gl/types": "3.0.0",
+    "@indranil-kepler.gl/utils": "3.0.0",
     "@luma.gl/core": "^8.5.20",
     "@luma.gl/shadertools": "^8.5.20",
     "suncalc": "^1.9.0"

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import {
@@ -7,8 +7,8 @@ import {
   getTooltipDisplayValue,
   getTooltipDisplayDeltaValue,
   TOOLTIP_MINUS_SIGN
-} from '@indranildeveloper-kepler.gl/reducers';
-import {DEFAULT_TOOLTIP_FIELDS, COMPARE_TYPES} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/reducers';
+import {DEFAULT_TOOLTIP_FIELDS, COMPARE_TYPES} from '@indranil-kepler.gl/constants';
 import {StateWTooltipFormat, testGeoJsonDataId} from 'test/helpers/mock-state';
 
 const fields = [

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable max-statements */
 import test from 'tape-catch';
@@ -9,8 +9,8 @@ import {console as Console} from 'global/window';
 import {drainTasksForTesting, succeedTaskInTest, errorTaskInTest} from 'react-palm/tasks';
 import CloneDeep from 'lodash.clonedeep';
 
-import SchemaManager from '@indranildeveloper-kepler.gl/schemas';
-import {VisStateActions, MapStateActions} from '@indranildeveloper-kepler.gl/actions';
+import SchemaManager from '@indranil-kepler.gl/schemas';
+import {VisStateActions, MapStateActions} from '@indranil-kepler.gl/actions';
 import {
   visStateReducer as reducer,
   INITIAL_VIS_STATE,
@@ -21,11 +21,11 @@ import {
   prepareStateForDatasetReplace,
   syncTimeFilterWithLayerTimelineUpdater,
   setTimeFilterTimelineModeUpdater
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 
-import {processCsvData, processGeojson} from '@indranildeveloper-kepler.gl/processors';
-import {Layer, KeplerGlLayers, COLUMN_MODE_TABLE} from '@indranildeveloper-kepler.gl/layers';
-import {createNewDataEntry, maybeToDate} from '@indranildeveloper-kepler.gl/table';
+import {processCsvData, processGeojson} from '@indranil-kepler.gl/processors';
+import {Layer, KeplerGlLayers, COLUMN_MODE_TABLE} from '@indranil-kepler.gl/layers';
+import {createNewDataEntry, maybeToDate} from '@indranil-kepler.gl/table';
 import {
   createDataContainer,
   applyFilterFieldName,
@@ -33,7 +33,7 @@ import {
   getDefaultFilter,
   histogramFromDomain,
   TileTimeInterval
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 import {
   ALL_FIELD_TYPES,
   EDITOR_MODES,
@@ -47,7 +47,7 @@ import {
   INTERVAL,
   LAYER_TYPES,
   SYNC_TIMELINE_MODES
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 const {ArcLayer, PointLayer, GeojsonLayer, LineLayer, TripLayer} = KeplerGlLayers;
 

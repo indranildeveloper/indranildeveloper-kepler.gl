@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, createRef, useMemo} from 'react';
 import {ScrollSync, AutoSizer, OnScrollParams, GridProps, Index} from 'react-virtualized';
@@ -15,11 +15,15 @@ import {CellSizeCache} from './cell-size';
 import Grid from './grid';
 import HeaderCellFactory from './header-cell';
 
-import {ColMeta} from '@indranildeveloper-kepler.gl/types';
-import {parseFieldValue, getColumnFormatter, DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
+import {ColMeta} from '@indranil-kepler.gl/types';
+import {
+  parseFieldValue,
+  getColumnFormatter,
+  DataContainerInterface
+} from '@indranil-kepler.gl/utils';
 import {adjustCellsToContainer} from './cell-size';
 
-import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {ALL_FIELD_TYPES} from '@indranil-kepler.gl/constants';
 
 const defaultHeaderRowHeight = 55;
 const defaultHeaderStatsControlHeight = 40;

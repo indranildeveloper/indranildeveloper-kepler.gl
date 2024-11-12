@@ -1,8 +1,8 @@
 {
-  "name": "@indranildeveloper-kepler.gl/schemas",
+  "name": "@indranil-kepler.gl/schemas",
   "author": "Shan He <shan@uber.com>",
-  "version": "3.0.0",
-  "description": "indranildeveloper-kepler.gl schemas used by indranildeveloper-kepler.gl components, actions and reducers",
+  "version": "1.0.0",
+  "description": "indranil-kepler.gl schemas used by indranil-kepler.gl components, actions and reducers",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
+    "url": "https://github.com/keplergl/indranil-kepler.gl.git"
   },
   "scripts": {
     "build": "rm -fr dist && babel src --out-dir dist --source-maps inline --extensions '.ts,.tsx,.js,.jsx' --ignore '**/*.d.ts'",
@@ -30,11 +30,11 @@
     "umd"
   ],
   "dependencies": {
-    "@indranildeveloper-kepler.gl/constants": "3.0.0",
-    "@indranildeveloper-kepler.gl/layers": "3.0.0",
-    "@indranildeveloper-kepler.gl/table": "3.0.0",
-    "@indranildeveloper-kepler.gl/types": "3.0.0",
-    "@indranildeveloper-kepler.gl/utils": "3.0.0",
+    "@indranil-kepler.gl/constants": "3.0.0",
+    "@indranil-kepler.gl/layers": "3.0.0",
+    "@indranil-kepler.gl/table": "3.0.0",
+    "@indranil-kepler.gl/types": "3.0.0",
+    "@indranil-kepler.gl/utils": "3.0.0",
     "@loaders.gl/loader-utils": "^4.3.2",
     "@types/keymirror": "^0.1.1",
     "@types/lodash.clonedeep": "^4.5.7",

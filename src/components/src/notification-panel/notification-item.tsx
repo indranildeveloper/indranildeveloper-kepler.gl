@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {Delete, Info, Warning, Checkmark} from '../common/icons';
 import ReactMarkdown from 'react-markdown';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
-import {ActionHandler, removeNotification as removeNotificationActions} from '@indranildeveloper-kepler.gl/actions';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
+import {
+  ActionHandler,
+  removeNotification as removeNotificationActions
+} from '@indranil-kepler.gl/actions';
 
 interface NotificationItemContentBlockProps {
   isExpanded?: boolean;

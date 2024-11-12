@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {generateHashId} from './utils';
 
@@ -9,7 +9,7 @@ import {
   DEFAULT_NOTIFICATION_TYPES,
   DEFAULT_UUID_COUNT,
   BUG_REPORT_LINK
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 export type Notification = Record<string, any> & {
   id: string;

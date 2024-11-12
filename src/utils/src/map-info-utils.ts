@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {MAP_INFO_CHARACTER} from '@indranildeveloper-kepler.gl/constants';
+import {MAP_INFO_CHARACTER} from '@indranil-kepler.gl/constants';
 
 export function isValidMapInfo(mapInfo) {
   return (

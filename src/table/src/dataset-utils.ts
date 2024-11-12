@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import uniq from 'lodash.uniq';
 import KeplerTable, {Datasets} from './kepler-table';
-import {ProtoDataset, RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {ProtoDataset, RGBColor} from '@indranil-kepler.gl/types';
 
-import {hexToRgb, validateInputData, datasetColorMaker} from '@indranildeveloper-kepler.gl/utils';
+import {hexToRgb, validateInputData, datasetColorMaker} from '@indranil-kepler.gl/utils';
 
 // apply a color for each dataset
 // to use as label colors

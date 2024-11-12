@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
-import {PureFeatureActionPanelFactory} from '@indranildeveloper-kepler.gl/components';
+import {PureFeatureActionPanelFactory} from '@indranil-kepler.gl/components';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
 
 const FeatureActionPanel = PureFeatureActionPanelFactory();

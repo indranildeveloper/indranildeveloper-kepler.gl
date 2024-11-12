@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-const ts = require("typescript");
-const fs = require("fs");
-const path = require("path");
+const ts = require('typescript');
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Writes the result of smooshing to a file
@@ -14,7 +14,7 @@ function smoosh(base) {
   fs.writeFileSync(outputFile, smooshedSrc);
 }
 
-const declDoesntExist = { typeAliases: [], declarations: [], imports: [] };
+const declDoesntExist = {typeAliases: [], declarations: [], imports: []};
 
 function returnSmooshed(base) {
   const dtsFile = `${base}.d.ts`;
@@ -28,18 +28,14 @@ function returnSmooshed(base) {
 
   const resultFile = ts.createSourceFile(
     outputFile,
-    "",
+    '',
     ts.ScriptTarget.Latest,
     false,
     ts.ScriptKind.TSX
   );
-  const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
+  const printer = ts.createPrinter({newLine: ts.NewLineKind.LineFeed});
 
-  const smooshedSrc = printer.printNode(
-    ts.EmitHint.Unspecified,
-    enrichedJsNode,
-    resultFile
-  );
+  const smooshedSrc = printer.printNode(ts.EmitHint.Unspecified, enrichedJsNode, resultFile);
 
   return smooshedSrc;
 }
@@ -47,7 +43,7 @@ function returnSmooshed(base) {
 function parseDts(dtsFile) {
   const parsed = ts.createSourceFile(
     dtsFile,
-    fs.readFileSync(dtsFile, "utf8"),
+    fs.readFileSync(dtsFile, 'utf8'),
     ts.ScriptTarget.Latest
   );
 
@@ -56,24 +52,24 @@ function parseDts(dtsFile) {
   const declarations = {};
   const imports = [];
 
-  const aggregateDecl = (statement) => {
+  const aggregateDecl = statement => {
     // console.log(statement);
     const kind = ts.SyntaxKind[statement.kind];
 
-    if (kind === "TypeAliasDeclaration") {
+    if (kind === 'TypeAliasDeclaration') {
       declarations[getIdentifierName(statement)] = statement.type;
       typeAliases.push(statement);
       return;
     }
-    if (kind === "ImportDeclaration") {
-      return console.log("import...");
+    if (kind === 'ImportDeclaration') {
+      return console.log('import...');
     }
 
-    if (kind === "FirstStatement") {
+    if (kind === 'FirstStatement') {
       return statement.declarationList.declarations.map(aggregateDecl);
     }
 
-    if (!kind.endsWith("Declaration")) {
+    if (!kind.endsWith('Declaration')) {
       const message = `Unexpected statement kind "${kind}" in type definition file "${dtsFile}"`;
       return console.warn(message);
     } else {
@@ -83,33 +79,28 @@ function parseDts(dtsFile) {
 
   parsed.statements.forEach(aggregateDecl);
 
-  return { typeAliases, declarations, imports };
+  return {typeAliases, declarations, imports};
 }
 
 function enrichJs(jsFile, dts) {
   const parsed = ts.createSourceFile(
     jsFile,
-    fs.readFileSync(jsFile, "utf8"),
+    fs.readFileSync(jsFile, 'utf8'),
     ts.ScriptTarget.Latest
   );
 
-  const findSource = (node) => {
-
+  const findSource = node => {
     let typeSource = null;
 
     // First, search for a jsdoc tag with the type, like:
     // @type {typeof import('./b').Noop}
     if (node.jsDoc) {
-      const typeTag = node.jsDoc[0].tags.find(
-        (tag) => tag.tagName.escapedText === "type"
-      );
+      const typeTag = node.jsDoc[0].tags.find(tag => tag.tagName.escapedText === 'type');
       if (typeTag) {
-        const fileName =
-          typeTag.typeExpression.type.argument.literal.text;
-        const identifier =
-          typeTag.typeExpression.type.qualifier.escapedText;
+        const fileName = typeTag.typeExpression.type.argument.literal.text;
+        const identifier = typeTag.typeExpression.type.qualifier.escapedText;
         const dir = path.dirname(jsFile);
-        const fullPath = path.resolve(dir, fileName + ".d.ts");
+        const fullPath = path.resolve(dir, fileName + '.d.ts');
         const importedDts = parseDts(fullPath);
         const importedType = importedDts.declarations[identifier];
         if (!importedType) {
@@ -128,13 +119,13 @@ function enrichJs(jsFile, dts) {
     }
 
     return typeSource;
-  }
+  };
 
-  const transformer = (context) => (rootNode) => {
+  const transformer = context => rootNode => {
     function visit(node) {
       const kind = ts.SyntaxKind[node.kind];
-      if (kind.endsWith("Declaration")) {
-        if (kind === "FunctionDeclaration") {
+      if (kind.endsWith('Declaration')) {
+        if (kind === 'FunctionDeclaration') {
           const typeSource = findSource(node);
           if (typeSource) {
             return ts.factory.updateFunctionDeclaration(
@@ -181,5 +172,5 @@ function getIdentifierName(node) {
 
 module.exports = {
   smoosh,
-  returnSmooshed,
+  returnSmooshed
 };

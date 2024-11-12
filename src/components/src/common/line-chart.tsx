@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo} from 'react';
 import {
@@ -13,9 +13,9 @@ import {
   LineSeriesPoint,
   RVNearestXData
 } from 'react-vis';
-import {LineChart} from '@indranildeveloper-kepler.gl/types';
+import {LineChart} from '@indranil-kepler.gl/types';
 import styled from 'styled-components';
-import {datetimeFormatter} from '@indranildeveloper-kepler.gl/utils';
+import {datetimeFormatter} from '@indranil-kepler.gl/utils';
 
 const LineChartWrapper = styled.div`
   .rv-xy-plot {

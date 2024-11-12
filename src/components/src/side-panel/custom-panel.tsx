@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import {SidePanelItem, SidePanelProps} from '../types';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {RGBColor} from '@indranil-kepler.gl/types';
 
 export type CustomPanelsStaticProps<P> = {
   panels: SidePanelItem[];

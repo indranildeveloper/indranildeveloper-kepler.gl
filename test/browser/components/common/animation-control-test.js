@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
 import moment from 'moment';
-import {setLayerAnimationTimeConfig} from '@indranildeveloper-kepler.gl/actions';
-import {getTimelineFromAnimationConfig} from '@indranildeveloper-kepler.gl/utils';
+import {setLayerAnimationTimeConfig} from '@indranil-kepler.gl/actions';
+import {getTimelineFromAnimationConfig} from '@indranil-kepler.gl/utils';
 
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
 import {
@@ -15,10 +15,10 @@ import {
   FloatingTimeDisplayFactory,
   appInjector,
   IconButton
-} from '@indranildeveloper-kepler.gl/components';
+} from '@indranil-kepler.gl/components';
 import {StateWTripGeojson} from 'test/helpers/mock-state';
 
-import {visStateReducer as reducer} from '@indranildeveloper-kepler.gl/reducers';
+import {visStateReducer as reducer} from '@indranil-kepler.gl/reducers';
 
 const AnimationControl = appInjector.get(AnimationControlFactory);
 const PlaybackControls = appInjector.get(PlaybackControlsFactory);

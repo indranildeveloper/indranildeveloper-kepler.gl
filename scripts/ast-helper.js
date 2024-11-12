@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import fs from 'fs';
 import {join} from 'path';
@@ -11,16 +11,16 @@ export function walkSync(dir, fileList = []) {
   directories.forEach(dirPath => {
     const files = fs.readdirSync(dirPath);
 
-    files.forEach((file) => {
+    files.forEach(file => {
       const path = join(dirPath, file);
 
       if (fs.statSync(path).isDirectory()) {
         fileList = walkSync(path, fileList);
-      } else if (path.endsWith('.js')){
+      } else if (path.endsWith('.js')) {
         fileList.push(path);
       }
     });
   });
 
   return fileList;
-};
+}

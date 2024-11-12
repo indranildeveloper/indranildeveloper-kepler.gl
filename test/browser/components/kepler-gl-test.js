@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount */
 import React from 'react';
@@ -10,8 +10,8 @@ import {drainTasksForTesting, succeedTaskWithValues} from 'react-palm/tasks';
 import configureStore from 'redux-mock-store';
 import {Provider} from 'react-redux';
 
-import {keplerGlReducerCore as coreReducer} from '@indranildeveloper-kepler.gl/reducers';
-import {keplerGlInit, ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {keplerGlReducerCore as coreReducer} from '@indranil-kepler.gl/reducers';
+import {keplerGlInit, ActionTypes} from '@indranil-kepler.gl/actions';
 import {
   appInjector,
   KeplerGlFactory,
@@ -22,8 +22,12 @@ import {
   PlotContainerFactory,
   GeocoderPanelFactory,
   NotificationPanelFactory
-} from '@indranildeveloper-kepler.gl/components';
-import {DEFAULT_MAP_STYLES, EXPORT_IMAGE_ID, GEOCODER_DATASET_NAME} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/components';
+import {
+  DEFAULT_MAP_STYLES,
+  EXPORT_IMAGE_ID,
+  GEOCODER_DATASET_NAME
+} from '@indranil-kepler.gl/constants';
 // mock state
 import {StateWithGeocoderDataset} from 'test/helpers/mock-state';
 
@@ -243,7 +247,7 @@ test('Components -> KeplerGl -> Mount -> Load default map style task', t => {
   t.deepEqual(
     actions,
     expectedActions,
-    'Should mount indranildeveloper-kepler.gl and dispatch 1 action to load map styles'
+    'Should mount indranil-kepler.gl and dispatch 1 action to load map styles'
   );
 
   // const tmpState0 = coreReducer(initialCoreState, actions[0]);
@@ -366,7 +370,7 @@ test('Components -> KeplerGl -> Mount -> Load custom map style task', t => {
   t.deepEqual(
     actions,
     expectedActions,
-    'Should mount indranildeveloper-kepler.gl and dispatch 1 actions to load map styles'
+    'Should mount indranil-kepler.gl and dispatch 1 actions to load map styles'
   );
 
   const resultState1 = coreReducer(initialCoreState1, actions[0]);

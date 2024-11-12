@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo, useState, useEffect, CSSProperties} from 'react';
 import styled, {withTheme} from 'styled-components';
 import RangeBrushFactory, {OnBrush, RangeBrushProps} from './range-brush';
 import HistogramPlotFactory from './histogram-plot';
 import LineChartFactory, {HoverDP} from './line-chart';
-import {hasMobileWidth, isTest} from '@indranildeveloper-kepler.gl/utils';
-import {PLOT_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {hasMobileWidth, isTest} from '@indranil-kepler.gl/utils';
+import {PLOT_TYPES} from '@indranil-kepler.gl/constants';
 import LoadingSpinner from './loading-spinner';
-import {breakPointValues} from '@indranildeveloper-kepler.gl/styles';
-import {LineChart as LineChartType, Filter, Bins} from '@indranildeveloper-kepler.gl/types';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {breakPointValues} from '@indranil-kepler.gl/styles';
+import {LineChart as LineChartType, Filter, Bins} from '@indranil-kepler.gl/types';
+import {Datasets} from '@indranil-kepler.gl/table';
 
 const StyledRangePlot = styled.div`
   margin-bottom: ${props => props.theme.sliderBarHeight}px;

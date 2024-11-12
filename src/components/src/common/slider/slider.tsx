@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, createRef, RefObject} from 'react';
 import classnames from 'classnames';
@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import SliderHandle from './slider-handle';
 import SliderBarHandle from './slider-bar-handle';
-import {normalizeSliderValue, clamp} from '@indranildeveloper-kepler.gl/utils';
+import {normalizeSliderValue, clamp} from '@indranil-kepler.gl/utils';
 
 function noop() {
   return;

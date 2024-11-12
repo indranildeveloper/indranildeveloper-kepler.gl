@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {LOCALES} from '../locales';
 
@@ -332,7 +332,7 @@ export default {
       publishSubtitle5: 'To use private style, paste your',
       publishSubtitle6: 'access token',
       publishSubtitle7:
-        'here. *indranildeveloper-kepler.gl is a client-side application, data stays in your browser..',
+        'here. *indranil-kepler.gl is a client-side application, data stays in your browser..',
       exampleToken: 'e.g. pk.abcdefg.xxxxxx',
       pasteTitle: '1. Paste style url',
       pasteSubtitle0: 'Style url can be a mapbox',
@@ -349,9 +349,9 @@ export default {
       cloudTitle: 'Cloud storage',
       cloudSubtitle: 'Login and upload map data to your personal cloud storage',
       shareDisclaimer:
-        'indranildeveloper-kepler.gl will save your map data to your personal cloud storage, only people with the URL can access your map and data. ' +
+        'indranil-kepler.gl will save your map data to your personal cloud storage, only people with the URL can access your map and data. ' +
         'You can edit/delete the data file in your cloud account anytime.',
-      gotoPage: 'Go to your indranildeveloper-kepler.gl {currentProvider} page'
+      gotoPage: 'Go to your indranil-kepler.gl {currentProvider} page'
     },
     statusPanel: {
       mapUploading: 'Map Uploading',
@@ -383,9 +383,9 @@ export default {
       json: {
         configTitle: 'Map Config',
         configDisclaimer:
-          'Map config will be included in the Json file. If you are using indranildeveloper-kepler.gl in your own app. You can copy this config and pass it to ',
+          'Map config will be included in the Json file. If you are using indranil-kepler.gl in your own app. You can copy this config and pass it to ',
         selection:
-          'Export current map data and config into a single Json file. You can later open the same map by uploading this file to indranildeveloper-kepler.gl.',
+          'Export current map data and config into a single Json file. You can later open the same map by uploading this file to indranil-kepler.gl.',
         disclaimer:
           '* Map config is coupled with loaded datasets. ‘dataId’ is used to bind layers, filters, and tooltips to a specific dataset. ' +
           'When passing this config to addDataToMap, make sure the dataset id matches the dataId/s in this config.'
@@ -489,7 +489,7 @@ ${'```'}
       description1:
         'In your csv, create a column, put the name of the icon you want to draw in it. You can leave the cell empty if you do not want the icon to show for some points. When the column is named',
       code: 'icon',
-      description2: ' indranildeveloper-kepler.gl will automatically create a icon layer for you.',
+      description2: ' indranil-kepler.gl will automatically create a icon layer for you.',
       example: 'Example:',
       icons: 'Icons'
     },
@@ -503,7 +503,7 @@ ${'```'}
     },
     loadStorageMap: {
       back: 'Back',
-      goToPage: 'Go to your indranildeveloper-kepler.gl {displayName} page',
+      goToPage: 'Go to your indranil-kepler.gl {displayName} page',
       storageMaps: 'Storage / Maps',
       noSavedMaps: 'No saved maps yet'
     }
@@ -587,7 +587,7 @@ ${'```'}
     chromeMessage:
       '*Chrome user: Limit file size to 250mb, if need to upload larger file, try Safari',
     disclaimer:
-      '*indranildeveloper-kepler.gl is a client-side application with no server backend. Data lives only on your machine/browser. ' +
+      '*indranil-kepler.gl is a client-side application with no server backend. Data lives only on your machine/browser. ' +
       'No information or map data is sent to any server.',
     configUploadMessage:
       'Upload {fileFormatNames} or saved map **Json**. Read more about [**supported file formats**]',

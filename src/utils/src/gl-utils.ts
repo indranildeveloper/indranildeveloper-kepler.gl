@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {setParameters} from '@luma.gl/core';
-import {LAYER_BLENDINGS} from '@indranildeveloper-kepler.gl/constants';
+import {LAYER_BLENDINGS} from '@indranil-kepler.gl/constants';
 import GL from '@luma.gl/constants';
 
 const getGlConst = d => GL[d];

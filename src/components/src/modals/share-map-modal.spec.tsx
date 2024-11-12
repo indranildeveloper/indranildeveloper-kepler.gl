@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // @ts-nocheck
 import React from 'react';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 import {renderWithTheme} from 'test/helpers/component-jest-utils';
 import ShareMapUrlModalFactory from './share-map-modal';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
 import {act} from '@testing-library/react';
 import {ThemeProvider} from 'styled-components';
 import {IntlProvider} from 'react-intl';
-import {theme} from '@indranildeveloper-kepler.gl/styles';
-import {messages} from '@indranildeveloper-kepler.gl/localization';
+import {theme} from '@indranil-kepler.gl/styles';
+import {messages} from '@indranil-kepler.gl/localization';
 
 jest.mock('../hooks/use-cloud-list-provider', () => ({
   useCloudListProvider: jest.fn().mockImplementation(() => ({

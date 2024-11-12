@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {deviation, min, max, mean, median, sum, variance} from 'd3-array';
-import {ValueOf} from '@indranildeveloper-kepler.gl/types';
-import {AGGREGATION_TYPES, AggregationTypes} from '@indranildeveloper-kepler.gl/constants';
+import {ValueOf} from '@indranil-kepler.gl/types';
+import {AGGREGATION_TYPES, AggregationTypes} from '@indranil-kepler.gl/constants';
 const identity = d => d;
 
 export const getFrequency = (

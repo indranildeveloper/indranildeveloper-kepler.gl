@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import pick from 'lodash.pick';
 import {console as globalConsole} from 'global/window';
 
-import {ProtoDataset, RGBColor} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
+import {ProtoDataset, RGBColor} from '@indranil-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
 import {VERSIONS} from './versions';
 import Schema from './schema';
-import {getFieldsFromData, getSampleForTypeAnalyze} from '@indranildeveloper-kepler.gl/utils';
+import {getFieldsFromData, getSampleForTypeAnalyze} from '@indranil-kepler.gl/utils';
 
 export type SavedField = {
   name: string;

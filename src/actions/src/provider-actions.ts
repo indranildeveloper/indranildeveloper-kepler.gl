@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {ACTION_PREFIX} from './action-types';
@@ -8,11 +8,12 @@ import {
   ExportFileToCloudPayload,
   OnErrorCallBack,
   OnSuccessCallBack
-} from '@indranildeveloper-kepler.gl/types';
-import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+} from '@indranil-kepler.gl/types';
+import {Provider} from '@indranil-kepler.gl/cloud-providers';
 
 // eslint-disable-next-line prettier/prettier
-const assignType = <T>(obj: T): { [K in keyof T]: `${typeof ACTION_PREFIX}${string & K}`; } => obj as any
+const assignType = <T>(obj: T): {[K in keyof T]: `${typeof ACTION_PREFIX}${string & K}`} =>
+  obj as any;
 export const ActionTypes = assignType({
   EXPORT_FILE_TO_CLOUD: `${ACTION_PREFIX}EXPORT_FILE_TO_CLOUD`,
   EXPORT_FILE_SUCCESS: `${ACTION_PREFIX}EXPORT_FILE_SUCCESS`,

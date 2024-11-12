@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import fs from 'fs';
 import {resolve, join} from 'path';
@@ -51,7 +51,6 @@ function createActionNode(actionType) {
  * @param {string} filePath
  */
 function addActionHandler(path, actionMap, filePath) {
-
   const {init} = path.node;
 
   if (init && Array.isArray(init.properties)) {
@@ -68,7 +67,7 @@ function addActionHandler(path, actionMap, filePath) {
           path: filePath
         });
       }
-    })
+    });
   }
 }
 
@@ -79,17 +78,18 @@ function addActionHandler(path, actionMap, filePath) {
  * @param {*} filePath
  */
 function addActionCreator(path, actionMap, filePath) {
-
   const {node, parentPath} = path;
   if (node.arguments.length && parentPath.node && parentPath.node.id) {
-
     const action = parentPath.node.id.name;
     const firstArg = node.arguments[0];
     const actionType = firstArg.property ? firstArg.property.name : firstArg.name;
 
-    const {loc} = parentPath.node
+    const {loc} = parentPath.node;
     actionMap[actionType] = actionMap[actionType] || createActionNode(actionType);
-    actionMap[actionType].action = {name: action, path: `${filePath}#L${loc.start.line}-L${loc.end.line}`};
+    actionMap[actionType].action = {
+      name: action,
+      path: `${filePath}#L${loc.start.line}-L${loc.end.line}`
+    };
   }
 }
 
@@ -104,7 +104,10 @@ function addActionDeclaration(path, actionMap, filePath) {
   const {loc} = path.node;
 
   actionMap[actionType] = actionMap[actionType] || createActionNode(actionType);
-  actionMap[actionType].action = {name: action, path: `${filePath}#L${loc.start.line}-L${loc.end.line}`};
+  actionMap[actionType].action = {
+    name: action,
+    path: `${filePath}#L${loc.start.line}-L${loc.end.line}`
+  };
 }
 
 function traverseTree(filePath, actionMap = {}) {
@@ -122,7 +125,7 @@ function traverseTree(filePath, actionMap = {}) {
         addActionHandler(path, actionMap, filePath);
       }
     },
-    CallExpression(path)  {
+    CallExpression(path) {
       /**
        * If action is declared with createAction
        * export const togglePerspective = createAction(
@@ -144,15 +147,14 @@ function traverseTree(filePath, actionMap = {}) {
       if (filePath.endsWith('actions.js')) {
         const {leadingComments} = path.parentPath.node;
         if (
-          Array.isArray(leadingComments) && leadingComments[0] && leadingComments[0].value.includes('@public')
+          Array.isArray(leadingComments) &&
+          leadingComments[0] &&
+          leadingComments[0].value.includes('@public')
         ) {
           addActionDeclaration(path, actionMap, filePath);
         }
-
       }
-
     }
-
   });
 
   return actionMap;

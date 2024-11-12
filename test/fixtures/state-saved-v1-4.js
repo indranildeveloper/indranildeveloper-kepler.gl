@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
-import {DEFAULT_COLOR_UI} from '@indranildeveloper-kepler.gl/constants';
+import {KeplerGlLayers} from '@indranil-kepler.gl/layers';
+import {DEFAULT_COLOR_UI} from '@indranil-kepler.gl/constants';
 const {PointLayer} = KeplerGlLayers;
 
 export const stateSavedV1 = {
@@ -163,7 +163,7 @@ export const stateSavedV1 = {
     }
   },
   info: {
-    app: 'indranildeveloper-kepler.gl',
+    app: 'indranil-kepler.gl',
     created_at: 'Tue Oct 02 2018 16:11:32 GMT-0700 (Pacific Daylight Time)'
   }
 };

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import classnames from 'classnames';
 import React, {
@@ -21,16 +21,16 @@ import {
 import styled, {StyledComponent, css} from 'styled-components';
 import Portaled from '../../common/portaled';
 
-import {KeyEvent} from '@indranildeveloper-kepler.gl/constants';
-import {ColorUI, HexColor} from '@indranildeveloper-kepler.gl/types';
-import {colorMapToColorBreaks, isNumericColorBreaks} from '@indranildeveloper-kepler.gl/utils';
+import {KeyEvent} from '@indranil-kepler.gl/constants';
+import {ColorUI, HexColor} from '@indranil-kepler.gl/types';
+import {colorMapToColorBreaks, isNumericColorBreaks} from '@indranil-kepler.gl/utils';
 import {
   addCustomPaletteColor,
   removeCustomPaletteColor,
   sortCustomPaletteColor,
   updateCustomPaletteColor
-} from '@indranildeveloper-kepler.gl/utils';
-import {ColorBreak, ColorBreakOrdinal} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
+import {ColorBreak, ColorBreakOrdinal} from '@indranil-kepler.gl/utils';
 import {Add, Trash, VertDots} from '../../common/icons';
 import {Button, Input} from '../../common/styled-components';
 import CustomPicker from './custom-picker';

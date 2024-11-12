@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount */
 import test from 'tape';
@@ -8,9 +8,9 @@ import {mount} from 'enzyme';
 import sinon from 'sinon';
 import sinonStubPromise from 'sinon-stub-promise';
 import {getDistanceScales} from 'viewport-mercator-project';
-import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
-import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
-import {DEFAULT_TEXT_LABEL, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {copyTableAndUpdate} from '@indranil-kepler.gl/table';
+import {KeplerGlLayers} from '@indranil-kepler.gl/layers';
+import {DEFAULT_TEXT_LABEL, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranil-kepler.gl/constants';
 
 sinonStubPromise(sinon);
 
@@ -24,7 +24,7 @@ import {
   pointLayerMeta,
   iconGeometry
 } from 'test/helpers/layer-utils';
-import {INITIAL_MAP_STATE} from '@indranildeveloper-kepler.gl/reducers';
+import {INITIAL_MAP_STATE} from '@indranil-kepler.gl/reducers';
 import {IntlWrapper} from '../../helpers/component-utils';
 
 const {IconLayer} = KeplerGlLayers;

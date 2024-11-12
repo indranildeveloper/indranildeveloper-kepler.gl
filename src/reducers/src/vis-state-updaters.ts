@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import bbox from '@turf/bbox';
 import copy from 'copy-to-clipboard';
@@ -13,7 +13,12 @@ import uniq from 'lodash.uniq';
 import xor from 'lodash.xor';
 import {disableStackCapturing, withTask} from 'react-palm/tasks';
 // Tasks
-import {DELAY_TASK, LOAD_FILE_TASK, PROCESS_FILE_DATA, UNWRAP_TASK} from '@indranildeveloper-kepler.gl/tasks';
+import {
+  DELAY_TASK,
+  LOAD_FILE_TASK,
+  PROCESS_FILE_DATA,
+  UNWRAP_TASK
+} from '@indranil-kepler.gl/tasks';
 // Actions
 import {
   ActionTypes,
@@ -31,7 +36,7 @@ import {
   loadNextFile,
   nextFileBatch,
   processFileContent
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 
 // Utils
 import {
@@ -62,7 +67,7 @@ import {
   updateFilterPlot,
   removeFilterPlot,
   isLayerAnimatable
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 
 // Mergers
 import {
@@ -79,8 +84,8 @@ import {
   PLOT_TYPES,
   SORT_ORDER,
   SYNC_TIMELINE_MODES
-} from '@indranildeveloper-kepler.gl/constants';
-import {LAYER_ID_LENGTH, Layer, LayerClasses} from '@indranildeveloper-kepler.gl/layers';
+} from '@indranil-kepler.gl/constants';
+import {LAYER_ID_LENGTH, Layer, LayerClasses} from '@indranil-kepler.gl/layers';
 import {
   apply_,
   compose_,
@@ -100,7 +105,7 @@ import {
   validateLayerWithData
 } from './vis-state-merger';
 
-import KeplerGLSchema, {Merger, PostMergerPayload, VisState} from '@indranildeveloper-kepler.gl/schemas';
+import KeplerGLSchema, {Merger, PostMergerPayload, VisState} from '@indranil-kepler.gl/schemas';
 
 import {
   Filter,
@@ -109,7 +114,7 @@ import {
   Editor,
   Field,
   TimeRangeFilter
-} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/types';
 import {Loader} from '@loaders.gl/loader-utils';
 
 import {
@@ -120,7 +125,7 @@ import {
   pinTableColumns,
   setFilterGpuMode,
   sortDatasetByColumn
-} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/table';
 import {findFieldsToShow} from './interaction-utils';
 import {calculateLayerData, findDefaultLayer, getLayerOrderFromLayers} from './layer-utils';
 import {getPropValueToMerger, hasPropsToMerge} from './merger-handler';
@@ -135,21 +140,21 @@ import {
   getDefaultTimeFormat,
   LayerToFilterTimeInterval,
   TIME_INTERVALS_ORDERED
-} from '@indranildeveloper-kepler.gl/utils';
-import {createEffect} from '@indranildeveloper-kepler.gl/effects';
+} from '@indranil-kepler.gl/utils';
+import {createEffect} from '@indranil-kepler.gl/effects';
 
 // react-palm
 // disable capture exception for react-palm call to withTask
 disableStackCapturing();
 
 /**
- * Updaters for `visState` reducer. Can be used in your root reducer to directly modify indranildeveloper-kepler.gl's state.
+ * Updaters for `visState` reducer. Can be used in your root reducer to directly modify indranil-kepler.gl's state.
  * Read more about [Using updaters](../advanced-usage/using-updaters.md)
  *
  * @public
  * @example
  *
- * import keplerGlReducer, {visStateUpdaters} from 'indranildeveloper-kepler.gl/reducers';
+ * import keplerGlReducer, {visStateUpdaters} from 'indranil-kepler.gl/reducers';
  * // Root Reducer
  * const reducers = combineReducers({
  *  keplerGl: keplerGlReducer,

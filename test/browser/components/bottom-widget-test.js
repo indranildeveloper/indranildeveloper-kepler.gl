@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
@@ -9,8 +9,8 @@ import {
   TimeWidgetFactory,
   AnimationControlFactory,
   appInjector
-} from '@indranildeveloper-kepler.gl/components';
-import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/components';
+import {VisStateActions} from '@indranil-kepler.gl/actions';
 
 const BottomWidget = appInjector.get(BottomWidgetFactory);
 const TimeWidget = appInjector.get(TimeWidgetFactory);

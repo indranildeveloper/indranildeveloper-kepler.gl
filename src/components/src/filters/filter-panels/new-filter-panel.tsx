@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import {StyledFilterContent} from '../../common/styled-components';
@@ -7,8 +7,8 @@ import FilterPanelHeaderFactory from '../../side-panel/filter-panel/filter-panel
 import SourceDataSelectorFactory from '../../side-panel/common/source-data-selector';
 import FieldSelectorFactory from '../../common/field-selector';
 import {FilterPanelComponent} from './types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
-import {Field, FilterBase, LineChart} from '@indranildeveloper-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
+import {Field, FilterBase, LineChart} from '@indranil-kepler.gl/types';
 
 NewFilterPanelFactory.deps = [
   FilterPanelHeaderFactory,

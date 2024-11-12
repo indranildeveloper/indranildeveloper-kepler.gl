@@ -1,10 +1,9 @@
 ---
 name: Feature request
-about: Suggest an idea for indranildeveloper-kepler.gl
+about: Suggest an idea for indranil-kepler.gl
 title: ''
 labels: ''
 assignees: heshan0131
-
 ---
 
 **Is your feature request related to a problem? Please describe.**

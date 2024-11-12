@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo, useCallback} from 'react';
 import {StyledFilterContent} from '../../common/styled-components';
@@ -12,7 +12,7 @@ import {StyledFilterPanel} from '../components';
 
 import get from 'lodash.get';
 import {PolygonFilterPanelComponent} from './types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
+import {KeplerTable} from '@indranil-kepler.gl/table';
 
 PolygonFilterPanelFactory.deps = [
   FilterPanelHeaderFactory,

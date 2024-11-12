@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo} from 'react';
 import styled from 'styled-components';
-import {TooltipField} from '@indranildeveloper-kepler.gl/types';
+import {TooltipField} from '@indranil-kepler.gl/types';
 import {CenterFlexbox} from '../common/styled-components';
 import {Layers} from '../common/icons';
 import PropTypes from 'prop-types';
-import {notNullorUndefined} from '@indranildeveloper-kepler.gl/utils';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {notNullorUndefined} from '@indranil-kepler.gl/utils';
+import {Layer} from '@indranil-kepler.gl/layers';
 import {
   AggregationLayerHoverData,
   getTooltipDisplayDeltaValue,
   getTooltipDisplayValue
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 import {useIntl} from 'react-intl';
 
 export const StyledLayerName = styled(CenterFlexbox)`

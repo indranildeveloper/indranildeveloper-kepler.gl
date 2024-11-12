@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 const {resolve} = require('path');
 
 // Looks like onCreateWebpackConfig does not receive theme options?
 function onCreateWebpackConfig(opts, ocularOptions = global.ocularOptions) {
   const {
-    stage,     // build stage: ‘develop’, ‘develop-html’, ‘build-javascript’, or ‘build-html’
+    stage, // build stage: ‘develop’, ‘develop-html’, ‘build-javascript’, or ‘build-html’
     // rules,     // Object (map): set of preconfigured webpack config rules
     // loaders,   // Object (map): set of preconfigured webpack config loaders
     // plugins,    // Object (map): A set of preconfigured webpack config plugins
@@ -19,19 +19,18 @@ function onCreateWebpackConfig(opts, ocularOptions = global.ocularOptions) {
   config.resolve = config.resolve || {};
   config.resolve.alias = config.resolve.alias || {};
   Object.assign(config.resolve.alias, {
-    'components': resolve(__dirname, '../src/components'),
-    'constants': resolve(__dirname, '../src/constants'),
-    'actions': resolve(__dirname, '../src/actions'),
-    'utils': resolve(__dirname, '../src/utils')
-    // 'indranildeveloper-kepler.gl/dist': libSources,
-    // // Imports the indranildeveloper-kepler.gl library from the src directory in this repo
-    // 'indranildeveloper-kepler.gl': libSources,
+    components: resolve(__dirname, '../src/components'),
+    constants: resolve(__dirname, '../src/constants'),
+    actions: resolve(__dirname, '../src/actions'),
+    utils: resolve(__dirname, '../src/utils')
+    // 'indranil-kepler.gl/dist': libSources,
+    // // Imports the indranil-kepler.gl library from the src directory in this repo
+    // 'indranil-kepler.gl': libSources,
     // react: resolve(rootDir, './node_modules/react'),
     // 'styled-components': resolve(rootDir, './node_modules/styled-components'),
     // 'react-redux': resolve(rootDir, './node_modules/react-redux'),
     // 'react-palm': resolve(rootDir, './node_modules/react-palm')
   });
-
 
   // NOTE: actions.setWebpackConfig MERGES in the new config, actions.replaceWebpackConfig SETS it
   actions.replaceWebpackConfig(config);

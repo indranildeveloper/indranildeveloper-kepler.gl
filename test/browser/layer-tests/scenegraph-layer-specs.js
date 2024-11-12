@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -18,7 +18,7 @@ import {
   pointLayerMeta,
   preparedFilterDomain0
 } from 'test/helpers/layer-utils';
-import {KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
+import {KeplerGlLayers} from '@indranil-kepler.gl/layers';
 const {ScenegraphLayer} = KeplerGlLayers;
 const columns = {lat: 'lat', lng: 'lng'};
 

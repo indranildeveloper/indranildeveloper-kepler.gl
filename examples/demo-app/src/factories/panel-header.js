@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {PanelHeaderFactory, Icons} from '@indranildeveloper-kepler.gl/components';
-import {BUG_REPORT_LINK, USER_GUIDE_DOC} from '@indranildeveloper-kepler.gl/constants';
+import {PanelHeaderFactory, Icons} from '@indranil-kepler.gl/components';
+import {BUG_REPORT_LINK, USER_GUIDE_DOC} from '@indranil-kepler.gl/constants';
 
 export function CustomPanelHeaderFactory(...deps) {
   const PanelHeader = PanelHeaderFactory(...deps);

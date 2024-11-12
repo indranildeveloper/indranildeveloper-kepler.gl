@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import styled from 'styled-components';
 import {injectIntl, IntlShape} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 
 import {
   SidePanelSection,
@@ -16,9 +16,9 @@ import DatasetTagFactory from '../common/dataset-tag';
 import TooltipChickletFactory from './tooltip-config/tooltip-chicklet';
 import Switch from '../../common/switch';
 import ItemSelector from '../../common/item-selector/item-selector';
-import {COMPARE_TYPES, GEOCODER_DATASET_NAME} from '@indranildeveloper-kepler.gl/constants';
+import {COMPARE_TYPES, GEOCODER_DATASET_NAME} from '@indranil-kepler.gl/constants';
 import FieldSelectorFactory from '../../common/field-selector';
-import KeplerTable, {Datasets} from '@indranildeveloper-kepler.gl/table';
+import KeplerTable, {Datasets} from '@indranil-kepler.gl/table';
 
 const TooltipConfigWrapper = styled.div`
   .item-selector > div > div {

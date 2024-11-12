@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {
   toggleModalUpdater,
@@ -22,9 +22,9 @@ import {
   mapStyleChangeUpdater,
   receiveMapConfigUpdater as styleMapConfigUpdater
 } from './map-style-updaters';
-import {filesToDataPayload} from '@indranildeveloper-kepler.gl/processors';
+import {filesToDataPayload} from '@indranil-kepler.gl/processors';
 import {payload_, apply_, with_, if_, compose_, merge_, pick_} from './composer-helpers';
-import {MapState, UiState, AddDataToMapPayload, ParsedConfig} from '@indranildeveloper-kepler.gl/types';
+import {MapState, UiState, AddDataToMapPayload, ParsedConfig} from '@indranil-kepler.gl/types';
 import {MapStyle} from './map-style-updaters';
 import {ProviderState} from './provider-state-updaters';
 import {
@@ -33,12 +33,12 @@ import {
   LayerTypeChangeUpdaterAction,
   ToggleSplitMapUpdaterAction,
   ReplaceDataInMapPayload
-} from '@indranildeveloper-kepler.gl/actions';
-import {VisState} from '@indranildeveloper-kepler.gl/schemas';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {isPlainObject} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/actions';
+import {VisState} from '@indranil-kepler.gl/schemas';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {isPlainObject} from '@indranil-kepler.gl/utils';
 import {findMapBounds} from './data-utils';
-import {BASE_MAP_COLOR_MODES, OVERLAY_BLENDINGS} from '@indranildeveloper-kepler.gl/constants';
+import {BASE_MAP_COLOR_MODES, OVERLAY_BLENDINGS} from '@indranil-kepler.gl/constants';
 
 export type KeplerGlState = {
   visState: VisState;
@@ -57,7 +57,7 @@ export type KeplerGlState = {
  * @public
  * @example
  *
- * import keplerGlReducer, {combinedUpdaters} from 'indranildeveloper-kepler.gl/reducers';
+ * import keplerGlReducer, {combinedUpdaters} from 'indranil-kepler.gl/reducers';
  * // Root Reducer
  * const reducers = combineReducers({
  *  keplerGl: keplerGlReducer,
@@ -72,7 +72,7 @@ export type KeplerGlState = {
  *        ...state,
  *        keplerGl: {
  *          ...state.keplerGl,
- *          // pass in indranildeveloper-kepler.gl instance state to combinedUpdaters
+ *          // pass in indranil-kepler.gl instance state to combinedUpdaters
  *          map:  combinedUpdaters.addDataToMapUpdater(
  *           state.keplerGl.map,
  *           {
@@ -111,7 +111,7 @@ export const defaultAddDataToMapOptions = {
  * Combine data and full configuration update in a single action
  *
  * @memberof combinedUpdaters
- * @param {Object} state indranildeveloper-kepler.gl instance state, containing all subreducer state
+ * @param {Object} state indranil-kepler.gl instance state, containing all subreducer state
  * @param {Object} action
  * @param {Object} action.payload `{datasets, options, config}`
  * @param action.payload.datasets - ***required** datasets can be a dataset or an array of datasets

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 
-import {openDeleteModal, VisStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
-import {DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {openDeleteModal, VisStateActions, ActionHandler} from '@indranil-kepler.gl/actions';
+import {DataContainerInterface} from '@indranil-kepler.gl/utils';
+import {RGBColor} from '@indranil-kepler.gl/types';
 
 import {SidePanelSection} from '../../common/styled-components';
 import DatasetTitleFactory from './dataset-title';

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {ScatterplotLayer} from '@deck.gl/layers';
 import {_AggregationLayer as AggregationLayer} from '@deck.gl/aggregation-layers';
@@ -14,9 +14,9 @@ import CPUAggregator, {
 import {getDistanceScales} from 'viewport-mercator-project';
 import {max} from 'd3-array';
 
-import {SCALE_TYPES, DEFAULT_COLOR_RANGE, LAYER_VIS_CONFIGS} from '@indranildeveloper-kepler.gl/constants';
+import {SCALE_TYPES, DEFAULT_COLOR_RANGE, LAYER_VIS_CONFIGS} from '@indranil-kepler.gl/constants';
 import ClusterBuilder, {getGeoJSON} from '../layer-utils/cluster-utils';
-import {RGBAColor} from '@indranildeveloper-kepler.gl/types';
+import {RGBAColor} from '@indranil-kepler.gl/types';
 import {AggregationLayerProps} from '@deck.gl/aggregation-layers/aggregation-layer';
 
 const defaultRadius = LAYER_VIS_CONFIGS.clusterRadius.defaultValue;

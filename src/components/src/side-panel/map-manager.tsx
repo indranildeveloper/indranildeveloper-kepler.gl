@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {createSelector} from 'reselect';
@@ -12,10 +12,10 @@ import PanelTitleFactory from '../side-panel/panel-title';
 import {Add, Trash} from '../common/icons';
 import {PanelMeta} from './common/types';
 import {injectIntl, WrappedComponentProps} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {MapStyle} from '@indranildeveloper-kepler.gl/reducers';
-import {MapStyleActions} from '@indranildeveloper-kepler.gl/actions';
-import {MapStyles} from '@indranildeveloper-kepler.gl/types';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {MapStyle} from '@indranil-kepler.gl/reducers';
+import {MapStyleActions} from '@indranil-kepler.gl/actions';
+import {MapStyles} from '@indranil-kepler.gl/types';
 
 export type MapManagerProps = {
   mapStyle: MapStyle;

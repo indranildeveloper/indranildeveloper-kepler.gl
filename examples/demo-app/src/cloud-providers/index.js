@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {CLOUD_PROVIDERS_CONFIGURATION} from '../constants/default-settings';
 
@@ -16,7 +16,7 @@ const {
   FOURSQUARE_USER_MAPS_URL
 } = CLOUD_PROVIDERS_CONFIGURATION;
 
-const DROPBOX_CLIENT_NAME = 'indranildeveloper-kepler.gl Demo App';
+const DROPBOX_CLIENT_NAME = 'indranil-kepler.gl Demo App';
 
 export const DEFAULT_CLOUD_PROVIDER = 'dropbox';
 

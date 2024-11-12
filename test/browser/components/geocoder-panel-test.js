@@ -1,12 +1,16 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable max-statements */
 import React from 'react';
 import sinon from 'sinon';
 import test from 'tape';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
-import {GeocoderPanelFactory, appInjector, testForCoordinates} from '@indranildeveloper-kepler.gl/components';
+import {
+  GeocoderPanelFactory,
+  appInjector,
+  testForCoordinates
+} from '@indranil-kepler.gl/components';
 import {cmpDatasetData, cmpObjectKeys} from '../../helpers/comparison-utils';
 
 import {InitialState} from 'test/helpers/mock-state';

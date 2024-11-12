@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {polyfill} from 'react-lifecycles-compat';
@@ -13,15 +13,15 @@ import {
   StyledModalVerticalPanel,
   StyledModalSection
 } from '../common/styled-components';
-import {media} from '@indranildeveloper-kepler.gl/styles';
+import {media} from '@indranil-kepler.gl/styles';
 
 // Utils
-import {getApplicationConfig, transformRequest} from '@indranildeveloper-kepler.gl/utils';
+import {getApplicationConfig, transformRequest} from '@indranil-kepler.gl/utils';
 import {injectIntl, IntlShape} from 'react-intl';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {NO_BASEMAP_ICON} from '@indranildeveloper-kepler.gl/constants';
-import {InputStyle, MapState} from '@indranildeveloper-kepler.gl/types';
-import {ActionHandler, inputMapStyle, loadCustomMapStyle} from '@indranildeveloper-kepler.gl/actions';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {NO_BASEMAP_ICON} from '@indranil-kepler.gl/constants';
+import {InputStyle, MapState} from '@indranil-kepler.gl/types';
+import {ActionHandler, inputMapStyle, loadCustomMapStyle} from '@indranil-kepler.gl/actions';
 
 const MapH = 190;
 const MapW = 264;

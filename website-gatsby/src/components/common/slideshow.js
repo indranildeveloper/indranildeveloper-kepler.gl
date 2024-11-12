@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
@@ -59,10 +59,7 @@ export default class SlideShow extends PureComponent {
   };
 
   componentDidMount() {
-    this._intervalId = setInterval(
-      this._transitionImage,
-      this.props.slideDuration
-    );
+    this._intervalId = setInterval(this._transitionImage, this.props.slideDuration);
   }
 
   componentWillUnmount() {

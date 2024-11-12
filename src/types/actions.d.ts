@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {SavedMap, ParsedConfig, SavedConfigV1, MinSavedConfigV1} from './schemas';
 

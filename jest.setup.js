@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import '@testing-library/jest-dom';
 
@@ -18,8 +18,8 @@ jest.mock('mapbox-gl/dist/mapbox-gl', () => ({
   Map: () => ({})
 }));
 
-jest.mock('@indranildeveloper-kepler.gl/utils', () => ({
-  ...jest.requireActual('@indranildeveloper-kepler.gl/utils'),
+jest.mock('@indranil-kepler.gl/utils', () => ({
+  ...jest.requireActual('@indranil-kepler.gl/utils'),
   hasPortableWidth: jest.fn(),
   hasMobileWidth: jest.fn()
 }));

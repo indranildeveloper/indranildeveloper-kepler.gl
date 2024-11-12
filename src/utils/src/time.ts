@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {ascending, bisector, tickStep} from 'd3-array';
 import moment from 'moment';
@@ -12,8 +12,8 @@ import {
   durationYear,
   INTERVAL,
   TickInterval
-} from '@indranildeveloper-kepler.gl/constants';
-import {AnimationConfig, Timeline, TimeRangeFilter} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/constants';
+import {AnimationConfig, Timeline, TimeRangeFilter} from '@indranil-kepler.gl/types';
 
 import {toArray} from './utils';
 import {getFrequency} from './aggregation';

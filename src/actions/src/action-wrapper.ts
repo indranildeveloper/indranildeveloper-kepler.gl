@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 export const FORWARD = '@redux-forward/FORWARD';
 export const ADDRESS_PREFIX = '@@KG_';
@@ -10,7 +10,7 @@ export const getActionForwardAddress = id => `${ADDRESS_PREFIX}${id.toUpperCase(
 
 /**
  * Wrap an action into a forward action that only modify the state of a specific
- * indranildeveloper-kepler.gl instance. indranildeveloper-kepler.gl reducer will look for signatures in the action to
+ * indranil-kepler.gl instance. indranil-kepler.gl reducer will look for signatures in the action to
  * determine whether it needs to be forwarded to a specific instance reducer.
  *
  * wrapTo can be curried. You can create a curried action wrapper by only supply the `id` argument
@@ -18,9 +18,9 @@ export const getActionForwardAddress = id => `${ADDRESS_PREFIX}${id.toUpperCase(
  * A forward action looks like this
  * ```js
  *  {
- *    type: "@@indranildeveloper-kepler.gl/LAYER_CONFIG_CHANGE",
+ *    type: "@@indranil-kepler.gl/LAYER_CONFIG_CHANGE",
  *    payload: {
- *      type: '@@indranildeveloper-kepler.gl/LAYER_CONFIG_CHANGE',
+ *      type: '@@indranil-kepler.gl/LAYER_CONFIG_CHANGE',
  *      payload: {},
  *      meta: {
  *       // id of instance
@@ -42,7 +42,7 @@ export const getActionForwardAddress = id => `${ADDRESS_PREFIX}${id.toUpperCase(
  * @public
  * @example
  *
- * import {wrapTo, togglePerspective} from 'indranildeveloper-kepler.gl/actions';
+ * import {wrapTo, togglePerspective} from 'indranil-kepler.gl/actions';
  *
  * // This action will only dispatch to the KeplerGl instance with `id: map_1`
  * this.props.dispatch(wrapTo('map_1', togglePerspective()));
@@ -116,7 +116,7 @@ export const _actionFor = (id, action) =>
  * @example
  *
  * // action and forward dispatcher
- * import {toggleSplitMap, forwardTo} from 'indranildeveloper-kepler.gl/actions';
+ * import {toggleSplitMap, forwardTo} from 'indranil-kepler.gl/actions';
  * import {connect} from 'react-redux';
  *
  * const MapContainer = props => (
@@ -138,7 +138,7 @@ export const _actionFor = (id, action) =>
 export const forwardTo = (id, dispatch) => action => dispatch(wrapTo(id, action));
 
 /**
- * Update the state of a indranildeveloper-kepler.gl instance
+ * Update the state of a indranil-kepler.gl instance
  * @memberof forwardActions
  * @param {Object} state
  * @param {string} id

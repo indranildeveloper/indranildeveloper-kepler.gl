@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 
@@ -10,13 +10,13 @@ import {
   toggleSplitMap,
   toggleSplitMapViewport,
   receiveMapConfig
-} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/actions';
 
 import {
   mapStateReducer as reducer,
   mapStateReducerFactory,
   INITIAL_MAP_STATE
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 
 const InitialMapState = reducer(undefined, {});
 test('#mapStateReducer', t => {

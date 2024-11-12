@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 import {Tooltip} from '../styled-components';
 import IconButton from '../icon-button';
-import {media} from '@indranildeveloper-kepler.gl/styles';
-import {preciseRound} from '@indranildeveloper-kepler.gl/utils';
+import {media} from '@indranil-kepler.gl/styles';
+import {preciseRound} from '@indranil-kepler.gl/utils';
 
 const StyledSpeedControl = styled.div`
   display: flex;

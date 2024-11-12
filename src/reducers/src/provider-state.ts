@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {handleActions} from 'redux-actions';
 import * as providerStateUpdaters from './provider-state-updaters';
-import {ProviderActionTypes as ActionTypes} from '@indranildeveloper-kepler.gl/actions';
+import {ProviderActionTypes as ActionTypes} from '@indranil-kepler.gl/actions';
 
 /**
  * Important: Do not rename `actionHandler` or the assignment pattern of property value.

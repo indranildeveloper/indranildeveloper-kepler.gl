@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount,enzyme-deprecation/no-shallow,max-statements */
 import React from 'react';
@@ -19,10 +19,10 @@ import {
   MapControlToolbarFactory,
   Icons,
   MapViewStateContextProvider
-} from '@indranildeveloper-kepler.gl/components';
-import {LOCALE_CODES, LOCALES} from '@indranildeveloper-kepler.gl/localization';
-import {toggleMapControl} from '@indranildeveloper-kepler.gl/actions';
-import {keplerGlReducerCore} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/components';
+import {LOCALE_CODES, LOCALES} from '@indranil-kepler.gl/localization';
+import {toggleMapControl} from '@indranil-kepler.gl/actions';
+import {keplerGlReducerCore} from '@indranil-kepler.gl/reducers';
 
 import {IntlWrapper, mountWithTheme} from '../../../helpers/component-utils';
 import {

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
@@ -21,8 +21,8 @@ export const SectionContainer = styled.div`
     props.isDark
       ? props.theme.darkBackgroundColor
       : props.background
-        ? `url(${props.background})`
-        : 'white'};
+      ? `url(${props.background})`
+      : 'white'};
   padding: ${props => props.theme.margins.huge};
   margin-bottom: ${props => props.theme.margins.large};
   background-size: cover;

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 import {createAction} from 'redux-actions';
 
-import {addDataToMap, wrapTo} from '@indranildeveloper-kepler.gl/actions';
+import {addDataToMap, wrapTo} from '@indranil-kepler.gl/actions';
 import sampleData from './data/sample-data';
 import config from './configurations/config';
 
 const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 
-// extra actions plugged into indranildeveloper-kepler.gl reducer (store.js)
+// extra actions plugged into indranil-kepler.gl reducer (store.js)
 const hideAndShowSidePanel = createAction('HIDE_AND_SHOW_SIDE_PANEL');
 
 class App extends Component {

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {RGBAColor} from '@deck.gl/core';
-import {Feature} from '@indranildeveloper-kepler.gl/types';
+import {Feature} from '@indranil-kepler.gl/types';
 
 import {COLORS} from './constants';
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {point as turfPoint} from '@turf/helpers';
@@ -39,7 +39,7 @@ import {
   CHANNEL_SCALES,
   ColorRange,
   LAYER_VIS_CONFIGS
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 import {
   VisConfigNumber,
   VisConfigColorSelect,
@@ -50,10 +50,10 @@ import {
   RGBColor,
   Field,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
-import {DataContainerInterface, ArrowDataContainer} from '@indranildeveloper-kepler.gl/utils';
-import {FilterArrowExtension} from '@indranildeveloper-kepler.gl/deckgl-layers';
+} from '@indranil-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
+import {DataContainerInterface, ArrowDataContainer} from '@indranil-kepler.gl/utils';
+import {FilterArrowExtension} from '@indranil-kepler.gl/deckgl-layers';
 import GeojsonInfoModalFactory from './geojson-info-modal';
 
 const SUPPORTED_ANALYZER_TYPES = {
@@ -453,7 +453,7 @@ export default class GeoJsonLayer extends Layer {
       // TODO add columnMode logic here for ArrowDataContainer?
       // filter geojson/arrow table by values and make a partial copy of the raw table are expensive
       // so we will use filteredIndex to create an attribute e.g. filteredIndex [0|1] for GPU filtering
-      // in deck.gl layer, see: FilterArrowExtension in @indranildeveloper-kepler.gl/deckgl-layers
+      // in deck.gl layer, see: FilterArrowExtension in @indranil-kepler.gl/deckgl-layers
       if (!this.filteredIndex || this.filteredIndex.length !== dataContainer.numRows()) {
         // for incremental data loading, we need to update filteredIndex
         this.filteredIndex = new Uint8ClampedArray(dataContainer.numRows());

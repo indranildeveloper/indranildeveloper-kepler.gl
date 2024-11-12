@@ -1,17 +1,22 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import {useIntl} from 'react-intl';
 import {SidePanelDivider, SidePanelSection} from '../common/styled-components';
 import SourceDataCatalogFactory from './common/source-data-catalog';
 import FilterPanelFactory from './filter-panel/filter-panel';
-import {FILTER_VIEW_TYPES, PANEL_VIEW_TOGGLES} from '@indranildeveloper-kepler.gl/constants';
-import {Filter} from '@indranildeveloper-kepler.gl/types';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {isSideFilter} from '@indranildeveloper-kepler.gl/utils';
-import {VisStateActions, ActionHandler, UIStateActions, ActionHandlers} from '@indranildeveloper-kepler.gl/actions';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {FILTER_VIEW_TYPES, PANEL_VIEW_TOGGLES} from '@indranil-kepler.gl/constants';
+import {Filter} from '@indranil-kepler.gl/types';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {isSideFilter} from '@indranil-kepler.gl/utils';
+import {
+  VisStateActions,
+  ActionHandler,
+  UIStateActions,
+  ActionHandlers
+} from '@indranil-kepler.gl/actions';
+import {Datasets} from '@indranil-kepler.gl/table';
 
 import PanelViewListToggleFactory from './panel-view-list-toggle';
 import PanelTitleFactory from './panel-title';

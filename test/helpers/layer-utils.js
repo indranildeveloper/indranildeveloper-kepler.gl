@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount */
 import {LayerManager, MapView} from '@deck.gl/core';
@@ -18,12 +18,16 @@ import {
   mapStateReducer as mapState,
   visStateReducer,
   keplerGlReducerCore
-} from '@indranildeveloper-kepler.gl/reducers';
-import {getGpuFilterProps} from '@indranildeveloper-kepler.gl/table';
-import {VisStateActions, addDataToMap} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/reducers';
+import {getGpuFilterProps} from '@indranil-kepler.gl/table';
+import {VisStateActions, addDataToMap} from '@indranil-kepler.gl/actions';
 
-import {colorMaker, layerColors, LayerClasses as KeplerLayerClasses} from '@indranildeveloper-kepler.gl/layers';
-import {processCsvData, processGeojson} from '@indranildeveloper-kepler.gl/processors';
+import {
+  colorMaker,
+  layerColors,
+  LayerClasses as KeplerLayerClasses
+} from '@indranil-kepler.gl/layers';
+import {processCsvData, processGeojson} from '@indranil-kepler.gl/processors';
 import {applyActions, InitialState} from '../helpers/mock-state';
 // Fixtures
 import csvData, {wktCsv} from '../fixtures/test-csv-data';

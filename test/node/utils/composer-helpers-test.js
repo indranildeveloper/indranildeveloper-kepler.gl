@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
-import {filterOutById, removeElementAtIndex} from '@indranildeveloper-kepler.gl/reducers';
+import {filterOutById, removeElementAtIndex} from '@indranil-kepler.gl/reducers';
 
 test('#composeHelpers -> RemoveElementAtIndex', t => {
   const list = [1, 2, 3, 4, 5];

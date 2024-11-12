@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import {connect} from 'react-redux';
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
 
 const localeMessages = {

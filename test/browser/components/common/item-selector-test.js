@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
 import {act} from 'react-dom/test-utils';
 import {IntlWrapper, mountWithTheme} from 'test/helpers/component-utils';
-import {ItemSelector, Typeahead, DropdownList, ListItem} from '@indranildeveloper-kepler.gl/components';
+import {ItemSelector, Typeahead, DropdownList, ListItem} from '@indranil-kepler.gl/components';
 
 test('Components -> ItemSelector.render', t => {
   let wrapper;

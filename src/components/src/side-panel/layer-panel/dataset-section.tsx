@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {Add} from '../../common/icons';
 import {Button} from '../../common/styled-components';
 
 import SourceDataCatalogFactory from '../common/source-data-catalog';
-import {UIStateActions, VisStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
+import {UIStateActions, VisStateActions, ActionHandler} from '@indranil-kepler.gl/actions';
+import {Datasets} from '@indranil-kepler.gl/table';
 
 type AddDataButtonProps = {
   onClick: () => void;

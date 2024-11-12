@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as VisStateActions from './vis-state-actions';
 import * as MapStateActions from './map-state-actions';
@@ -10,7 +10,7 @@ import * as ProviderActions from './provider-actions';
 // Actions
 export * from './actions';
 
-// indranildeveloper-kepler.gl actions accessible outside component
+// indranil-kepler.gl actions accessible outside component
 export * from './action-wrapper';
 export * from './vis-state-actions';
 export * from './ui-state-actions';

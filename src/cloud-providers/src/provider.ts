@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Upload from './upload';
-import {MapData, ExportFileOptions, Millisecond, SavedMap} from '@indranildeveloper-kepler.gl/types';
+import {MapData, ExportFileOptions, Millisecond, SavedMap} from '@indranil-kepler.gl/types';
 import {ComponentType} from 'react';
 
 export type MapItemLoadParams = {
@@ -113,7 +113,7 @@ export default class Provider {
   }
 
   /**
-   * This method is called by indranildeveloper-kepler.gl demo app to pushes a new location to history, becoming the current location.
+   * This method is called by indranil-kepler.gl demo app to pushes a new location to history, becoming the current location.
    * @returns mapUrl
    * @public
    */
@@ -174,7 +174,7 @@ export default class Provider {
   }
 
   /**
-   * This method will be called to upload map for saving and sharing. indranildeveloper-kepler.gl will package map data, config, title, description and thumbnail for upload to storage.
+   * This method will be called to upload map for saving and sharing. indranil-kepler.gl will package map data, config, title, description and thumbnail for upload to storage.
    * With the option to overwrite already saved map, and upload as private or public map.
    *
    * @param {Object} param
@@ -233,7 +233,7 @@ export default class Provider {
    *      datasets: [],
    *      config: {},
    *      info: {
-   *        app: 'indranildeveloper-kepler.gl',
+   *        app: 'indranil-kepler.gl',
    *        created_at: ''
    *        title: 'test map',
    *        description: 'Hello this is my test dropbox map'

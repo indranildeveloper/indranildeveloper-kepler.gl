@@ -5,12 +5,12 @@
 Use <b>Node v18</b> and above, older node versions have not been tested
 
 ```sh
-npm install --save indranildeveloper-kepler.gl @indranildeveloper-kepler.gl/components @indranildeveloper-kepler.gl/reducers
+npm install --save indranil-kepler.gl @indranil-kepler.gl/components @indranil-kepler.gl/reducers
 ```
 
 ### Get Mapbox Token
 
-indranildeveloper-kepler.gl is built on top of [Mapbox GL](https://www.mapbox.com). A mapbox account and an access token are needed to use indranildeveloper-kepler.gl in your app. Get a [Mapbox Access Token](https://www.mapbox.com/help/define-access-token/) at mapbox.com.
+indranil-kepler.gl is built on top of [Mapbox GL](https://www.mapbox.com). A mapbox account and an access token are needed to use indranil-kepler.gl in your app. Get a [Mapbox Access Token](https://www.mapbox.com/help/define-access-token/) at mapbox.com.
 
 ### Basic Usage
 
@@ -18,15 +18,15 @@ indranildeveloper-kepler.gl is built on top of [Mapbox GL](https://www.mapbox.co
 
 #### 1. Mount reducer
 
-indranildeveloper-kepler.gl uses [Redux](https://redux.js.org/) to manage its internal state, along with [react-palm](https://github.com/btford/react-palm) middleware to handle side effects. Mount indranildeveloper-kepler.gl reducer in your store, apply  `taskMiddleware`.
+indranil-kepler.gl uses [Redux](https://redux.js.org/) to manage its internal state, along with [react-palm](https://github.com/btford/react-palm) middleware to handle side effects. Mount indranil-kepler.gl reducer in your store, apply `taskMiddleware`.
 
 ```js
-import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
+import keplerGlReducer from '@indranil-kepler.gl/reducers';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {taskMiddleware} from 'react-palm/tasks';
 
 const reducer = combineReducers({
-  // <-- mount indranildeveloper-kepler.gl reducer in your app
+  // <-- mount indranil-kepler.gl reducer in your app
   keplerGl: keplerGlReducer,
 
   // Your other reducers here
@@ -36,32 +36,28 @@ const reducer = combineReducers({
 // create store
 const store = createStore(reducer, {}, applyMiddleware(taskMiddleware));
 ```
+
 If you mount `keplerGlReducer` in another address instead of `keplerGl`, or it is not
 mounted at root of your reducer, you will need to specify the path to it when you mount the component with the `getState` prop.
 
 #### 2. Mount component
 
 ```js
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 
 const Map = props => (
-  <KeplerGl
-      id="foo"
-      mapboxApiAccessToken={token}
-      width={width}
-      height={height}/>
+  <KeplerGl id="foo" mapboxApiAccessToken={token} width={width} height={height} />
 );
 ```
 
 #### 3. Add data to map
 
-In order to interact with a indranildeveloper-kepler.gl instance and add new data to it, you can dispatch the __`addDataToMap`__ action from anywhere inside your app. It adds dataset(s) to a indranildeveloper-kepler.gl instance and updates the full configuration (mapState, mapStyle, visState).
+In order to interact with a indranil-kepler.gl instance and add new data to it, you can dispatch the **`addDataToMap`** action from anywhere inside your app. It adds dataset(s) to a indranil-kepler.gl instance and updates the full configuration (mapState, mapStyle, visState).
 
 Read more about [addDataToMap](./actions/actions.md#adddatatomap)
 
-
 ```js
-import {addDataToMap} from '@indranildeveloper-kepler.gl/actions';
+import {addDataToMap} from '@indranil-kepler.gl/actions';
 
 this.props.dispatch(
   addDataToMap({
@@ -86,4 +82,4 @@ this.props.dispatch(
 );
 ```
 
-[basic-usage]: https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/api_basic-usage.png
+[basic-usage]: https://d1a3f4spazzrp4.cloudfront.net/indranil-kepler.gl/documentation/api_basic-usage.png

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, ComponentType} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-import {dataTestIds, LIGHT_AND_SHADOW_EFFECT} from '@indranildeveloper-kepler.gl/constants';
-import {removeEffect, updateEffect} from '@indranildeveloper-kepler.gl/actions';
-import {Effect} from '@indranildeveloper-kepler.gl/types';
+import {dataTestIds, LIGHT_AND_SHADOW_EFFECT} from '@indranil-kepler.gl/constants';
+import {removeEffect, updateEffect} from '@indranil-kepler.gl/actions';
+import {Effect} from '@indranil-kepler.gl/types';
 
 import EffectPanelHeaderFactory from './effect-panel-header';
 import EffectConfiguratorFactory from './effect-configurator';

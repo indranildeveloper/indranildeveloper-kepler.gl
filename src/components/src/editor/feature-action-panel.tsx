@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useState, ComponentType} from 'react';
 import {useIntl} from 'react-intl';
@@ -8,11 +8,11 @@ import {useDismiss, useFloating, useInteractions} from '@floating-ui/react';
 import classnames from 'classnames';
 import styled from 'styled-components';
 
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {Filter} from '@indranildeveloper-kepler.gl/types';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {Filter} from '@indranil-kepler.gl/types';
 import {Feature} from '@nebula.gl/edit-modes';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
-import {canApplyFeatureFilter} from '@indranildeveloper-kepler.gl/utils';
+import {Datasets} from '@indranil-kepler.gl/table';
+import {canApplyFeatureFilter} from '@indranil-kepler.gl/utils';
 
 import ActionPanel, {ActionPanelItem} from '../common/action-panel';
 import {Trash, Layers, Copy, Checkmark} from '../common/icons';

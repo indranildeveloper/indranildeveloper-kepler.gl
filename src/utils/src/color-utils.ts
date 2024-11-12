@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
-import {HexColor, RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {ColorRange} from '@indranil-kepler.gl/constants';
+import {HexColor, RGBColor} from '@indranil-kepler.gl/types';
 import {rgb as d3Rgb} from 'd3-color';
 import {interpolate} from 'd3-interpolate';
 import {arrayInsert, arrayMove} from './utils';
@@ -138,9 +138,7 @@ export function normalizeColor(color: number[]): number[] {
 }
 
 export function interpolateHex(hex1, hex2) {
-  return d3Rgb(interpolate(hex1, hex2)(0.5))
-    .hex()
-    .toUpperCase();
+  return d3Rgb(interpolate(hex1, hex2)(0.5)).hex().toUpperCase();
 }
 
 export function addNewQuantativeColorBreakAtIndex(colorMap, index, newColors) {

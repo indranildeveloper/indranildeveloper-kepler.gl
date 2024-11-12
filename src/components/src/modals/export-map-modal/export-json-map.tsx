@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useState} from 'react';
 import JSONPretty from 'react-json-pretty';
-import {ADD_DATA_TO_MAP_DOC} from '@indranildeveloper-kepler.gl/constants';
+import {ADD_DATA_TO_MAP_DOC} from '@indranil-kepler.gl/constants';
 import styled from 'styled-components';
 import {StyledExportSection, Button} from '../../common/styled-components';
 import {StyledExportMapSection, StyledWarning, ExportMapLink} from './components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const StyledJsonExportSection = styled(StyledExportSection)`

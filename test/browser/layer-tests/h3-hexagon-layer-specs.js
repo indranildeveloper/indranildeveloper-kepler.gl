@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
@@ -14,10 +14,10 @@ import {
   preparedFilterDomain0,
   hexagonIdLayerMeta
 } from 'test/helpers/layer-utils';
-import {KeplerGlLayers, h3DefaultElevation as defaultElevation} from '@indranildeveloper-kepler.gl/layers';
-import {getCentroid, idToPolygonGeo} from '@indranildeveloper-kepler.gl/utils';
+import {KeplerGlLayers, h3DefaultElevation as defaultElevation} from '@indranil-kepler.gl/layers';
+import {getCentroid, idToPolygonGeo} from '@indranil-kepler.gl/utils';
 
-import {copyTableAndUpdate} from '@indranildeveloper-kepler.gl/table';
+import {copyTableAndUpdate} from '@indranil-kepler.gl/table';
 
 const {H3Layer} = KeplerGlLayers;
 const columns = {

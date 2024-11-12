@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, createRef} from 'react';
 import styled, {withTheme} from 'styled-components';
 import {select, Selection} from 'd3-selection';
 import {BrushBehavior, brushX} from 'd3-brush';
-import {normalizeSliderValue} from '@indranildeveloper-kepler.gl/utils';
+import {normalizeSliderValue} from '@indranil-kepler.gl/utils';
 
 interface StyledGProps {
   isRanged?: boolean;

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // SPDX-License-Identifier: MIT
-// Copyriht contributors to the indranildeveloper-kepler.gl project
+// Copyriht contributors to the indranil-kepler.gl project
 
 import React from 'react';
 

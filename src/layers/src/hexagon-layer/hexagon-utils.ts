@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {WebMercatorViewport} from '@deck.gl/core';
 import Console from 'global/console';
-import {Centroid} from '@indranildeveloper-kepler.gl/utils';
+import {Centroid} from '@indranil-kepler.gl/utils';
 
 export function hexagonToPolygonGeo(object, properties, radius, mapState) {
   const viewport = new WebMercatorViewport(mapState);

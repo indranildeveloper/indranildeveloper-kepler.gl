@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Layer, {LayerBaseConfig, OVERLAY_TYPE_CONST, VisualChannels} from './base-layer';
 import {createSelector} from 'reselect';
 
 import {geoJsonFromData, prefixGpuField, gpuFilterToMapboxFilter} from './mapbox-utils';
-import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
-import {Merge, LayerColumn} from '@indranildeveloper-kepler.gl/types';
+import {default as KeplerTable} from '@indranil-kepler.gl/table';
+import {Merge, LayerColumn} from '@indranil-kepler.gl/types';
 
 type MapboxLayerGLColumns = {
   lat: LayerColumn;

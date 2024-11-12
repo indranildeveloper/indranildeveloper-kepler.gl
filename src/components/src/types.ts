@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
-import {MapStyle} from '@indranildeveloper-kepler.gl/reducers';
-import {Layer, LayerClassesType} from '@indranildeveloper-kepler.gl/layers';
-import {Filter, InteractionConfig, UiState} from '@indranildeveloper-kepler.gl/types';
+import {MapStyle} from '@indranil-kepler.gl/reducers';
+import {Layer, LayerClassesType} from '@indranil-kepler.gl/layers';
+import {Filter, InteractionConfig, UiState} from '@indranil-kepler.gl/types';
 
 import {
   MapStyleActions,
   VisStateActions,
   MapStateActions,
   UIStateActions
-} from '@indranildeveloper-kepler.gl/actions';
-import {Datasets} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/actions';
+import {Datasets} from '@indranil-kepler.gl/table';
 
 export type SidePanelItem = {
   id: string;

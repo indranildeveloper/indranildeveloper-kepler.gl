@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {visStateReducer as reducer} from '@indranildeveloper-kepler.gl/reducers';
+import {visStateReducer as reducer} from '@indranil-kepler.gl/reducers';
 import CloneDeep from 'lodash.clonedeep';
 import test from 'tape-catch';
 import {StateWFiles, testCsvDataId, testGeoJsonDataId} from 'test/helpers/mock-state';
-import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {VisStateActions} from '@indranil-kepler.gl/actions';
 
 test('#visStateReducer -> COPY_TABLE_COLUMN', t => {
   const initialState = CloneDeep(StateWFiles.visState);

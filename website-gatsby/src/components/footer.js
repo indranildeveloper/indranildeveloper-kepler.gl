@@ -1,14 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
-import {
-  FacebookIcon,
-  FacebookShareButton,
-  TwitterIcon,
-  TwitterShareButton
-} from 'react-share';
+import {FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton} from 'react-share';
 
 import {cdnUrl} from '../utils';
 import {LinkButton} from './common/styled-components';
@@ -129,18 +124,14 @@ export default class Footer extends PureComponent {
     return (
       <Container>
         <LogosContainer>
-          <img style={{width: '120px'}} src={cdnUrl('icons/indranildeveloper-kepler.gl-logo.png')} />
+          <img style={{width: '120px'}} src={cdnUrl('icons/indranil-kepler.gl-logo.png')} />
           <BrandingContainer>
             <img src={cdnUrl('icons/uber.svg')} />
-            <MapboxLogo/>
+            <MapboxLogo />
             <CreatedBy>
               created by
               <StyledLogo className="fg">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="http://vis.gl"
-                >
+                <a target="_blank" rel="noopener noreferrer" href="http://vis.gl">
                   VIS.GL
                 </a>
               </StyledLogo>
@@ -155,18 +146,17 @@ export default class Footer extends PureComponent {
             <LinkButton
               large
               outlineDark
-              href="https://github.com/keplergl/indranildeveloper-kepler.gl"
+              href="https://github.com/keplergl/indranil-kepler.gl"
               style={{marginLeft: '5px'}}
             >
               <img src={cdnUrl('icons/github.svg')} /> Github
             </LinkButton>
           </ButtonContainer>
           <SocialContainer>
-            <FacebookShareButton url="https://indranildeveloper-kepler.gl/">
+            <FacebookShareButton url="https://indranil-kepler.gl/">
               <FacebookIcon size={32} />
-            </FacebookShareButton>
-            {' '}
-            <TwitterShareButton url="https://indranildeveloper-kepler.gl/" hashtags={['keplergl']}>
+            </FacebookShareButton>{' '}
+            <TwitterShareButton url="https://indranil-kepler.gl/" hashtags={['keplergl']}>
               <TwitterIcon size={32} />
             </TwitterShareButton>
           </SocialContainer>

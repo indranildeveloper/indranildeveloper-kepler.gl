@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {arrayMove} from '@dnd-kit/sortable';
 import SunCalc from 'suncalc';
@@ -12,9 +12,9 @@ import {
   LIGHT_AND_SHADOW_EFFECT_TIME_MODES,
   FILTER_TYPES,
   FILTER_VIEW_TYPES
-} from '@indranildeveloper-kepler.gl/constants';
-import {VisState} from '@indranildeveloper-kepler.gl/schemas';
-import {MapState, Effect, EffectProps, EffectDescription} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/constants';
+import {VisState} from '@indranil-kepler.gl/schemas';
+import {MapState, Effect, EffectProps, EffectDescription} from '@indranil-kepler.gl/types';
 import {findById} from './utils';
 import {clamp} from './data-utils';
 

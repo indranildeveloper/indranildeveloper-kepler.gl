@@ -1,15 +1,20 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {FC, useCallback} from 'react';
 import styled from 'styled-components';
 import {rgb} from 'd3-color';
 import ColorLegendFactory, {LegendRowFactory} from '../common/color-legend';
 import RadiusLegend from '../common/radius-legend';
-import {CHANNEL_SCALES, DIMENSIONS} from '@indranildeveloper-kepler.gl/constants';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {Layer, LayerBaseConfig, VisualChannel, VisualChannelDescription} from '@indranildeveloper-kepler.gl/layers';
-import {LayerVisConfig, MapState, RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {CHANNEL_SCALES, DIMENSIONS} from '@indranil-kepler.gl/constants';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {
+  Layer,
+  LayerBaseConfig,
+  VisualChannel,
+  VisualChannelDescription
+} from '@indranil-kepler.gl/layers';
+import {LayerVisConfig, MapState, RGBColor} from '@indranil-kepler.gl/types';
 
 interface StyledMapControlLegendProps {
   width?: number;

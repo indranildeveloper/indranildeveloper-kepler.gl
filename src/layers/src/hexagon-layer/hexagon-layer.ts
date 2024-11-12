@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {GeoJsonLayer} from '@deck.gl/layers';
 import AggregationLayer, {AggregationLayerConfig} from '../aggregation-layer';
-import {EnhancedHexagonLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
+import {EnhancedHexagonLayer} from '@indranil-kepler.gl/deckgl-layers';
 import {hexagonToPolygonGeo} from './hexagon-utils';
 import HexagonLayerIcon from './hexagon-layer-icon';
-import {clamp} from '@indranildeveloper-kepler.gl/utils';
+import {clamp} from '@indranil-kepler.gl/utils';
 import {
   VisConfigBoolean,
   VisConfigColorRange,
@@ -14,8 +14,8 @@ import {
   VisConfigRange,
   VisConfigSelection,
   Merge
-} from '@indranildeveloper-kepler.gl/types';
-import {AggregationTypes, ColorRange} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/types';
+import {AggregationTypes, ColorRange} from '@indranil-kepler.gl/constants';
 
 export type HexagonLayerVisConfigSettings = {
   opacity: VisConfigNumber;

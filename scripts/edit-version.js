@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import fs from 'fs';
 import {resolve, join} from 'path';
@@ -13,7 +13,7 @@ function readWritePackage(file, version) {
   fs.readFile(file, (err, data) => {
     if (err) throw err;
     const PackageContent = JSON.parse(data);
-    PackageContent.dependencies['indranildeveloper-kepler.gl'] = `^${version}`;
+    PackageContent.dependencies['indranil-kepler.gl'] = `^${version}`;
     const out = JSON.stringify(PackageContent, null, 2);
 
     fs.writeFile(file, out, error => {
@@ -24,9 +24,7 @@ function readWritePackage(file, version) {
 }
 
 function editExamplePackageJson(version) {
-  logProgress(
-    '\n============= Start Editing examples package.json =================\n'
-  );
+  logProgress('\n============= Start Editing examples package.json =================\n');
 
   fs.readdir(exampleDir, (err, items) => {
     if (err) throw err;
@@ -42,17 +40,12 @@ function editExamplePackageJson(version) {
 }
 
 function editUMDPackage(version) {
-  logProgress(
-    '\n============= Start Editing umd package version =================\n'
-  );
+  logProgress('\n============= Start Editing umd package version =================\n');
   const htmlFile = join(exampleDir, 'umd-client', 'index.html');
   fs.readFile(htmlFile, 'utf8', (err, html) => {
     if (err) throw err;
 
-    const out = html.replace(
-      /kepler\.gl@\d+.\d+.\d+\/umd/,
-      `indranildeveloper-kepler.gl@${version}/umd`
-    );
+    const out = html.replace(/kepler\.gl@\d+.\d+.\d+\/umd/, `indranil-kepler.gl@${version}/umd`);
     fs.writeFile(htmlFile, out, error => {
       if (error) throw error;
       logStep(`   ## Edit ${htmlFile} success.`);
@@ -67,6 +60,6 @@ function editUMDPackage(version) {
   editUMDPackage(KeplerGlVersion);
 
   logSuccess(
-    `\n================= Edit example indranildeveloper-kepler.gl version to ${KeplerGlVersion} Success! =================\n`
+    `\n================= Edit example indranil-kepler.gl version to ${KeplerGlVersion} Success! =================\n`
   );
 })();

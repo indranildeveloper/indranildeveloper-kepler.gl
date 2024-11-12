@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount */
 import React from 'react';
@@ -16,16 +16,16 @@ import {
   injectComponents,
   PanelHeaderFactory,
   provideRecipesToInjector
-} from '@indranildeveloper-kepler.gl/components';
+} from '@indranil-kepler.gl/components';
 
-import {keplerGlInit} from '@indranildeveloper-kepler.gl/actions';
+import {keplerGlInit} from '@indranil-kepler.gl/actions';
 import {
   keplerGlReducerCore as coreReducer,
   visStateLens,
   uiStateLens,
   mapStateLens,
   mapStyleLens
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 
 const mockStore = configureStore();
 const initialCoreState = coreReducer(undefined, keplerGlInit({}));

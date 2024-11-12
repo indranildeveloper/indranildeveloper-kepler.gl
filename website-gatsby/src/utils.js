@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {CLOUDFRONT, KEPLER_GL_BUCKET, WEBSITE_ASSET_FOLDER} from './constants';
 

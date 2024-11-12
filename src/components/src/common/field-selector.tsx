@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import classnames from 'classnames';
 import React, {Component, ComponentType} from 'react';
 import styled from 'styled-components';
 import {createSelector} from 'reselect';
 
-import {Field, TooltipField} from '@indranildeveloper-kepler.gl/types';
-import {notNullorUndefined, toArray} from '@indranildeveloper-kepler.gl/utils';
+import {Field, TooltipField} from '@indranil-kepler.gl/types';
+import {notNullorUndefined, toArray} from '@indranil-kepler.gl/utils';
 
 import ItemSelector from './item-selector/item-selector';
 import {classList} from './item-selector/dropdown-list';

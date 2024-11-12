@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import {injectIntl, IntlShape} from 'react-intl';
@@ -7,15 +7,15 @@ import styled from 'styled-components';
 import moment from 'moment-timezone';
 import SunCalc from 'suncalc';
 
-import {MapState} from '@indranildeveloper-kepler.gl/types';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {clamp} from '@indranildeveloper-kepler.gl/utils';
+import {MapState} from '@indranil-kepler.gl/types';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {clamp} from '@indranil-kepler.gl/utils';
 import {
   LIGHT_AND_SHADOW_EFFECT_TIME_MODES,
   LightAndShadowEffectTimeMode,
   DEFAULT_TIMEZONE
-} from '@indranildeveloper-kepler.gl/constants';
-import {mapStateLens} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/constants';
+import {mapStateLens} from '@indranil-kepler.gl/reducers';
 
 import {withState} from '../injector';
 import {StyledDatePicker as DatePicker, Tooltip} from '../common/styled-components';

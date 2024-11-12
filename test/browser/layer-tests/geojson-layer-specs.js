@@ -1,9 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
-import {defaultElevation, defaultLineWidth, defaultRadius, KeplerGlLayers} from '@indranildeveloper-kepler.gl/layers';
-import {copyTableAndUpdate, createNewDataEntry} from '@indranildeveloper-kepler.gl/table';
+import {
+  defaultElevation,
+  defaultLineWidth,
+  defaultRadius,
+  KeplerGlLayers
+} from '@indranil-kepler.gl/layers';
+import {copyTableAndUpdate, createNewDataEntry} from '@indranil-kepler.gl/table';
 
 const {GeojsonLayer} = KeplerGlLayers;
 
@@ -24,7 +29,7 @@ import {
   geoStyleDataToFeature,
   geoStyleMeta
 } from 'test/fixtures/geojson';
-import {processGeojson} from '@indranildeveloper-kepler.gl/processors';
+import {processGeojson} from '@indranil-kepler.gl/processors';
 
 test('#GeojsonLayer -> constructor', t => {
   const TEST_CASES = {

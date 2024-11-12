@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
@@ -8,7 +8,7 @@ import {
   MapControlFactory,
   EffectControlFactory,
   EffectManagerFactory
-} from '@indranildeveloper-kepler.gl/components';
+} from '@indranil-kepler.gl/components';
 import {SampleMapPanel} from '../components/map-control/map-control';
 
 const StyledMapControlPanel = styled.div`

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 export {
   default as Layer,
@@ -41,7 +41,7 @@ import {default as S2GeometryLayer} from './s2-geometry-layer/s2-geometry-layer'
 export {defaultElevation as s2DefaultElevation} from './s2-geometry-layer/s2-geometry-layer';
 export {getS2Center} from './s2-geometry-layer/s2-utils';
 export {default as AggregationLayer} from './aggregation-layer';
-import {LAYER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {LAYER_TYPES} from '@indranil-kepler.gl/constants';
 export {parseGeoJsonRawFeature} from './geojson-layer/geojson-utils';
 // base layer
 // eslint-disable-next-line prettier/prettier

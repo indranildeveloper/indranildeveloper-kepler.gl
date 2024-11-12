@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
 import MultiSelectFilterFactory from '../multi-select-filter';
-import {MultiSelectFilter} from '@indranildeveloper-kepler.gl/types';
+import {MultiSelectFilter} from '@indranil-kepler.gl/types';
 import FieldPanelWithFieldSelectFactory from './filter-panel-with-field-select';
 import {FilterPanelComponent} from './types';
 

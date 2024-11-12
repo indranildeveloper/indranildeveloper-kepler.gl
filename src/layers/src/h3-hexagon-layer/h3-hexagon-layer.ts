@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import Layer, {
   LayerBaseConfig,
@@ -11,7 +11,7 @@ import Layer, {
 import {BrushingExtension} from '@deck.gl/extensions';
 import {GeoJsonLayer} from '@deck.gl/layers';
 import {H3HexagonLayer} from '@deck.gl/geo-layers';
-import {EnhancedColumnLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
+import {EnhancedColumnLayer} from '@indranil-kepler.gl/deckgl-layers';
 import {
   getCentroid,
   idToPolygonGeo,
@@ -21,7 +21,7 @@ import {
   findDefaultColorField,
   DataContainerInterface,
   createDataContainer
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 import H3HexagonLayerIcon from './h3-hexagon-layer-icon';
 import {
   CHANNEL_SCALES,
@@ -30,7 +30,7 @@ import {
   DEFAULT_TEXT_LABEL,
   LAYER_VIS_CONFIGS,
   ColorRange
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 import {
   VisConfigBoolean,
@@ -39,8 +39,8 @@ import {
   VisConfigRange,
   Merge,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/types';
+import {KeplerTable} from '@indranil-kepler.gl/table';
 
 import {getTextOffsetByRadius, formatTextLabelData} from '../layer-text-label';
 

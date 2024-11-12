@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
-import {preciseRound} from '@indranildeveloper-kepler.gl/utils';
+import {preciseRound} from '@indranil-kepler.gl/utils';
 import {CursorClick} from '../common/icons';
 import {StyledLayerName} from './layer-hover-info';
 

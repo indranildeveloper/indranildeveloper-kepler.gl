@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, ComponentType, Dispatch} from 'react';
 import {connect, ConnectedProps} from 'react-redux';
@@ -8,13 +8,13 @@ import {console as Console} from 'global/window';
 import {injector, provideRecipesToInjector, flattenDeps} from './injector';
 import KeplerGlFactory from './kepler-gl';
 
-import {registerEntry, deleteEntry, renameEntry, forwardTo} from '@indranildeveloper-kepler.gl/actions';
-import {notNullorUndefined} from '@indranildeveloper-kepler.gl/utils';
-import {KeplerGlState} from '@indranildeveloper-kepler.gl/reducers';
+import {registerEntry, deleteEntry, renameEntry, forwardTo} from '@indranil-kepler.gl/actions';
+import {notNullorUndefined} from '@indranil-kepler.gl/utils';
+import {KeplerGlState} from '@indranil-kepler.gl/reducers';
 
 export const ERROR_MSG = {
   noState:
-    `indranildeveloper-kepler.gl state does not exist. ` +
+    `indranil-kepler.gl state does not exist. ` +
     `You might forget to mount keplerGlReducer in your root reducer.` +
     `If it is not mounted as state.keplerGl by default, you need to provide getState as a prop`
 };
@@ -43,7 +43,7 @@ export function ContainerFactory(
 ): ComponentType<PropsFromRedux> {
   /** @lends KeplerGl */
   /**
-    * Main indranildeveloper-kepler.gl Component
+    * Main indranil-kepler.gl Component
     * @param {Object} props
     *
     * @param {string} props.id - _required_
@@ -54,7 +54,7 @@ export function ContainerFactory(
     * stored in the KeplerGl reducer. For example, the state of the KeplerGl component with id `foo` is
     * stored in `state.keplerGl.foo`.
     *
-    * In case you create multiple indranildeveloper-kepler.gl instances using the same id, the indranildeveloper-kepler.gl state defined by the entry will be
+    * In case you create multiple indranil-kepler.gl instances using the same id, the indranil-kepler.gl state defined by the entry will be
     * overridden by the latest instance and reset to a blank state.
     * @param {string} props.mapboxApiAccessToken - _required_
     * @param {string} props.mapboxApiUrl - _optional_
@@ -160,7 +160,7 @@ export const appInjector = allDependencies.reduce(
   injector()
 );
 
-// Helper to inject custom components and return indranildeveloper-kepler.gl container
+// Helper to inject custom components and return indranil-kepler.gl container
 export function injectComponents(recipes = []) {
   return provideRecipesToInjector(recipes, appInjector).get(ContainerFactory);
 }

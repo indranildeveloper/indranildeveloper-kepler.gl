@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import styled, {withTheme} from 'styled-components';
 
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {ALL_FIELD_TYPES} from '@indranildeveloper-kepler.gl/constants';
-import {getAnimatableVisibleLayers} from '@indranildeveloper-kepler.gl/utils';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {ALL_FIELD_TYPES} from '@indranil-kepler.gl/constants';
+import {getAnimatableVisibleLayers} from '@indranil-kepler.gl/utils';
 
 import {Button} from '../../common/styled-components';
 import {Add, Trash} from '../../common/icons';

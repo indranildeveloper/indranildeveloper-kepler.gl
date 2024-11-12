@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import cloneDeep from 'lodash.clonedeep';
 import {cmpFilters, cmpSavedLayers} from 'test/helpers/comparison-utils';
-import SchemaManager, {CURRENT_VERSION, visStateSchema} from '@indranildeveloper-kepler.gl/schemas';
+import SchemaManager, {CURRENT_VERSION, visStateSchema} from '@indranil-kepler.gl/schemas';
 
 import {
   StateWFiles,
@@ -22,8 +22,8 @@ import {
   testCsvDataId,
   testGeoJsonDataId
 } from 'test/helpers/mock-state';
-import {keplerGlReducerCore as keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
-import {VisStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {keplerGlReducerCore as keplerGlReducer} from '@indranil-kepler.gl/reducers';
+import {VisStateActions} from '@indranil-kepler.gl/actions';
 
 const expectedVisStateEntries = [
   'filters',

@@ -1,21 +1,27 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, ComponentType} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
-import {processRowObject} from '@indranildeveloper-kepler.gl/processors';
+import {processRowObject} from '@indranil-kepler.gl/processors';
 import {FlyToInterpolator} from '@deck.gl/core/typed';
-import {getCenterAndZoomFromBounds} from '@indranildeveloper-kepler.gl/utils';
+import {getCenterAndZoomFromBounds} from '@indranil-kepler.gl/utils';
 import {
   GEOCODER_DATASET_NAME,
   GEOCODER_LAYER_ID,
   GEOCODER_GEO_OFFSET,
   GEOCODER_ICON_COLOR,
   GEOCODER_ICON_SIZE
-} from '@indranildeveloper-kepler.gl/constants';
-import {AddDataToMapOptions, MapState, ProtoDataset, UiState, Viewport} from '@indranildeveloper-kepler.gl/types';
-import {ActionHandler, removeDataset, updateMap, updateVisData} from '@indranildeveloper-kepler.gl/actions';
+} from '@indranil-kepler.gl/constants';
+import {
+  AddDataToMapOptions,
+  MapState,
+  ProtoDataset,
+  UiState,
+  Viewport
+} from '@indranil-kepler.gl/types';
+import {ActionHandler, removeDataset, updateMap, updateVisData} from '@indranil-kepler.gl/actions';
 
 import Geocoder, {Result} from './geocoder/geocoder';
 import {MapViewState} from '@deck.gl/core/typed';

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useRef, useState} from 'react';
 import styled from 'styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 
-import {Table} from '@indranildeveloper-kepler.gl/layers';
+import {Table} from '@indranil-kepler.gl/layers';
 import {CenterFlexbox, Tooltip} from '../../common/styled-components';
 import {ArrowRight, Trash} from '../../common/icons';
 import DatasetTagFactory from './dataset-tag';
 import CustomPicker from '../layer-panel/custom-picker';
 import {Portaled} from '../..';
-import {rgbToHex} from '@indranildeveloper-kepler.gl/utils';
-import {openDeleteModal, VisStateActions, ActionHandler} from '@indranildeveloper-kepler.gl/actions';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {rgbToHex} from '@indranil-kepler.gl/utils';
+import {openDeleteModal, VisStateActions, ActionHandler} from '@indranil-kepler.gl/actions';
+import {RGBColor} from '@indranil-kepler.gl/types';
 import {StyledDatasetTitleProps, RemoveDatasetProps, ShowDataTableProps} from './types';
 
 const StyledDatasetTitle = styled.div<StyledDatasetTitleProps>`

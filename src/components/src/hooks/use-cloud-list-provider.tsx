@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PropsWithChildren, useCallback, useContext, useMemo, useRef, useState} from 'react';
 import {CloudProviderContext} from '../context';
-import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {Provider} from '@indranil-kepler.gl/cloud-providers';
 
 type CloudListProviderProps = PropsWithChildren<{
   providers: Provider[];

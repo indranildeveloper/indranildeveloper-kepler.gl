@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {ColorRange} from '@indranildeveloper-kepler.gl/constants';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {ColorRange} from '@indranil-kepler.gl/constants';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
@@ -22,8 +22,8 @@ import LayerConfigGroupFactory, {
   ConfigGroupCollapsibleHeader
 } from './layer-config-group';
 
-import {LAYER_TEXT_CONFIGS} from '@indranildeveloper-kepler.gl/constants';
-import {Field, LayerTextLabel, RGBAColor, RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {LAYER_TEXT_CONFIGS} from '@indranil-kepler.gl/constants';
+import {Field, LayerTextLabel, RGBAColor, RGBColor} from '@indranil-kepler.gl/types';
 import FieldSelectorFactory from '../../common/field-selector';
 import ColorSelectorFactory from './color-selector';
 

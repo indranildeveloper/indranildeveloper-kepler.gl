@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 /* eslint-disable enzyme-deprecation/no-mount,enzyme-deprecation/no-shallow */
 import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
 import {shallow} from 'enzyme';
-import {NotificationItemFactory, NotificationPanelFactory} from '@indranildeveloper-kepler.gl/components';
-import {createNotification} from '@indranildeveloper-kepler.gl/utils';
-import {theme} from '@indranildeveloper-kepler.gl/styles';
+import {NotificationItemFactory, NotificationPanelFactory} from '@indranil-kepler.gl/components';
+import {createNotification} from '@indranil-kepler.gl/utils';
+import {theme} from '@indranil-kepler.gl/styles';
 
 const NotificationItem = NotificationItemFactory();
 const NotificationPanel = NotificationPanelFactory(NotificationItem);

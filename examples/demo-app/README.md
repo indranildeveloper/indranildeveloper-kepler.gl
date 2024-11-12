@@ -1,8 +1,9 @@
 # Demo App
 
-This is the src code of indranildeveloper-kepler.gl demo app. You can copy this folder out and run it locally.
+This is the src code of indranil-kepler.gl demo app. You can copy this folder out and run it locally.
 
 #### Pre requirement
+
 - [Node.js ^18.x](http://nodejs.org): We use Node to generate the documentation, run a
   development web server, run tests, and generate distributable files. Depending on your system,
   you can install Node either from source or as a pre-packaged bundle.
@@ -15,8 +16,8 @@ This is the src code of indranildeveloper-kepler.gl demo app. You can copy this 
 yarn install
 ```
 
-
 #### 2. Mapbox Token and Cloud storage client id
+
 A collection of enviroment variables to pass mapbox tokens, and client ids for the cloud storages
 
 ```sh

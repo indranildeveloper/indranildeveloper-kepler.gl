@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useState} from 'react';
 import styled from 'styled-components';
@@ -9,11 +9,11 @@ import {CSS, Transform} from '@dnd-kit/utilities';
 import {ChickletButton} from '../../../common/item-selector/chickleted-input';
 import {Hash, Delete, VertDots} from '../../../common/icons';
 import DropdownList from '../../../common/item-selector/dropdown-list';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {TimeLabelFormat, TooltipFields} from '@indranildeveloper-kepler.gl/types';
-import {getFormatValue, getFormatLabels} from '@indranildeveloper-kepler.gl/utils';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {TimeLabelFormat, TooltipFields} from '@indranil-kepler.gl/types';
+import {getFormatValue, getFormatLabels} from '@indranil-kepler.gl/utils';
 import TippyTooltip from '../../../common/tippy-tooltip';
-import {TooltipFormat} from '@indranildeveloper-kepler.gl/constants';
+import {TooltipFormat} from '@indranil-kepler.gl/constants';
 import useOnClickOutside from '../../../hooks/use-on-click-outside';
 
 interface TooltipChickletProps {

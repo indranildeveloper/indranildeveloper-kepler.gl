@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
@@ -62,12 +62,7 @@ class Tutorials extends PureComponent {
           ))}
         </StaggeredScrollAnimation>
         <CenteredContent>
-          <LinkButton
-            outline
-            large
-            target="_blank"
-            href="https://medium.com/vis-gl"
-          >
+          <LinkButton outline large target="_blank" href="https://medium.com/vis-gl">
             Read More
           </LinkButton>
         </CenteredContent>

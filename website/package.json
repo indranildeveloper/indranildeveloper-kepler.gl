@@ -1,6 +1,6 @@
 {
-  "name": "indranildeveloper-kepler.gl-website",
-  "description": "Website for indranildeveloper-kepler.gl",
+  "name": "indranil-kepler.gl-website",
+  "description": "Website for indranil-kepler.gl",
   "license": "MIT",
   "author": "Shan He <shan@uber.com>",
   "main": "dist/index.js",

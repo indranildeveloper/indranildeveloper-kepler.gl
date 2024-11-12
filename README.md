@@ -1,39 +1,39 @@
 <p align="right">
-  <a href="https://npmjs.org/package/indranildeveloper-kepler.gl">
-    <img src="https://img.shields.io/npm/v/indranildeveloper-kepler.gl.svg?style=flat" alt="version" />
+  <a href="https://npmjs.org/package/indranil-kepler.gl">
+    <img src="https://img.shields.io/npm/v/indranil-kepler.gl.svg?style=flat" alt="version" />
   </a>
-  <a href="https://travis-ci.com/keplergl/indranildeveloper-kepler.gl">
-    <img src="https://api.travis-ci.com/keplergl/indranildeveloper-kepler.gl.svg?branch=master" alt="build" />
+  <a href="https://travis-ci.com/keplergl/indranil-kepler.gl">
+    <img src="https://api.travis-ci.com/keplergl/indranil-kepler.gl.svg?branch=master" alt="build" />
   </a>
-  <a href="https://github.com/keplergl/indranildeveloper-kepler.gl">
-    <img src="https://img.shields.io/github/stars/keplergl/indranildeveloper-kepler.gl.svg?style=flat" alt="stars" />
+  <a href="https://github.com/keplergl/indranil-kepler.gl">
+    <img src="https://img.shields.io/github/stars/keplergl/indranil-kepler.gl.svg?style=flat" alt="stars" />
   </a>
   <a href='https://opensource.org/licenses/MIT'>
     <img src='https://img.shields.io/badge/License-MIT-blue.svg' alt='MIT License' />
   </a>
-  <a href='https://app.fossa.com/projects/custom%2B4458%2Fgithub.com%2Fkeplergl%2Findranildeveloper-kepler.gl?ref=badge_shield'>
-    <img src='https://app.fossa.com/api/projects/custom%2B4458%2Fgithub.com%2Fkeplergl%2Findranildeveloper-kepler.gl.svg?type=shield' alt='Fossa' />
+  <a href='https://app.fossa.com/projects/custom%2B4458%2Fgithub.com%2Fkeplergl%2Findranil-kepler.gl?ref=badge_shield'>
+    <img src='https://app.fossa.com/api/projects/custom%2B4458%2Fgithub.com%2Fkeplergl%2Findranil-kepler.gl.svg?type=shield' alt='Fossa' />
   </a>
   <a href="https://app.netlify.com/sites/keplergl/deploys" alt="Netlify Status">
     <img src="https://api.netlify.com/api/v1/badges/0c9b895c-acd0-43fd-8af7-fe960181b686/deploy-status" />
   </a>
-  <a href='https://coveralls.io/github/keplergl/indranildeveloper-kepler.gl?branch=master'>
-    <img src='https://coveralls.io/repos/github/keplergl/indranildeveloper-kepler.gl/badge.svg?branch=master' alt='Coverage Status' />
+  <a href='https://coveralls.io/github/keplergl/indranil-kepler.gl?branch=master'>
+    <img src='https://coveralls.io/repos/github/keplergl/indranil-kepler.gl/badge.svg?branch=master' alt='Coverage Status' />
   </a>
 </p>
 
 <h1 align="center">
-  indranildeveloper-kepler.gl | <a href="http://indranildeveloper-kepler.gl">Website</a> | <a href="http://indranildeveloper-kepler.gl/#/demo">Demo App</a> | <a href="https://docs.indranildeveloper-kepler.gl/">Docs</a>
+  indranil-kepler.gl | <a href="http://indranil-kepler.gl">Website</a> | <a href="http://indranil-kepler.gl/#/demo">Demo App</a> | <a href="https://docs.indranil-kepler.gl/">Docs</a>
 </h1>
 <h3></h3>
 
-[<img width="120" alt="indranildeveloper-kepler.gl" src="https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/website/icons/indranildeveloper-kepler.gl-logo.png">](http://indranildeveloper-kepler.gl)
+[<img width="120" alt="indranil-kepler.gl" src="https://d1a3f4spazzrp4.cloudfront.net/indranil-kepler.gl/website/icons/indranil-kepler.gl-logo.png">](http://indranil-kepler.gl)
 
-[<img width="600" alt="indranildeveloper-kepler.gl Demo" src="https://eng.uber.com/wp-content/uploads/2018/05/image4-3-768x493.png">](http://indranildeveloper-kepler.gl/#/demo)
+[<img width="600" alt="indranil-kepler.gl Demo" src="https://eng.uber.com/wp-content/uploads/2018/05/image4-3-768x493.png">](http://indranil-kepler.gl/#/demo)
 
-[indranildeveloper-kepler.gl][web] is a data-agnostic, high-performance web-based application for visual exploration of large-scale geolocation data sets. Built on top of [MapLibre GL](https://maplibre.org/) and [deck.gl](https://deck.gl/), indranildeveloper-kepler.gl can render millions of points representing thousands of trips and perform spatial aggregations on the fly.
+[indranil-kepler.gl][web] is a data-agnostic, high-performance web-based application for visual exploration of large-scale geolocation data sets. Built on top of [MapLibre GL](https://maplibre.org/) and [deck.gl](https://deck.gl/), indranil-kepler.gl can render millions of points representing thousands of trips and perform spatial aggregations on the fly.
 
-indranildeveloper-kepler.gl is also a React component that uses [Redux](https://redux.js.org/) to manage its state and data flow. It can be embedded into other React-Redux applications and is highly customizable. For information on how to embed indranildeveloper-kepler.gl in your app take a look at this step-by-step [tutorial][vis-academy] on vis.academy.
+indranil-kepler.gl is also a React component that uses [Redux](https://redux.js.org/) to manage its state and data flow. It can be embedded into other React-Redux applications and is highly customizable. For information on how to embed indranil-kepler.gl in your app take a look at this step-by-step [tutorial][vis-academy] on vis.academy.
 
 ## Links
 
@@ -54,54 +54,54 @@ indranildeveloper-kepler.gl is also a React component that uses [Redux](https://
 Use Node 18.18.2 or above, older node versions have not been supported/ tested.
 For best results, use [nvm](https://github.com/creationix/nvm) `nvm install`.
 
-## Install indranildeveloper-kepler.gl
+## Install indranil-kepler.gl
 
 Install node (`> 18.18.2`), yarn, and project dependencies
 
 ```sh
-npm install --save indranildeveloper-kepler.gl
+npm install --save indranil-kepler.gl
 // or
-yarn add indranildeveloper-kepler.gl
+yarn add indranil-kepler.gl
 ```
 
-indranildeveloper-kepler.gl is built upon [mapbox][mapbox]. You will need a [Mapbox Access Token][mapbox-token] to use it.
+indranil-kepler.gl is built upon [mapbox][mapbox]. You will need a [Mapbox Access Token][mapbox-token] to use it.
 
-If you don't use a module bundler, it's also fine. indranildeveloper-kepler.gl npm package includes precompiled production UMD builds in the [umd folder](https://unpkg.com/indranildeveloper-kepler.gl/umd).
+If you don't use a module bundler, it's also fine. indranil-kepler.gl npm package includes precompiled production UMD builds in the [umd folder](https://unpkg.com/indranil-kepler.gl/umd).
 You can add the script tag to your html file as it follows:
 
 ```html
-<script src="https://unpkg.com/indranildeveloper-kepler.gl/umd/keplergl.min.js" />
+<script src="https://unpkg.com/indranil-kepler.gl/umd/keplergl.min.js" />
 ```
 
 or if you would like, you can load a specific version
 
 ```html
-<script src="https://unpkg.com/indranildeveloper-kepler.gl@2.5.5/umd/keplergl.min.js" />
+<script src="https://unpkg.com/indranil-kepler.gl@2.5.5/umd/keplergl.min.js" />
 ```
 
-## Develop indranildeveloper-kepler.gl
+## Develop indranil-kepler.gl
 
-Take a look at the [development guide][developers] to develop indranildeveloper-kepler.gl locally.
+Take a look at the [development guide][developers] to develop indranil-kepler.gl locally.
 
 ## Basic Usage
 
-Here are the basic steps to import indranildeveloper-kepler.gl into your app. You also take a look at the examples folder. Each example in the folder can be installed and run locally.
+Here are the basic steps to import indranil-kepler.gl into your app. You also take a look at the examples folder. Each example in the folder can be installed and run locally.
 
 ### 1. Mount reducer
 
-indranildeveloper-kepler.gl uses Redux to manage its internal state, along with [react-palm][react-palm] middleware to handle side effects.
+indranil-kepler.gl uses Redux to manage its internal state, along with [react-palm][react-palm] middleware to handle side effects.
 
 You need to add `taskMiddleware` of `react-palm` to your store too. We are actively working on a solution where
 `react-palm` will not be required, however it is still a very lightweight side effects management tool that is easier to test than react-thunk.
 
 ```js
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
-import keplerGlReducer from '@indranildeveloper-kepler.gl/reducers';
-import {enhanceReduxMiddleware} from '@indranildeveloper-kepler.gl/middleware';
+import keplerGlReducer from '@indranil-kepler.gl/reducers';
+import {enhanceReduxMiddleware} from '@indranil-kepler.gl/middleware';
 
 const initialState = {};
 const reducers = combineReducers({
-  // <-- mount indranildeveloper-kepler.gl reducer in your app
+  // <-- mount indranil-kepler.gl reducer in your app
   keplerGl: keplerGlReducer,
 
   // Your other reducers here
@@ -133,7 +133,7 @@ const enhancers = [applyMiddleware(...middlewares)];
 export default createStore(reducer, initialState, compose(...enhancers));
 ```
 
-If you mount indranildeveloper-kepler.gl reducer in another address instead of `keplerGl`, or the indranildeveloper-kepler.gl reducer is not
+If you mount indranil-kepler.gl reducer in another address instead of `keplerGl`, or the indranil-kepler.gl reducer is not
 mounted at root of your state, you will need to specify the path to it when you mount the component
 with the `getState` prop.
 
@@ -142,7 +142,7 @@ Read more about [Reducers][reducers].
 ### 2. Mount Component
 
 ```js
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 
 const Map = props => (
   <KeplerGl id="foo" width={width} mapboxApiAccessToken={token} height={height} />
@@ -160,16 +160,16 @@ KeplerGl instances in your app. It defines the prop name of the KeplerGl state t
 stored in the KeplerGl reducer. For example, the state of the KeplerGl component with id `foo` is
 stored in `state.keplerGl.foo`.
 
-In case you create multiple indranildeveloper-kepler.gl instances using the same id, the indranildeveloper-kepler.gl state defined by the entry will be
+In case you create multiple indranil-kepler.gl instances using the same id, the indranil-kepler.gl state defined by the entry will be
 overridden by the latest instance and reset to a blank state.
 
 ##### `mapboxApiAccessToken` (String, required\*)
 
 - Default: `undefined`
 
-By default, indranildeveloper-kepler.gl uses mapbox-gl.js to render its base maps. You can create a free account at [mapbox][mapbox] and create a token at [www.mapbox.com/account/access-tokens][mapbox-token].
+By default, indranil-kepler.gl uses mapbox-gl.js to render its base maps. You can create a free account at [mapbox][mapbox] and create a token at [www.mapbox.com/account/access-tokens][mapbox-token].
 
-If you replaced indranildeveloper-kepler.gl default map styles with your own, and they are not Mapbox styles. `mapboxApiAccessToken` will not be required.
+If you replaced indranil-kepler.gl default map styles with your own, and they are not Mapbox styles. `mapboxApiAccessToken` will not be required.
 
 Read more about [Custom Map Styles][custom-map-styles].
 
@@ -191,7 +191,7 @@ Width of the KeplerGl UI.
 
 ##### `appName` (String, optional)
 
-- Default: `indranildeveloper-kepler.gl`
+- Default: `indranil-kepler.gl`
 
 App name displayed in side panel header
 
@@ -228,14 +228,14 @@ The `index` argument is 0 for a single map or 1 for an additional map (since `Ke
 
 - Default: `{}`
 
-Actions creators to replace default indranildeveloper-kepler.gl action creator. Only use custom action when you want to modify action payload.
+Actions creators to replace default indranil-kepler.gl action creator. Only use custom action when you want to modify action payload.
 
 ##### `mint` (Boolean, optional)
 
 - Default: `true`
 
-Whether to load a fresh empty state when component is mounted. when parse `mint: true` indranildeveloper-kepler.gl component will always load a fresh state when re-mount the same component, state inside this component will be destroyed once its unmounted.
-By Parsing `mint: false` indranildeveloper-kepler.gl will keep the component state in the store even when it is unmounted, and use it as initial state when re-mounted again. This is useful when mounting indranildeveloper-kepler.gl in a modal, and keep the same map when re-open.
+Whether to load a fresh empty state when component is mounted. when parse `mint: true` indranil-kepler.gl component will always load a fresh state when re-mount the same component, state inside this component will be destroyed once its unmounted.
+By Parsing `mint: false` indranil-kepler.gl will keep the component state in the store even when it is unmounted, and use it as initial state when re-mounted again. This is useful when mounting indranil-kepler.gl in a modal, and keep the same map when re-open.
 
 Read more about [Components][components].
 
@@ -244,7 +244,7 @@ Read more about [Components][components].
 - default: `null`
 
 One of `"dark"`, `"light"` or `"base"`
-You can pass theme name or object used to customize indranildeveloper-kepler.gl style. indranildeveloper-kepler.gl provide an `'light'` theme besides the default 'dark' theme. When pass in a theme object indranildeveloper-kepler.gl will use the value passed as input to override values from [theme](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/src/styles/base.js).
+You can pass theme name or object used to customize indranil-kepler.gl style. indranil-kepler.gl provide an `'light'` theme besides the default 'dark' theme. When pass in a theme object indranil-kepler.gl will use the value passed as input to override values from [theme](https://github.com/keplergl/indranil-kepler.gl/blob/master/src/styles/base.js).
 
 Read more about [Custom Theme][custom-theme]
 
@@ -258,13 +258,13 @@ If you are using your own mapbox tile server, you can pass in your own tile serv
 
 - Default: `false`
 
-indranildeveloper-kepler.gl provide 4 map styles to choose from. Pass `true` if you want to supply your own `mapStyles`. See Below.
+indranil-kepler.gl provide 4 map styles to choose from. Pass `true` if you want to supply your own `mapStyles`. See Below.
 
 #### `mapStyles` (Array, optional)
 
 - Default: `[]`
 
-You can supply additional map styles to be displayed in [map style selection panel](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/docs/user-guides/f-map-styles/1-base-map-styles.md). By default, additional map styles will be added to default map styles. If pass `mapStylesReplaceDefault: true`, they will replace the default ones. indranildeveloper-kepler.gl will attempt to group layers of your style based on its `id` naming convention and use it to allow toggle visibility of [base map layers](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/docs/user-guides/f-map-styles/2-map-layers.md). Supply your own `layerGroups` to override default for more accurate layer grouping.
+You can supply additional map styles to be displayed in [map style selection panel](https://github.com/keplergl/indranil-kepler.gl/blob/master/docs/user-guides/f-map-styles/1-base-map-styles.md). By default, additional map styles will be added to default map styles. If pass `mapStylesReplaceDefault: true`, they will replace the default ones. indranil-kepler.gl will attempt to group layers of your style based on its `id` naming convention and use it to allow toggle visibility of [base map layers](https://github.com/keplergl/indranil-kepler.gl/blob/master/docs/user-guides/f-map-styles/2-map-layers.md). Supply your own `layerGroups` to override default for more accurate layer grouping.
 
 Each `mapStyles` should has the following properties:
 
@@ -304,7 +304,7 @@ Read more about [Custom Map Styles][custom-map-styles].
 
 - Default: `undefined`
 
-Intial UI State applied to uiState reducer, value will be shallow merged with default [`INITIAL_UI_STATE`](https://docs.indranildeveloper-kepler.gl/docs/api-reference/reducers/ui-state#initial_ui_state)
+Intial UI State applied to uiState reducer, value will be shallow merged with default [`INITIAL_UI_STATE`](https://docs.indranil-kepler.gl/docs/api-reference/reducers/ui-state#initial_ui_state)
 
 #### `localeMessages` (object, optional)
 
@@ -322,12 +322,12 @@ There are multiple ways to dispatch actions to a specific `KeplerGl` instance.
 
 - In the root reducer, with reducer updaters.
 
-Each action is mapped to a reducer updater in indranildeveloper-kepler.gl. You can import the reducer updater corresponding to a specific action, and call it with the previous state and action payload to get the updated state.
+Each action is mapped to a reducer updater in indranil-kepler.gl. You can import the reducer updater corresponding to a specific action, and call it with the previous state and action payload to get the updated state.
 e.g. `updateVisDataUpdater` is the updater for `ActionTypes.UPDATE_VIS_DATA` (take a look at each reducer `reducers/vis-state.js` for action to updater mapping).
-Here is an example how you can listen to an app action `QUERY_SUCCESS` and call `updateVisDataUpdater` to load data into indranildeveloper-kepler.gl.
+Here is an example how you can listen to an app action `QUERY_SUCCESS` and call `updateVisDataUpdater` to load data into indranil-kepler.gl.
 
 ```js
-import {keplerGlReducer, visStateUpdaters} from '@indranildeveloper-kepler.gl/reducers';
+import {keplerGlReducer, visStateUpdaters} from '@indranil-kepler.gl/reducers';
 
 // Root Reducer
 const reducers = combineReducers({
@@ -360,7 +360,7 @@ const composedReducer = (state, action) => {
 export default composedReducer;
 ```
 
-Read more about [using updaters to modify indranildeveloper-kepler.gl state][using-updaters]
+Read more about [using updaters to modify indranil-kepler.gl state][using-updaters]
 
 - Using redux `connect`
 
@@ -369,10 +369,10 @@ using connect.
 
 ```js
 // component
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 
 // action and forward dispatcher
-import {toggleFullScreen, forwardTo} from '@indranildeveloper-kepler.gl/actions';
+import {toggleFullScreen, forwardTo} from '@indranil-kepler.gl/actions';
 import {connect} from 'react-redux';
 
 const MapContainer = props => (
@@ -402,10 +402,10 @@ You can also simply wrap an action into a forward action with the `wrapTo` helpe
 
 ```js
 // component
-import KeplerGl from '@indranildeveloper-kepler.gl/components';
+import KeplerGl from '@indranil-kepler.gl/components';
 
 // action and forward dispatcher
-import {toggleFullScreen, wrapTo} from '@indranildeveloper-kepler.gl/actions';
+import {toggleFullScreen, wrapTo} from '@indranil-kepler.gl/actions';
 
 // create a function to wrapper action payload to 'foo'
 const wrapToMap = wrapTo('foo');
@@ -424,18 +424,18 @@ Read more about [forward dispatching actions][forward-actions]
 
 ### 4. Customize style.
 
-indranildeveloper-kepler.gl implements css styling using [Styled-Components](https://www.styled-components.com/). By using said framework indranildeveloper-kepler.gl offers the ability to customize its style/theme using the following approaches:
+indranil-kepler.gl implements css styling using [Styled-Components](https://www.styled-components.com/). By using said framework indranil-kepler.gl offers the ability to customize its style/theme using the following approaches:
 
 - Passing a Theme prop
 - Styled-Components ThemeProvider
 
-The available properties to customize are listed here [theme](https://github.com/keplergl/indranildeveloper-kepler.gl/blob/master/src/styles/base.js).
+The available properties to customize are listed here [theme](https://github.com/keplergl/indranil-kepler.gl/blob/master/src/styles/base.js).
 
-[Custom theme example](https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/examples/custom-theme).
+[Custom theme example](https://github.com/keplergl/indranil-kepler.gl/tree/master/examples/custom-theme).
 
 #### Passing a Theme prop.
 
-You can customize indranildeveloper-kepler.gl theme by passing a **theme** props to indranildeveloper-kepler.gl react component as it follows:
+You can customize indranil-kepler.gl theme by passing a **theme** props to indranil-kepler.gl react component as it follows:
 
 ```javascript
 const white = '#ffffff';
@@ -457,11 +457,11 @@ return (
 );
 ```
 
-As you can see the customTheme object defines certain properties which will override indranildeveloper-kepler.gl default style rules.
+As you can see the customTheme object defines certain properties which will override indranil-kepler.gl default style rules.
 
 #### Styled-Components Theme Provider.
 
-In order to customize indranildeveloper-kepler.gl theme using [ThemeProvider](https://www.styled-components.com/docs/api#themeprovider) you can simply wrap indranildeveloper-kepler.gl using ThemeProvider as it follows:
+In order to customize indranil-kepler.gl theme using [ThemeProvider](https://www.styled-components.com/docs/api#themeprovider) you can simply wrap indranil-kepler.gl using ThemeProvider as it follows:
 
 ```javascript
 import {ThemeProvider} from 'styled-components';
@@ -483,19 +483,19 @@ return (
 
 ### 5. Render Custom UI components.
 
-Everyone wants the flexibility to render custom indranildeveloper-kepler.gl components. indranildeveloper-kepler.gl has a dependency injection system that allow you to inject
+Everyone wants the flexibility to render custom indranil-kepler.gl components. indranil-kepler.gl has a dependency injection system that allow you to inject
 components to KeplerGl replacing existing ones. All you need to do is to create a component factory for the one you want to replace, import the original component factory
 and call `injectComponents` at the root component of your app where `KeplerGl` is mounted.
-Take a look at `examples/demo-app/src/app.js` and see how it renders a custom side panel header in indranildeveloper-kepler.gl
+Take a look at `examples/demo-app/src/app.js` and see how it renders a custom side panel header in indranil-kepler.gl
 
 ```javascript
-import {injectComponents, PanelHeaderFactory} from '@indranildeveloper-kepler.gl/components';
+import {injectComponents, PanelHeaderFactory} from '@indranil-kepler.gl/components';
 
 // define custom header
-const CustomHeader = () => <div>My indranildeveloper-kepler.gl app</div>;
+const CustomHeader = () => <div>My indranil-kepler.gl app</div>;
 const myCustomHeaderFactory = () => CustomHeader;
 
-// Inject custom header into indranildeveloper-kepler.gl, replacing default
+// Inject custom header into indranil-kepler.gl, replacing default
 const KeplerGl = injectComponents([[PanelHeaderFactory, myCustomHeaderFactory]]);
 
 // render KeplerGl, it will render your custom header instead of the default
@@ -509,8 +509,8 @@ const MapContainer = () => (
 Using `withState` helper to add reducer state and actions to customized component as additional props.
 
 ```js
-import {withState, injectComponents, PanelHeaderFactory} from '@indranildeveloper-kepler.gl/components';
-import {visStateLens} from '@indranildeveloper-kepler.gl/reducers';
+import {withState, injectComponents, PanelHeaderFactory} from '@indranil-kepler.gl/components';
+import {visStateLens} from '@indranil-kepler.gl/reducers';
 
 // custom action wrap to mounted instance
 const addTodo = text =>
@@ -542,7 +542,7 @@ Read more about [replacing UI component][replace-ui-component]
 
 ### 6. How to add data to map
 
-To interact with a indranildeveloper-kepler.gl instance and add new data to it, you can dispatch the **`addDataToMap`** action from anywhere inside your app. It adds a dataset or multiple datasets to a indranildeveloper-kepler.gl instance and updates the full configuration (mapState, mapStyle, visState).
+To interact with a indranil-kepler.gl instance and add new data to it, you can dispatch the **`addDataToMap`** action from anywhere inside your app. It adds a dataset or multiple datasets to a indranil-kepler.gl instance and updates the full configuration (mapState, mapStyle, visState).
 
 #### Parameters
 
@@ -559,20 +559,20 @@ To interact with a indranildeveloper-kepler.gl instance and add new data to it, 
       - `datasets.data.rows` **[Array][41]&lt;[Array][41]>** **\*required** Array of rows, in a tabular format with `fields` and `rows`
   - `options` **[Object][40]**
 
-    - `options.centerMap` **[boolean][43]** `default: true` if `centerMap` is set to `true` indranildeveloper-kepler.gl will place the map view within the data points boundaries
+    - `options.centerMap` **[boolean][43]** `default: true` if `centerMap` is set to `true` indranil-kepler.gl will place the map view within the data points boundaries
     - `options.readOnly` **[boolean][43]** `default: false` if `readOnly` is set to `true`
       the left setting panel will be hidden
     - `options.keepExistingConfig` **[boolean][43]** `default: false` whether to keep exiting map config, including layers, filters and splitMaps.
 
-- `config` **[Object][40]** this object will contain the full indranildeveloper-kepler.gl instance configuration {mapState, mapStyle, visState}
+- `config` **[Object][40]** this object will contain the full indranil-kepler.gl instance configuration {mapState, mapStyle, visState}
 
-indranildeveloper-kepler.gl provides an easy API `KeplerGlSchema.getConfigToSave` to generate a json blob of the current kepler instance configuration.
+indranil-kepler.gl provides an easy API `KeplerGlSchema.getConfigToSave` to generate a json blob of the current kepler instance configuration.
 
 #### Examples
 
 ```javascript
 // app.js
-import {addDataToMap} from '@indranildeveloper-kepler.gl/actions';
+import {addDataToMap} from '@indranil-kepler.gl/actions';
 
 const sampleTripData = {
   fields: [
@@ -622,18 +622,18 @@ this.props.dispatch(
 Read more about [addDataToMap](./docs/api-reference/actions/actions.md#adddatatomap) and [Saving and loading maps with schema manager][saving-loading-w-schema].
 
 [contributing]: contributing/README.md
-[demo-app]: http://indranildeveloper-kepler.gl/#/demo
-[github]: https://github.com/keplergl/indranildeveloper-kepler.gl
+[demo-app]: http://indranil-kepler.gl/#/demo
+[github]: https://github.com/keplergl/indranil-kepler.gl
 [github-pr]: https://help.github.com/articles/creating-a-pull-request/
 [mapbox]: https://www.mapbox.com
 [mapbox-token]: https://www.mapbox.com/help/define-access-token/
 [developers]: contributing/DEVELOPERS.md
-[examples]: https://github.com/keplergl/indranildeveloper-kepler.gl/tree/master/examples
+[examples]: https://github.com/keplergl/indranil-kepler.gl/tree/master/examples
 [react-palm]: https://github.com/btford/react-palm
-[roadmap]: https://github.com/keplergl/indranildeveloper-kepler.gl/wiki/indranildeveloper-kepler.gl-2019-Roadmap
-[stack]: https://stackoverflow.com/questions/tagged/indranildeveloper-kepler.gl
-[web]: http://www.indranildeveloper-kepler.gl/
-[vis-academy]: http://vis.academy/#/indranildeveloper-kepler.gl/
+[roadmap]: https://github.com/keplergl/indranil-kepler.gl/wiki/indranil-kepler.gl-2019-Roadmap
+[stack]: https://stackoverflow.com/questions/tagged/indranil-kepler.gl
+[web]: http://www.indranil-kepler.gl/
+[vis-academy]: http://vis.academy/#/indranil-kepler.gl/
 [user-guide]: docs/user-guides/README.md
 [user-guide-jupyter]: docs/keplergl-jupyter/README.md
 [api-reference]: docs/api-reference/README.md

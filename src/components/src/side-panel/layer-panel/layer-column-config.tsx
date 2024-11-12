@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 
-import {LayerBaseConfig} from '@indranildeveloper-kepler.gl/layers';
+import {LayerBaseConfig} from '@indranil-kepler.gl/layers';
 import {
   FieldPair,
   ColumnPairs,
   LayerColumns,
   ColumnLabels,
   EnhancedFieldPair
-} from '@indranildeveloper-kepler.gl/types';
-import {toArray} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/types';
+import {toArray} from '@indranil-kepler.gl/utils';
 
 import ColumnSelectorFactory from './column-selector';
 import {MinimalField} from '../../common/field-selector';

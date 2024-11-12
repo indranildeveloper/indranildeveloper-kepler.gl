@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 
-import {createDataContainer, createIndexedDataContainer} from '@indranildeveloper-kepler.gl/utils';
+import {createDataContainer, createIndexedDataContainer} from '@indranil-kepler.gl/utils';
 
 const data = [
   [10, 20], // 0

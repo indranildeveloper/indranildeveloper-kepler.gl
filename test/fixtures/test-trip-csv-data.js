@@ -1,7 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {DEFAULT_TEXT_LABEL, DEFAULT_COLOR_RANGE, DEFAULT_LAYER_OPACITY} from '@indranildeveloper-kepler.gl/constants';
+import {
+  DEFAULT_TEXT_LABEL,
+  DEFAULT_COLOR_RANGE,
+  DEFAULT_LAYER_OPACITY
+} from '@indranil-kepler.gl/constants';
 
 const gps = `timestamp,location-lng,location-lat,ground-speed,heading,name,location-alt
 2014-08-01 00:00:23.000,90.2266981,27.6162803,0.22,0.0,Thuub,3217.0

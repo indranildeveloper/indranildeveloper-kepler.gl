@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo} from 'react';
 import throttle from 'lodash.throttle';
@@ -9,8 +9,8 @@ import RangeSliderFactory from './range-slider';
 import TimeSliderMarkerFactory from './time-slider-marker';
 import PlaybackControlsFactory from './animation-control/playback-controls';
 import TimeRangeSliderTimeTitleFactory from './time-range-slider-time-title';
-import {LineChart, Timeline, AnimationConfig} from '@indranildeveloper-kepler.gl/types';
-import {ActionHandler, setFilterPlot} from '@indranildeveloper-kepler.gl/actions';
+import {LineChart, Timeline, AnimationConfig} from '@indranil-kepler.gl/types';
+import {ActionHandler, setFilterPlot} from '@indranil-kepler.gl/actions';
 import AnimationControlFactory from './animation-control/animation-control';
 
 const animationControlWidth = 176;
@@ -117,10 +117,10 @@ export default function TimeRangeSliderFactory(
     } = props;
 
     const throttledOnchange = useMemo(() => throttle(onChange, 20), [onChange]);
-    const binsForInterval = useMemo(() => getTimeBinsForInterval(timeBins, plotType?.interval), [
-      timeBins,
-      plotType?.interval
-    ]);
+    const binsForInterval = useMemo(
+      () => getTimeBinsForInterval(timeBins, plotType?.interval),
+      [timeBins, plotType?.interval]
+    );
 
     const style = useMemo(
       () => ({

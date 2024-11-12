@@ -1,10 +1,10 @@
 // // SPDX-License-Identifier: MIT
-// // Copyright contributors to the indranildeveloper-kepler.gl project
+// // Copyright contributors to the indranil-kepler.gl project
 
 // /* eslint-disable max-statements */
 
-// import {layerColorUIChange, layerVisualChannelConfigChange} from '@indranildeveloper-kepler.gl/actions';
-// import {keplerGlReducerCore as coreReducer} from '@indranildeveloper-kepler.gl/reducers';
+// import {layerColorUIChange, layerVisualChannelConfigChange} from '@indranil-kepler.gl/actions';
+// import {keplerGlReducerCore as coreReducer} from '@indranil-kepler.gl/reducers';
 // import cloneDeep from 'lodash.clonedeep';
 // import React from 'react';
 // import sinon from 'sinon';
@@ -26,7 +26,7 @@
 //   ColorPaletteItem,
 //   ColorSwatch,
 //   EditableColorRange
-// } from '@indranildeveloper-kepler.gl/components';
+// } from '@indranil-kepler.gl/components';
 
 // import {StateWFilesFiltersLayerColor} from 'test/helpers/mock-state';
 

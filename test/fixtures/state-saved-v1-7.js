@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 export const savedStateV1InteractionCoordinate = {
   datasets: [
@@ -781,7 +781,7 @@ export const savedStateV1InteractionCoordinate = {
     }
   },
   info: {
-    app: 'indranildeveloper-kepler.gl',
+    app: 'indranil-kepler.gl',
     created_at: 'Sun Nov 17 2019 18:37:59 GMT-0800 (Pacific Standard Time)'
   }
 };

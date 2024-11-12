@@ -24,7 +24,7 @@
     "baseUrl": ".",
     "paths": {
       // Map all modules to their source
-      "@indranildeveloper-kepler.gl/*": ["src/*/src"]
+      "@indranil-kepler.gl/*": ["src/*/src"]
     }
   },
   "include": ["src"],

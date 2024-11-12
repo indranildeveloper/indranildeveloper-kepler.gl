@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import FSQIcon from './foursquare-icon';
-import {Provider, KEPLER_FORMAT} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {Provider, KEPLER_FORMAT} from '@indranil-kepler.gl/cloud-providers';
 import {Auth0Client} from '@auth0/auth0-spa-js';
 
 const NAME = 'foursquare';
 const DISPLAY_NAME = 'Foursquare';
-const APP_NAME = 'indranildeveloper-kepler.gl';
+const APP_NAME = 'indranil-kepler.gl';
 
 const FOURSQUARE_PRIVATE_STORAGE_ENABLED = true;
 const FOURSQUARE_AUTH_AUDIENCE = 'https://foursquare.com/api/';
 const FOURSQUARE_AUTH_SCOPE = 'openid profile email';
 
-// Foursquare stores kepler maps using indranildeveloper-kepler.gl-raw as ImportSource
-const FOURSQUARE_KEPLER_GL_IMPORT_SOURCE = 'indranildeveloper-kepler.gl-raw';
+// Foursquare stores kepler maps using indranil-kepler.gl-raw as ImportSource
+const FOURSQUARE_KEPLER_GL_IMPORT_SOURCE = 'indranil-kepler.gl-raw';
 
 /**
  * Converts a FSQ map model to cloud provider map item

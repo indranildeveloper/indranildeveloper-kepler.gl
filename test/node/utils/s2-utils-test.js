@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
-import {getS2Center} from '@indranildeveloper-kepler.gl/layers';
+import {getS2Center} from '@indranil-kepler.gl/layers';
 
 test('Utils -> getS2Center', t => {
   const s2Toekn = '8085873c';

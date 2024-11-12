@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useMemo} from 'react';
 import classnames from 'classnames';
@@ -9,8 +9,8 @@ import {Layers} from '../common/icons';
 import MapLayerSelector from '../common/map-layer-selector';
 import MapControlTooltipFactory from './map-control-tooltip';
 import MapControlPanelFactory from './map-control-panel';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {MapControlItem, MapControls} from '@indranildeveloper-kepler.gl/types';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {MapControlItem, MapControls} from '@indranil-kepler.gl/types';
 
 LayerSelectorPanelFactory.deps = [MapControlTooltipFactory, MapControlPanelFactory];
 

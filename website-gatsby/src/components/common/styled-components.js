@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import styled, {css} from 'styled-components';
 import {media} from '../../styles';
@@ -10,27 +10,27 @@ const buttonStyles = css`
     props.negative
       ? props.theme.negativeBtnBgd
       : props.secondary
-        ? props.theme.secondaryBtnBgd
-        : props.outline
-          ? props.theme.outlineBtnBgd
-          : props.outlineDark
-            ? props.outlineDarkBtnBgd
-            : props.link
-              ? props.theme.linkBtnBgd
-              : props.theme.primaryBtnBgd};
+      ? props.theme.secondaryBtnBgd
+      : props.outline
+      ? props.theme.outlineBtnBgd
+      : props.outlineDark
+      ? props.outlineDarkBtnBgd
+      : props.link
+      ? props.theme.linkBtnBgd
+      : props.theme.primaryBtnBgd};
   border-radius: ${props => props.theme.primaryBtnRadius};
   color: ${props =>
     props.negative
       ? props.theme.negativeBtnColor
       : props.secondary
-        ? props.theme.secondaryBtnColor
-        : props.outline
-          ? props.outlineBtnColor
-          : props.outlineDark
-            ? props.theme.outlineDarkBtnColor
-            : props.link
-              ? props.theme.linkBtnColor
-              : props.theme.primaryBtnColor};
+      ? props.theme.secondaryBtnColor
+      : props.outline
+      ? props.outlineBtnColor
+      : props.outlineDark
+      ? props.theme.outlineDarkBtnColor
+      : props.link
+      ? props.theme.linkBtnColor
+      : props.theme.primaryBtnColor};
   cursor: pointer;
   display: inline-flex;
   font-size: ${props => (props.large ? '14px' : '11px')};
@@ -43,8 +43,8 @@ const buttonStyles = css`
     props.outline
       ? `1px solid ${props.theme.outlineBtnColor}`
       : props.outlineDark
-        ? `1px solid ${props.theme.outlineDarkBtnColor}`
-        : 'none'};
+      ? `1px solid ${props.theme.outlineDarkBtnColor}`
+      : 'none'};
   padding: ${props => (props.large ? '14px 32px' : '9px 12px')};
   text-align: center;
   transition: ${props => props.theme.btnTransition};
@@ -61,26 +61,26 @@ const buttonStyles = css`
       props.negative
         ? props.theme.negativeBtnBgdHover
         : props.secondary
-          ? props.theme.secondaryBtnBgdHover
-          : props.outline
-            ? props.theme.outlineBtnBgdHover
-            : props.outlineDark
-              ? props.theme.outlineDarkBtnBgdHover
-              : props.link
-                ? props.theme.linkBtnActBgdHover
-                : props.theme.primaryBtnBgdHover};
+        ? props.theme.secondaryBtnBgdHover
+        : props.outline
+        ? props.theme.outlineBtnBgdHover
+        : props.outlineDark
+        ? props.theme.outlineDarkBtnBgdHover
+        : props.link
+        ? props.theme.linkBtnActBgdHover
+        : props.theme.primaryBtnBgdHover};
     color: ${props =>
       props.negative
         ? props.theme.negativeBtnActColor
         : props.secondary
-          ? props.theme.secondaryBtnActColor
-          : props.outline
-            ? props.theme.outlineBtnActColor
-            : props.outlineDark
-              ? props.theme.outlineDarkBtnActColor
-              : props.link
-                ? props.theme.linkBtnActColor
-                : props.theme.primaryBtnActColor};
+        ? props.theme.secondaryBtnActColor
+        : props.outline
+        ? props.theme.outlineBtnActColor
+        : props.outlineDark
+        ? props.theme.outlineDarkBtnActColor
+        : props.link
+        ? props.theme.linkBtnActColor
+        : props.theme.primaryBtnActColor};
   }
 
   svg,

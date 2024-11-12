@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useMemo, useCallback} from 'react';
 import ItemSelector from '../common/item-selector/item-selector';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {LAYER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {LAYER_TYPES} from '@indranil-kepler.gl/constants';
 import {PolygonFilterProps} from './types';
 import {StyledFilterPanel} from './components';
 

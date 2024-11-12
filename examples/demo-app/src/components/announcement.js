@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
@@ -31,8 +31,9 @@ export const FormLink = 'https://shan990829.typeform.com/to/RbCAXt';
 const Announcement = ({onDisable}) => (
   <StyledText>
     <span>
-      indranildeveloper-kepler.gl turns two years old! Help our open source community by taking this 5-minute-survey
-      and get a chance to win a <b>$100 Amazon gift card</b>. Make your answers count!
+      indranil-kepler.gl turns two years old! Help our open source community by taking this
+      5-minute-survey and get a chance to win a <b>$100 Amazon gift card</b>. Make your answers
+      count!
     </span>
     <StyledLink target="_blank" href={FormLink}>
       Take the survey

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 import {routerReducer, routerMiddleware} from 'react-router-redux';

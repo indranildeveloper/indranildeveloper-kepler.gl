@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
@@ -24,8 +24,7 @@ const Item = styled.div`
   position: absolute;
   transition: transform 1s;
   cursor: pointer;
-  transform: perspective(600px)
-    translate3d(${props => props.tX}%, 0, ${props => props.tZ}px);
+  transform: perspective(600px) translate3d(${props => props.tX}%, 0, ${props => props.tZ}px);
 `;
 
 export default class Carousel extends PureComponent {

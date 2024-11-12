@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import uniq from 'lodash.uniq';
 import pick from 'lodash.pick';
@@ -11,13 +11,18 @@ import {
   applyFiltersToDatasets,
   validateFiltersUpdateDatasets,
   findById
-} from '@indranildeveloper-kepler.gl/utils';
-import {getLayerOrderFromLayers} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/utils';
+import {getLayerOrderFromLayers} from '@indranil-kepler.gl/reducers';
 
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
-import {createEffect} from '@indranildeveloper-kepler.gl/effects';
-import {LAYER_BLENDINGS, OVERLAY_BLENDINGS} from '@indranildeveloper-kepler.gl/constants';
-import {CURRENT_VERSION, VisState, VisStateMergers, KeplerGLSchemaClass} from '@indranildeveloper-kepler.gl/schemas';
+import {Layer} from '@indranil-kepler.gl/layers';
+import {createEffect} from '@indranil-kepler.gl/effects';
+import {LAYER_BLENDINGS, OVERLAY_BLENDINGS} from '@indranil-kepler.gl/constants';
+import {
+  CURRENT_VERSION,
+  VisState,
+  VisStateMergers,
+  KeplerGLSchemaClass
+} from '@indranil-kepler.gl/schemas';
 
 import {
   ParsedLayer,
@@ -31,8 +36,13 @@ import {
   ParsedEffect,
   LayerColumns,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
-import {KeplerTable, Datasets, assignGpuChannels, resetFilterGpuMode} from '@indranildeveloper-kepler.gl/table';
+} from '@indranil-kepler.gl/types';
+import {
+  KeplerTable,
+  Datasets,
+  assignGpuChannels,
+  resetFilterGpuMode
+} from '@indranil-kepler.gl/table';
 
 /**
  * Merge loaded filters with current state, if no fields or data are loaded

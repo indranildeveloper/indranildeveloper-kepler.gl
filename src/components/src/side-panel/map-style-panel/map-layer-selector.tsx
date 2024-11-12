@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
@@ -8,20 +8,20 @@ import LayerGroupItemFactory, {LayerGroupItemActionIcons} from './map-layer-grou
 import {EyeSeen, EyeUnseen} from '../../common/icons';
 
 import {PanelLabel, PanelContent} from '../../common/styled-components';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {VisibleLayerGroups} from '@indranildeveloper-kepler.gl/types';
-import {Upload} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {VisibleLayerGroups} from '@indranil-kepler.gl/types';
+import {Upload} from '@indranil-kepler.gl/cloud-providers';
 import {
   THREE_D_BUILDING_LAYER_GROUP_SLUG,
   BACKGROUND_LAYER_GROUP_SLUG,
   DEFAULT_LAYER_GROUP
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 import {
   MapConfigChangeUpdaterAction,
   Set3dBuildingColorUpdaterAction,
   SetBackgroundColorUpdaterAction
-} from '@indranildeveloper-kepler.gl/actions';
-import {MapStyle} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/actions';
+import {MapStyle} from '@indranil-kepler.gl/reducers';
 
 function noop() {
   return;

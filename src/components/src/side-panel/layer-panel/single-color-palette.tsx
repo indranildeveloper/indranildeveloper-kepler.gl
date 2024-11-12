@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {MouseEvent, useCallback, useState} from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
-import {hexToRgb} from '@indranildeveloper-kepler.gl/utils';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
-import {Themes, ColorRange} from '@indranildeveloper-kepler.gl/constants';
-import {RGBColor, HexColor} from '@indranildeveloper-kepler.gl/types';
+import {hexToRgb} from '@indranil-kepler.gl/utils';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
+import {Themes, ColorRange} from '@indranil-kepler.gl/constants';
+import {RGBColor, HexColor} from '@indranil-kepler.gl/types';
 
 import CustomPicker from './custom-picker';
 import PresetColorPalette from './color-palette-preset';

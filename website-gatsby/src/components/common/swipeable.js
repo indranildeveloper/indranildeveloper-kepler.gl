@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
@@ -42,17 +42,10 @@ export default class Swipeable extends PureComponent {
     const {children, onChange, selectedIndex} = this.props;
     return (
       <div>
-        <SwipeableViews
-          enableMouseEvents
-          index={selectedIndex}
-          onChange={onChange}>
+        <SwipeableViews enableMouseEvents index={selectedIndex} onChange={onChange}>
           {children}
         </SwipeableViews>
-        <Pagination
-          items={children}
-          selectedIndex={selectedIndex}
-          onChange={onChange}
-        />
+        <Pagination items={children} selectedIndex={selectedIndex} onChange={onChange} />
       </div>
     );
   }

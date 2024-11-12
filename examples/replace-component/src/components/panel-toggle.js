@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import styled from 'styled-components';
 
-import {PanelToggleFactory, Button, Icons, withState} from '@indranildeveloper-kepler.gl/components';
-import {visStateLens} from '@indranildeveloper-kepler.gl/reducers';
+import {PanelToggleFactory, Button, Icons, withState} from '@indranil-kepler.gl/components';
+import {visStateLens} from '@indranil-kepler.gl/reducers';
 
 import {setMapConfig} from '../app-reducer';
 

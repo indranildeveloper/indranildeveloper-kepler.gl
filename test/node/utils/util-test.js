@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {
   arrayInsert,
@@ -10,7 +10,7 @@ import {
   getError,
   set,
   toArray
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 import test from 'tape';
 
 test('Utils -> set', t => {

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-export const ACTION_PREFIX = '@@indranildeveloper-kepler.gl/';
+export const ACTION_PREFIX = '@@indranil-kepler.gl/';
 
 /**
- * indranildeveloper-kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in indranildeveloper-kepler.gl
+ * indranil-kepler.gl action types, can be listened by reducers to perform additional tasks whenever an action is called in indranil-kepler.gl
  * @constant
  * @type {Object}
  * @public
@@ -15,11 +15,11 @@ export const ACTION_PREFIX = '@@indranildeveloper-kepler.gl/';
  * import {createStore, combineReducers, applyMiddleware} from 'redux';
  * import {taskMiddleware} from 'react-palm/tasks';
  *
- * import keplerGlReducer from 'indranildeveloper-kepler.gl/reducers';
- * import {ActionTypes} from 'indranildeveloper-kepler.gl/actions';
+ * import keplerGlReducer from 'indranil-kepler.gl/reducers';
+ * import {ActionTypes} from 'indranil-kepler.gl/actions';
  *
  * const appReducer = handleActions({
- *   // listen on indranildeveloper-kepler.gl map update action to store a copy of viewport in app state
+ *   // listen on indranil-kepler.gl map update action to store a copy of viewport in app state
  *   [ActionTypes.UPDATE_MAP]: (state, action) => ({
  *     ...state,
  *     viewport: action.payload
@@ -190,6 +190,7 @@ export const ActionTypes = {
 };
 
 // eslint-disable-next-line prettier/prettier
-const assignType = <T>(obj: T): { [K in keyof T]: `${typeof ACTION_PREFIX}${string & K}`; } => obj as any
+const assignType = <T>(obj: T): {[K in keyof T]: `${typeof ACTION_PREFIX}${string & K}`} =>
+  obj as any;
 
 export default assignType(ActionTypes);

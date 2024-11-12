@@ -1,13 +1,24 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {createSelector} from 'reselect';
-import {CHANNEL_SCALES, SCALE_FUNC, ALL_FIELD_TYPES, ColorRange} from '@indranildeveloper-kepler.gl/constants';
+import {
+  CHANNEL_SCALES,
+  SCALE_FUNC,
+  ALL_FIELD_TYPES,
+  ColorRange
+} from '@indranil-kepler.gl/constants';
 import MapboxGLLayer, {MapboxLayerGLConfig} from '../mapboxgl-layer';
 import HeatmapLayerIcon from './heatmap-layer-icon';
 import {LayerBaseConfigPartial, LayerWeightConfig, VisualChannels} from '../base-layer';
-import {VisConfigColorRange, VisConfigNumber, HexColor, Merge, LayerColumn} from '@indranildeveloper-kepler.gl/types';
-import {hexToRgb, DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
+import {
+  VisConfigColorRange,
+  VisConfigNumber,
+  HexColor,
+  Merge,
+  LayerColumn
+} from '@indranil-kepler.gl/types';
+import {hexToRgb, DataContainerInterface} from '@indranil-kepler.gl/utils';
 
 export type HeatmapLayerVisConfigSettings = {
   opacity: VisConfigNumber;

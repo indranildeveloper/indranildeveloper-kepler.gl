@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {Component, createRef, ComponentType, MouseEventHandler, RefObject} from 'react';
 import classnames from 'classnames';
@@ -11,7 +11,7 @@ import ChickletedInput from './chickleted-input';
 import Typeahead from './typeahead';
 import DropdownList, {ListItem} from './dropdown-list';
 import Portaled from '../../common/portaled';
-import {toArray, observeDimensions, unobserveDimensions} from '@indranildeveloper-kepler.gl/utils';
+import {toArray, observeDimensions, unobserveDimensions} from '@indranil-kepler.gl/utils';
 import {injectIntl, IntlShape} from 'react-intl';
 import {ListItemProps} from './dropdown-select';
 import DropdownSelect from './dropdown-select';

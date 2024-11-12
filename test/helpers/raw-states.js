@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import cloneDeep from 'lodash.clonedeep';
 
-import {keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
-import {addDataToMap} from '@indranildeveloper-kepler.gl/actions';
-import {processCsvData} from '@indranildeveloper-kepler.gl/processors';
+import {keplerGlReducer} from '@indranil-kepler.gl/reducers';
+import {addDataToMap} from '@indranil-kepler.gl/actions';
+import {processCsvData} from '@indranil-kepler.gl/processors';
 
 import {dataId as csvDataId} from '../fixtures/test-csv-data';
 import testLayerData from '../fixtures/test-layer-data';

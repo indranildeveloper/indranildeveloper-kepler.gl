@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import cloneDeep from 'lodash.clonedeep';
@@ -19,13 +19,18 @@ import keplerGlReducer, {
   keplerGlReducerCore as coreReducer,
   defaultInteractionConfig,
   getLayerOrderFromLayers
-} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/reducers';
 
-import SchemaManager, {CURRENT_VERSION, visStateSchema} from '@indranildeveloper-kepler.gl/schemas';
-import {processKeplerglJSON} from '@indranildeveloper-kepler.gl/processors';
-import {updateVisData, receiveMapConfig, addDataToMap, registerEntry} from '@indranildeveloper-kepler.gl/actions';
+import SchemaManager, {CURRENT_VERSION, visStateSchema} from '@indranil-kepler.gl/schemas';
+import {processKeplerglJSON} from '@indranil-kepler.gl/processors';
+import {
+  updateVisData,
+  receiveMapConfig,
+  addDataToMap,
+  registerEntry
+} from '@indranil-kepler.gl/actions';
 
-import {createDataContainer, findById} from '@indranildeveloper-kepler.gl/utils';
+import {createDataContainer, findById} from '@indranil-kepler.gl/utils';
 
 // fixtures
 import {

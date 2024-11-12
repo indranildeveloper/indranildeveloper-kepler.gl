@@ -2,11 +2,11 @@
 
 ### Table of Contents
 
--   [getFieldsFromData][1]
--   [processCsvData][4]
--   [processGeojson][7]
--   [processKeplerglJSON][10]
--   [processRowObject][13]
+- [getFieldsFromData][1]
+- [processCsvData][4]
+- [processGeojson][7]
+- [processKeplerglJSON][10]
+- [processRowObject][13]
 
 ## getFieldsFromData
 
@@ -15,32 +15,36 @@ Assign `type`, `tableFieldIndex` and `format` (timestamp only) to each field
 
 **Parameters**
 
--   `data` **[Array][16]&lt;[Object][17]>** array of row object
--   `fieldOrder` **[Array][16]** array of field names as string
+- `data` **[Array][16]&lt;[Object][17]>** array of row object
+- `fieldOrder` **[Array][16]** array of field names as string
 
 **Examples**
 
 ```javascript
-import {getFieldsFromData} from 'indranildeveloper-kepler.gl/processors';
-const data = [{
-  time: '2016-09-17 00:09:55',
-  value: '4',
-  surge: '1.2',
-  isTrip: 'true',
-  zeroOnes: '0'
-}, {
-  time: '2016-09-17 00:30:08',
-  value: '3',
-  surge: null,
-  isTrip: 'false',
-  zeroOnes: '1'
-}, {
-  time: null,
-  value: '2',
-  surge: '1.3',
-  isTrip: null,
-  zeroOnes: '1'
-}];
+import {getFieldsFromData} from 'indranil-kepler.gl/processors';
+const data = [
+  {
+    time: '2016-09-17 00:09:55',
+    value: '4',
+    surge: '1.2',
+    isTrip: 'true',
+    zeroOnes: '0'
+  },
+  {
+    time: '2016-09-17 00:30:08',
+    value: '3',
+    surge: null,
+    isTrip: 'false',
+    zeroOnes: '1'
+  },
+  {
+    time: null,
+    value: '2',
+    surge: '1.3',
+    isTrip: null,
+    zeroOnes: '1'
+  }
+];
 
 const fieldOrder = ['time', 'value', 'surge', 'isTrip', 'zeroOnes'];
 const fields = getFieldsFromData(data, fieldOrder);
@@ -61,28 +65,30 @@ The data object can be wrapped in a `dataset` and pass to [`addDataToMap`][18]
 
 **Parameters**
 
--   `rawData` **[string][19]** raw csv string
+- `rawData` **[string][19]** raw csv string
 
 **Examples**
 
 ```javascript
-import {processCsvData} from 'indranildeveloper-kepler.gl/processors';
+import {processCsvData} from 'indranil-kepler.gl/processors';
 
 const testData = `gps_data.utc_timestamp,gps_data.lat,gps_data.lng,gps_data.types,epoch,has_result,id,time,begintrip_ts_utc,begintrip_ts_local,date
 2016-09-17 00:09:55,29.9900937,31.2590542,driver_analytics,1472688000000,False,1,2016-09-23T00:00:00.000Z,2016-10-01 09:41:39+00:00,2016-10-01 09:41:39+00:00,2016-09-23
 2016-09-17 00:10:56,29.9927699,31.2461142,driver_analytics,1472688000000,False,2,2016-09-23T00:00:00.000Z,2016-10-01 09:46:37+00:00,2016-10-01 16:46:37+00:00,2016-09-23
 2016-09-17 00:11:56,29.9907261,31.2312742,driver_analytics,1472688000000,False,3,2016-09-23T00:00:00.000Z,,,2016-09-23
-2016-09-17 00:12:58,29.9870074,31.2175827,driver_analytics,1472688000000,False,4,2016-09-23T00:00:00.000Z,,,2016-09-23`
+2016-09-17 00:12:58,29.9870074,31.2175827,driver_analytics,1472688000000,False,4,2016-09-23T00:00:00.000Z,,,2016-09-23`;
 
 const dataset = {
- info: {id: 'test_data', label: 'My Csv'},
- data: processCsvData(testData)
+  info: {id: 'test_data', label: 'My Csv'},
+  data: processCsvData(testData)
 };
 
-dispatch(addDataToMap({
- datasets: [dataset],
- options: {centerMap: true, readOnly: true}
-}));
+dispatch(
+  addDataToMap({
+    datasets: [dataset],
+    options: {centerMap: true, readOnly: true}
+  })
+);
 ```
 
 Returns **[Object][17]** data object `{fields: [], rows: []}`
@@ -95,58 +101,62 @@ The data object can be wrapped in a `dataset` and pass to [`addDataToMap`][18]
 
 **Parameters**
 
--   `rawData` **[Object][17]** raw geojson feature collection
+- `rawData` **[Object][17]** raw geojson feature collection
 
 **Examples**
 
 ```javascript
-import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
-import {processGeojson} from 'indranildeveloper-kepler.gl/processors';
+import {addDataToMap} from 'indranil-kepler.gl/actions';
+import {processGeojson} from 'indranil-kepler.gl/processors';
 
 const geojson = {
-	"type" : "FeatureCollection",
-	"features" : [{
-		"type" : "Feature",
-		"properties" : {
-			"capacity" : "10",
-			"type" : "U-Rack"
-		},
-		"geometry" : {
-			"type" : "Point",
-			"coordinates" : [ -71.073283, 42.417500 ]
-		}
-	}]
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      properties: {
+        capacity: '10',
+        type: 'U-Rack'
+      },
+      geometry: {
+        type: 'Point',
+        coordinates: [-71.073283, 42.4175]
+      }
+    }
+  ]
 };
 
-dispatch(addDataToMap({
- datasets: {
-   info: {
-     label: 'Sample Taxi Trips in New York City',
-     id: 'test_trip_data'
-   },
-   data: processGeojson(geojson)
- }
-}));
+dispatch(
+  addDataToMap({
+    datasets: {
+      info: {
+        label: 'Sample Taxi Trips in New York City',
+        id: 'test_trip_data'
+      },
+      data: processGeojson(geojson)
+    }
+  })
+);
 ```
 
 Returns **[Object][17]** dataset containing `fields` and `rows`
 
 ## processKeplerglJSON
 
-Process saved indranildeveloper-kepler.gl json to be pass to [`addDataToMap`][18].
+Process saved indranil-kepler.gl json to be pass to [`addDataToMap`][18].
 The json object should contain `datasets` and `config`.
 
 **Parameters**
 
--   `rawData` **[Object][17]** 
-    -   `rawData.datasets` **[Array][16]** 
-    -   `rawData.config` **[Object][17]** 
+- `rawData` **[Object][17]**
+  - `rawData.datasets` **[Array][16]**
+  - `rawData.config` **[Object][17]**
 
 **Examples**
 
 ```javascript
-import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
-import {processKeplerglJSON} from 'indranildeveloper-kepler.gl/processors';
+import {addDataToMap} from 'indranil-kepler.gl/actions';
+import {processKeplerglJSON} from 'indranil-kepler.gl/processors';
 
 dispatch(addDataToMap(processKeplerglJSON(keplerGlJson)));
 ```
@@ -159,65 +169,48 @@ Process data where each row is an object, output can be passed to [`addDataToMap
 
 **Parameters**
 
--   `rawData` **[Array][16]&lt;[Object][17]>** an array of row object, each object should have the same number of keys
+- `rawData` **[Array][16]&lt;[Object][17]>** an array of row object, each object should have the same number of keys
 
 **Examples**
 
 ```javascript
-import {addDataToMap} from 'indranildeveloper-kepler.gl/actions';
-import {processRowObject} from 'indranildeveloper-kepler.gl/processors';
+import {addDataToMap} from 'indranil-kepler.gl/actions';
+import {processRowObject} from 'indranil-kepler.gl/processors';
 
 const data = [
- {lat: 31.27, lng: 127.56, value: 3},
- {lat: 31.22, lng: 126.26, value: 1}
+  {lat: 31.27, lng: 127.56, value: 3},
+  {lat: 31.22, lng: 126.26, value: 1}
 ];
 
-dispatch(addDataToMap({
- datasets: {
-   info: {label: 'My Data', id: 'my_data'},
-   data: processRowObject(data)
- }
-}));
+dispatch(
+  addDataToMap({
+    datasets: {
+      info: {label: 'My Data', id: 'my_data'},
+      data: processRowObject(data)
+    }
+  })
+);
 ```
 
 Returns **[Object][17]** dataset containing `fields` and `rows`
 
 [1]: #getfieldsfromdata
-
 [2]: #parameters
-
 [3]: #examples
-
 [4]: #processcsvdata
-
 [5]: #parameters-1
-
 [6]: #examples-1
-
 [7]: #processgeojson
-
 [8]: #parameters-2
-
 [9]: #examples-2
-
 [10]: #processkeplergljson
-
 [11]: #parameters-3
-
 [12]: #examples-3
-
 [13]: #processrowobject
-
 [14]: #parameters-4
-
 [15]: #examples-4
-
 [16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
-
 [17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
 [18]: ../actions/actions.md#adddatatomap
-
 [19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
-
 [20]: http://wiki.geojson.org/GeoJSON_draft_version_6#FeatureCollection

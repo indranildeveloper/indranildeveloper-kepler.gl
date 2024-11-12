@@ -1,16 +1,20 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 
 import {BrushingExtension} from '@deck.gl/extensions';
 
-import {GeoArrowArcLayer} from '@indranildeveloper-kepler.gl/deckgl-arrow-layers';
-import {FilterArrowExtension} from '@indranildeveloper-kepler.gl/deckgl-layers';
-import {EnhancedLineLayer} from '@indranildeveloper-kepler.gl/deckgl-layers';
+import {GeoArrowArcLayer} from '@indranil-kepler.gl/deckgl-arrow-layers';
+import {FilterArrowExtension} from '@indranil-kepler.gl/deckgl-layers';
+import {EnhancedLineLayer} from '@indranil-kepler.gl/deckgl-layers';
 import LineLayerIcon from './line-layer-icon';
 import ArcLayer, {ArcLayerConfig} from '../arc-layer/arc-layer';
-import {LAYER_VIS_CONFIGS, ColorRange, PROJECTED_PIXEL_SIZE_MULTIPLIER} from '@indranildeveloper-kepler.gl/constants';
+import {
+  LAYER_VIS_CONFIGS,
+  ColorRange,
+  PROJECTED_PIXEL_SIZE_MULTIPLIER
+} from '@indranil-kepler.gl/constants';
 import {
   Merge,
   RGBColor,
@@ -19,9 +23,9 @@ import {
   VisConfigNumber,
   VisConfigRange,
   LayerColumn
-} from '@indranildeveloper-kepler.gl/types';
-import {default as KeplerTable} from '@indranildeveloper-kepler.gl/table';
-import {DataContainerInterface} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/types';
+import {default as KeplerTable} from '@indranil-kepler.gl/table';
+import {DataContainerInterface} from '@indranil-kepler.gl/utils';
 
 export type LineLayerVisConfigSettings = {
   opacity: VisConfigNumber;

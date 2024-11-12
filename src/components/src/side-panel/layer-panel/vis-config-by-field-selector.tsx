@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import {FormattedMessage, injectIntl, WrappedComponentProps} from 'react-intl';
 
-import {Field} from '@indranildeveloper-kepler.gl/types';
+import {Field} from '@indranil-kepler.gl/types';
 
-import {camelize} from '@indranildeveloper-kepler.gl/utils';
+import {camelize} from '@indranil-kepler.gl/utils';
 import FieldSelectorFactory from '../../common/field-selector';
 import InfoHelperFactory from '../../common/info-helper';
 import {PanelLabel, PanelLabelWrapper, SidePanelSection} from '../../common/styled-components';

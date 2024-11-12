@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback} from 'react';
-import {ANIMATION_WINDOW} from '@indranildeveloper-kepler.gl/constants';
-import {AnimationConfig, Timeline} from '@indranildeveloper-kepler.gl/types';
-import {snapToMarks, getTimelineFromAnimationConfig, toArray} from '@indranildeveloper-kepler.gl/utils';
+import {ANIMATION_WINDOW} from '@indranil-kepler.gl/constants';
+import {AnimationConfig, Timeline} from '@indranil-kepler.gl/types';
+import {snapToMarks, getTimelineFromAnimationConfig, toArray} from '@indranil-kepler.gl/utils';
 import AnimationControllerFactory from './common/animation-control/animation-controller';
 
 interface LayerAnimationControllerProps {

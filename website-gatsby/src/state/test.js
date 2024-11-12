@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // action creators
 
@@ -12,7 +12,7 @@ export const toggleDarkMode = () => ({
 // initial state
 
 const initialState = {
-  isDarkMode: false,
+  isDarkMode: false
 };
 
 // reducer
@@ -20,7 +20,7 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_DARKMODE:
-      return { ...state, isDarkMode: !state.isDarkMode };
+      return {...state, isDarkMode: !state.isDarkMode};
     default:
       return state;
   }

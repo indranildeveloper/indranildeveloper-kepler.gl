@@ -2396,16 +2396,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@indranildeveloper-kepler.gl/actions@npm:3.0.0, @indranildeveloper-kepler.gl/actions@workspace:src/actions":
+"@indranil-kepler.gl/actions@npm:3.0.0, @indranil-kepler.gl/actions@workspace:src/actions":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/actions@workspace:src/actions"
+  resolution: "@indranil-kepler.gl/actions@workspace:src/actions"
   dependencies:
     "@deck.gl/core": "npm:^8.9.27"
-    "@indranildeveloper-kepler.gl/cloud-providers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/processors": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/cloud-providers": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/layers": "npm:3.0.0"
+    "@indranil-kepler.gl/processors": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
     "@reduxjs/toolkit": "npm:^1.7.2"
     "@types/lodash.curry": "npm:^4.1.7"
     "@types/react-redux": "npm:^7.1.23"
@@ -2418,18 +2418,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/cloud-providers@npm:3.0.0, @indranildeveloper-kepler.gl/cloud-providers@workspace:src/cloud-providers":
+"@indranil-kepler.gl/cloud-providers@npm:3.0.0, @indranil-kepler.gl/cloud-providers@workspace:src/cloud-providers":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/cloud-providers@workspace:src/cloud-providers"
+  resolution: "@indranil-kepler.gl/cloud-providers@workspace:src/cloud-providers"
   dependencies:
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
     react: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/components@npm:3.0.0, @indranildeveloper-kepler.gl/components@workspace:src/components":
+"@indranil-kepler.gl/components@npm:3.0.0, @indranil-kepler.gl/components@workspace:src/components":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/components@workspace:src/components"
+  resolution: "@indranil-kepler.gl/components@workspace:src/components"
   dependencies:
     "@deck.gl/core": "npm:^8.9.27"
     "@deck.gl/react": "npm:^8.9.27"
@@ -2438,19 +2438,19 @@ __metadata:
     "@dnd-kit/sortable": "npm:^7.0.2"
     "@dnd-kit/utilities": "npm:^3.2.1"
     "@floating-ui/react": "npm:0.25.1"
-    "@indranildeveloper-kepler.gl/actions": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/cloud-providers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/effects": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/localization": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/processors": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/reducers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/schemas": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/styles": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/table": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/actions": "npm:3.0.0"
+    "@indranil-kepler.gl/cloud-providers": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/effects": "npm:3.0.0"
+    "@indranil-kepler.gl/layers": "npm:3.0.0"
+    "@indranil-kepler.gl/localization": "npm:3.0.0"
+    "@indranil-kepler.gl/processors": "npm:3.0.0"
+    "@indranil-kepler.gl/reducers": "npm:3.0.0"
+    "@indranil-kepler.gl/schemas": "npm:3.0.0"
+    "@indranil-kepler.gl/styles": "npm:3.0.0"
+    "@indranil-kepler.gl/table": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@mapbox/mapbox-sdk": "npm:^0.15.3"
     "@nebula.gl/edit-modes": "npm:1.0.2-alpha.1"
     "@tippyjs/react": "npm:^4.2.0"
@@ -2528,11 +2528,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/constants@npm:3.0.0, @indranildeveloper-kepler.gl/constants@workspace:src/constants":
+"@indranil-kepler.gl/constants@npm:3.0.0, @indranil-kepler.gl/constants@workspace:src/constants":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/constants@workspace:src/constants"
+  resolution: "@indranil-kepler.gl/constants@workspace:src/constants"
   dependencies:
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
     "@types/d3-scale": "npm:^3.2.2"
     "@types/keymirror": "npm:^0.1.1"
     colorbrewer: "npm:^1.5.0"
@@ -2542,9 +2542,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/deckgl-arrow-layers@npm:3.0.0, @indranildeveloper-kepler.gl/deckgl-arrow-layers@workspace:src/deckgl-arrow-layers":
+"@indranil-kepler.gl/deckgl-arrow-layers@npm:3.0.0, @indranil-kepler.gl/deckgl-arrow-layers@workspace:src/deckgl-arrow-layers":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/deckgl-arrow-layers@workspace:src/deckgl-arrow-layers"
+  resolution: "@indranil-kepler.gl/deckgl-arrow-layers@workspace:src/deckgl-arrow-layers"
   dependencies:
     "@geoarrow/geoarrow-js": "npm:^0.3.0"
     "@math.gl/core": "npm:^4.0.0"
@@ -2560,18 +2560,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/deckgl-layers@npm:3.0.0, @indranildeveloper-kepler.gl/deckgl-layers@workspace:src/deckgl-layers":
+"@indranil-kepler.gl/deckgl-layers@npm:3.0.0, @indranil-kepler.gl/deckgl-layers@workspace:src/deckgl-layers":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/deckgl-layers@workspace:src/deckgl-layers"
+  resolution: "@indranil-kepler.gl/deckgl-layers@workspace:src/deckgl-layers"
   dependencies:
     "@danmarshall/deckgl-typings": "npm:4.9.22"
     "@deck.gl/aggregation-layers": "npm:^8.9.27"
     "@deck.gl/core": "npm:^8.9.27"
     "@deck.gl/geo-layers": "npm:^8.9.27"
     "@deck.gl/layers": "npm:^8.9.27"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@luma.gl/constants": "npm:^8.5.20"
     "@luma.gl/core": "npm:^8.5.20"
     "@mapbox/geo-viewport": "npm:^0.4.1"
@@ -2589,23 +2589,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/effects@npm:3.0.0, @indranildeveloper-kepler.gl/effects@workspace:src/effects":
+"@indranil-kepler.gl/effects@npm:3.0.0, @indranil-kepler.gl/effects@workspace:src/effects":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/effects@workspace:src/effects"
+  resolution: "@indranil-kepler.gl/effects@workspace:src/effects"
   dependencies:
     "@deck.gl/core": "npm:^8.9.27"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@luma.gl/core": "npm:^8.5.20"
     "@luma.gl/shadertools": "npm:^8.5.20"
     suncalc: "npm:^1.9.0"
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/layers@npm:3.0.0, @indranildeveloper-kepler.gl/layers@workspace:src/layers":
+"@indranil-kepler.gl/layers@npm:3.0.0, @indranil-kepler.gl/layers@workspace:src/layers":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/layers@workspace:src/layers"
+  resolution: "@indranil-kepler.gl/layers@workspace:src/layers"
   dependencies:
     "@danmarshall/deckgl-typings": "npm:4.9.22"
     "@deck.gl/core": "npm:^8.9.27"
@@ -2613,13 +2613,13 @@ __metadata:
     "@deck.gl/geo-layers": "npm:^8.9.27"
     "@deck.gl/layers": "npm:^8.9.27"
     "@deck.gl/mesh-layers": "npm:^8.9.27"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/deckgl-arrow-layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/deckgl-layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/localization": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/table": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/deckgl-arrow-layers": "npm:3.0.0"
+    "@indranil-kepler.gl/deckgl-layers": "npm:3.0.0"
+    "@indranil-kepler.gl/localization": "npm:3.0.0"
+    "@indranil-kepler.gl/table": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@loaders.gl/arrow": "npm:^4.3.2"
     "@loaders.gl/core": "npm:^4.3.2"
     "@loaders.gl/gis": "npm:^4.3.2"
@@ -2656,9 +2656,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/localization@npm:3.0.0, @indranildeveloper-kepler.gl/localization@workspace:src/localization":
+"@indranil-kepler.gl/localization@npm:3.0.0, @indranil-kepler.gl/localization@workspace:src/localization":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/localization@workspace:src/localization"
+  resolution: "@indranil-kepler.gl/localization@workspace:src/localization"
   dependencies:
     react: "npm:^18.2.0"
     react-intl: "npm:^6.3.0"
@@ -2666,15 +2666,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/processors@npm:3.0.0, @indranildeveloper-kepler.gl/processors@workspace:src/processors":
+"@indranil-kepler.gl/processors@npm:3.0.0, @indranil-kepler.gl/processors@workspace:src/processors":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/processors@workspace:src/processors"
+  resolution: "@indranil-kepler.gl/processors@workspace:src/processors"
   dependencies:
     "@danmarshall/deckgl-typings": "npm:4.9.22"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/schemas": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/schemas": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@loaders.gl/arrow": "npm:^4.3.2"
     "@loaders.gl/core": "npm:^4.3.2"
     "@loaders.gl/csv": "npm:^4.3.2"
@@ -2689,24 +2689,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/reducers@npm:3.0.0, @indranildeveloper-kepler.gl/reducers@workspace:src/reducers":
+"@indranil-kepler.gl/reducers@npm:3.0.0, @indranil-kepler.gl/reducers@workspace:src/reducers":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/reducers@workspace:src/reducers"
+  resolution: "@indranil-kepler.gl/reducers@workspace:src/reducers"
   dependencies:
-    "@indranildeveloper-kepler.gl/actions": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/cloud-providers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/deckgl-arrow-layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/deckgl-layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/effects": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/localization": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/processors": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/schemas": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/table": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/tasks": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/actions": "npm:3.0.0"
+    "@indranil-kepler.gl/cloud-providers": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/deckgl-arrow-layers": "npm:3.0.0"
+    "@indranil-kepler.gl/deckgl-layers": "npm:3.0.0"
+    "@indranil-kepler.gl/effects": "npm:3.0.0"
+    "@indranil-kepler.gl/layers": "npm:3.0.0"
+    "@indranil-kepler.gl/localization": "npm:3.0.0"
+    "@indranil-kepler.gl/processors": "npm:3.0.0"
+    "@indranil-kepler.gl/schemas": "npm:3.0.0"
+    "@indranil-kepler.gl/table": "npm:3.0.0"
+    "@indranil-kepler.gl/tasks": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@loaders.gl/loader-utils": "npm:^4.3.2"
     "@turf/bbox": "npm:^6.0.1"
     "@types/lodash.clonedeep": "npm:^4.5.7"
@@ -2734,15 +2734,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/schemas@npm:3.0.0, @indranildeveloper-kepler.gl/schemas@workspace:src/schemas":
+"@indranil-kepler.gl/schemas@npm:3.0.0, @indranil-kepler.gl/schemas@workspace:src/schemas":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/schemas@workspace:src/schemas"
+  resolution: "@indranil-kepler.gl/schemas@workspace:src/schemas"
   dependencies:
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/table": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/layers": "npm:3.0.0"
+    "@indranil-kepler.gl/table": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@loaders.gl/loader-utils": "npm:^4.3.2"
     "@types/keymirror": "npm:^0.1.1"
     "@types/lodash.clonedeep": "npm:^4.5.7"
@@ -2754,24 +2754,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/styles@npm:3.0.0, @indranildeveloper-kepler.gl/styles@workspace:src/styles":
+"@indranil-kepler.gl/styles@npm:3.0.0, @indranil-kepler.gl/styles@workspace:src/styles":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/styles@workspace:src/styles"
+  resolution: "@indranil-kepler.gl/styles@workspace:src/styles"
   dependencies:
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
     "@types/styled-components": "npm:^5.1.25"
     styled-components: "npm:^4.1.3"
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/table@npm:3.0.0, @indranildeveloper-kepler.gl/table@workspace:src/table":
+"@indranil-kepler.gl/table@npm:3.0.0, @indranil-kepler.gl/table@workspace:src/table":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/table@workspace:src/table"
+  resolution: "@indranil-kepler.gl/table@workspace:src/table"
   dependencies:
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/layers": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/utils": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/layers": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/utils": "npm:3.0.0"
     "@types/d3-array": "npm:^2.8.0"
     "@types/lodash.uniq": "npm:^4.5.7"
     d3-array: "npm:^2.8.0"
@@ -2781,27 +2781,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/tasks@npm:3.0.0, @indranildeveloper-kepler.gl/tasks@workspace:src/tasks":
+"@indranil-kepler.gl/tasks@npm:3.0.0, @indranil-kepler.gl/tasks@workspace:src/tasks":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/tasks@workspace:src/tasks"
+  resolution: "@indranil-kepler.gl/tasks@workspace:src/tasks"
   dependencies:
-    "@indranildeveloper-kepler.gl/processors": "npm:3.0.0"
+    "@indranil-kepler.gl/processors": "npm:3.0.0"
     react-palm: "npm:^3.3.8"
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/types@npm:3.0.0, @indranildeveloper-kepler.gl/types@workspace:src/types":
+"@indranil-kepler.gl/types@npm:3.0.0, @indranil-kepler.gl/types@workspace:src/types":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/types@workspace:src/types"
+  resolution: "@indranil-kepler.gl/types@workspace:src/types"
   languageName: unknown
   linkType: soft
 
-"@indranildeveloper-kepler.gl/utils@npm:3.0.0, @indranildeveloper-kepler.gl/utils@workspace:src/utils":
+"@indranil-kepler.gl/utils@npm:3.0.0, @indranil-kepler.gl/utils@workspace:src/utils":
   version: 0.0.0-use.local
-  resolution: "@indranildeveloper-kepler.gl/utils@workspace:src/utils"
+  resolution: "@indranil-kepler.gl/utils@workspace:src/utils"
   dependencies:
-    "@indranildeveloper-kepler.gl/constants": "npm:3.0.0"
-    "@indranildeveloper-kepler.gl/types": "npm:3.0.0"
+    "@indranil-kepler.gl/constants": "npm:3.0.0"
+    "@indranil-kepler.gl/types": "npm:3.0.0"
     "@luma.gl/constants": "npm:^8.5.20"
     "@luma.gl/core": "npm:^8.5.20"
     "@mapbox/geo-viewport": "npm:^0.4.1"
@@ -13731,9 +13731,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"indranildeveloper-kepler.gl@workspace:.":
+"indranil-kepler.gl@workspace:.":
   version: 0.0.0-use.local
-  resolution: "indranildeveloper-kepler.gl@workspace:."
+  resolution: "indranil-kepler.gl@workspace:."
   dependencies:
     "@babel/cli": "npm:^7.12.1"
     "@babel/core": "npm:^7.12.1"
@@ -13760,7 +13760,7 @@ __metadata:
     "@deck.gl/test-utils": "npm:^8.9.27"
     "@hubble.gl/core": "npm:1.2.0-alpha.6"
     "@hubble.gl/react": "npm:1.2.0-alpha.6"
-    "@indranildeveloper-kepler.gl/components": "npm:3.0.0"
+    "@indranil-kepler.gl/components": "npm:3.0.0"
     "@loaders.gl/polyfills": "npm:^4.3.2"
     "@luma.gl/test-utils": "npm:^8.5.20"
     "@nebula.gl/layers": "npm:1.0.2-alpha.1"

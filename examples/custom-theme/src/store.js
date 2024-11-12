@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import window from 'global/window';
 import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
-import {enhanceReduxMiddleware} from '@indranildeveloper-kepler.gl/reducers';
+import {enhanceReduxMiddleware} from '@indranil-kepler.gl/reducers';
 
 import demoReducer from './reducers/index';
 

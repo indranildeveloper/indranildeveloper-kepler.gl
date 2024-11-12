@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import test from 'tape';
 import moment from 'moment';
 
-import {getDatasetFieldIndexForFilter} from '@indranildeveloper-kepler.gl/table';
+import {getDatasetFieldIndexForFilter} from '@indranil-kepler.gl/table';
 
 import {
   isValidFilterValue,
@@ -17,9 +17,9 @@ import {
   diffFilters,
   getTimestampFieldDomain,
   createDataContainer
-} from '@indranildeveloper-kepler.gl/utils';
+} from '@indranil-kepler.gl/utils';
 
-import {FILTER_TYPES} from '@indranildeveloper-kepler.gl/constants';
+import {FILTER_TYPES} from '@indranil-kepler.gl/constants';
 import {mockPolygonFeature, mockPolygonData} from '../../fixtures/polygon';
 
 /* eslint-disable max-statements */

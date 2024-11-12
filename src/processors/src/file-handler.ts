@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import * as arrow from 'apache-arrow';
 import {parseInBatches} from '@loaders.gl/core';
@@ -8,10 +8,10 @@ import {CSVLoader} from '@loaders.gl/csv';
 import {GeoArrowLoader} from '@loaders.gl/arrow';
 import {ParquetWasmLoader} from '@loaders.gl/parquet';
 import {Loader} from '@loaders.gl/loader-utils';
-import {generateHashId, isPlainObject, generateHashIdFromString} from '@indranildeveloper-kepler.gl/utils';
-import {DATASET_FORMATS} from '@indranildeveloper-kepler.gl/constants';
-import {LoadedMap, ProcessorResult} from '@indranildeveloper-kepler.gl/types';
-import {Feature, AddDataToMapPayload} from '@indranildeveloper-kepler.gl/types';
+import {generateHashId, isPlainObject, generateHashIdFromString} from '@indranil-kepler.gl/utils';
+import {DATASET_FORMATS} from '@indranil-kepler.gl/constants';
+import {LoadedMap, ProcessorResult} from '@indranil-kepler.gl/types';
+import {Feature, AddDataToMapPayload} from '@indranil-kepler.gl/types';
 import {FeatureCollection} from '@turf/helpers';
 
 import {
@@ -105,7 +105,7 @@ export function isKeplerGlMap(json: unknown): json is ValidKeplerGlMap {
       json.config &&
       json.info &&
       isPlainObject(json.info) &&
-      json.info.app === 'indranildeveloper-kepler.gl'
+      json.info.app === 'indranil-kepler.gl'
   );
 }
 

@@ -1,8 +1,8 @@
 {
-  "name": "@indranildeveloper-kepler.gl/types",
+  "name": "@indranil-kepler.gl/types",
   "author": "Shan He <shan@uber.com>",
-  "version": "3.0.0",
-  "description": "indranildeveloper-kepler.gl types used by indranildeveloper-kepler.gl components, actions and reducers",
+  "version": "1.0.0",
+  "description": "indranil-kepler.gl types used by indranil-kepler.gl components, actions and reducers",
   "license": "MIT",
   "types": "index.d.ts",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/keplergl/indranildeveloper-kepler.gl.git"
+    "url": "https://github.com/keplergl/indranil-kepler.gl.git"
   },
   "scripts": {
     "prepublish": " ",

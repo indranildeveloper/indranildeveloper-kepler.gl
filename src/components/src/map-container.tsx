@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 // libraries
 import React, {Component, createRef, useMemo} from 'react';
@@ -11,7 +11,7 @@ import {createSelector, Selector} from 'reselect';
 import {useDroppable} from '@dnd-kit/core';
 import debounce from 'lodash.debounce';
 
-import {VisStateActions, MapStateActions, UIStateActions} from '@indranildeveloper-kepler.gl/actions';
+import {VisStateActions, MapStateActions, UIStateActions} from '@indranil-kepler.gl/actions';
 
 // components
 import MapPopoverFactory from './map/map-popover';
@@ -31,8 +31,8 @@ import {
   LayerBaseConfig,
   VisualChannelDomain,
   EditorLayerUtils
-} from '@indranildeveloper-kepler.gl/layers';
-import {MapState, MapControls, Viewport, SplitMap, SplitMapLayers} from '@indranildeveloper-kepler.gl/types';
+} from '@indranil-kepler.gl/layers';
+import {MapState, MapControls, Viewport, SplitMap, SplitMapLayers} from '@indranil-kepler.gl/types';
 import {
   errorNotification,
   setLayerBlending,
@@ -48,8 +48,8 @@ import {
   rgbToHex,
   computeDeckEffects,
   getApplicationConfig
-} from '@indranildeveloper-kepler.gl/utils';
-import {breakPointValues} from '@indranildeveloper-kepler.gl/styles';
+} from '@indranil-kepler.gl/utils';
+import {breakPointValues} from '@indranil-kepler.gl/styles';
 
 // default-settings
 import {
@@ -60,14 +60,14 @@ import {
   NO_MAP_ID,
   EMPTY_MAPBOX_STYLE,
   DROPPABLE_MAP_CONTAINER_TYPE
-} from '@indranildeveloper-kepler.gl/constants';
+} from '@indranil-kepler.gl/constants';
 
 // Contexts
 import {MapViewStateContext} from './map-view-state-context';
 
 import ErrorBoundary from './common/error-boundary';
 import {DatasetAttribution} from './types';
-import {LOCALE_CODES} from '@indranildeveloper-kepler.gl/localization';
+import {LOCALE_CODES} from '@indranil-kepler.gl/localization';
 import {MapView} from '@deck.gl/core';
 import {
   MapStyle,
@@ -77,8 +77,8 @@ import {
   prepareLayersForDeck,
   prepareLayersToRender,
   LayersToRender
-} from '@indranildeveloper-kepler.gl/reducers';
-import {VisState} from '@indranildeveloper-kepler.gl/schemas';
+} from '@indranil-kepler.gl/reducers';
+import {VisState} from '@indranil-kepler.gl/schemas';
 
 // Debounce the propagation of viewport change and mouse moves to redux store.
 // This is to avoid too many renders of other components when the map is
@@ -246,8 +246,8 @@ export const Attribution: React.FC<{
           <div className="attrition-link">
             {datasetAttributions?.length ? <span className="pipe-separator">|</span> : null}
             {isPalm ? <MapLibLogo /> : null}
-            <a href="https://indranildeveloper-kepler.gl/policy/" target="_blank" rel="noopener noreferrer">
-              © indranildeveloper-kepler.gl |{' '}
+            <a href="https://indranil-kepler.gl/policy/" target="_blank" rel="noopener noreferrer">
+              © indranil-kepler.gl |{' '}
             </a>
             {!isPalm ? <MapLibLogo /> : null}
           </div>

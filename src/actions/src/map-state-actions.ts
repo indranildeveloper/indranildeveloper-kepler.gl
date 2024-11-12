@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import {createAction} from '@reduxjs/toolkit';
 import {default as ActionTypes} from './action-types';
-import {Bounds, Merge, Viewport} from '@indranildeveloper-kepler.gl/types';
+import {Bounds, Merge, Viewport} from '@indranil-kepler.gl/types';
 
 export type TogglePerspectiveUpdaterAction = void;
 /**
@@ -12,7 +12,7 @@ export type TogglePerspectiveUpdaterAction = void;
  * @memberof mapStateActions
  * @public
  * @example
- * import {togglePerspective} from 'indranildeveloper-kepler.gl/actions';
+ * import {togglePerspective} from 'indranil-kepler.gl/actions';
  * this.props.dispatch(togglePerspective());
  */
 export const togglePerspective: () => Merge<
@@ -27,7 +27,7 @@ export type FitBoundsUpdaterAction = {payload: Bounds};
  * @param {Array<Number>} bounds as `[lngMin, latMin, lngMax, latMax]`
  * @public
  * @example
- * import {fitBounds} from 'indranildeveloper-kepler.gl/actions';
+ * import {fitBounds} from 'indranil-kepler.gl/actions';
  * this.props.dispatch(fitBounds([-122.23, 37.127, -122.11, 37.456]));
  */
 export const fitBounds: (
@@ -53,7 +53,7 @@ export type UpdateMapUpdaterAction = {payload: {viewport: Viewport; mapIndex?: n
  * @param {number} mapIndex Index of which map to update the viewport of
  * @public
  * @example
- * import {updateMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {updateMap} from 'indranil-kepler.gl/actions';
  * this.props.dispatch(updateMap({latitude: 37.75043, longitude: -122.34679, width: 800, height: 1200}, 0));
  */
 
@@ -79,7 +79,7 @@ export type ToggleSplitMapUpdaterAction = {
  * @param {Number} [index] index is provided, close split map at index
  * @public
  * @example
- * import {toggleSplitMap} from 'indranildeveloper-kepler.gl/actions';
+ * import {toggleSplitMap} from 'indranil-kepler.gl/actions';
  * this.props.dispatch(toggleSplitMap());
  */
 export const toggleSplitMap: (

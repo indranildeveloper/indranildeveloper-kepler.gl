@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React from 'react';
 import cloneDeep from 'lodash.clonedeep';
 
 import {fireEvent, screen} from '@testing-library/react';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
-import {appInjector, LayerListFactory} from '@indranildeveloper-kepler.gl/components';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
+import {appInjector, LayerListFactory} from '@indranil-kepler.gl/components';
 import {
   VisStateActions,
   UIStateActions,
   MapStateActions,
   addDataToMap,
   keplerGlInit
-} from '@indranildeveloper-kepler.gl/actions';
-import {processCsvData} from '@indranildeveloper-kepler.gl/processors';
-import {keplerGlReducerCore as keplerGlReducer} from '@indranildeveloper-kepler.gl/reducers';
+} from '@indranil-kepler.gl/actions';
+import {processCsvData} from '@indranil-kepler.gl/processors';
+import {keplerGlReducerCore as keplerGlReducer} from '@indranil-kepler.gl/reducers';
 
 import {renderWithTheme} from '../../../helpers/component-jest-utils';
 import testLayerData from '../../../fixtures/test-layer-data';
@@ -96,7 +96,7 @@ const defaultProps = {
   mapStateActions: MapStateActions
 };
 
-// jest.mock('@indranildeveloper-kepler.gl/actions');
+// jest.mock('@indranil-kepler.gl/actions');
 
 describe('Components -> SidePanel -> LayerPanel -> LayerList', () => {
   it('render sortable list', () => {

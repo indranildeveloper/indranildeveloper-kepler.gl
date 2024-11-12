@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {Field} from '@indranildeveloper-kepler.gl/types';
+import {Field} from '@indranil-kepler.gl/types';
 import {DataRow, SharedRowOptions} from './data-row';
 
 /**

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useCallback, useState, useEffect} from 'react';
 import {CloudHeader} from './cloud-components/cloud-header';
@@ -7,7 +7,7 @@ import {CloudMaps} from './cloud-components/cloud-maps';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 import {ProviderSelect} from './cloud-components/provider-select';
 import {FlexColContainer} from '../common/flex-container';
-import {Provider, MapListItem} from '@indranildeveloper-kepler.gl/cloud-providers';
+import {Provider, MapListItem} from '@indranil-kepler.gl/cloud-providers';
 
 function LoadStorageMapFactory() {
   const LoadStorageMap = ({onLoadCloudMap}) => {

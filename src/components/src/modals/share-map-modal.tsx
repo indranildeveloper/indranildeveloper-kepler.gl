@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useEffect, useState} from 'react';
 import styled, {ThemeProvider} from 'styled-components';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import {themeLT} from '@indranildeveloper-kepler.gl/styles';
+import {themeLT} from '@indranil-kepler.gl/styles';
 import ImageModalContainer, {ImageModalContainerProps} from './image-modal-container';
 
 import {
@@ -14,12 +14,12 @@ import {
   Button
 } from '../common/styled-components';
 import StatusPanel from './status-panel';
-import {FormattedMessage} from '@indranildeveloper-kepler.gl/localization';
+import {FormattedMessage} from '@indranil-kepler.gl/localization';
 import {useCloudListProvider} from '../hooks/use-cloud-list-provider';
 import {ProviderSelect} from './cloud-components/provider-select';
-import {Provider} from '@indranildeveloper-kepler.gl/cloud-providers';
-import {cleanupExportImage as cleanupExportImageAction} from '@indranildeveloper-kepler.gl/actions';
-import {dataTestIds} from '@indranildeveloper-kepler.gl/constants';
+import {Provider} from '@indranil-kepler.gl/cloud-providers';
+import {cleanupExportImage as cleanupExportImageAction} from '@indranil-kepler.gl/actions';
+import {dataTestIds} from '@indranil-kepler.gl/constants';
 
 export const StyledInputLabel = styled.label`
   font-size: 12px;

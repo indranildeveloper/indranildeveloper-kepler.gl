@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {ComponentType, useCallback, useMemo} from 'react';
 import classnames from 'classnames';
 import {Cube3d} from '../common/icons';
 import {MapControlButton} from '../common/styled-components';
 import MapControlTooltipFactory from './map-control-tooltip';
-import {MapControls} from '@indranildeveloper-kepler.gl/types';
+import {MapControls} from '@indranil-kepler.gl/types';
 
 Toggle3dButtonFactory.deps = [MapControlTooltipFactory];
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {PanelHeaderFactory} from '@indranildeveloper-kepler.gl/components';
+import {PanelHeaderFactory} from '@indranil-kepler.gl/components';
 
 // Custom Panel Header renders default panel header, changing its default props
 // to avoid rendering any action items on the top right

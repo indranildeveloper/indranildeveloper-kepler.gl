@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {useState, useEffect, createContext} from 'react';
 import isEqual from 'lodash.isequal';
 import pick from 'lodash.pick';
 import {MapViewState} from '@deck.gl/core/typed';
-import {pickViewportPropsFromMapState} from '@indranildeveloper-kepler.gl/reducers';
+import {pickViewportPropsFromMapState} from '@indranil-kepler.gl/reducers';
 
-import {MapState} from '@indranildeveloper-kepler.gl/types';
+import {MapState} from '@indranil-kepler.gl/types';
 
 export type MapViewStateContextType = {
   getInternalViewState: (index?: number) => MapViewState;

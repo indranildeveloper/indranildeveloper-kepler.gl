@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 export const LOCALES = {
   en: 'English',
@@ -20,7 +20,7 @@ export const LOCALES = {
  * @example
  * ```js
  * import {combineReducers} from 'redux';
- * import {LOCALE_CODES} from 'indranildeveloper-kepler.gl/localization';
+ * import {LOCALE_CODES} from 'indranil-kepler.gl/localization';
  *
  * const customizedKeplerGlReducer = keplerGlReducer
  *   .initialState({

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
 import React, {PureComponent} from 'react';
 import styled, {ThemeProvider} from 'styled-components';
@@ -7,10 +7,10 @@ import {Container, Content, HeroImage, LogoImage, StyledCaption} from './common/
 import {theme} from '../styles';
 import Header from './header';
 
-const GITHUB_PROJECT = 'https://github.com/keplergl/indranildeveloper-kepler.gl';
+const GITHUB_PROJECT = 'https://github.com/keplergl/indranil-kepler.gl';
 const GITHUB_PROJECT_ISSUES = `${GITHUB_PROJECT}/issues`;
 const MAILING_LIST_URL = 'https://groups.google.com/d/forum/kepler-gl';
-const CONTRIBUTING_URL = 'https://docs.indranildeveloper-kepler.gl/contributing';
+const CONTRIBUTING_URL = 'https://docs.indranil-kepler.gl/contributing';
 
 const StyledContainer = styled(Container)`
   background-color: black;
@@ -58,21 +58,22 @@ export default class Home extends PureComponent {
                 <div className="kg-home__caption__subtitle">Support Policy</div>
                 <div className="description">
                   <h3>
-                    <a href="https://indranildeveloper-kepler.gl">indranildeveloper-kepler.gl</a> is an open source project. Its source
-                    code is available at <a href={GITHUB_PROJECT}>indranildeveloper-kepler.gl Github project</a>.
+                    <a href="https://indranil-kepler.gl">indranil-kepler.gl</a> is an open source
+                    project. Its source code is available at{' '}
+                    <a href={GITHUB_PROJECT}>indranil-kepler.gl Github project</a>.
                   </h3>
                   <span className="description-content">
                     As an open source project, questions and bug reports can be filed with the
                     project community, and you can participate in the development of the project's
                     source code. Bug reports and issues can be submitted at{' '}
-                    <a href={GITHUB_PROJECT_ISSUES}>indranildeveloper-kepler.gl Github issues</a>. Questions can be
-                    asked on the project's mailing lists, which you can subscribe at{' '}
-                    <a href={MAILING_LIST_URL}>indranildeveloper-kepler.gl Mailing list</a>
+                    <a href={GITHUB_PROJECT_ISSUES}>indranil-kepler.gl Github issues</a>. Questions
+                    can be asked on the project's mailing lists, which you can subscribe at{' '}
+                    <a href={MAILING_LIST_URL}>indranil-kepler.gl Mailing list</a>
                     Please review the applicable{' '}
                     <a href={CONTRIBUTING_URL}>contributing guidelines</a> and procedures in
-                    connection with your submissions. Please note that the indranildeveloper-kepler.gl project and
-                    Urban Computing Foundation do not otherwise provide support for users of
-                    indranildeveloper-kepler.gl software.
+                    connection with your submissions. Please note that the indranil-kepler.gl
+                    project and Urban Computing Foundation do not otherwise provide support for
+                    users of indranil-kepler.gl software.
                   </span>
                 </div>
               </StyledCaption>

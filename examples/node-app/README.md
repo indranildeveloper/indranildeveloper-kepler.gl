@@ -1,6 +1,6 @@
 # Node/Express
 
-This example shows how to embed indranildeveloper-kepler.gl in a node/express/webpack application. 
+This example shows how to embed indranil-kepler.gl in a node/express/webpack application.
 
 #### 1. Install
 
@@ -14,8 +14,8 @@ or
 yarn
 ```
 
-
 #### 2. Mapbox Token
+
 add mapbox access token to node env
 
 ```sh

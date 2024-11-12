@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {Bounds} from '@indranildeveloper-kepler.gl/types';
-import {Layer} from '@indranildeveloper-kepler.gl/layers';
+import {Bounds} from '@indranil-kepler.gl/types';
+import {Layer} from '@indranil-kepler.gl/layers';
 
 const MAX_LATITUDE = 90;
 const MIN_LATITUDE = -90;

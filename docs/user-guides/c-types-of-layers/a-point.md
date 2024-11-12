@@ -1,10 +1,11 @@
 # Point
 
-![Point layer](https://d1a3f4spazzrp4.cloudfront.net/indranildeveloper-kepler.gl/documentation/image34.png "Point layer")
+![Point layer](https://d1a3f4spazzrp4.cloudfront.net/indranil-kepler.gl/documentation/image34.png 'Point layer')
 
 Point layers draw points for a given event or object.
 
-__Layer Attributes__
+**Layer Attributes**
+
 - Basic
   - Columns:
     - Latitude
@@ -24,8 +25,8 @@ __Layer Attributes__
   - Single radius / radius based on
   - Fixed radius to meter
 - Text,
- - Font Size
- - Font Color
- - Text Anchor
+- Font Size
+- Font Color
+- Text Anchor
 
 [Back to table of contents](../README.md)

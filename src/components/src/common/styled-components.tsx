@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Copyright contributors to the indranildeveloper-kepler.gl project
+// Copyright contributors to the indranil-kepler.gl project
 
-import {media} from '@indranildeveloper-kepler.gl/styles';
-import {RGBColor} from '@indranildeveloper-kepler.gl/types';
+import {media} from '@indranil-kepler.gl/styles';
+import {RGBColor} from '@indranil-kepler.gl/types';
 import classnames from 'classnames';
 import DatePicker from 'react-date-picker';
 import TimePicker from 'react-time-picker';
